@@ -1,4 +1,4 @@
-<div align="center"><figure><img src="icons/phylip.gif"/></figure></div>
+<div align="center"><figure><img src="icons/PHYLIP.gif"/></figure></div>
 
 
 
