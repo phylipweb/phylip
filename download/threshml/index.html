@@ -1,0 +1,144 @@
+<HTML>
+<HEAD><title>Threshml 3.7a preliminary distribution</title></HEAD>
+<BODY bgcolor="#ccffff">
+<DIV align=center>
+<h1>Preliminary distribution of Threshml from PHYLIP 3.7a</h1>
+</DIV>
+<P>
+This folder has an alpha release of the program Threshml, from PHYLIP 3.7a.
+That version of PHYLIP is not yet released as other programs are not
+in a releasable state yet.
+<P>
+My paper describing Threshml is:
+<P>
+<DIV ALIGN=center>
+<table border=0 width="80%" ><tr><td bgcolor="lightgreen">
+Felsenstein, J. 2012. A comparative method for both discrete and
+continuous characters using the threshold model. <I>American Naturalist</i>
+<b>179:</b>
+145-156.
+</td></tr></table>
+</DIV>
+<P>
+The files here include a documentation web page file,   threshml.html
+which explains the options and use of Threshml.
+<P>
+They also include some pieces of the source code:
+<P>
+<table border=0>
+<tr><td>threshml.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>         The main Threshml program</td></tr>
+<tr><td>cont.c</td><td>             supporting functions</td></tr>
+<tr><td>cont.h</td><td>             a header file for them</td></tr>
+<tr><td>phylip.c</td><td>           more widely-used PHYLIP functions</td></tr>
+<tr><td>phylip.h</td><td>           the main PHYLIP header file</td></tr>
+<tr><td>Slist.c</td><td>            linked-list functions</td></tr>
+<tr><td>Slist.h</td><td>            ... and their header file</td></tr>
+<tr><td>ml.h</td><td>               header file for likelihood</td></tr>
+</table>
+<P>
+You mostly do not need to worry about these files once
+Threshml is compiled.
+<p>
+In addition there is a Unix/Linux Makefile for compiling Threshml:
+<p>
+Makefile.unix
+<p>
+A zip archive of the source code, executables, and the
+documentation files is also available.  It is called   threshml.zip<BR>
+<i>It may be the easiest file to download to get everything.</i>
+It can be downloaded <a href="threshml.zip">at this link</a>.
+<p>
+
+<h2>USING OUR PRECOMPILED EXECUTABLES</h2>
+<p>
+We have also included several executable files compiled for
+various systems.   The relevant one could be copied to another
+folder, and renamed "threshml".   On some systems you might also
+need to give that executable file "execution permission" with a
+command such as (for Unix, Linux, or Mac OS X)  "chmod +x threshml"
+<p>
+Here are the executables available now:
+<p>
+<table border=0>
+<tr><td>   threshml.linuxi64&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Intel- or AMD-compatible 64-bit Linux
+executable</td></tr>
+<tr><td>   threshml.linuxi32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Intel- or AMD-compatible 32-bit Linux
+executable</td></tr>
+<tr><td>threshml.exe</td><td>32-bit Windows executable</td></tr>
+<tr><td>threshml.osx</td><td>Mac OS X universal executable Intel or
+Powermac</td></tr>
+</table>
+<p>
+For the moment the Mac OS X executable needs to be run from a
+Terminal window by typing "threshml" or by typing "./threshml"
+We do not yet have a version available that will run by clicking
+on an icon.
+<p>
+The Windows executable can be run by double-clicking on its icon.
+<p>
+Note that some systems will not be happy downloading an executable
+from elsewhere and allowing it to run on your system.   In these
+cases you might be able to do the compilation locally, using the
+instructions below.
+<p>
+
+<h2>COMPILING IT YOURSELF</h2>
+<p>
+For Linux or Unix systems, or for Mac OS X systems you can compile
+an executable of your own by following these steps:
+<ol>
+  <li>Make sure you are in a command-line terminal window
+      (for Mac OS X you can use the Terminal utility which will
+      be found in the Utilities folder within the Applications folder,
+      or else the X11 terminal application that is available from the
+      Applications menu once you run the X11 application).
+  <li>Type:<br>
+<table><tr><td bgcolor=white>
+        <tt>make threshml -f Makefile.unix</tt><br>
+</td></tr></table>
+      which should cause the program to be compiled and the
+      executable named "threshml"
+  <li>  If for some reason you want to remove the executable and the
+      object (".o") files that were used to make it, type the command<br>
+<table><tr><td bgcolor=white>
+        <tt>make clean -f Makefile.unix</tt>
+</td></tr></table>
+</ol>
+<p>
+<i>Important:</i> you don't need to do any compiling if you can use one of the
+precompiled executables described above.   There is then no reason to
+compile.
+<p>
+For Mac OS X systems, the above instructions will work.  However if you
+want to compile a universal executable, rather than one which will work
+only on your processor, you need to edit the  Makefile.unix  file, and
+remove the initial "#" character from the special CFLAGS line that is
+for OSX compiles, and instead place that character on front of the
+CFLAGS line which is for the GCC compiler.   Then do the compilation as
+described above.
+<p>
+For Windows systems we have a line in the Makefile.unix  that can be
+used with the CygWin GCC compiler to compile the program.  If for some
+reason you cannot use our precompiled Windows executable and want to
+compile one of your own, you need to edit the  Makefile.unix  file, and
+remove the initial "#" character from the special CFLAGS line that is
+for CygWin Windows compiles, and instead place that character on front of 
+the CFLAGS line which is for the GCC compiler.   Then do the compilation as
+described above.
+<P>
+<DIV ALIGN=right>
+<table><tr><td>
+Joe Felsenstein<BR>
+Department of Genome Sciences<BR>
+University of Washington<BR>
+Box 355065<BR>
+Seattle, WA  98195-5065<BR>
+USA
+</td></tr></table>
+</DIV>
+<p>
+<DIV align=right>
+email:  joe (at) gs.washington.edu
+</div>
+</BODY>
+</HTML>

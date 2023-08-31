@@ -1,0 +1,198 @@
+#
+# Special subset, for compiling Threshml, of
+# Generic Linux/Unix Makefile for PHYLIP 3.7a.
+#
+# You should not need to change anything, though if you want you could
+# change the first (noncomment) statement -- the one that sets the
+# folder (directory) in which the executables will be placed -- to some
+# directory location that might be more useful.
+#
+# The compressed tar archive phylip.tar.Z when uncompressed and extracted
+# puts the source code into a directory ./src, and also makes two other
+# directories ./exe and ./doc for the final executables and the documentation
+# files.  Only change the EXEDIR settings if you want something different
+# from that structure.
+#
+# If it causes trouble in compiling, the CFLAGS statement below may also need
+# to be changed.
+#
+#  To use the PHYLIP v3.7 Makefile, type
+#      make clean         to remove all object files and executables from the
+#                           current directory
+#      make threshml      to compile and link one program, (in this example,
+#                           DnaML) and leave the executable and object files
+#                           in the current directory (where the source code is).
+#                           You will have to move the executable in to the
+#                           executables directory (e.g. "mv threshml ../exe")
+#                           Note that the program name should be lower case.
+# 
+# ----------------------------------------------------------------------------
+#  (Starting here is the section where you may want to change things)
+# ----------------------------------------------------------------------------
+#
+# these are the statements we have been talking about:
+# one of the reasons for changing them would be to put the executables
+# on a different file system.
+# The default configuration is to have within the overall PHYLIP
+# directory three subdirectories:  "src" for source code, "exe" for the
+# executables, and "doc" for the documentation files.
+#
+# the following specifies the directory where the executables will be placed
+EXEDIR  = ../exe
+#
+# ----------------------------------------------------------------------------
+#
+# In the following statements (the ones that set CFLAGS, DFLAGS, LIBS
+# and DLIBS, CC and DC) you should make sure each is set properly.
+# Usually this will simply involve making sure that the proper statement
+# has no "#" as its first character and that all other possibilities
+# have "#" for their first character.
+#
+# ----------------------------------------------------------------------------
+#
+# This is the CFLAGS statement:
+#
+# Here are some possible CFLAGS statements:
+#
+#
+#A minimal one
+#CFLAGS = 
+#
+# A basic one for debugging
+#CFLAGS  = -g 
+#
+# An optimized one for gcc
+CFLAGS  = -O3 -fomit-frame-pointer
+#
+# For making a 32-bit Windows executable with the CygWin GCC compiler
+#CFLAGS  = -DWIN32 -O3 -fomit-frame-pointer -mno-cygwin
+#
+# For making Universal executables for Mac OS X
+#CFLAGS = -O3 -arch ppc -arch i386 -mmacosx-version-min=10.1
+#
+# For some serious debugging using Gnu gcc
+#
+#CFLAGS=-g -Wall -Wmain -Wmissing-prototypes -Wreturn-type -Wstrict-prototypes -Wunused -Wredundant-decls -Waggregate-return -Wcast-align -Wcomment 
+#
+# For Digital Alpha systems with Compaq Tru64 Unix
+# (however, be aware that this may cause floating-point problems in programs
+#  like Dnaml owing to not using IEEE floating point standards).
+#CFLAGS = -fast
+#
+# Optimized one for the IBM Visualage compiler for Linux or AIX on IBM pSeries
+#CFLAGS = -O -qmaxmem=-1 -qarch=auto -qtune=auto
+#
+# ----------------------------------------------------------------------------
+#
+# These are the libraries for the CC compiles
+#
+LIBS    = phylip.o Slist.o
+LDADD   = -lm 
+#
+# ----------------------------------------------------------------------------
+#
+# The next two assignments are the invocations of the compiler for the
+# ordinary compiles and the tree-drawing programs, CC and DC
+#
+# This one specifies the "cc" C compiler
+CC        = gcc $(CFLAGS)
+#
+#  To use GCC instead, if it is not the compiler that "cc" invokes
+#CC        = gcc $(CFLAGS)
+#
+# For IBM compiler for Linux or AIX on IBM pSeries
+#CC        = xlc $(CFLAGS)
+#
+# ----------------------------------------------------------------------------
+#  (After this point there should not be any reason to change anything)
+# ----------------------------------------------------------------------------
+#
+#
+# the list of programs
+#
+PROGS = threshml
+#
+# general commands
+#
+
+# These targets do not produce a file of their namesake, so tell make not
+# to bother looking:
+.PHONY: help all introduce put clean install
+
+#
+#  The first uses a symbol you are unlikely to type.  It is the one that
+#  is executed if you just type "make".  It tells you how to use the
+#  Makefile.
+#
+help:
+	@echo ""
+	@echo " To use the PHYLIP v3.7 Makefile, type"
+	@echo "     make clean         to remove all object files and executables from the"
+	@echo "                          current directory"
+	@echo "     make threshml      to compile and link one program, (in this example,"
+	@echo "                          DnaML) and leave the executable and object files"
+	@echo "                          in the current directory (where the source code is)."
+	@echo "                          You will have to move the executable into the"
+	@echo "                          executables directory (e.g. "mv dnaml $(EXEDIR)")"
+	@echo "                          Note that the program name should be lower case."
+	@echo " "
+
+all:        introduce $(PROGS)
+	@echo "Finished compiling."
+	@echo ""
+
+install:        all put clean
+	@echo "Done."
+	@echo ""
+
+introduce:
+	@echo "Building PHYLIP Threshml version 3.7a"
+put:
+	@echo "Installing PHYLIP vThreshml 3.7a binaries in $(EXEDIR)"
+	@mkdir -p $(EXEDIR)
+	@cp $(PROGS) $(EXEDIR)
+	@echo "Finished installation."
+	@echo ""
+
+clean:
+	@echo "Removing object files to save space"
+	@rm -f *.o
+	@echo "Finished removing object files.  Now will remove"
+	@echo "executable files from the current directory, but not from the"
+	@echo "executables directory.  (If some are not here, the makefile"
+	@echo "will terminate with an error message but this is not a problem)"
+	@echo ""
+	@echo "Removing executables from this directory"
+	@rm -f $(PROGS)
+	@echo "Finished cleanup."
+	@echo ""
+
+#
+# compile the shared stuff
+#
+
+Slist.o:      Slist.c Slist.h
+	$(CC) -c Slist.c
+
+phylip.o:     phylip.c phylip.h Slist.h
+	$(CC) -c phylip.c
+
+ml.o:         ml.c phylip.h ml.h
+	$(CC) -c ml.c
+
+cont.o:       cont.c cont.h phylip.h
+	$(CC) -c cont.c
+
+#
+# compile program object files
+#
+
+threshml.o:   threshml.c cont.h phylip.h Slist.h
+	$(CC) -c threshml.c
+
+#
+# link the individual programs
+#
+
+threshml:      threshml.o cont.o $(LIBS)
+	$(CC) $? $(LDADD) -o $@
