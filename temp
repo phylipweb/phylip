@@ -1,0 +1,2136 @@
+From apache@evolution.gs.washington.edu Mon Jun  4 02:51:42 2012
+Received: via tmail-2007b.22 (invoked by user felsenst) for felsenst; Mon, 4 Jun 2012 02:51:42 -0700 (PDT)
+Received: from mx1.cac.washington.edu (mx1.cac.washington.edu [140.142.32.206])
+	by cg55.u.washington.edu (8.14.4+UW11.03/8.14.4+UW12.03) with ESMTP id q549pdAO009418
+	for <felsenst@cg55.u.washington.edu>; Mon, 4 Jun 2012 02:51:39 -0700
+Received: from mx2.gs.washington.edu (mx2.gs.washington.edu [128.208.9.176])
+	by mx1.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW12.05) with ESMTP id q549pYRg009298
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Mon, 4 Jun 2012 02:51:35 -0700
+Received: from evolution.gs.washington.edu (evolution.genetics.washington.edu [128.208.27.135])
+	by mx2.gs.washington.edu (8.13.8/8.13.8) with ESMTP id q549pUuv028007
+	for <joe@gs.washington.edu>; Mon, 4 Jun 2012 02:51:33 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx2.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id q549pUFw001888
+	for <joe@gs.washington.edu>; Mon, 4 Jun 2012 02:51:30 -0700
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id q549pUZE001887;
+	Mon, 4 Jun 2012 02:51:30 -0700
+Status: RO
+Content-Length: 2873
+Lines: 50
+
+# This one is entered as a server.  Is Java code available as stated.
+Date: Mon, 4 Jun 2012 02:51:30 -0700
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201206040951.q549pUZE001887@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 0.595sec at (mx2.gs.washington.edu [128.208.9.176])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2012.6.4.94516
+X-PMX-Server: mx1.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1700_1799 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __APPLICATION_BODY 0, __CP_URI_IN_BODY 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_PATH 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1760
+Lines: 34
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="PhyDesign">
+<HR>
+<P>
+Francesc Lopez-Giraldez and Jeffrey P. Townsend</A>
+of the Department of Ecology and Evokutionary Biology
+of  Yale University, New Haven, CT
+<tt>(Jeffrey.Townsend<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;Yale.edu)</tt>
+has released <strong>PhyDesign</strong>
+(PHYlogenetics experimental DESIGN),
+, a phylogeny package with parsimony, distance and likelihood methods.  PhyDesign is a platform-independent online application that implements the Townsend phylogenetic informativeness profiling, providing a quantitative prediction of the utility of loci to solve specific phylogenetic questions. An easy-to-use interface facilitates uploading of alignments and ultrametric trees to calculate and depict profiles of informativeness over specified time ranges, and provides rankings of locus prioritization for epochs of interest. Using PhyDesign increases the time-efficiency and cost-effectiveness of sequencing for phylogenetic purposes compared to traditional studies with more laborious and low capacity screening methods, as well as increasing the accuracy of phylogenetic studies.
+It is described in the paper:
+Felsenstein, J.  1989.  PHYLIP - Phylogeny Inference Package (Version 3.2).  Cladistics  5: 132-133.
+It is available as Java executables.  It can be downloaded from
+<a href="http://phydesign.townsend.yale.edu">its web site</a>
+at <code>http://phydesign.townsend.yale.edu</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Description or prediction of data from trees, Teaching about phylogenies and Web or e-mail server that can analyze data for you </p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Sat Aug 25 14:05:28 2012
+Received: via tmail-2007b.22 (invoked by user felsenst) for felsenst; Sat, 25 Aug 2012 14:05:28 -0700 (PDT)
+Received: from mx2.cac.washington.edu (mx2.cac.washington.edu [140.142.33.18])
+	by cg55.u.washington.edu (8.14.4+UW11.03/8.14.4+UW12.05) with ESMTP id q7PL5N1e004349
+	for <felsenst@cg55.u.washington.edu>; Sat, 25 Aug 2012 14:05:23 -0700
+Received: from mx2.gs.washington.edu (mx2.gs.washington.edu [128.208.9.176])
+	by mx2.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW12.05) with ESMTP id q7PL5Irm018718
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Sat, 25 Aug 2012 14:05:19 -0700
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx2.gs.washington.edu (8.13.8/8.13.8) with ESMTP id q7PL5Cam030558
+	for <joe@gs.washington.edu>; Sat, 25 Aug 2012 14:05:15 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx2.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id q7PL5ChG009973
+	for <joe@gs.washington.edu>; Sat, 25 Aug 2012 14:05:12 -0700
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id q7PL5CRe009972;
+	Sat, 25 Aug 2012 14:05:12 -0700
+Date: Sat, 25 Aug 2012 14:05:12 -0700
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201208252105.q7PL5CRe009972@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.014sec at (mx2.gs.washington.edu [128.208.9.176])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2012.8.25.205716
+X-PMX-Server: mx2.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1600_1699 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1619
+Lines: 35
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="PartitionFinder">
+<HR>
+<P>
+Rob Lanfear</A>
+of the Research School of Biology
+of the Australian National University
+<tt>(rob.lanfear<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;anu.edu.au)</tt>
+has released <strong>PartitionFinder</strong>
+version 1.0.1, combined model and partitioning scheme selection for DNA and protein alignments.  PartitionFinder and PartitionFinderProtein are free open source programs for selecting best-fit partitioning schemes and models of molecular evolution for nucleotide and amino acid alignments. They take the hard work out of comparing partitioning schemes, and are useful in any situation where you wish to compare or select partitioning schemes or models of molecular evolution on partitioned or unpartitioned datasets.
+It is described in the paper:
+PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses
+
+Lanfear R, Calcott B, Ho SYW, Guindon S (2012) Molecular Biology and Evolution 29(6): 1695-1701.
+It is available as Python script.  It can be downloaded from
+<a href="http://robertlanfear.com/partitionfinder/">its web site</a>
+at <code>http://robertlanfear.com/partitionfinder/</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Maximum likelihood methods and Model selection</p>
+
+<h3>Comments:</h3>
+<p>You do not need to know anything about python to use this program. The programs are simple to run on Mac, Windows, and Linux, everything is described in detail in the manual.</p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Sat Nov 30 07:25:13 2013
+Received: via tmail-2007f.22 (invoked by user felsenst) for felsenst; Sat, 30 Nov 2013 07:25:13 -0800 (PST)
+Received: from mx2.cac.washington.edu (mx2.cac.washington.edu [140.142.32.166])
+	by cg35.u.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id rAUFP92d004504
+	for <felsenst@cg35.u.washington.edu>; Sat, 30 Nov 2013 07:25:09 -0800
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.208.9.205])
+	by mx2.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id rAUFP7eM030336
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Sat, 30 Nov 2013 07:25:07 -0800
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id rAUFP0SB015090
+	for <joe@gs.washington.edu>; Sat, 30 Nov 2013 07:25:03 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id rAUFOxR3026423
+	for <joe@gs.washington.edu>; Sat, 30 Nov 2013 07:24:59 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id rAUFOxp7026422;
+	Sat, 30 Nov 2013 07:24:59 -0800
+Date: Sat, 30 Nov 2013 07:24:59 -0800
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201311301524.rAUFOxp7026422@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.701sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2013.11.30.151815
+X-PMX-Server: mx2.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1600_1699 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NS '
+Status: RO
+Content-Length: 1630
+Lines: 32
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="OBLONG">
+<HR>
+<P>
+Pablo A. Goloboff</A>
+of the CONICET
+<tt>(pablogolo<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;csnat.unt.edu.ar)</tt>
+has released <strong>OBLONG</strong>
+, a phylogeny program for parsimony, with very low RAM requirements.  It is a program for searching most-parsimonious trees, using very low amounts of RAM.  The program uses disk buffers to avoid holding in RAM all the variables needed for a search.  It can analyze data sets occupying several GIGA Bytes on disk using only a few  MEGA Bytes of RAM.  The program minimizes the number of times the data must be read from disk during a search, so that using the disk buffers slows down searches only by a small factor.  The methods implemented in the program are standard searches (stepwise addition trees, branch-swapping, and ratchet), bootstrapping, and approximmate bremer supports. 
+It is described in the paper:
+Goloboff, P. 2013. Oblong, a program to analyse phylogenomic data sets with millions of characters, requiring negligible amounts of RAM.  Cladistics, 10.1111/cla.12056. 
+It is available as C source code, Windows executables, Linux executables and Intel Mac OS X executables.  It can be downloaded from
+<a href="http://www.zmuc.dk/public/phylogeny/oblong">its web site</a>
+at <code>http://www.zmuc.dk/public/phylogeny/oblong</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>General-purpose packages, Parsimony programs and Bootstrapping and other measures of support</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Tue Feb 18 14:22:25 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.42.164.132 with SMTP id g4csp77013icy;
+        Tue, 18 Feb 2014 14:22:28 -0800 (PST)
+X-Received: by 10.67.3.68 with SMTP id bu4mr12678322pad.144.1392762145983;
+        Tue, 18 Feb 2014 14:22:25 -0800 (PST)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout11.cac.washington.edu (mxout11.cac.washington.edu. [140.142.32.201])
+        by mx.google.com with ESMTPS id xk2si19688545pab.13.2014.02.18.14.22.25
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Tue, 18 Feb 2014 14:22:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.206 as permitted sender) client-ip=140.142.32.206;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.206 as permitted sender) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx1.cac.washington.edu (mx1.cac.washington.edu [140.142.32.206])
+	by mxout11.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id s1IMLScu004077
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Tue, 18 Feb 2014 14:21:28 -0800
+Received: from mx.gs.washington.edu (mail.gs.washington.edu [128.208.9.205])
+	by mx1.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id s1IMLGof031899
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Tue, 18 Feb 2014 14:21:16 -0800
+Received: from evolution.gs.washington.edu (evolution.genetics.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s1IML8cd028529
+	for <joe@gs.washington.edu>; Tue, 18 Feb 2014 14:21:11 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s1IML8tJ027548
+	for <joe@gs.washington.edu>; Tue, 18 Feb 2014 14:21:08 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id s1IML8HI027547;
+	Tue, 18 Feb 2014 14:21:08 -0800
+Date: Tue, 18 Feb 2014 14:21:08 -0800
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201402182221.s1IML8HI027547@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.895sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.2.18.220915
+X-PMX-Server: mxout11.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1700_1799 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, ECARD_KNOWN_DOMAINS 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1720
+Lines: 34
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="ProteinEvolver">
+<HR>
+<P>
+Miguel Arenas</A>
+of the Bioinformatics Unit
+of the Centre for Molecular Biology "Severo Ochoa" (CSIC)
+<tt>(miguelmmmab<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;gmail.com)</tt>
+has released <strong>ProteinEvolver</strong>
+(Protein Evolver),
+version 1.2.0, Simulation of protein evolution along phylogenies under structure-based substitution models.  ProteinEvolver generates samples of protein-coding genes and protein sequences evolved along phylogenies under structure-based substitution models. These models consider the protein structure to evaluate candidate mutations, which can be accepted (substitutions) or rejected depending on the energy of the protein structure of the mutated sequence. The simulation of molecular evolution occurs along phylogenetic histories, which can be either user-specified or simulated by the coalescent modified with recombination (including recombination hotspots), migration, demographics and longitudinal sampling.
+It is described in the paper:
+Arenas, M.; Dos Santos, H.G.; Posada, D. and Bastolla, U. 2013. Protein Evolution along Phylogenetic Histories under Structurally Constrained Substitution Models.  Bioinformatics, 29(23):3020-3028.
+It is available as C source code, Linux executables and Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://code.google.com/p/proteinevolver/">its web site</a>
+at <code>http://code.google.com/p/proteinevolver/</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Tree-based alignment and Simulation of trees or data</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Fri Mar  7 12:47:24 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.42.164.132 with SMTP id g4csp58914icy;
+        Fri, 7 Mar 2014 12:47:26 -0800 (PST)
+X-Received: by 10.69.0.39 with SMTP id av7mr24368618pbd.4.1394225244094;
+        Fri, 07 Mar 2014 12:47:24 -0800 (PST)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout13.cac.washington.edu (mxout13.cac.washington.edu. [140.142.32.202])
+        by mx.google.com with ESMTPS id uc9si9438682pac.268.2014.03.07.12.47.23
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Fri, 07 Mar 2014 12:47:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.166 as permitted sender) client-ip=140.142.32.166;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.166 as permitted sender) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx2.cac.washington.edu (mx2.cac.washington.edu [140.142.32.166])
+	by mxout13.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW14.03) with ESMTP id s27KlB65022503
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Fri, 7 Mar 2014 12:47:12 -0800
+Received: from mx.gs.washington.edu (mail.gs.washington.edu [128.208.9.205])
+	by mx2.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW13.09) with ESMTP id s27Kl4NB001229
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Fri, 7 Mar 2014 12:47:04 -0800
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s27KkuCw017831
+	for <joe@gs.washington.edu>; Fri, 7 Mar 2014 12:46:59 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s27KkufH027812
+	for <joe@gs.washington.edu>; Fri, 7 Mar 2014 12:46:56 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id s27Kku0Y027811;
+	Fri, 7 Mar 2014 12:46:56 -0800
+Date: Fri, 7 Mar 2014 12:46:56 -0800
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201403072046.s27Kku0Y027811@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.904sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.3.7.203915
+X-PMX-Server: mxout13.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1500_1599 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, ECARD_KNOWN_DOMAINS 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1560
+Lines: 39
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="fitmodel">
+<HR>
+<P>
+Stephane Guindon</A>
+of the Department of Statistics
+of the University of Auckland, New Zealand and the CNRS in France
+<tt>(s.guindon<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;auckland.ac.nz)</tt>
+has released <strong>fitmodel</strong>
+, a software written  in C  that detects traces  of positive  selection in molecular  sequences.  fitmodel  fits codon  models to  alignments of  homologous  DNA coding
+sequences.  It  offers  a  variety  of  such  models  that  allow  the
+non-synonymous  to synonymous  rate  ratio to  vary  across sites  and
+lineages.   An original feature  of the  approach implemented  in this
+software is  that branches where positive selection  may have occurred
+do  not have  to be  specified  by the  users a  priori.  fitmodel  is
+available at http://code.google.com/p/fitmodel.
+It is described in the paper:
+Lu A.  and Guindon S.  "Performance of standard and stochastic branch-site models for detecting   positive selection among coding sequences", Mol. Biol. Evol., 31(2):484-495.
+It is available as C source code.  It can be downloaded from
+<a href="http://code.google.com/p/fitmodel">its web site</a>
+at <code>http://code.google.com/p/fitmodel</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Maximum likelihood methods and Model selection</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p>This form is just fine. That you very much for all the hard work in maintaining this site.</p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Wed Jun  4 06:25:11 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.42.202.196 with SMTP id ff4csp255152icb;
+        Wed, 4 Jun 2014 06:25:13 -0700 (PDT)
+X-Received: by 10.220.133.197 with SMTP id g5mr43304519vct.20.1401888311312;
+        Wed, 04 Jun 2014 06:25:11 -0700 (PDT)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout14.cac.washington.edu (mxout14.cac.washington.edu. [140.142.32.168])
+        by mx.google.com with ESMTPS id pq10si5703661pbb.233.2014.06.04.06.25.10
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Wed, 04 Jun 2014 06:25:11 -0700 (PDT)
+Received-SPF: none (google.com: apache@evolution.gs.washington.edu does not designate permitted sender hosts) client-ip=140.142.32.206;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: apache@evolution.gs.washington.edu does not designate permitted sender hosts) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx1.cac.washington.edu (mx1.cac.washington.edu [140.142.32.206])
+	by mxout14.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW14.04) with ESMTP id s54DOfM4015542
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Wed, 4 Jun 2014 06:24:41 -0700
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.208.9.205])
+	by mx1.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW14.04) with ESMTP id s54DOWtb006841
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Wed, 4 Jun 2014 06:24:32 -0700
+Received: from evolution.gs.washington.edu (evolution.genetics.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s54DOOTh012752
+	for <joe@gs.washington.edu>; Wed, 4 Jun 2014 06:24:27 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s54DOOSJ027002
+	for <joe@gs.washington.edu>; Wed, 4 Jun 2014 06:24:24 -0700
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id s54DOOFi027001;
+	Wed, 4 Jun 2014 06:24:24 -0700
+Date: Wed, 4 Jun 2014 06:24:24 -0700
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201406041324.s54DOOFi027001@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 4.215sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.3.2322014, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.6.4.131820
+X-PMX-Server: mxout14.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_2000_2999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 2303
+Lines: 45
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="Prunier">
+<HR>
+<P>
+Sophie Abby, Eric Tannier, Manolo Gouy, Vincent Daubin</A>
+of the Laboratoire de Biométrie et Biologie Evolutive
+of the University de Lyon, Lyon, France
+<tt>(vincent.daubin<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univ-lyon1.fr)</tt>
+has released <strong>Prunier</strong>
+version 2.1, Detecting lateral gene transfers by statistical reconciliation of phylogenetic forests.  Prunier aims at detecting lateral gene transfers in a gene tree given a species tree. It cuts the gene tree and the species tree into a MSAF (Maximum Statistical Agreement Forest), which can be interpreted as an SPR (Subtree Pruning and Regrafting) reconciliation. 
+
+    Input:
+        a bifurcating species tree (Newick format) rooted or not,
+        a gene alignment (PHYLIP interleaved or FASTA format),
+        an optional bifurcating gene tree with support values (Newick format).
+    Output: a scenario of lateral gene transfers
+        per possible rootings of the species tree. 
+    Prunier builds a gene tree (if not provided by the user) and estimates branch lengths of the species tree using RaxML.
+    Prunier is implemented in C++ and uses the Bio++ library [3]. 
+
+Prunier was tested on a simulated dataset available on its web page. It was compared to two programs, EEEP [4] and RIATA-HGT [5] that deal with the same biological problem, i.e. the reconciliation of a rooted reference tree with unrooted gene trees that are not necessary fully resolved. See Prunier's article for further details.
+
+It is described in the paper:
+Abby S.S., Tannier E., Gouy M. and Daubin V. Detecting lateral gene transfers by statistical reconciliation of phylogenetic forests. 2010. BMC Bioinformatics. 
+It is available as Linux executables and Mac OS X universal executables.  It can be downloaded from
+<a href="http://pbil.univ-lyon1.fr/software/prunier/">its web site</a>
+at <code>http://pbil.univ-lyon1.fr/software/prunier/</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Looking for hybridization or recombination events and Examination of shapes of trees</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p>add lateral gene transfer detection as a keyword for search on the web site</p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Wed Nov  5 15:06:54 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.43.87.13 with SMTP id au13csp613089icc;
+        Wed, 5 Nov 2014 15:06:56 -0800 (PST)
+X-Received: by 10.68.201.130 with SMTP id ka2mr411629pbc.112.1415228814150;
+        Wed, 05 Nov 2014 15:06:54 -0800 (PST)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout24.s.uw.edu (mxout24.s.uw.edu. [140.142.234.158])
+        by mx.google.com with ESMTPS id s5si4331180pdc.27.2014.11.05.15.06.53
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 05 Nov 2014 15:06:54 -0800 (PST)
+Received-SPF: none (google.com: apache@evolution.gs.washington.edu does not designate permitted sender hosts) client-ip=140.142.32.166;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: apache@evolution.gs.washington.edu does not designate permitted sender hosts) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx2.cac.washington.edu (mx2.cac.washington.edu [140.142.32.166])
+	by mxout24.s.uw.edu (8.14.4+UW14.03/8.14.4+UW14.04) with ESMTP id sA5N6npt019902
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Wed, 5 Nov 2014 15:06:49 -0800
+Received: from mx.gs.washington.edu (mail.gs.washington.edu [128.208.9.205])
+	by mx2.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW14.04) with ESMTP id sA5N6ZLf002677
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@u.washington.edu>; Wed, 5 Nov 2014 15:06:35 -0800
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id sA5N6S1J027869
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <joe@gs.washington.edu>; Wed, 5 Nov 2014 15:06:31 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id sA5N6Sdv031845
+	for <joe@gs.washington.edu>; Wed, 5 Nov 2014 15:06:28 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id sA5N6SY2031844;
+	Wed, 5 Nov 2014 15:06:28 -0800
+Date: Wed, 5 Nov 2014 15:06:28 -0800
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201411052306.sA5N6SY2031844@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.984sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.1.0.2415318, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.11.5.225720
+X-PMX-Server: mxout24.s.uw.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ AT_TLD 0.1, FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1800_1899 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NS '
+Status: RO
+Content-Length: 1806
+Lines: 33
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="IQ-TREE">
+<HR>
+<P>
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh</A>
+of the Center for Integrative Bioinformatics Vienna
+of the Max F. Perutz Laboratories, University of Vienna, Austria
+<tt>(minh.bui<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univie.ac.at)</tt>
+have released <strong>IQ-TREE</strong>
+version 1, An efficient phylogenetic software by maximum likelihood.  Key features of IQ-TREE include: (1) a fast and effective stochastic algorithm to estimate maximum likelihood phylogenies, (2) an ultrafast bootstrap approximation (UFBoot) as alternative to the standard non-parametric bootstrap, (3) an ultrafast phylogenetic model selection, (4) partition models for phylogenomic alignments with joint, proportional, or separate branch lengths among partitions.
+It is described in the paper:
+Nguyen, L.T., Schmidt H.A., von Haeseler A., and Minh B.Q.  2014.  IQ-TREE: A fast and effective stochastic algorithm for estimating maximum likelihood phylogenies. Mol. Biol. Evol., in press. DOI: 10.1093/molbev/msu300
+It is available as C++ source code, C source code, Windows executables, Linux executables and Intel Mac OS X executables.  It can be downloaded from
+<a href="http://www.cibiv.at/software/iqtree">its web site</a>
+at <code>http://www.cibiv.at/software/iqtree</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Computation of distances, Maximum likelihood methods, Bootstrapping and other measures of support, Consensus trees, subtrees, supertrees, distances between trees  and Simulation of trees or data</p>
+
+<h3>Comments:</h3>
+<p>A web server for online computation is available at http://iqtree.cibiv.univie.ac.at</p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Mon May 18 21:17:31 2015
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.202.224.8 with SMTP id x8csp521494oig;
+        Mon, 18 May 2015 21:17:32 -0700 (PDT)
+X-Received: by 10.66.141.77 with SMTP id rm13mr50254228pab.14.1432009051790;
+        Mon, 18 May 2015 21:17:31 -0700 (PDT)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout24.cac.washington.edu (mxout24.cac.washington.edu. [140.142.234.158])
+        by mx.google.com with ESMTPS id gt2si18999400pbb.115.2015.05.18.21.17.30
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 18 May 2015 21:17:31 -0700 (PDT)
+Received-SPF: neutral (google.com: 140.142.234.149 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) client-ip=140.142.234.149;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 140.142.234.149 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx11.s.uw.edu (mx11.s.uw.edu [140.142.234.149])
+	by mxout24.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id t4J4H5VA023842
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Mon, 18 May 2015 21:17:05 -0700
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.95.55.226])
+	by mx11.s.uw.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id t4J4H2aM010304
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@u.washington.edu>; Mon, 18 May 2015 21:17:02 -0700
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id t4J4GsnJ004191
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <joe@gs.washington.edu>; Mon, 18 May 2015 21:16:57 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id t4J4GsMJ011219
+	for <joe@gs.washington.edu>; Mon, 18 May 2015 21:16:54 -0700
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id t4J4GsZ6011218;
+	Mon, 18 May 2015 21:16:54 -0700
+Date: Mon, 18 May 2015 21:16:54 -0700
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201505190416.t4J4GsZ6011218@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=0.8/8.0, scanned in 3.592sec at (mx.gs.washington.edu [128.95.55.226])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.1.0.2415318, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2015.5.19.40615
+X-PMX-Server: mxout24.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1300_1399 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1276
+Lines: 34
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="PHYLOLAND">
+<HR>
+<P>
+Louis Ranjard</A>
+of the Bioinformatics Institute
+of the University of Auckland, New Zealand
+<tt>(louis.ranjard<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;gmail.com)</tt>
+has released <strong>PHYLOLAND</strong>
+version 1.3, Modelling Competitive Exclusion and Limited Dispersal in a Statistical Phylogeographic Framework.  This R package implements a model of space colonization mapped onto a phylogeny, it aims at estimating limited dispersal and ecological competitive exclusion in a Bayesian MCMC statistical phylogeographic framework.
+
+It is described in the paper:
+Louis Ranjard, David Welch, Marie Paturel, and Stéphane Guindon, Modelling Competition and Dispersal in a Statistical Phylogeographic Framework, Systematic Biology 63(5):743-752, 2014
+It is available as an R package.  It can be downloaded from
+<a href="http://cran.r-project.org/web/packages/phyloland">its web site</a>
+at <code>http://cran.r-project.org/web/packages/phyloland</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Bayesian inference methods and Biogeographic analysis and host-parasite comparison</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Mon Feb 10 11:15:15 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.42.164.132 with SMTP id g4csp46818icy;
+        Mon, 10 Feb 2014 11:15:17 -0800 (PST)
+X-Received: by 10.66.121.200 with SMTP id lm8mr27109753pab.7.1392059715035;
+        Mon, 10 Feb 2014 11:15:15 -0800 (PST)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout14.cac.washington.edu (mxout14.cac.washington.edu. [140.142.32.168])
+        by mx.google.com with ESMTPS id yy4si16385982pbc.39.2014.02.10.11.15.14
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Mon, 10 Feb 2014 11:15:14 -0800 (PST)
+Received-SPF: pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.206 as permitted sender) client-ip=140.142.32.206;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.206 as permitted sender) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx1.cac.washington.edu (mx1.cac.washington.edu [140.142.32.206])
+	by mxout14.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id s1AJEpAa022426
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Mon, 10 Feb 2014 11:14:51 -0800
+Received: from mx.gs.washington.edu (mail.gs.washington.edu [128.208.9.205])
+	by mx1.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id s1AJEeGn030112
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Mon, 10 Feb 2014 11:14:40 -0800
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s1AJEXHY015154
+	for <joe@gs.washington.edu>; Mon, 10 Feb 2014 11:14:36 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s1AJEWpW029931
+	for <joe@gs.washington.edu>; Mon, 10 Feb 2014 11:14:32 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id s1AJEWNF029930;
+	Mon, 10 Feb 2014 11:14:32 -0800
+Date: Mon, 10 Feb 2014 11:14:32 -0800
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201402101914.s1AJEWNF029930@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.932sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.2.10.190617
+X-PMX-Server: mxout14.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ HTML_NO_HTTP 0.1, FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1900_1999 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_PATH 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1878
+Lines: 36
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="ExCaliBAR">
+<HR>
+<P>
+Mansour Aliabadian</A>
+of the Department of Biology
+of the Ferdowsi University of Mashhad, Mashhad, Iran
+<tt>(aliabadi<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;um.ac.ir)</tt>
+has released <strong>ExCaliBAR</strong>
+(Extraction, Calculation, Barcoding),
+version 3.66, determination the barcoding gap between pairwise genetic distances among and within species.  In the context of DNA Barcoding, sequences of standard marker genes for thousands and potentially millions of individuals and species are becoming available, requiring ever more efficient bioinformatic environments and software algorithms for analysis. We here present ExcaliBAR (Extraction, Calculation, Barcoding), a user-friendly software utility to facilitate one important initial step in DNA barcoding analyses, namely the determination of the barcoding gap between pairwise genetic distances among and within species, based on original distance matrices computed by MEGA software. In addition, the software is able to rename sequences downloaded via the standard user interfaces of public databases such as GenBank, without the need of developing and applying specific scripts for this purpose.
+It is described in the paper:
+Aliabadian, M., Nijman, V., Mahmoudi, A.,  Naderi, M., Vonk, R.,  Vences, M. (2014) ExcaliBAR: a simple and fast software utility to calculate intra- and interspecific distances
+from DNA barcodes. Contributions to Zoology, 83 (1) 79-83 (2014).
+
+It is available as C source code and Windows executables.  It can be downloaded from
+<a href="doi:10.5061/dryad.r458n">its web site</a>
+at <code>doi:10.5061/dryad.r458n</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Distance matrix methods</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Tue Feb 18 14:22:25 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.42.164.132 with SMTP id g4csp77013icy;
+        Tue, 18 Feb 2014 14:22:28 -0800 (PST)
+X-Received: by 10.67.3.68 with SMTP id bu4mr12678322pad.144.1392762145983;
+        Tue, 18 Feb 2014 14:22:25 -0800 (PST)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout11.cac.washington.edu (mxout11.cac.washington.edu. [140.142.32.201])
+        by mx.google.com with ESMTPS id xk2si19688545pab.13.2014.02.18.14.22.25
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Tue, 18 Feb 2014 14:22:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.206 as permitted sender) client-ip=140.142.32.206;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.206 as permitted sender) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx1.cac.washington.edu (mx1.cac.washington.edu [140.142.32.206])
+	by mxout11.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id s1IMLScu004077
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Tue, 18 Feb 2014 14:21:28 -0800
+Received: from mx.gs.washington.edu (mail.gs.washington.edu [128.208.9.205])
+	by mx1.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id s1IMLGof031899
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Tue, 18 Feb 2014 14:21:16 -0800
+Received: from evolution.gs.washington.edu (evolution.genetics.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s1IML8cd028529
+	for <joe@gs.washington.edu>; Tue, 18 Feb 2014 14:21:11 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s1IML8tJ027548
+	for <joe@gs.washington.edu>; Tue, 18 Feb 2014 14:21:08 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id s1IML8HI027547;
+	Tue, 18 Feb 2014 14:21:08 -0800
+Date: Tue, 18 Feb 2014 14:21:08 -0800
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201402182221.s1IML8HI027547@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.895sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.2.18.220915
+X-PMX-Server: mxout11.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1700_1799 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, ECARD_KNOWN_DOMAINS 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1720
+Lines: 34
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="ProteinEvolver">
+<HR>
+<P>
+Miguel Arenas</A>
+of the Bioinformatics Unit
+of the Centre for Molecular Biology "Severo Ochoa" (CSIC)
+<tt>(miguelmmmab<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;gmail.com)</tt>
+has released <strong>ProteinEvolver</strong>
+(Protein Evolver),
+version 1.2.0, Simulation of protein evolution along phylogenies under structure-based substitution models.  ProteinEvolver generates samples of protein-coding genes and protein sequences evolved along phylogenies under structure-based substitution models. These models consider the protein structure to evaluate candidate mutations, which can be accepted (substitutions) or rejected depending on the energy of the protein structure of the mutated sequence. The simulation of molecular evolution occurs along phylogenetic histories, which can be either user-specified or simulated by the coalescent modified with recombination (including recombination hotspots), migration, demographics and longitudinal sampling.
+It is described in the paper:
+Arenas, M.; Dos Santos, H.G.; Posada, D. and Bastolla, U. 2013. Protein Evolution along Phylogenetic Histories under Structurally Constrained Substitution Models.  Bioinformatics, 29(23):3020-3028.
+It is available as C source code, Linux executables and Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://code.google.com/p/proteinevolver/">its web site</a>
+at <code>http://code.google.com/p/proteinevolver/</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Tree-based alignment and Simulation of trees or data</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Thu Oct  1 06:03:18 2015
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.202.72.74 with SMTP id v71csp481053oia;
+        Thu, 1 Oct 2015 06:03:18 -0700 (PDT)
+X-Received: by 10.60.55.9 with SMTP id n9mr5605969oep.67.1443704598537;
+        Thu, 01 Oct 2015 06:03:18 -0700 (PDT)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout22.s.uw.edu (mxout22.s.uw.edu. [128.95.242.222])
+        by mx.google.com with ESMTPS id h17si3141069oic.77.2015.10.01.06.03.18
+        for <felsenst@gamail.uw.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 01 Oct 2015 06:03:18 -0700 (PDT)
+Received-SPF: neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) client-ip=140.142.32.169;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) smtp.mailfrom=apache@evolution.gs.washington.edu
+Received: from mx12.s.uw.edu (mx12.s.uw.edu [140.142.32.169])
+	by mxout22.s.uw.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id t91D2rW6002055
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Thu, 1 Oct 2015 06:02:54 -0700
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.95.55.226])
+	by mx12.s.uw.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id t91D2M82015924
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@u.washington.edu>; Thu, 1 Oct 2015 06:02:23 -0700
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id t91D2FKD019167
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <joe@gs.washington.edu>; Thu, 1 Oct 2015 06:02:18 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id t91D2FtT009757
+	for <joe@gs.washington.edu>; Thu, 1 Oct 2015 06:02:15 -0700
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id t91D2FSv009756;
+	Thu, 1 Oct 2015 06:02:15 -0700
+Date: Thu, 1 Oct 2015 06:02:15 -0700
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201510011302.t91D2FSv009756@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=0.8/8.0, scanned in 3.651sec at (mx.gs.washington.edu [128.95.55.226])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.2.1.2493963, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2015.10.1.125417
+X-PMX-Server: mxout22.s.uw.edu
+X-Uwash-Spam: Gauge=IIIIIIIII, Probability=9%, Report='
+ AT_TLD 0.1, FROM_NAME_ONE_WORD 0.05, HTML_00_10 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_2000_2999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, NO_URI_HTTPS 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HTML_AHREF_TAG 0, __MIME_TEXT_ONLY 0, __MULTIPLE_URI_TEXT 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_IN_BODY 0, __URI_NO_MAILTO 0, __URI_NS '
+Status: RO
+Content-Length: 2329
+Lines: 35
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="IQ-Tree">
+<HR>
+<P>
+Bui Quang Minh</A>
+of the Center for Integrative Bioinformatics Vienna (CIBIV)
+of the University of Vienna / Medical University of Vienna, Vienna, Austria
+<tt>(minh.bui<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univie.ac.at)</tt>
+has released <strong>IQ-Tree</strong>
+version 1.3.9, IQ-TREE is a very efficient maximum likelihood phylogenetic software offering a large number of features..  IQ-TREE is a very efficient maximum likelihood phylogenetic software with following key features among others: (a) A novel fast and effective stochastic algorithm to estimate maximum likelihood trees. IQ-TREE typically outperforms both RAxML and PhyML in terms of likelihood while requiring similar amount of computing time (see Nguyen et al., 2015) (b) An ultrafast bootstrap approximation to assess branch supports (see Minh et al., 2013).  (c) A wide range of substitution models for binary, DNA, protein, codon, and morphological alignments.  (d) Ultrafast model selection for all data types, 10 to 100 times faster than jModelTest and ProtTest.  (e) Finding best partition scheme like PartitionFinder.  (f) Partitioned models with mixed data types for phylogenomic (multi-gene) alignments, allowing for separate, proportional, or joint branch lengths among gene!
+ s.
+It is described in the paper:
+Felsenstein, J.  1989.  PHYLIP - Phylogeny Inference Package (Version 3.2).  Cladistics  5: 132-133.
+Nguyen, L.T., Schmidt, H.A., von Haeseler, A., Minh, B.Q. 2015. IQ-TREE: A fast and effective stochastic algorithm for estimating maximum likelihood phylogenies. Mol. Biol. Evol., 32, 268-274. (DOI: 10.1093/molbev/msu300)
+It is available as C++ source code, C source code, Windows executables, Linux executables and Intel Mac OS X executables.  It can be downloaded from
+<a href="http://www.cibiv.at/software/iqtree/">its web site</a>
+at <code>http://www.cibiv.at/software/iqtree/</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Maximum likelihood methods, Bootstrapping and other measures of support, Consensus trees, subtrees, supertrees, distances between trees , Model selection and Web or e-mail server that can analyze data for you </p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From db60@st-andrews.ac.uk Tue Nov  3 04:49:30 2015
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.202.55.132 with SMTP id e126csp2682684oia;
+        Tue, 3 Nov 2015 04:49:30 -0800 (PST)
+X-Received: by 10.107.185.131 with SMTP id j125mr27649351iof.146.1446554970789;
+        Tue, 03 Nov 2015 04:49:30 -0800 (PST)
+Return-Path: <db60@st-andrews.ac.uk>
+Received: from mxout25.s.uw.edu (mxout25.s.uw.edu. [140.142.234.175])
+        by mx.google.com with ESMTPS id gb7si15396058igd.41.2015.11.03.04.49.30
+        for <felsenst@gamail.uw.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 03 Nov 2015 04:49:30 -0800 (PST)
+Received-SPF: fail (google.com: domain of db60@st-andrews.ac.uk does not designate 140.142.234.149 as permitted sender) client-ip=140.142.234.149;
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of db60@st-andrews.ac.uk does not designate 140.142.234.149 as permitted sender) smtp.mailfrom=db60@st-andrews.ac.uk
+Received: from mx11.s.uw.edu (mx11.s.uw.edu [140.142.234.149])
+	by mxout25.s.uw.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id tA3Cn4sH030834
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Tue, 3 Nov 2015 04:49:05 -0800
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.95.55.226])
+	by mx11.s.uw.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id tA3Cmckt024416
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@u.washington.edu>; Tue, 3 Nov 2015 04:48:39 -0800
+Received: from mcgraw.st-andrews.ac.uk (mcgraw.st-andrews.ac.uk [138.251.8.95])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id tA3CmRf2008989
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=FAIL)
+	for <joe@gs.washington.edu>; Tue, 3 Nov 2015 04:48:32 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+X-Spam-Status: No
+X-StAndrews-MailScanner-From: db60@st-andrews.ac.uk
+X-StAndrews-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=-1.909, required 5, autolearn=not spam, BAYES_00 -1.90,
+	HTML_MESSAGE 0.00, T_RP_MATCHES_RCVD -0.01)
+X-StAndrews-MailScanner: No virus detected
+X-StAndrews-MailScanner-ID: tA3CmALj023931
+X-StAndrews-MailScanner-Information: Please contact the ISP for more information
+Received: from unimail.st-andrews.ac.uk (exch13-srv01.st-andrews.ac.uk [138.251.8.22])
+	by mcgraw.st-andrews.ac.uk (8.14.9/8.14.9/Debian-4~bpo0+uos) with ESMTP id tA3CmALj023931
+	(version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=NOT)
+	for <joe@gs.washington.edu>; Tue, 3 Nov 2015 12:48:11 GMT
+Received: from exch13-srv02.st-andrews.ac.uk (138.251.8.23) by
+ exch13-srv01.st-andrews.ac.uk (138.251.8.22) with Microsoft SMTP Server (TLS)
+ id 15.0.1130.7; Tue, 3 Nov 2015 12:48:10 +0000
+Received: from emea01-am1-obe.outbound.protection.outlook.com (213.199.154.14)
+ by exch13-srv02.st-andrews.ac.uk (138.251.8.23) with Microsoft SMTP Server
+ (TLS) id 15.0.1130.7 via Frontend Transport; Tue, 3 Nov 2015 12:48:10 +0000
+Received: from DB5PR06MB1239.eurprd06.prod.outlook.com (10.162.156.17) by
+ DB5PR06MB0999.eurprd06.prod.outlook.com (10.162.158.152) with Microsoft SMTP
+ Server (TLS) id 15.1.312.18; Tue, 3 Nov 2015 12:48:08 +0000
+Received: from DB5PR06MB1239.eurprd06.prod.outlook.com (10.162.156.17) by
+ DB5PR06MB1239.eurprd06.prod.outlook.com (10.162.156.17) with Microsoft SMTP
+ Server (TLS) id 15.1.312.18; Tue, 3 Nov 2015 12:48:08 +0000
+Received: from DB5PR06MB1239.eurprd06.prod.outlook.com ([10.162.156.17]) by
+ DB5PR06MB1239.eurprd06.prod.outlook.com ([10.162.156.17]) with mapi id
+ 15.01.0312.014; Tue, 3 Nov 2015 12:48:08 +0000
+From: Daniel Barker <db60@st-andrews.ac.uk>
+To: "joe@gs.washington.edu" <joe@gs.washington.edu>
+Subject: Web server for phylogeny software list
+Thread-Topic: Web server for phylogeny software list
+Thread-Index: AQHRFjXjKV+U6Tol4UCJHAyTrf5opg==
+Date: Tue, 3 Nov 2015 12:48:08 +0000
+Message-ID: <D25E5D85.16BB8%db60@st-andrews.ac.uk>
+Accept-Language: en-GB, en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+user-agent: Microsoft-MacOutlook/14.5.7.151005
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=db60@st-andrews.ac.uk; 
+x-ms-exchange-messagesentrepresentingtype: 1
+x-originating-ip: [138.251.156.61]
+x-microsoft-exchange-diagnostics: 1;DB5PR06MB1239;5:48l9agsEOBNf2lw13pbpYlzxsKPRFJ21zXXtRq9a4LgfueYX2FTtbXOcAJN3JtXlp4yPD74fFxvIdBUexb55mxlbbIBO2cfWARqHMiFU6BPjTsu1eyxL4sc5NW5bvx+N+ZrRgnwUYZrUzRYs7PdhnQ==;24:bxzuxi5VjLsBn8+YprR4zkbOM7A4scI7g2D8vR93Yol29jDXmapI12Zz1EldMYMRISabkvh6vr7X/K2LK2kQR3lFLDd/2w/QEy02+v4twTI=;20:vebkFbWfb97SK+tFjPkavvqNi7nGW1V1IRqNcQC/ft6Taw/B5tG34yhEDlTtXQA2N1POc5r19yhbieZrIifKXA==
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:;SRVR:DB5PR06MB1239;
+x-microsoft-antispam-prvs: <DB5PR06MB123921731EB78CC1C2B595B0B42B0@DB5PR06MB1239.eurprd06.prod.outlook.com>
+x-exchange-antispam-report-test: UriScan:;
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(601004)(2401047)(5005006)(8121501046)(520078)(10201501046)(3002001);SRVR:DB5PR06MB1239;BCL:0;PCL:0;RULEID:;SRVR:DB5PR06MB1239;
+x-forefront-prvs: 0749DC2CE6
+x-forefront-antispam-report: SFV:NSPM;SFS:(10019020)(6009001)(199003)(189002)(105586002)(81156007)(66066001)(87936001)(10400500002)(40100003)(122556002)(106116001)(5001960100002)(74482002)(92566002)(2171001)(106356001)(11100500001)(83506001)(229853001)(16236675004)(5008740100001)(5002640100001)(15975445007)(4001350100001)(5004730100002)(2351001)(189998001)(107886002)(97736004)(101416001)(2900100001)(77096005)(19580395003)(5007970100001)(2501003)(54356999)(50986999)(450100001)(110136002)(86362001)(36756003)(16601075003)(102836002)(88722002)(42262002);DIR:OUT;SFP:1102;SCL:1;SRVR:DB5PR06MB1239;H:DB5PR06MB1239.eurprd06.prod.outlook.com;FPR:;SPF:None;PTR:InfoNoRecords;A:1;MX:1;LANG:en;
+received-spf: None (protection.outlook.com: st-andrews.ac.uk does not
+ designate permitted sender hosts)
+spamdiagnosticoutput: 1:23
+spamdiagnosticmetadata: NSPM
+Content-Type: multipart/alternative;
+	boundary="_000_D25E5D8516BB8db60standrewsacuk_"
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-originalarrivaltime: 03 Nov 2015 12:48:08.2481
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: f85626cb-0da8-49d3-aa58-64ef678ef01a
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB5PR06MB1239
+X-Microsoft-Exchange-Diagnostics: 1;DB5PR06MB0999;2:4bgoTPNZ6wFVgYwDnYJB4jloCuNDbmKx/s5yhrmBlEWPrGDJzA1O8gYild/+wQlerlshhju+p7Oq3ExIq7ZlPa0FsCQHhBDflBzjtVvGvawcwNGv5i5nLBhyFRXacUK1Jpr5w6vGW8IQEHmJhOknbNwjeNTfTAXySxG6wFNAfXU=;23:+Bfm8Q6/GXWDjqonsXKTgBIH6sYONBmaRyPqTCRCXwK9MyTbDD0pTNwtzggc/Q+SlwoLDb2u4jBovvt5k+2f7R3Yjacyiqmvv1QcN+WpLE7It33AEIb1femvI2VhQQJCLpWVB93HnjSGOoZhU6mOXXIZs/GKXVc2oU05vByeLvfksYFGTheRmH+94pCSfdmq
+X-Antispam: No, score=-1.5/8.0, scanned in 5.501sec at (mx.gs.washington.edu [128.95.55.226])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.2.1.2493963, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2015.11.3.123915
+X-PMX-Server: mxout25.s.uw.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ HTML_70_90 0.1, HTML_NO_HTTP 0.1, BODYTEXTH_SIZE_10000_LESS 0, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_2000_2999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, FROM_EDU_TLD 0, NO_URI_HTTPS 0, SPF_PASS 0, WEBMAIL_SOURCE 0, WEBMAIL_XOIP 0, WEBMAIL_X_IP_HDR 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_ALT 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HAS_XOIP 0, __INT_PROD_ONLINE 0, __MIME_HTML 0, __MIME_VERSION 0, __MULTIPLE_URI_TEXT 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_IN_BODY 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS , __USER_AGENT 0, __X_MAILSCANNER 0'
+Status: RO
+Content-Length: 2802
+Lines: 94
+
+--_000_D25E5D8516BB8db60standrewsacuk_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Joe,
+
+I hope you are well.
+
+Thank you for the continued maintenance of the phylogeny software list.
+
+We would love it if you could add our Web server, which runs LVB:
+
+http://lvb.st-andrews.ac.uk
+
+I wasn't sure if I should make this fit in the software submission form, or=
+ submit for consideration for your list by other means. Please let me know.
+
+Thanks and best wishes,
+
+Daniel
+
+
+--
+
+http://biology.st-andrews.ac.uk/staff/db60
+
+The University of St Andrews is a charity registered in Scotland : No SC013=
+532
+
+--_000_D25E5D8516BB8db60standrewsacuk_
+Content-Type: text/html; charset="us-ascii"
+Content-ID: <E544EE5D9E6628419CB30FC536B6B9C1@eurprd06.prod.outlook.com>
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-lin=
+e-break: after-white-space;">
+<div style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-siz=
+e: 14px;">
+Dear Joe,</div>
+<div style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-siz=
+e: 14px;">
+<br>
+</div>
+<div style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-siz=
+e: 14px;">
+I hope you are well.</div>
+<div style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-siz=
+e: 14px;">
+<br>
+</div>
+<div style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-siz=
+e: 14px;">
+Thank you for the continued maintenance of the phylogeny software list.</di=
+v>
+<div style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-siz=
+e: 14px;">
+<br>
+</div>
+<div><font face=3D"Arial,sans-serif">We would love it if you could add our =
+Web server, which runs LVB:</font></div>
+<div><font face=3D"Arial,sans-serif"><br>
+</font></div>
+<div><font face=3D"Arial,sans-serif">http://lvb.st-andrews.ac.uk</font></di=
+v>
+<div><font face=3D"Arial,sans-serif"><br>
+</font></div>
+<div>I wasn't sure if I should make this fit in the software submission for=
+m, or submit for consideration for your list by other means. Please let me =
+know.</div>
+<div><br>
+</div>
+<div>Thanks and best wishes,</div>
+<div><br>
+</div>
+<div>Daniel</div>
+<div><font face=3D"Arial,sans-serif"><br>
+</font></div>
+<div style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-siz=
+e: 14px;">
+<p style=3D"margin: 0px; font-family: Menlo;">--&nbsp;</p>
+<p style=3D"margin: 0px; font-family: Menlo;">http://biology.st-andrews.ac.=
+uk/staff/db60</p>
+<p style=3D"margin: 0px; font-family: Menlo;">The University of St Andrews =
+is a charity registered in Scotland : No SC013532</p>
+</div>
+</body>
+</html>
+
+--_000_D25E5D8516BB8db60standrewsacuk_--
+
+From apache@evolution.gs.washington.edu Thu Oct  1 06:03:18 2015
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.202.72.74 with SMTP id v71csp481053oia;
+        Thu, 1 Oct 2015 06:03:18 -0700 (PDT)
+X-Received: by 10.60.55.9 with SMTP id n9mr5605969oep.67.1443704598537;
+        Thu, 01 Oct 2015 06:03:18 -0700 (PDT)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout22.s.uw.edu (mxout22.s.uw.edu. [128.95.242.222])
+        by mx.google.com with ESMTPS id h17si3141069oic.77.2015.10.01.06.03.18
+        for <felsenst@gamail.uw.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 01 Oct 2015 06:03:18 -0700 (PDT)
+Received-SPF: neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) client-ip=140.142.32.169;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) smtp.mailfrom=apache@evolution.gs.washington.edu
+Received: from mx12.s.uw.edu (mx12.s.uw.edu [140.142.32.169])
+	by mxout22.s.uw.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id t91D2rW6002055
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Thu, 1 Oct 2015 06:02:54 -0700
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.95.55.226])
+	by mx12.s.uw.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id t91D2M82015924
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@u.washington.edu>; Thu, 1 Oct 2015 06:02:23 -0700
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id t91D2FKD019167
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <joe@gs.washington.edu>; Thu, 1 Oct 2015 06:02:18 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id t91D2FtT009757
+	for <joe@gs.washington.edu>; Thu, 1 Oct 2015 06:02:15 -0700
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id t91D2FSv009756;
+	Thu, 1 Oct 2015 06:02:15 -0700
+Date: Thu, 1 Oct 2015 06:02:15 -0700
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201510011302.t91D2FSv009756@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=0.8/8.0, scanned in 3.651sec at (mx.gs.washington.edu [128.95.55.226])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.2.1.2493963, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2015.10.1.125417
+X-PMX-Server: mxout22.s.uw.edu
+X-Uwash-Spam: Gauge=IIIIIIIII, Probability=9%, Report='
+ AT_TLD 0.1, FROM_NAME_ONE_WORD 0.05, HTML_00_10 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_2000_2999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, NO_URI_HTTPS 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HTML_AHREF_TAG 0, __MIME_TEXT_ONLY 0, __MULTIPLE_URI_TEXT 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_IN_BODY 0, __URI_NO_MAILTO 0, __URI_NS '
+Status: RO
+Content-Length: 2329
+Lines: 35
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="IQ-Tree">
+<HR>
+<P>
+Bui Quang Minh</A>
+of the Center for Integrative Bioinformatics Vienna (CIBIV)
+of the University of Vienna / Medical University of Vienna, Vienna, Austria
+<tt>(minh.bui<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univie.ac.at)</tt>
+has released <strong>IQ-Tree</strong>
+version 1.3.9, IQ-TREE is a very efficient maximum likelihood phylogenetic software offering a large number of features..  IQ-TREE is a very efficient maximum likelihood phylogenetic software with following key features among others: (a) A novel fast and effective stochastic algorithm to estimate maximum likelihood trees. IQ-TREE typically outperforms both RAxML and PhyML in terms of likelihood while requiring similar amount of computing time (see Nguyen et al., 2015) (b) An ultrafast bootstrap approximation to assess branch supports (see Minh et al., 2013).  (c) A wide range of substitution models for binary, DNA, protein, codon, and morphological alignments.  (d) Ultrafast model selection for all data types, 10 to 100 times faster than jModelTest and ProtTest.  (e) Finding best partition scheme like PartitionFinder.  (f) Partitioned models with mixed data types for phylogenomic (multi-gene) alignments, allowing for separate, proportional, or joint branch lengths among gene!
+ s.
+It is described in the paper:
+Felsenstein, J.  1989.  PHYLIP - Phylogeny Inference Package (Version 3.2).  Cladistics  5: 132-133.
+Nguyen, L.T., Schmidt, H.A., von Haeseler, A., Minh, B.Q. 2015. IQ-TREE: A fast and effective stochastic algorithm for estimating maximum likelihood phylogenies. Mol. Biol. Evol., 32, 268-274. (DOI: 10.1093/molbev/msu300)
+It is available as C++ source code, C source code, Windows executables, Linux executables and Intel Mac OS X executables.  It can be downloaded from
+<a href="http://www.cibiv.at/software/iqtree/">its web site</a>
+at <code>http://www.cibiv.at/software/iqtree/</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Maximum likelihood methods, Bootstrapping and other measures of support, Consensus trees, subtrees, supertrees, distances between trees , Model selection and Web or e-mail server that can analyze data for you </p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From evoldir@evol.biology.mcmaster.ca Sat Sep 24 02:14:21 2016
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.36.16.203 with SMTP id 194csp887410ity;
+        Sat, 24 Sep 2016 02:14:21 -0700 (PDT)
+X-Received: by 10.98.184.26 with SMTP id p26mr20451071pfe.71.1474708461588;
+        Sat, 24 Sep 2016 02:14:21 -0700 (PDT)
+Return-Path: <evoldir@evol.biology.mcmaster.ca>
+Received: from mxout24.cac.washington.edu (mxout24.cac.washington.edu. [140.142.234.158])
+        by mx.google.com with ESMTPS id e5si12152333pfe.212.2016.09.24.02.14.21
+        for <felsenst@gamail.uw.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 24 Sep 2016 02:14:21 -0700 (PDT)
+Received-SPF: neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of evoldir@evol.biology.mcmaster.ca) client-ip=140.142.32.169;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of evoldir@evol.biology.mcmaster.ca) smtp.mailfrom=evoldir@evol.biology.mcmaster.ca
+Received: from mx12.s.uw.edu (mx12.s.uw.edu [140.142.32.169])
+	by mxout24.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW16.03) with ESMTP id u8O9E3ag008192
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Sat, 24 Sep 2016 02:14:04 -0700
+Received: from mx2.gs.washington.edu (mx2.gs.washington.edu [128.208.9.176])
+	by mx12.s.uw.edu (8.14.4+UW14.03/8.14.4+UW16.03) with ESMTP id u8O9Dste020135
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@u.washington.edu>; Sat, 24 Sep 2016 02:13:55 -0700
+Received: from pinegw01.uts.mcmaster.ca (pinegw01.UTS.McMaster.CA [130.113.64.127])
+	by mx2.gs.washington.edu (8.13.8/8.13.8) with ESMTP id u8O9DkMd014908
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <joe@genetics.washington.edu>; Sat, 24 Sep 2016 02:13:50 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx2.gs.washington.edu
+Received: from pinegw03.uts.mcmaster.ca (pinegw03.UTS.McMaster.CA [130.113.64.132])
+	by pinegw01.uts.mcmaster.ca (8.14.4/8.14.4) with ESMTP id u8O9CG8I004191
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)
+	for <joe@genetics.washington.edu>; Sat, 24 Sep 2016 05:13:46 -0400
+Received: from evol.biology.mcmaster.ca (evol.Biology.McMaster.CA [130.113.246.218])
+	by pinegw03.uts.mcmaster.ca (8.14.4/8.14.4) with ESMTP id u8O96jHw030100
+	for <joe@genetics.washington.edu>; Sat, 24 Sep 2016 05:07:22 -0400
+Received: by evol.biology.mcmaster.ca (Postfix, from userid 10048)
+	id 97FBA26D89; Sat, 24 Sep 2016 02:41:28 -0400 (EDT)
+To: joe@genetics.washington.edu
+Subject:  Other: Software.LLPLL
+Reply-To: brian@helix.biology.mcmaster.ca
+Message-Id: <20160924064128.97FBA26D89@evol.biology.mcmaster.ca>
+Date: Sat, 24 Sep 2016 02:41:28 -0400 (EDT)
+From: evoldir@evol.biology.mcmaster.ca
+X-PMX-Version-Mac: 6.0.3.2322014, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2016.9.24.90917
+X-Spam-Flag: NO
+X-Antispam: No, score=2.4/8.0, scanned in 4.233sec at (mx2.gs.washington.edu [128.208.9.176])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.2.1.2493963, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2016.9.24.90917
+X-PMX-Server: mxout24.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ HTML_00_01 0.05, HTML_00_10 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1700_1799 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, NO_REAL_NAME 0, SPF_NONE 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __FRAUD_BODY_WEBMAIL 0, __FRAUD_WEBMAIL 0, __HAS_FROM 0, __HAS_MSGID 0, __HAS_REPLYTO 0, __HTTPS_URI 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0, __MULTIPLE_URI_TEXT 0, __REPLYTO_SAMEAS_FROM_DOMAIN 0, __SANE_MSGID 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_IN_BODY 0, __URI_NS , __URI_WITH_PATH 0'
+Status: RO
+Content-Length: 1731
+Lines: 52
+
+
+Dear Community,
+
+We would like to announce the release of libpll - a new library that 
+facilitates phylogenetic analyses.
+
+Libpll is a low-level re-design of PLL
+(see http://sysbio.oxfordjournals.org/content/64/2/356.short), that 
+offers unprecedented flexibility when implementing new models, testing 
+hypotheses and/or developing new tools, methods or pipelines.
+
+Apart from the highly-optimized phylogenetic likelihood function, libpll 
+offers the following functionality:
+
+- parsing of alignment file formats (FASTA/PHYLIP)
+- parsing of tree file formats (binary rooted, unrooted, n-ary trees)
+- flexibility in defining custom models of dna evolution
+- support for heterotachous and mixture models
+- support for models with arbitrary number of states
+- parsimony functions
+- support for arbitrary number of rate heterogeneity categories
+- functions for weighted parsimony
+- methods for ascertainment bias correction
+- tree visualization
+
+Libpll is highly optimized and can make use of the SSE3/AVX/AVX-2 
+instruction sets.
+
+It is available for download at:
+https://github.com/xflouris/libpll under the Affero GPL 3 License.
+
+The corresponding documentation can be found at:
+https://github.com/xflouris/libpll/wiki and a number of examples 
+demonstrating a large portion of its functionality are available at:
+https://github.com/xflouris/libpll/tree/master/examples
+
+Alexis
+
+
+-- 
+Alexandros (Alexis) Stamatakis
+
+Research Group Leader, Heidelberg Institute for Theoretical Studies
+Full Professor, Dept. of Informatics, Karlsruhe Institute of Technology
+Adjunct Professor, Dept. of Ecology and Evolutionary Biology, University
+of Arizona at Tucson
+
+www.exelixis-lab.org
+
+
+Alexandros Stamatakis <alexandros.stamatakis@gmail.com>
+
+
+From apache@evolution.gs.washington.edu Tue Feb 18 14:22:25 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.42.164.132 with SMTP id g4csp77013icy;
+        Tue, 18 Feb 2014 14:22:28 -0800 (PST)
+X-Received: by 10.67.3.68 with SMTP id bu4mr12678322pad.144.1392762145983;
+        Tue, 18 Feb 2014 14:22:25 -0800 (PST)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout11.cac.washington.edu (mxout11.cac.washington.edu. [140.142.32.201])
+        by mx.google.com with ESMTPS id xk2si19688545pab.13.2014.02.18.14.22.25
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Tue, 18 Feb 2014 14:22:25 -0800 (PST)
+Received-SPF: pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.206 as permitted sender) client-ip=140.142.32.206;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of apache@evolution.gs.washington.edu designates 140.142.32.206 as permitted sender) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx1.cac.washington.edu (mx1.cac.washington.edu [140.142.32.206])
+	by mxout11.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id s1IMLScu004077
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Tue, 18 Feb 2014 14:21:28 -0800
+Received: from mx.gs.washington.edu (mail.gs.washington.edu [128.208.9.205])
+	by mx1.cac.washington.edu (8.14.4+UW11.03/8.14.4+UW13.09) with ESMTP id s1IMLGof031899
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Tue, 18 Feb 2014 14:21:16 -0800
+Received: from evolution.gs.washington.edu (evolution.genetics.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s1IML8cd028529
+	for <joe@gs.washington.edu>; Tue, 18 Feb 2014 14:21:11 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s1IML8tJ027548
+	for <joe@gs.washington.edu>; Tue, 18 Feb 2014 14:21:08 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id s1IML8HI027547;
+	Tue, 18 Feb 2014 14:21:08 -0800
+Date: Tue, 18 Feb 2014 14:21:08 -0800
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201402182221.s1IML8HI027547@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.895sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.2.18.220915
+X-PMX-Server: mxout11.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1700_1799 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, ECARD_KNOWN_DOMAINS 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1720
+Lines: 34
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="ProteinEvolver">
+<HR>
+<P>
+Miguel Arenas</A>
+of the Bioinformatics Unit
+of the Centre for Molecular Biology "Severo Ochoa" (CSIC)
+<tt>(miguelmmmab<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;gmail.com)</tt>
+has released <strong>ProteinEvolver</strong>
+(Protein Evolver),
+version 1.2.0, Simulation of protein evolution along phylogenies under structure-based substitution models.  ProteinEvolver generates samples of protein-coding genes and protein sequences evolved along phylogenies under structure-based substitution models. These models consider the protein structure to evaluate candidate mutations, which can be accepted (substitutions) or rejected depending on the energy of the protein structure of the mutated sequence. The simulation of molecular evolution occurs along phylogenetic histories, which can be either user-specified or simulated by the coalescent modified with recombination (including recombination hotspots), migration, demographics and longitudinal sampling.
+It is described in the paper:
+Arenas, M.; Dos Santos, H.G.; Posada, D. and Bastolla, U. 2013. Protein Evolution along Phylogenetic Histories under Structurally Constrained Substitution Models.  Bioinformatics, 29(23):3020-3028.
+It is available as C source code, Linux executables and Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://code.google.com/p/proteinevolver/">its web site</a>
+at <code>http://code.google.com/p/proteinevolver/</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Tree-based alignment and Simulation of trees or data</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From r-sig-phylo-bounces@r-project.org Wed Jul 28 06:01:08 2010
+Delivered-To: felsenst@uw.edu
+Received: by 10.43.155.80 with SMTP id lh16csp308693icc;
+        Mon, 23 Dec 2013 16:00:18 -0800 (PST)
+X-Received: by 10.66.187.129 with SMTP id fs1mr2598612pac.45.1387843207909;
+        Mon, 23 Dec 2013 16:00:07 -0800 (PST)
+Received: via tmail-2007b.22 (invoked by user felsenst) for felsenst; Wed, 28 Jul 2010 06:01:45 -0700 (PDT)
+Received: from mxi3.u.washington.edu (mxi3.u.washington.edu [140.142.32.176])
+	by cg55.u.washington.edu (8.14.3+UW09.11/8.14.3+UW09.11) with ESMTP id o6SD1eZq022011
+	for <felsenst@cg55.u.washington.edu>; Wed, 28 Jul 2010 06:01:40 -0700
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.208.9.205])
+	by mxi3.u.washington.edu (8.14.3+UW09.11/8.14.3+UW09.11) with ESMTP id o6SD1Z4h009635
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Wed, 28 Jul 2010 06:01:35 -0700
+Received: from hypatia.math.ethz.ch (hypatia.math.ethz.ch [129.132.145.15])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id o6SD1YQg024726
+	for <joe@gs.washington.edu>; Wed, 28 Jul 2010 06:01:35 -0700
+Received: from hypatia.math.ethz.ch (hypatia [129.132.145.15])
+	by hypatia.math.ethz.ch (8.14.1/8.14.1) with ESMTP id o6SD1M6P025630;
+	Wed, 28 Jul 2010 15:01:24 +0200
+X-Spam-Checker-Version: SpamAssassin 3.3.1 (2010-03-16) on hypatia.math.ethz.ch
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.3 required=5.0 tests=BAYES_00, DKIM_SIGNED,
+	DKIM_VALID, DKIM_VALID_AU, FREEMAIL_FROM,
+	RCVD_IN_DNSWL_MED autolearn=ham version=3.3.1
+Received: from phil2.ethz.ch (phil2.ethz.ch [129.132.202.240])
+	by hypatia.math.ethz.ch (8.14.1/8.14.1) with ESMTP id o6SD1ESK025524
+	for <r-sig-phylo@r-project.org>; Wed, 28 Jul 2010 15:01:15 +0200
+Received: from mail-qw0-f41.google.com ([209.85.216.41])
+	by phil2.ethz.ch with esmtp (Exim 4.69)
+	(envelope-from <francois.michonneau@gmail.com>) id 1Oe6G0-0006oY-6d
+	for r-sig-phylo@r-project.org; Wed, 28 Jul 2010 15:01:14 +0200
+Received: by qwk4 with SMTP id 4so925891qwk.28
+	for <r-sig-phylo@r-project.org>; Wed, 28 Jul 2010 06:01:10 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:received:received:subject:from:to:content-type
+	:date:message-id:mime-version:x-mailer;
+	bh=RV4Wz+liHOnrySuhJrcsRZTPMkJNE3jPj7IRbfqjhWM=;
+	b=oIXSqz0Gbxf1kQ/IiLhkw0RKCS/NhHDZ2ZwtWslw34LSqcDDC8hJusZNCP+NPhvXDC
+	f/KZbSxgNEhrHk1ksIhQ3w6toiLGIly5CK4I7CXECE6uhRxAMpvK3M2CZUOfp43etNZ1
+	Ysxv/ksKKs3kuUmgGCAGh1XRReOz2vFlQcFpA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=subject:from:to:content-type:date:message-id:mime-version:x-mailer;
+	b=NmZ04bbBvkzo9ZySOWOidiZMaoWo+X8A+nxpcvPmYBjG14yXnwQts0YkwlpJS6Z7vG
+	I8L/OraQuBxFG905u6FrgwZrJvRuFMSFEgrnUIdYXpktufZne0LxBZYzA5POBpvoRXVl
+	hPQ9dEUJUw0Bf6tVQqqEBXNy0bb/ON3JTHnPY=
+Received: by 10.224.94.75 with SMTP id y11mr8678885qam.190.1280322069857;
+	Wed, 28 Jul 2010 06:01:09 -0700 (PDT)
+Received: from [10.203.4.1] ([128.128.250.98])
+	by mx.google.com with ESMTPS id h34sm5678357qcm.14.2010.07.28.06.01.08
+	(version=SSLv3 cipher=RC4-MD5); Wed, 28 Jul 2010 06:01:08 -0700 (PDT)
+From: =?ISO-8859-1?Q?Fran=E7ois?= Michonneau <francois.michonneau@gmail.com>
+To: "r-sig-phylo@r-project.org" <r-sig-phylo@r-project.org>
+Date: Wed, 28 Jul 2010 09:01:08 -0400
+Message-ID: <1280322068.23207.10.camel@francois-laptop>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.28.3 
+X-Tag-Only: YES
+X-Filter-Node: phil2.ethz.ch
+X-USF-Spam-Level: 
+X-USF-Spam-Status: hits=-0.1 tests=DKIM_SIGNED, DKIM_VALID, DKIM_VALID_AU,
+	FREEMAIL_FROM, RCVD_IN_DNSWL_NONE, SPF_PASS
+X-USF-Spam-Flag: NO
+X-Virus-Scanned: by amavisd-new at stat.math.ethz.ch
+Subject: [R-sig-phylo] New phylobase release
+X-BeenThere: r-sig-phylo@r-project.org
+X-Mailman-Version: 2.1.13
+Precedence: list
+List-Id: R SIG on phylogenetic and comparative methods and analyses
+	<r-sig-phylo.r-project.org>
+List-Unsubscribe: <https://stat.ethz.ch/mailman/options/r-sig-phylo>,
+	<mailto:r-sig-phylo-request@r-project.org?subject=unsubscribe>
+List-Archive: <https://stat.ethz.ch/pipermail/r-sig-phylo>
+List-Post: <mailto:r-sig-phylo@r-project.org>
+List-Help: <mailto:r-sig-phylo-request@r-project.org?subject=help>
+List-Subscribe: <https://stat.ethz.ch/mailman/listinfo/r-sig-phylo>,
+	<mailto:r-sig-phylo-request@r-project.org?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============0172591379=="
+Sender: r-sig-phylo-bounces@r-project.org
+Errors-To: r-sig-phylo-bounces@r-project.org
+X-PMX-Version: 5.5.9.388399, Antispam-Engine: 2.7.2.376379, Antispam-Data: 2010.7.28.125114
+X-Uwash-Spam: Gauge=X, Probability=10%, Report='
+ TO_IN_SUBJECT 0.5, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_2000_2999 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, INVALID_MSGID_NO_FQDN 0, SPF_NONE 0, __CP_URI_IN_BODY 0, __CT 0, __CTYPE_HAS_BOUNDARY 0, __CTYPE_MULTIPART 0, __CTYPE_MULTIPART_MIXED 0, __FRAUD_WEBMAIL 0, __FRAUD_WEBMAIL_FROM 0, __FROM_GMAIL 0, __HAS_LIST_HEADER 0, __HAS_LIST_HELP 0, __HAS_LIST_SUBSCRIBE 0, __HAS_LIST_UNSUBSCRIBE 0, __HAS_MSGID 0, __HAS_X_MAILER 0, __MIME_VERSION 0, __SANE_MSGID 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 2180
+Lines: 72
+
+
+--===============0172591379==
+Content-Type: multipart/signed; micalg="pgp-sha1"; protocol="application/pgp-signature"; boundary="=-ejeO5VzSr0vROi+iglLj"
+
+
+--=-ejeO5VzSr0vROi+iglLj
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello,
+
+  A new beta release of phylobase (0.6.1) is now available on CRAN.
+
+  This release brings much improved support of NEXUS files. In
+particular it's now possible to import both Standard and Continuous
+datatypes. Issues involving special characters in species names should
+also be resolved. This is made possible by using the latest version of
+the Nexus Class Library (NCL) [1] and a total rewrite of the interface
+between NCL and phylobase.
+
+  Among other main modifications, there is now global options that allow
+users to modify the behavior of the validator.
+
+  Compilations issues on Mac and Windows should also be fixed.
+
+  The full NEWS can be found at:
+http://cran.r-project.org/web/packages/phylobase/NEWS
+
+  If you haven't heard of phylobase, it's a package that allows storage,
+manipulation and plotting of phylogenetic trees and data associated with
+them. Vignettes are available in the package to help you getting
+started.
+
+  You can use this mailing list or R-forge [2] for any questions,
+feature requests, bug reports, etc...
+
+  Cheers,
+  -- Fran=C3=A7ois=20
+
+[1] http://phylo.bio.ku.edu/ncldocs/v2.1/funcdocs/index.html
+[2] http://r-forge.r-project.org/projects/phylobase/
+
+
+--=-ejeO5VzSr0vROi+iglLj
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEABECAAYFAkxQKhEACgkQvL+naSQfkVdclgCfVzSpkdiLbKm82H/hfEBMgarY
+86cAnjKzilFzvXO2MBSVdPGVYwTHRkgT
+=SxM8
+-----END PGP SIGNATURE-----
+
+--=-ejeO5VzSr0vROi+iglLj--
+
+
+--===============0172591379==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+_______________________________________________
+R-sig-phylo mailing list
+R-sig-phylo@r-project.org
+https://stat.ethz.ch/mailman/listinfo/r-sig-phylo
+
+--===============0172591379==--
+
+
+From apache@evolution.gs.washington.edu Mon Sep 15 17:48:20 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.42.13.211 with SMTP id e19csp1135641ica;
+        Mon, 15 Sep 2014 17:48:21 -0700 (PDT)
+X-Received: by 10.69.26.134 with SMTP id iy6mr45339247pbd.115.1410828500322;
+        Mon, 15 Sep 2014 17:48:20 -0700 (PDT)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout12.cac.washington.edu (mxout12.cac.washington.edu. [140.142.32.167])
+        by mx.google.com with ESMTPS id i14si9070256pdl.61.2014.09.15.17.48.19
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Mon, 15 Sep 2014 17:48:20 -0700 (PDT)
+Received-SPF: none (google.com: apache@evolution.gs.washington.edu does not designate permitted sender hosts) client-ip=140.142.32.166;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: apache@evolution.gs.washington.edu does not designate permitted sender hosts) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx2.cac.washington.edu (mx2.cac.washington.edu [140.142.32.166])
+	by mxout12.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW14.04) with ESMTP id s8G0m1Dq032517
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Mon, 15 Sep 2014 17:48:01 -0700
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.208.9.205])
+	by mx2.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW14.04) with ESMTP id s8G0lurh017094
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Mon, 15 Sep 2014 17:47:56 -0700
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s8G0lnwc002794
+	for <joe@gs.washington.edu>; Mon, 15 Sep 2014 17:47:52 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id s8G0lm0F021696
+	for <joe@gs.washington.edu>; Mon, 15 Sep 2014 17:47:48 -0700
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id s8G0lmhi021695;
+	Mon, 15 Sep 2014 17:47:48 -0700
+Date: Mon, 15 Sep 2014 17:47:48 -0700
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201409160047.s8G0lmhi021695@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 4.278sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.0.3.2322014, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.9.16.4222
+X-PMX-Server: mxout12.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1500_1599 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NS '
+Status: RO
+Content-Length: 1565
+Lines: 34
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="siMBa">
+<HR>
+<P>
+Bagdevi Mishra, Marco Thines</A>
+of the Biodiversity and Climate Research Centre (BiK-F)
+of the Institute of Ecology, Evolution and Diversity, Goethe University.
+<tt>(bagdevi.mishra<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;senckenberg.de)</tt>
+has released <strong>siMBa</strong>
+(simple MrBayes),
+version 1.0, A simple GUI for Bayesian phylogenetic inference program MrBayes.  This tool gives the user interactive control over most of the parameters used in MrBayes and also facilitates the input of a multiple sequence alignment, as any widely used format can be used. siMBa is coded in Perl using the Tk module. Executables are provided for Windows, Linux, and Macintosh. The Perl codes, along with executables for different operating system, are freely available to download from [http://www.thines-lab.senckenberg.de/simba].
+It is described in the paper:
+Mishra B, Thines M (2014) siMBa - a simple graphical user interface for the Bayesian phylogenetic inference program MrBayes. Mycological Progress. doi:10.1007/s11557-014-1010-2
+It is available as Perl script, Windows executables, Linux executables and Mac OS X universal executables.  It can be downloaded from
+<a href="http://simba-simplemrbayes.sourceforge.net/">its web site</a>
+at <code>http://simba-simplemrbayes.sourceforge.net/</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Bayesian inference methods</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Wed Nov  5 15:06:54 2014
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.43.87.13 with SMTP id au13csp613089icc;
+        Wed, 5 Nov 2014 15:06:56 -0800 (PST)
+X-Received: by 10.68.201.130 with SMTP id ka2mr411629pbc.112.1415228814150;
+        Wed, 05 Nov 2014 15:06:54 -0800 (PST)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout24.s.uw.edu (mxout24.s.uw.edu. [140.142.234.158])
+        by mx.google.com with ESMTPS id s5si4331180pdc.27.2014.11.05.15.06.53
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 05 Nov 2014 15:06:54 -0800 (PST)
+Received-SPF: none (google.com: apache@evolution.gs.washington.edu does not designate permitted sender hosts) client-ip=140.142.32.166;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: apache@evolution.gs.washington.edu does not designate permitted sender hosts) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx2.cac.washington.edu (mx2.cac.washington.edu [140.142.32.166])
+	by mxout24.s.uw.edu (8.14.4+UW14.03/8.14.4+UW14.04) with ESMTP id sA5N6npt019902
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Wed, 5 Nov 2014 15:06:49 -0800
+Received: from mx.gs.washington.edu (mail.gs.washington.edu [128.208.9.205])
+	by mx2.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW14.04) with ESMTP id sA5N6ZLf002677
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@u.washington.edu>; Wed, 5 Nov 2014 15:06:35 -0800
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id sA5N6S1J027869
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <joe@gs.washington.edu>; Wed, 5 Nov 2014 15:06:31 -0800
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id sA5N6Sdv031845
+	for <joe@gs.washington.edu>; Wed, 5 Nov 2014 15:06:28 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id sA5N6SY2031844;
+	Wed, 5 Nov 2014 15:06:28 -0800
+Date: Wed, 5 Nov 2014 15:06:28 -0800
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201411052306.sA5N6SY2031844@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=-1.9/8.0, scanned in 3.984sec at (mx.gs.washington.edu [128.208.9.205])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.1.0.2415318, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2014.11.5.225720
+X-PMX-Server: mxout24.s.uw.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ AT_TLD 0.1, FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1800_1899 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NS '
+Status: RO
+Content-Length: 1806
+Lines: 33
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="IQ-TREE">
+<HR>
+<P>
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh</A>
+of the Center for Integrative Bioinformatics Vienna
+of the Max F. Perutz Laboratories, University of Vienna, Austria
+<tt>(minh.bui<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univie.ac.at)</tt>
+have released <strong>IQ-TREE</strong>
+version 1, An efficient phylogenetic software by maximum likelihood.  Key features of IQ-TREE include: (1) a fast and effective stochastic algorithm to estimate maximum likelihood phylogenies, (2) an ultrafast bootstrap approximation (UFBoot) as alternative to the standard non-parametric bootstrap, (3) an ultrafast phylogenetic model selection, (4) partition models for phylogenomic alignments with joint, proportional, or separate branch lengths among partitions.
+It is described in the paper:
+Nguyen, L.T., Schmidt H.A., von Haeseler A., and Minh B.Q.  2014.  IQ-TREE: A fast and effective stochastic algorithm for estimating maximum likelihood phylogenies. Mol. Biol. Evol., in press. DOI: 10.1093/molbev/msu300
+It is available as C++ source code, C source code, Windows executables, Linux executables and Intel Mac OS X executables.  It can be downloaded from
+<a href="http://www.cibiv.at/software/iqtree">its web site</a>
+at <code>http://www.cibiv.at/software/iqtree</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Computation of distances, Maximum likelihood methods, Bootstrapping and other measures of support, Consensus trees, subtrees, supertrees, distances between trees  and Simulation of trees or data</p>
+
+<h3>Comments:</h3>
+<p>A web server for online computation is available at http://iqtree.cibiv.univie.ac.at</p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From apache@evolution.gs.washington.edu Mon May 18 21:17:31 2015
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.202.224.8 with SMTP id x8csp521494oig;
+        Mon, 18 May 2015 21:17:32 -0700 (PDT)
+X-Received: by 10.66.141.77 with SMTP id rm13mr50254228pab.14.1432009051790;
+        Mon, 18 May 2015 21:17:31 -0700 (PDT)
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout24.cac.washington.edu (mxout24.cac.washington.edu. [140.142.234.158])
+        by mx.google.com with ESMTPS id gt2si18999400pbb.115.2015.05.18.21.17.30
+        for <felsenst@gamail.uw.edu>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 18 May 2015 21:17:31 -0700 (PDT)
+Received-SPF: neutral (google.com: 140.142.234.149 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) client-ip=140.142.234.149;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 140.142.234.149 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) smtp.mail=apache@evolution.gs.washington.edu
+Received: from mx11.s.uw.edu (mx11.s.uw.edu [140.142.234.149])
+	by mxout24.cac.washington.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id t4J4H5VA023842
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Mon, 18 May 2015 21:17:05 -0700
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.95.55.226])
+	by mx11.s.uw.edu (8.14.4+UW14.03/8.14.4+UW15.02) with ESMTP id t4J4H2aM010304
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK)
+	for <felsenst@u.washington.edu>; Mon, 18 May 2015 21:17:02 -0700
+Received: from evolution.gs.washington.edu (evolution.gs.washington.edu [128.208.27.135])
+	by mx.gs.washington.edu (8.13.8/8.13.8) with ESMTP id t4J4GsnJ004191
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO)
+	for <joe@gs.washington.edu>; Mon, 18 May 2015 21:16:57 -0700
+X-Virus-Status: Clean
+X-Virus-Scanned: clamav-milter 0.97.2 at mx.gs.washington.edu
+Received: from evolution.gs.washington.edu (localhost.localdomain [127.0.0.1])
+	by evolution.gs.washington.edu (8.13.8/8.13.8) with ESMTP id t4J4GsMJ011219
+	for <joe@gs.washington.edu>; Mon, 18 May 2015 21:16:54 -0700
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.13.8/8.13.8/Submit) id t4J4GsZ6011218;
+	Mon, 18 May 2015 21:16:54 -0700
+Date: Mon, 18 May 2015 21:16:54 -0700
+From: Apache <apache@evolution.gs.washington.edu>
+Message-Id: <201505190416.t4J4GsZ6011218@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Antispam: No, score=0.8/8.0, scanned in 3.592sec at (mx.gs.washington.edu [128.95.55.226])
+	by smf-spamd v1.3.1 - http://smfs.sf.net/
+X-PMX-Version: 6.1.0.2415318, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2015.5.19.40615
+X-PMX-Server: mxout24.cac.washington.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ FROM_NAME_ONE_WORD 0.05, SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1300_1399 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __MIME_TEXT_ONLY 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS '
+Status: RO
+Content-Length: 1276
+Lines: 34
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="PHYLOLAND">
+<HR>
+<P>
+Louis Ranjard</A>
+of the Bioinformatics Institute
+of the University of Auckland, New Zealand
+<tt>(louis.ranjard<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;gmail.com)</tt>
+has released <strong>PHYLOLAND</strong>
+version 1.3, Modelling Competitive Exclusion and Limited Dispersal in a Statistical Phylogeographic Framework.  This R package implements a model of space colonization mapped onto a phylogeny, it aims at estimating limited dispersal and ecological competitive exclusion in a Bayesian MCMC statistical phylogeographic framework.
+
+It is described in the paper:
+Louis Ranjard, David Welch, Marie Paturel, and Stéphane Guindon, Modelling Competition and Dispersal in a Statistical Phylogeographic Framework, Systematic Biology 63(5):743-752, 2014
+It is available as an R package.  It can be downloaded from
+<a href="http://cran.r-project.org/web/packages/phyloland">its web site</a>
+at <code>http://cran.r-project.org/web/packages/phyloland</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>Bayesian inference methods and Biogeographic analysis and host-parasite comparison</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+
+From evoldir@evol.biology.mcmaster.ca Fri Nov 24 02:23:52 2017
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.2.108.83 with SMTP id w80csp1930715jab;
+        Fri, 24 Nov 2017 02:23:52 -0800 (PST)
+X-Google-Smtp-Source: AGs4zMbQt8Dgs2R8AMEeRvvY1fYbs/aEZ1RS6M9vJQYjD5UKL+kd9pipQ3zbtUUes1X1m6u/YZ86
+X-Received: by 10.98.68.84 with SMTP id r81mr3145259pfa.48.1511519032887;
+        Fri, 24 Nov 2017 02:23:52 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1511519032; cv=none;
+        d=google.com; s=arc-20160816;
+        b=QEGpp8dFpRBlEFQN5DlGzAtU5Zy9I1YKKTz7RE750cHLkwDbe9n9DXvqUU9i9+NFWg
+         79BqFpAi9m+40Cntps2VSTzGP5/47aU4l24/K39HhOQmkIxwmLUK1fItSDUwZaYdJ7nc
+         dbD07hMBa47RZTxbcB1PDLn2oc798g6KRcpbk8nMgnrtH3XzLtyRRy5py/xPC4NCHecd
+         cdCved+ckmY8WiXIdkEcZkCFpPhW9OAni2cxMY3b0QdV8Rd0ibokXBfNVKOFL0X82LP9
+         ZqD5sOR0UmH4eGNNg8u2bQrrjemMgpbdLOzCl3wV4BqGtu1Hbn91pdIG9Ws3BWlI4NYl
+         g6mw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=from:date:message-id:reply-to:subject:to:arc-authentication-results;
+        bh=16iyittv3yjr/ZWU0gANyitq0OVuLy8EsPPtDvQonv8=;
+        b=qbtbqkM+qNvZvNzxlZbd+Zg98fMeRn1ybfn4cB5jLimiG7pXxKxaDJPO+ueEtlK//S
+         Ws7AzWTCdD/0QOd86LUnQmQWj6T5JojbI49fQHo6Den0JdP3zJiqE4DLmUFp9FUZo3S6
+         MMsVqFJFc3NBvE2Ahh7MZoeowGbZuNLQElTKMchWdU4m7Yviau7C7ClAqrZVe3qrJ4dO
+         im3Xm0qfARalh1FKN3KcQB+blMBZIMYrfFnTpBlJ9xiig3VjOAspP7zPzxz7iOfr/ysB
+         Q+nAHqgEzCRqA6ELuUUxu3JLjfk2zQ68WmFP6FmPyMVuLyqg3cjJvu1VxAuzqnlKgHP1
+         7fFA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of evoldir@evol.biology.mcmaster.ca) smtp.mailfrom=evoldir@evol.biology.mcmaster.ca
+Return-Path: <evoldir@evol.biology.mcmaster.ca>
+Received: from mxout21.s.uw.edu (mxout21.s.uw.edu. [140.142.32.139])
+        by mx.google.com with ESMTPS id n189si18096597pga.205.2017.11.24.02.23.52
+        for <felsenst@gamail.uw.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 24 Nov 2017 02:23:52 -0800 (PST)
+Received-SPF: neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of evoldir@evol.biology.mcmaster.ca) client-ip=140.142.32.169;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 140.142.32.169 is neither permitted nor denied by best guess record for domain of evoldir@evol.biology.mcmaster.ca) smtp.mailfrom=evoldir@evol.biology.mcmaster.ca
+Received: from mx12.s.uw.edu (mx12.s.uw.edu [140.142.32.169])
+	by mxout21.s.uw.edu (8.14.4+UW14.03/8.14.4+UW16.03) with ESMTP id vAOANgqS026568
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Fri, 24 Nov 2017 02:23:42 -0800
+Received: from mx1.gs.washington.edu (mx1.gs.washington.edu [128.95.55.225])
+	by mx12.s.uw.edu (8.14.4+UW14.03/8.14.4+UW16.03) with ESMTP id vAOANI5q008011
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Fri, 24 Nov 2017 02:23:19 -0800
+Received: from pinegw01.uts.mcmaster.ca ([130.113.64.127])
+	by mx1.gs.washington.edu with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.89)
+	(envelope-from <evoldir@evol.biology.mcmaster.ca>)
+	id 1eIB8g-0000ir-4W
+	for joe@genetics.washington.edu; Fri, 24 Nov 2017 02:23:18 -0800
+Received: from pinegw04.uts.mcmaster.ca (pinegw04.uts.mcmaster.ca [130.113.128.58])
+	by pinegw01.uts.mcmaster.ca (8.14.4/8.14.4) with ESMTP id vAOAKvJV028493
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)
+	for <joe@genetics.washington.edu>; Fri, 24 Nov 2017 05:23:17 -0500
+Received: from evol.biology.mcmaster.ca (evol.biology.mcmaster.ca [130.113.246.218])
+	by pinegw04.uts.mcmaster.ca (8.14.4/8.14.4) with ESMTP id vAO9jAuw009994
+	for <joe@genetics.washington.edu>; Fri, 24 Nov 2017 04:45:12 -0500
+Received: by evol.biology.mcmaster.ca (Postfix, from userid 10048)
+	id B6EC52DFA9; Fri, 24 Nov 2017 04:28:16 -0500 (EST)
+To: joe@genetics.washington.edu
+Subject:  Other: Software PGT
+Reply-To: Xuhua.Xia@uottawa.ca
+Message-Id: <20171124092816.B6EC52DFA9@evol.biology.mcmaster.ca>
+Date: Fri, 24 Nov 2017 04:28:16 -0500 (EST)
+From: evoldir@evol.biology.mcmaster.ca
+X-PMX-Version-Mac: 6.0.3.2322014, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2017.11.24.101815
+X-Spam-Flag: NO
+X-Spam-Score: -0.0 (/)
+X-Spam-Report: Spam detection software, running on the system "mx1.gs.washington.edu",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  --_000_ed9caa49303d4140be0b6a192448cb94uottawaca_ Content-Type:
+    text/plain; charset="us-ascii" Content-Transfer-Encoding: quoted-printable
+    Dear All, I am releasing a new software PGT for plotting geophylogenies (i.e.,
+    mapping a phylogenetic tree onto a map): [...] 
+ 
+ Content analysis details:   (-0.0 points, 5.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no
+                             trust
+                             [130.113.64.127 listed in list.dnswl.org]
+ -0.0 T_RP_MATCHES_RCVD      Envelope sender domain matches handover relay
+                             domain
+X-PMX-Version: 6.3.3.2656215, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2017.11.24.101815, AntiVirus-Engine: 5.43.0, AntiVirus-Data: 2017.11.23.5430005
+X-PMX-Server: mxout21.s.uw.edu
+X-Uwash-Spam: Gauge=IIIIIIIII, Probability=9%, Report='
+ REPLYTO_FROM_DIFF_ADDY 0.1, HTML_00_01 0.05, HTML_00_10 0.05, SUPERLONG_LINE 0.05, BODY_SIZE_5000_5999 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, LINK_TO_IMAGE 0, NO_REAL_NAME 0, NO_URI_HTTPS 0, SPF_NONE 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_MSGID 0, __HAS_REPLYTO 0, __HTML_AHREF_TAG 0, __HTML_FONT_BLUE 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0, __MULTIPLE_URI_HTML 0, __MULTIPLE_URI_TEXT 0, __SANE_MSGID 0, __STYLE_RATWARE_NEG 0, __SUBJ_ALPHA_END 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_IN_BODY 0, __URI_NOT_IMG 0, __URI_NO_MAILTO 0, __URI_NS , __URI_WITHOUT_PATH 0, __URI_WITH_PATH 0'
+Status: RO
+Content-Length: 5376
+Lines: 109
+
+
+--_000_ed9caa49303d4140be0b6a192448cb94uottawaca_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear All,
+
+I am releasing a new software PGT for plotting geophylogenies (i.e., mapping a phylogenetic tree onto a map):
+
+http://dambe.bio.uottawa.ca/PGT/PGT.aspx
+
+It is available for Windows, Macintosh and Linux (with Mono installed/enabled). Here is the link for a screenshot of PGT on Ubuntu:
+
+http://dambe.bio.uottawa.ca/PGT/Ubuntu.png
+
+PGT is extremely easy to use. It takes just a few clicks to install. Start PGT, click 'File|Open' to open a sample file Banza.pgt which is in plain text. The first part of input file is a phylogenetic tree in Newick (or PHYLIP) format and the second is a list of OTUs with associated latitude and longitude. The last column is optional. If used, it specifies which map symbol to use for which OTU. The sample file Banza.pgt uses the same symbol for the same species (i.e., different specimens from the same species will have the symbol).
+
+You can switch between regular and satellite maps, and zoom in/out to any resolution. I bet that you will be impressed by its user-friendliness and its quality. Enjoy!
+
+Best
+Xuhua
+http://dambe.bio.uottawa.ca<http://dambe.bio.uottawa.ca/>
+http://science.uottawa.ca/biology/people/xia-xuhua
+
+
+--_000_ed9caa49303d4140be0b6a192448cb94uottawaca_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="#0563C1" vlink="#954F72">
+<div class="WordSection1">
+<p class="MsoNormal">Dear All,<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">I am releasing a new software PGT for plotting geophylogenies (i.e., mapping a phylogenetic tree onto a map):<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><a href="http://dambe.bio.uottawa.ca/PGT/PGT.aspx">http://dambe.bio.uottawa.ca/PGT/PGT.aspx</a><o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">It is available for Windows, Macintosh and Linux (with Mono installed/enabled). Here is the link for a screenshot of PGT on Ubuntu:<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><a href="http://dambe.bio.uottawa.ca/PGT/Ubuntu.png">http://dambe.bio.uottawa.ca/PGT/Ubuntu.png</a><o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">PGT is extremely easy to use. It takes just a few clicks to install. Start PGT, click &#8216;File|Open&#8217; to open a sample file Banza.pgt which is in plain text. The first part of input file is a phylogenetic tree in Newick (or PHYLIP) format and
+ the second is a list of OTUs with associated latitude and longitude. The last column is optional. If used, it specifies which map symbol to use for which OTU. The sample file Banza.pgt uses the same symbol for the same species (i.e., different specimens from
+ the same species will have the symbol).<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">You can switch between regular and satellite maps, and zoom in/out to any resolution. I bet that you will be impressed by its user-friendliness and its quality. Enjoy!<o:p></o:p></p>
+<p class="MsoNormal"><span style="color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA" style="color:#1F497D">Best<br>
+Xuhua<br>
+<a href="http://dambe.bio.uottawa.ca/"><span style="color:blue">http://dambe.bio.uottawa.ca</span></a><o:p></o:p></span></p>
+<p class="MsoNormal"><span lang="EN-CA" style="color:#1F497D">http://science.uottawa.ca/biology/people/xia-xuhua</span><span lang="EN-CA"><o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_ed9caa49303d4140be0b6a192448cb94uottawaca_--
+
+
+From apache@evolution.gs.washington.edu Fri Jan 26 12:09:01 2018
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 10.2.34.4 with SMTP id o4csp1073847jao;
+        Fri, 26 Jan 2018 12:09:01 -0800 (PST)
+X-Google-Smtp-Source: AH8x224SvjyJzXbSX6ZJKBX8a8eZsmajDr15nLFDZoBjR+G4VyO3PseFsU3UMQVGWdgI9X4iX67F
+X-Received: by 2002:a17:902:20e8:: with SMTP id v37-v6mr15091705plg.66.1516997341530;
+        Fri, 26 Jan 2018 12:09:01 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1516997341; cv=none;
+        d=google.com; s=arc-20160816;
+        b=W4GXLq/BiITxndRPbTe/7gwAj3+5E9JF2abhTK5n52bCDIHcGR4ZQhvwNC8hm8La35
+         2Xm1qnI6MtKs2wXKWUDZD9DNx5saAAKnDW9S+U9HbT+1j0PfxP8q/vkYbOXOZq/ujwcE
+         tUgVleelFLzsLxT/21Cmly0AxgyE73eGFt8w3wV4pK2KEKQU4PwNlWjanOhrBj41U6yh
+         F6OTjIWUxn2fiDU+5XOIFftmMfLXlHz9xpeLhZ7klXZQI6Nz58SHvTy2woyhSflkwBDc
+         lYhHcygn9Mgz3AQ9rvugLJnyw/1uYacWH8y2oXPy0SeYly0waZ0Tb51ErifqO77HdPBt
+         Mjpw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:from:to:message-id:date:arc-authentication-results;
+        bh=DHIuZj/6rkEtkyDhhhpBnDIFIUBChbkGTyjeoS/Bf8U=;
+        b=ue3ynXek2vg8nwxK/fVFZBa87oUt0UFlvQgP/21bL2fKL9olmsxvDjCl6P9jZq6BgS
+         dW9ews8XLt53udf7Km6Y8pZ+gJN6gFfObxPALa+2I29vJ8CtXwhD7FY4C3xCpmN2wXtB
+         jHOjQs6/oVUG+GNAbqkgSdQoCggcuvgRxTwFR9ucpYeYy5AfaOO72Ig1OWA7b/+VxQEC
+         my4kSyihqwJcJNaV1AADURyWl1aQBQMxq5JLw391B3aBwSp+57nIzRwXJSnggCaSlFiL
+         OpbrJrs+MLi0kYPhimD/18p7BcaKVcp45AFb8h/crc0i7KNAyLSs448tjKSNf1jSjn1H
+         c2qg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 140.142.234.149 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) smtp.mailfrom=apache@evolution.gs.washington.edu
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mxout26.s.uw.edu (mxout26.s.uw.edu. [140.142.234.176])
+        by mx.google.com with ESMTPS id q16si6815334pfj.192.2018.01.26.12.09.01
+        for <felsenst@gamail.uw.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 26 Jan 2018 12:09:01 -0800 (PST)
+Received-SPF: neutral (google.com: 140.142.234.149 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) client-ip=140.142.234.149;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 140.142.234.149 is neither permitted nor denied by best guess record for domain of apache@evolution.gs.washington.edu) smtp.mailfrom=apache@evolution.gs.washington.edu
+Received: from mx11.s.uw.edu (mx11.s.uw.edu [140.142.234.149])
+	by mxout26.s.uw.edu (8.14.4+UW14.03/8.14.4+UW16.03) with ESMTP id w0QK8vMi028148
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=OK)
+	for <felsenst@gamail.uw.edu>; Fri, 26 Jan 2018 12:08:58 -0800
+Received: from mx1.gs.washington.edu (mx1.gs.washington.edu [128.95.55.225])
+	by mx11.s.uw.edu (8.14.4+UW14.03/8.14.4+UW16.03) with ESMTP id w0QK8RiE014853
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)
+	for <felsenst@u.washington.edu>; Fri, 26 Jan 2018 12:08:28 -0800
+Received: from evolution.gs.washington.edu ([128.208.27.135])
+	by mx1.gs.washington.edu with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.89)
+	(envelope-from <apache@evolution.gs.washington.edu>)
+	id 1efAIU-0001b2-U0
+	for joe@gs.washington.edu; Fri, 26 Jan 2018 12:08:27 -0800
+Received: from evolution.gs.washington.edu (localhost [127.0.0.1])
+	by evolution.gs.washington.edu (8.14.4/8.14.4) with ESMTP id w0P9Q4F4006253
+	for <joe@gs.washington.edu>; Thu, 25 Jan 2018 01:26:04 -0800
+Received: (from apache@localhost)
+	by evolution.gs.washington.edu (8.14.4/8.14.4/Submit) id w0P9Q4WY006252;
+	Thu, 25 Jan 2018 01:26:04 -0800
+Date: Thu, 25 Jan 2018 01:26:04 -0800
+Message-Id: <201801250926.w0P9Q4WY006252@evolution.gs.washington.edu>
+To: joe@gs.washington.edu
+From: apache@evolution.gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+X-Spam-Score: -0.0 (/)
+X-Spam-Report: Spam detection software, running on the system "mx1.gs.washington.edu",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  software-form.pl on evolution.gs has this to say: Krzysztof
+    Bartoszek of the Department of Computer and Information Science of the University
+    of Linkoping (bartoszekkj (at) gmail.com) has released mvSLOUCH (Multivariate
+    Stochastic Linear Ornstein-Uhlenbeck Models for Phylogenetic Comparative
+   Hypotheses), version 1.3.3, an R package to fit multivariate OU models to
+   continues trait data from phylogenetically related species. The package fits
+    parameters of multivariate Ornstein-Uhlenbeck models for phylogenetically
+    related tip data. It can also simulate such models and supports automatic
+    model selection. The user has the possibility to test various hypotheses
+   about evolution based on different parametrizations of the model's components.
+    It is the multivariate version of the SLOUCH R package. It is described in
+    the paper: Bartoszek, K., Pienaar, J., Mostad, P., Andersson, S., Hansen,
+    T.F. 2012. A phylogenetic comparative method for studying multivariate adaptation.
+    Journal of Theoretical Biology 314: 204-215. It is available as an R package.
+    It can be downloaded from its web siteat https://cran.r-project.org/web/packages/mvSLOUCH/
+    [...] 
+ 
+ Content analysis details:   (-0.0 points, 5.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 T_RP_MATCHES_RCVD      Envelope sender domain matches handover relay
+                             domain
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+X-PMX-Version: 6.3.3.2656215, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2018.1.26.200016, AntiVirus-Engine: 5.46.1.0, AntiVirus-Data: 2018.1.25.5461001
+X-PMX-Server: mxout26.s.uw.edu
+X-Uwash-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ SUPERLONG_LINE 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1500_1599 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, DATE_TZ_NA 0, NO_REAL_NAME 0, URI_WITH_PATH_ONLY 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __HAS_FROM 0, __HAS_HTML 0, __HAS_MSGID 0, __HTML_AHREF_TAG 0, __HTTPS_URI 0, __MIME_TEXT_ONLY 0, __MIME_TEXT_P 0, __MIME_TEXT_P1 0, __MULTIPLE_URI_TEXT 0, __SANE_MSGID 0, __SUBJ_ALPHA_END 0, __TAG_EXISTS_HTML 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_IN_BODY 0, __URI_NOT_IMG 0, __URI_NO_MAILTO 0, __URI_NO_WWW 0, __URI_NS , __URI_WITH_PATH 0'
+Status: RO
+Content-Length: 1528
+Lines: 35
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="mvSLOUCH">
+<HR>
+<P>
+Krzysztof Bartoszek</A>
+of the Department of Computer and Information Science
+of the University of Linkoping
+<tt>(bartoszekkj<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;gmail.com)</tt>
+has released <strong>mvSLOUCH</strong>
+(Multivariate Stochastic Linear Ornstein-Uhlenbeck Models for Phylogenetic Comparative Hypotheses),
+version 1.3.3, an R package to fit multivariate OU models to continues trait data from phylogenetically related species.  The package fits parameters of multivariate Ornstein-Uhlenbeck models for phylogenetically related tip data. It can also simulate such models and supports automatic model selection. The user has the possibility to test various hypotheses about evolution based on different parametrizations of the model's components. It is the multivariate version of the SLOUCH R package.
+It is described in the paper:
+Bartoszek, K., Pienaar, J., Mostad, P., Andersson,  S., Hansen, T.F. 2012. A phylogenetic
+comparative method for studying multivariate adaptation. Journal of Theoretical Biology 314:
+204-215.
+
+It is available as an R package.  It can be downloaded from
+<a href="https://cran.r-project.org/web/packages/mvSLOUCH/">its web site</a>at <code>https://cran.r-project.org/web/packages/mvSLOUCH/</code><P>
+<HR>
+<h3>Categories:</h3>
+<p>Comparative method analysis and Model selection</p>
+
+<h3>Comments:</h3>
+<p></p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+

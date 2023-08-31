@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<LINK href="bluestyle.css" rel="stylesheet" type="text/css">
+
+
+<HEAD>
+<TITLE> Installing PHYLIP 3.6 </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+
+<CENTER>
+<TABLE WIDTH=60%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="navy"><STRONG><FONT SIZE=+3 COLOR="cyan">
+I</FONT><FONT SIZE=+2 COLOR="cyan">nstalling PHYLIP 3.6</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<P>
+Let's assume that you have fetched the appropriate executables archives (if any)
+for your machine, together with the Documentation and Sources archive.
+<P>
+These archives are <EM>not</EM> simply a single executable for general
+use.  Instead they are a (large) number of files, squished together into
+one file, and thus called an "archive".  You have to go through a step
+which involves getting all the files out of the archive and into a
+folder on your machine.
+<P>
+We will give these instructions for four
+different kinds of systems, Windows, MacOS, Linux or Unix systems,
+Then we will describe how to access the
+documentation after installing the package.
+<P>
+&nbsp;
+<P>
+<CENTER>
+<TABLE WIDTH=50%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+W</FONT><FONT SIZE=+2 COLOR="cyan">indows</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+<P>
+When you click to download the Zip archive, most recent Windows systems
+will open a window which asks whether you want to open the archive with
+Windows Explorer, or want to Save the archive.  Choose to Save it.  It
+will be placed in the Downloads folder of your account. There are
+now two possibilities:
+<P>
+<ol>
+<li> If it has been extracted, a folder called <tt>phylip-3.698</tt> (one which
+does not have the image of a zipper on the folder icon) will also be
+there.  Move that folder to where you want it to be. Do not try to
+use the programs or documentation while it is still in the Downloads
+folder.
+<p>
+<li>If it has not been extracted, there will be a Zip archive folder (one which
+has a zipper on the folder icon). Move it to where you want it to be.
+This Zip archive can then be extracted by right-clicking on
+its icon and selecting Extract All from the menu that appears.
+<p>
+It will create a folder called Phylip-3.698.  So if
+you place the archive on the Desktop, it will make that folder there.
+</ol>
+<P>
+After the extraction is done, you will find the <TT>phylip-3.698</TT> folder
+which has three folders within it, called <TT>doc</TT>, <TT>exe</TT>, and
+<TT>src</TT>.  There is also a web page <TT>phylip.html</TT>.  You should
+read this in your browser, which you can usually do by clicking on the file.  It contains links to the main documentation
+web page <TT>main.html</TT> and to the other documentation pages and
+programs.
+<P>
+<b>Note:</b> There has been a report that on Windows Vista (specifically
+the report was for Service Pack 2 on Home Edition) that if you extract the
+files into a folder that is somewhere under Program Files, they may not
+work properly.   You can avoid this problem if you extract them into a folder
+which is somewhere in your own folders.
+<P>
+<b>What to do if the Avast virus-checking software complains:</b>  We have had
+several reports that the Avast virus-checking software will not allow PHYLIP
+3.695 to be installed because it concludes that it contains a virus.  It is
+complaining about our Java front end for program Drawgram (a file called
+DrawGramJava.exe).  We have had this file checked carefully by our
+virus-checking company, Sophos, and they find no virus there.  There is the
+invocation of a "shell" in that Java code that may alarm Avast, which is being
+overcautious.  If you can extract and install the code on someone else's
+machine, one which has differemt virus-checking software, you then may be
+able to copy the folder over to your machine.
+<P>
+<b>Issue with Drawgram or Drawtree not finding .dll  libraries.</b>
+There has been a report that using Drawgram or Drawtree's Java front-end failed
+because a Dynamic Link Library (.dll file) is not found.  This has happened when
+people have a 64-bit Windows system but install the 32-bit version of PHYLIP.
+There are now both 64- and 32-bit versions of the executables available. If the
+problem with finding DLL files persists in spite of you having the correct
+version of the Windows executables, try installing the latest version of Java. (Thanks to Isha Androiya).
+<P>
+&nbsp;
+<P>
+<CENTER>
+<TABLE WIDTH=60%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+A</FONT><FONT SIZE=+2 COLOR="cyan">pple Mac OS</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+The archives for Intel iMac are in the Apple
+<tt>.dmg</tt> disk image format.
+There is one <tt>.dmg</tt> disk image distributed.  It is 12 Megabytes in
+size, and is compressed; when uncompressed it is several times larger.
+<P>
+It contains what looks like a normal folder called <tt>phylip-3.695</tt>, but
+<b><em>you should not use the programs while that folder is in the Downloads
+folder</em></b>.  It is
+<em>important</em> that you use a copy of the contents of the disk image
+elsewhere on your system.
+Decide where the folder <tt>phylip-3.695</tt> is going to reside, and move
+that folder to that new location.  Within it is all the
+source code, documentation, and executables. 
+</em>
+<P>
+The executables are 64-bit binaries which will run on
+Intel iMacs produced since about 2010.
+<P>
+<b>Enabling the programs to be run in a Terminal windows by typing their
+names:</b>
+A set of links can be set up in the <tt>exe</tt> folder to enable you to
+run the programs by simply typing their name.  If these are absent,
+which they should not be, there is one additional set of steps you need to do:
+<OL>
+<LI> Open a Terminal window (which you will find in the Utilities folder
+of the Applications folder).
+<LI> At the prompt, change to the folder where the PHYLIP executables
+are kept.  For example, if you have folder <tt>phylip-3.695</tt> on your
+desktop, type in the command<BR>
+<tt>cd ~/Desktop/phylip-3.695/</tt>
+<li> Copy the file <tt>linkmac</tt> from the <tt>src</tt> folder
+to this <tt>exe</tt> folder (by giving the command <tt>cp ../src/linkmac
+.</tt>)
+<LI> Change the permissions of the script <tt>linkmac</tt> to allow it to
+execute, by doing the command:<br>
+<TT>&nbsp;&nbsp;chmod +x linkmac</TT>
+<LI> Then execute the script by typing:
+<TT>&nbsp;&nbsp;./linkmac</TT>
+</OL>
+The result will be that the executables folder will now have a set of
+links, one for each program, that allow the programs to be executed
+simply by typing their names.   Thus the programs in that folder can
+then be executed either by clicking on their icon, or by typing their
+name (in lower case) preceded by <tt>./</tt> to indicate the current
+folder, such as <tt>./dnaml</tt>
+<P>
+This setting up of these links needs to done only once, and they will
+be available thereafter.
+<P>
+<h3>Two problems running our MacOS executables</h3>
+<P>
+<ol>
+<li> <b>The executables permission problem</b>:  The latest Mac OS
+operating system versions, since Mountain Lion, will not run executables of PHYLIP
+programs when you click in their icons.  It complains that the developer
+name is unknown.  This is a security feature.  The problem happens because
+when I made the 3.695 executables, I did not sign them with my Apple Developer
+identity, so they appear to be from some dangerous person.
+<P>
+<li><b>The file path problem</b>:  When the programs are run on recent
+versions of MacOS (since Catalina, which is MacOS 10.13) the system
+may report that it cannot find their default input files "infile" and/or "intree",
+or that they need to be told where to write the default output files such as "outfile".
+This is due to a change in the default values of the PATH variables.    The
+solution will be to use not just the name "infile" but the full file paths such as
+<tt>/User/Foobar/phylip/phylip-3.695/exe/infile</tt>
+</ol>
+To learn how to deal with these problems, look at the detailed instructions in our Bugs documentation page <a
+href="http://evolution.gs.washington.edu/phylip/bugs.html"><strong>here</strong></a>,
+and while you're at it, enjoy the image of the world's largest terrestrial true bug.
+<P>
+&nbsp;
+<P>
+<CENTER>
+<TABLE WIDTH=50%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+L</FONT><FONT SIZE=+2 COLOR="cyan">inux and</FONT></STRONG>
+<FONT SIZE=+3 COLOR="cyan">U</FONT><FONT SIZE=+2 COLOR="cyan">nix</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+You can easily install
+PHYLIP and compile it yourself on a Linux or Unix system,
+provided that you have a C compiler
+on your system.  (On some Linux systems and in some recent versions of Mac OS
+the C compiler is not installed by default, and you may have to
+make sure that it is installed).
+<P>
+The archive for Linux or Unix systems is just the Documentation and Sources archive.
+You can extract the files from the archive by putting it into a folder
+by itself, getting into that folder, and giving the command<BR>
+<DL>
+<DT>
+</DT>
+<DD><CODE>tar -zxvf phylip-3.697.tar.gz</CODE></DD>
+</DL>
+This uncompresses the archive so
+that it will now be bigger and then extracts
+the archive.  A <TT>phylip3.697</TT> folder is created that contains
+within it three folders, <TT>doc</TT>, <TT>exe</TT>, and <TT>src</TT>, as well
+as a web page <TT>phylip.html</TT>.  You should start with that web
+page.  It contains links to the documentation web pages, including the main
+documentation web page <TT>main.html</TT>.
+<P>
+To make executables, use your C compiler.  It is probably as simple as
+going into the <TT>src</TT> directory, copying <tt>Makefile.unx</tt> and
+calling the copy <tt>Makefile</tt>, and then typing the command<br>
+<PRE>
+    make install
+</PRE>
+which will cause the programs to be compiled and the executables and font
+files installed in
+the <TT>exe</TT> directory. Alternatively, you can type the command<br>
+<pre>
+    make -f Makefile.unx install
+</pre>
+instead.
+<p>
+If there are problems with the compilation,
+read the relevant sections of <TT>main.html</TT> and also the beginning of the
+<TT>Makefile</TT>.
+<P>
+</ol>
+With luck this will work.  After the compilation the executables and their font files
+will be in folder <tt>exe</tt>.
+<P>
+<b>Load Library Path problem</b>. &nbsp;&nbsp;  I have encountered problems with
+using the Java interface for the Drawgram and Drawtree programs on
+Linux systems.  When running the interface and using its Preview
+function to preview the tree, there may be an error message saying
+that the program has been unable to find the library file
+libdrawgram.so or libdrawtree.so.  These files are present in the
+executables folder, but the program still cannot find them
+unless the load library path is specified.  This can be done
+one of three ways:
+<ol>
+<li> Before running Drawtree or Drawgram, give a command to
+specify the path.  For example, you were user "ernie" and
+if the <tt>exe</tt> folder
+were the folder <tt>/home/ernie/phylip/phylip-3.697/exe</tt>
+you add that to the LD_LIBRARY_PATH variable with the command
+<pre>
+export LD_LIBRARY_PATH=/home/ernie/phylip/phylip-3.697/exe:$LOAD_LIBRARY_PATH
+</pre>
+This has to be done once each session.
+<li> Alternatively, you can put that command in the <tt>.bashrc</tt>
+or in the <tt>.bash_profile</tt> file in your home directory (folder)
+so that it is executed every time you log in.
+<li> If you have access to the <tt>/etc</tt> folder on your
+system, you could instead put the path <tt>/home/ernie/phylip/phylip-3.697/exe</tt>
+in the file <tt>/etc/ld.so.conf</tt> which informs your program where to
+search for libraries.
+</ol>
+These have been problems in recent versions of MacOS.  However, as of MacOS Catalina 10.5.17 these
+two problems seem to have gone away.  If you have either for any recent version of MacOS,
+do send us an email with details so we can keep the information here current.
+<P>
+&nbsp;
+<P>
+<CENTER>
+<TABLE WIDTH=60%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+M</FONT><FONT SIZE=+2 COLOR="cyan">acintosh Mac OS 8 or Mac OS 9</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+We don't think there are many Mac OS 8 or Mac OS 9 machines around any more
+-- Apple long ago abandoned that operating system, and it is probably not
+safe to use it on the Internet as it has not been upgraded to cope with
+recent security threats.  We no longer distribute Mac OS 8 or 9 executables
+for our most recent versions of PHYLIP.  Nevertheless, we do make
+available a Stuffit (.sit) archive of executables for PHYLIP 3.65, in the
+webpage on Old Versions of PHYLIP, just
+in case anyone needs it.
+<P>
+<P>
+<H2>Downloading the single Stuffit archive</H2>
+<P>
+The archives for Mac OS 8, Mac OS 9 Macintoshes are self-extracting archives.
+If you
+are fetching the files using a Web browser directly from your Mac, it will
+probably automatically invoke Stuffit Expander to unpack the archives into
+self-extracting archives.  Self-extracting archives are archives with a small
+self-extraction program on their front, so that when they are run as
+programs they write a great many files into a folder. 
+<P>
+Our default distribution is of a single large (4.9 Megabyte) Stuffit
+archive called <tt>phylip3.65.sit</tt>.  This should automatically be
+unstuffed as it is downloaded.  It contains the source code, documentation,
+and Mac OS executables.
+<P>
+<EM>However, at the moment we have reports of trouble running the unstuffed
+archives.  Recent versions of Mac OS 9, and also the Classic environment under
+Mac OS, seem to regard the executables files as text files, and they try to
+open them under SimpleText, which of course does not work.</EM>
+<P>
+<H2>Downloading multiple smaller Stuffit archives</H2>
+<P>
+Some people may wish instead to download these as a series of four
+archives.  This might be necessary, for example, if you wanted to
+transfer them to a machine that was not connected to the Internet, and needed
+them each to be small enough to write onto a floppy disk.
+<P>
+If you choose to download these instead of the single Stuffit archive,
+and our system does automatically invoke Stuffit Expander, four self
+extracting archives will
+be created on your desktop, and their file names will end in <CODE>.sit</CODE>.
+If you have Stuffit Expander, you can use it to expand them.
+<P>
+Once the archives are downloaded and extracted, they will put
+folders on the desktop.  One is called <TT>phylip</TT> and contains
+folders <TT>doc</TT> and <TT>src</TT> as well as a web page <TT>phylip.html</TT>.
+There are 307 files in all, as these include the documentation files, source
+code files, and compilation support files.  You may have to be patient
+while the archive is being extracted.
+<P>
+The three archives of Macintosh Mac OS 8 and Mac OS 9 executables will create folders <TT>exe</TT>,
+<TT>exe.1</TT>, <TT>exe.2</TT> and <TT>exe.3</TT> on the desktop when they are extracted.
+For some reason we could not create these inside the <TT>phylip</TT> folder,
+but that is where these files need to be put.  Do the following:
+<OL>
+<LI>Move the <TT>exe</TT> folder inside the <TT>phylip</TT> folder.
+<LI>Open the <TT>exe.1</TT> folder, and mark all of its files (you can do this
+using the <TT>Select All</TT> menu option in the system <TT>Edit</TT> menu).
+<LI>Drag this group of marked files into the <TT>exe</TT> folder which is
+now inside the <TT>phylip</TT> folder.
+<LI>Now do the same for <TT>exe.2</TT> (mark the files and drag them into
+<TT>exe</TT>).
+<LI>And do the same for <TT>exe.3</TT> (mark the files and drag them into
+<TT>exe</TT>).
+<LI> You can now discard the folders <TT>exe.1</TT>, <TT>exe.2</TT> and <TT>exe.3</TT> (if any). If you
+have four folders named <TT>phylip3.65.0.sit</TT>, <TT>exe.1.sit</TT>,
+<TT>exe.2.sit</TT>, and <TT>exe.3.sit</TT> on your desktop, these can
+be discarded too.
+<LI>The <TT>phylip3.65</TT> folder can now be moved to wherever you want it to
+be.
+</OL>
+<P>
+&nbsp;
+<P>
+<CENTER>
+<TABLE WIDTH=50%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+R</FONT><FONT SIZE=+2 COLOR="cyan">eading the documentation</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+The main folder contains a web page, <TT>phylip.html</TT>.  You
+should start by reading it (either by clicking on it to activate your
+browser, or calling it to the attention of your browser in some other way such
+as drag-and-drop).  It contains links to the documentation web pages, including
+the main documention page <TT>main.html</TT>, which you should read.
+<P>
+You can also read the latest documentation files here <a
+href="http://evolution.gs.washington.edu/phylip/doc/"><strong>at this link</strong></a>.
+<P>
+&nbsp;
+<CENTER>
+<TABLE WIDTH=50%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+E</FONT><FONT SIZE=+2 COLOR="cyan">xecutables available from others</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+Executables packages are also available from others.  For the moment, these
+are for earlier versions of PHYLIP (such as 3.61 and 3.68).  They
+include executables for Red Hat Linux, Debian Linux, NetBSD Unix for
+Intel-compatible processors, and FreeBSD Unix.  For links see
+<a href="getme-new1.html">our downloads page</a>.
+<P>
+<HR>
+<P>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>

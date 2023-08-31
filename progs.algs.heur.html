@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE> PHYLIP Heuristic search programs </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<H1>Heuristic search for best tree </H1>
+
+<P>
+<IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROTPARS</STRONG>.  Estimates phylogenies from protein sequences (input using the
+   standard one-letter code for amino acids) using the parsimony method, in
+   a variant which counts only those nucleotide changes that change the amino
+   acid, on the assumption that silent changes are more easily accomplished.
+
+<P>
+<IMG SRC="icons/DNA.gif" ALT="[Icon]"> <STRONG>DNAPARS</STRONG>.
+Estimates phylogenies by the parsimony method using nucleic acid
+   sequences.  Allows use the full IUB ambiguity codes, and estimates
+   ancestral nucleotide states.  Gaps treated as a fifth nucleotide state.
+   It can also fo transversion parsimony.  Can cope with multifurcations,
+   reconstruct ancestral states, use 0/1 character weights, and infer branch
+   lengths.
+
+<P>
+<IMG SRC="icons/DNA.gif" ALT="[Icon]"> <STRONG>DNACOMP</STRONG>.
+Estimates phylogenies from nucleic acid sequence data using
+   the compatibility criterion, which searches for the largest number of sites
+   which could have all states (nucleotides) uniquely evolved on the same
+   tree.  Compatibility is particularly appropriate when sites vary greatly in
+   their rates of evolution, but we do not know in advance which are the less
+   reliable ones.
+
+<P>
+<IMG SRC="icons/DNA.gif" ALT="[Icon]"> <STRONG>DNAML</STRONG>.
+Estimates phylogenies from nucleotide sequences by maximum
+   likelihood.  The model employed allows for unequal expected frequencies of
+   the four nucleotides, for unequal rates of transitions and transversions,
+   and for different (prespecified) rates of change in different categories of
+   sites, and also use of a Hidden Markov model of rates, with
+   the program inferring which sites have which rates.  This also
+   allows gamma-distribution and gamma-plus-invariant sites distributions of
+   rates across sites.
+
+<P>
+<IMG SRC="icons/DNA.gif" ALT="[Icon]"> <STRONG>DNAMLK</STRONG>.   Same as DNAML but assumes a molecular clock.  The use of the
+   two programs together permits a likelihood ratio test of the
+   molecular clock hypothesis to be made.
+
+<P> <IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROML</STRONG>.
+Estimates phylogenies from protein amino acid sequences by maximum
+   likelihood.  The PAM, JTT, or PMB models can be employed, and also use
+   of a Hidden Markov model of rates, with the program inferring which sites
+   have which rates.  This also allows gamma-distribution and
+   gamma-plus-invariant sites distributions of rates across sites.
+   It also allows different rates of change at known sites.
+                                                                               
+<P> <IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROMLK</STRONG>.
+Same as PROML but assumes a molecular clock.  The use of the
+   two programs together permits a likelihood ratio test of the
+   molecular clock hypothesis to be made.
+
+<P>
+<IMG SRC="icons/RESTRICT.gif" ALT="[Icon]"> <STRONG>RESTML</STRONG>.  Estimation of phylogenies by maximum likelihood using restriction
+   sites data (not restriction fragments but presence/absence of individual
+   sites).  It employs the Jukes-Cantor symmetrical model of nucleotide
+   change, which does not allow for differences of rate between transitions
+   and transversions.  This program is VERY slow.
+
+<P> <IMG SRC="icons/DISTANCE.gif" ALT="[Icon]"> <STRONG>FITCH</STRONG>.
+Estimates phylogenies from distance matrix data under the
+   "additive tree model" according to which the distances are expected to
+   equal the sums of branch lengths between the species.  Uses the
+   Fitch-Margoliash criterion and some related least squares criteria, or
+   the Minimum Evolution distance matrix method.  Does
+   not assume an evolutionary clock.  This program will be useful with
+   distances computed from molecular sequences, restriction sites or fragments
+   distances, with DNA hybridization measurements, and with genetic distances
+   computed from gene frequencies.
+                                                                               
+<P> <IMG SRC="icons/DISTANCE.gif" ALT="[Icon]"> <STRONG>KITSCH</STRONG>.
+Estimates phylogenies from distance matrix data under the
+   "ultrametric" model which is the same as the additive tree model except
+   that an evolutionary clock is assumed.  The Fitch-Margoliash criterion and
+   other least squares criteria, or the Minimum Evolution criterion are
+   possible.  This program will be useful with
+   distances computed from molecular sequences, restriction sites or
+   fragments distances, with distances from DNA hybridization measurements,
+   and with genetic distances computed from gene frequencies.
+                                                                               
+<P> <IMG SRC="icons/DISTANCE.gif" ALT="[Icon]"> <STRONG>NEIGHBOR</STRONG>.
+An implementation by Mary Kuhner and John Yamato of Saitou and
+   Nei's "Neighbor Joining Method," and of the UPGMA (Average Linkage
+   clustering) method.  Neighbor Joining is a distance matrix method producing
+   an unrooted tree without the assumption of a clock.  UPGMA does assume a
+   clock.  The branch lengths are not optimized by the least squares criterion
+   but the methods are very fast and thus can handle much larger data sets.
+
+<P>
+<IMG SRC="icons/CONTCHAR.gif" ALT="[Icon]"> <STRONG>CONTML</STRONG>.
+Estimates phylogenies from gene frequency data by maximum
+   likelihood under a model in which all divergence is due to genetic drift in
+   the absence of new mutations.  Does not assume a molecular clock.  An
+   alternative method of analyzing this data is to compute Nei's genetic
+   distance and use one of the distance matrix programs.
+   This program can also do maximum likelihood analysis of continuous
+   characters that evolve by a Brownian Motion model, but it assumes that
+   the characters evolve at equal rates and in an uncorrelated fashion, so
+   that it does not take into account the usual correlations of characters.
+
+<P> <IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>PARS</STRONG>.
+Multistate discrete-characters parsimony method.   Up to 8 states
+  (as well as "<TT>?</TT>") are allowed.  Cannot do Camin-Sokal or Dollo Parsimony.
+  Can cope with multifurcations, reconstruct ancestral states, use character
+  weights, and infer branch lengths.
+
+<P>
+<IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>MIX</STRONG>.
+Estimates phylogenies by some parsimony methods for discrete
+   character data with two states (0 and 1).  Allows use of the
+   Wagner parsimony method, the Camin-Sokal parsimony method, or arbitrary
+   mixtures of these.  Also reconstructs ancestral states and allows weighting
+   of characters (does not infer branch lengths).
+                                                                               
+<P>
+<IMG SRC="icons/DOLLO.gif" ALT="[Icon]"> <STRONG>DOLLOP</STRONG>.
+Estimates phylogenies by the Dollo or polymorphism parsimony
+   criteria for discrete character data with two states (0 and 1).  Also
+   reconstructs ancestral states and allows weighting of characters.  Dollo
+   parsimony is particularly appropriate for restriction sites data; with
+   ancestor states specified as unknown it may be appropriate for restriction
+   fragments data.
+
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
+

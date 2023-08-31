@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE>PHYLIP restriction sites programs </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<H1> restriction sites data </H1>
+
+<P> <IMG SRC="icons/RESTRICT.gif" ALT="[Icon]"> <STRONG>RESTML</STRONG>.  Estimation of phylogenies by maximum likelihood using restriction
+   sites data (not restriction fragments but presence/absence of individual
+   sites).  It employs the Jukes-Cantor symmetrical model of nucleotide
+   change, which does not allow for differences of rate between transitions
+   and transversions.  This program is VERY slow.
+
+<P> <IMG SRC="icons/RESTRICT.gif" ALT="[Icon]"> <STRONG>RESTDIST</STRONG>.
+Distances calculated from restriction sites data or
+   restriction fragments data.  The restriction sites option is the one to
+   use to also make distances for RAPDs or AFLPs.  The distances can then
+   be used with the <A HREF="progs.data.dist.html">distance matrix programs</A>
+
+<P> <IMG SRC="icons/DISCRETE.gif" ALT="[Icon]">(In addition, we can use the <A HREF="progs.data.disc.html">discrete character (0,1) programs</A> to do
+parsimony methods on restriction sites.
+
+<P> <IMG SRC="icons/BOOT.gif" ALT="[Icon]"> <STRONG>SEQBOOT</STRONG>.
+Reads in a data set, and produces multiple data sets from
+   it by bootstrap resampling.  Since most programs in the current version of
+   the package allow processing of multiple data sets, this can be used
+   together with the consensus tree program CONSENSE to do bootstrap (or
+   delete-half-jackknife) analyses with most of the methods in this package.
+   This program also allows the Archie/Faith technique of permutation of
+   species within characters.
+
+<P> <IMG SRC="icons/CONSENSE.gif" ALT="[Icon]"> <STRONG>CONSENSE</STRONG>.  Computes consensus trees by the majority-rule consensus tree
+   method, which also allows one to easily find the strict consensus tree.
+   Does NOT compute the Adams consensus tree.  Trees are input in a tree file
+   in standard nested-parenthesis notation, which is produced by many of the
+   tree estimation programs in the package.  This program can be used as the
+   final step in doing bootstrap analyses for many of the methods in the
+   package.
+
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
+

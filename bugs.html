@@ -1,0 +1,1097 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE>Bugs in PHYLIP, known or recently fixed </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<P>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="navy"><STRONG><FONT SIZE=+3 COLOR="cyan">
+B</FONT><FONT SIZE=+2 COLOR="cyan">ugs in PHYLIP, known or recently fixed</FONT>
+</STRONG>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+<P ALIGN=CENTER>
+<TABLE BORDER=0><TR><TD><DIV ALIGN=CENTER><A
+HREF="http://en.wikipedia.org/wiki/Giant_mesquite_bug">
+<IMG SRC="icons/thassus.small.gif" ALT="[A picture of the hemipteran bug Thasus]"></A></DIV></TD></TR>
+<TR><TD><DIV ALIGN=CENTER><FONT SIZE=-2>The hemipteran <em>Thasus</em>,  a true bug</font></DIV></TD></TR></TABLE></P>
+<P>
+This page shows only recent bugs, but we make this listing cumulative so that
+it will have ever more material on it (we never run out of bugs).  Not all
+bugs we find or fix can be shown -- these are only the most dramatic ones.
+<P>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+K</FONT><FONT SIZE=+2 COLOR="cyan">nown bugs (we're working on them)</FONT>
+</STRONG>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+<h3>Two irritating problems with recent versions of MacOS</h3>
+<p>
+There are two serious problems running PHYLIP 3.695 executables in recent
+versions of the MacOS operating system.  Fortunately there are workarounds,
+and although each is tedious, it only has to be done once for each program
+that is affected.  Then, after that, you will not have the problem again for
+that program.
+<P><em>Latest news</em>:  These two problems seem to have gone away
+with the update of MacOS to version 10.15.7.  At least they did on my
+computer.  If you have a recent version of MacOS and see these problems,
+do send me an email giving the details.
+<dl>
+<dt><b>Problem 1</b></dt>
+<dd> In recent versions of MacOS such as some recent versions of MacOS Catalina), when you click on
+a program icon (in the "exe" folder) you will be presented with a box which says that the program comes from
+an unknown developer, and you will not be offered any option to open it anyway.
+
+is a security feature.  For many versions of MacOS 
+there is an easy workaround for this that needs to be
+done once for each program: When this occurs,
+<ul>
+<li> If you have the usual Apple one-button mouse, try control-clicking on the
+program icon instead.
+<li> If you have a two-button mouse try right-clicking, or
+<li> If you are using the mousepad instead, try a two-finger press
+</ul>
+A menu should pop up nearby.  Select not Open but control-click on Open.
+You will then see a box which has an option to open the program
+anyway.
+This allows the program to
+be opened in the future simply by clicking on 
+the executable icon. So these steps only need to
+be done once for each of the programs in PHYLIP, and after that the program can
+be run by clicking on the icon for that program. We hope to avoid this in
+future versions by signing the programs with my Apple Developer identity.
+<P>
+There are two other considerations, one of which evades the problem, the other
+of which requires a different response:
+<ul>
+<li> In
+versions of MacOS before Mojave, this
+problem does not arise if you open a program in a Terminal
+by typing its name.
+<li> In some versions of MacOS from Mojave on, you won't be given any option to
+tell the operating system that you want to open the program anyway.  And even
+using the Terminal utility, the operating system will stop your program from
+running, and complain.  Fortunately, there is another way that does work.
+You have to open the System Preferences (which has a gear icon) and choose
+its General tab, then choose Security and Privacy.  You should then see, towards
+the bottom of the window, an error message that the program is from an unknown
+developer.  Right-click (or control-click, or do a two-finger mousepad click)
+on thie, and choose from the menu that appears the option of giving permission
+for this application to run.  It will then be placed on an exception list and
+should run after that, when chosen.
+</ul>
+<P>
+<dt><b>Problem 2</b></dt> <dd>
+In versions 10.14, 10.15, and
+11 (Mojave, Catalina, and Big Sur) if you go to the "exe" executables
+folder and run a program by clicking on its icon, the program will
+look for files named "infile" and "intree" to read data from.  Even if
+they are present in the folder with those names, under these recent
+versions of the operating system the program will report that it
+cannot find them.  This seems to be the result of a change in the
+default path variables in the operating system.
+<p>
+There are two ways of working around this:
+<P>
+<ul>
+<li> When the program asks you to type in the name of a file, give the
+full path to the file, all the way from the outermost level of the
+file system.  Thus to have the program find "infile", if the folder
+with the executables is &nbsp;&nbsp; /User/Joe/phylip-3.695/exe/ &nbsp;&nbsp; you need to type that string in full as
+the folder name with the file name.  For example:
+<pre>
+ /User/Joe/phylip-3.695/exe/infile
+</pre>
+This will work, but is quite tedious.  You can find this path string by
+right-clicking (or control-clicking, or two-finger mousepad clicking)  on the file
+icon for "infile" while pressing on the
+"option" key.  A menu will appear.  Select the item &nbsp;&nbsp;<tt>Copy "infile" as
+full pathname&nbsp;&nbsp;</tt>.
+You can then paste it in when the program wants the input file name.
+You might also receive a message that the output file cannot be written.  In
+that case you also need to specify a valid path, for example
+<pre>
+/User/Joe/phylip-3.695/exe/outfile
+</pre>
+<li>
+Instead of running the program by clicking on its icon, use the
+Terminal utility.  This is found in the Utility folder within the
+computer's Applications folder.  It can be run and it will start by
+showing you a prompt -- you will then be in your own user folder.  To
+change to the "exe" folder you should type a change-directory command
+such as <tt> cd /User/Joe/phylip-3.695/exe </tt>.  (Do not click on anything,
+while running Terminal you are now back in the era of the command-line
+before the mouse existed).  Once you are in "exe", the very first time
+you do this, run a command called <tt>linkmac</tt> which is in the "src"
+folder. Before you run it, you will want to change its file
+permissions by typing the command.
+<pre>
+chmod +x ../src/linkmac
+</pre>
+You run it by typing the command 
+<pre>
+../src/linkmac
+</pre>
+(the dots are important).That will set up a set of "links" in the exe folder.
+The good news is that you only need to do that once -- it affects all
+PHYLIP programs from then on.   Now you can run any PHYLIP program by typing its
+name, in lower-case letters, preceded by a period and a slash.  For example, to
+run Dnaml, type 
+<pre>
+./dnaml
+</pre>
+followed by pressing on the Enter (Return) key.  The program will now be able
+to find files such as  infile  and  intree,  and write files such as
+outfile  and outree, just as it could in previous versions of MacOS.
+If you will continue to want to use Terminal this way, you should
+think of pinning it to the task bar or putting a link to it on your
+desktop.
+</ul>
+<P>
+Many thanks to David Heckel for pointing out this problem and helping
+explore workarounds.
+</dd>
+</dl>
+<P>
+<h3>Bugs we know how to fix; the fixes will appear in the next release</h3>
+<P>
+<UL>
+<li> At a number of points in the main documentation file for version 3.695,
+the version number of the package is described as 3.7a, or the folder in
+which the package is to exist is named  <tt>phylip-3.7a</tt>.  These of
+course should have been respectively 3.695 and <tt>phylip-3.6</tt>.  There
+actually will be no version 3.7; the next major release will be version 4.0.
+<li> People trying the compile the source code in Linux or other versions of
+Unix cannot simple type the command <tt>&nbsp;make install&nbsp;</tt> while the current
+folder is the <tt>&nbsp;src&nbsp;</tt> folder.  That would require a makefile named
+<tt>&nbsp;Makefile&nbsp;</tt>.  But in version 3.695 the Linux/Unix makefile is actually
+named <tt>&nbsp;Makefile.unx&nbsp;</tt>. It is probably as simple as
+going into the <TT>&nbsp;src&nbsp;</TT> directory, copying
+<tt>&nbsp;Makefile.unx&nbsp;</tt>  and
+calling the copy <tt>&nbsp;Makefile&nbsp;</tt>, and then typing the command<br>
+<pre>
+    make install
+</pre>
+which will cause the programs to be compiled and the executables and font
+files installed in the  <tt>&nbsp;exe&nbsp;</tt>  directory. Alternatively, you can type the command
+<pre>
+    make -f Makefile.unx install
+</pre>
+instead.
+<li> Dnadist has an error for the case in which sites are weighted (menu option
+W).   In those cases some subscripts of an array are generated which cause
+memory access violations (elements before the start of the array are accessed).
+If you can recompile the program, the problem can be fixed by adding one line
+to the code.  Just before line 642, add the line
+<pre>
+    if (location[ally[i]-1] > 0)
+</pre>
+so that the code there now reads:
+<pre>
+  for (i = 0; i < sites; i++)
+    if (location[ally[i]-1] > 0)
+      weight[location[ally[i] - 1] - 1] += oldweight[i];
+</pre>
+</UL>
+<P>
+<h3>Bugs we are still intending to work on and haven't yet fixed</h3>
+<uL>
+<li> Fitch has a bug (or lack-of-feature).  When an input tree has a
+multifurcation (other than a trifurcation at its base) then Fitch uses only 
+the first two "furcs" at that fork.  The result is that the tree it 
+reads in lacks some species, and of course that can cause further problems.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will often be a problem for people who are using a consensus tree
+from boostrapping and want to use Fitch to infer branch lengths for it.
+The best we can suggest is that you either (1) use Dnaml or Proml together 
+with the original sequence data and the input tree -- Dnaml will correctly 
+read your multifurcating input tree, or (2) use Retree to take each 
+multifurcation and,
+by hand, resolve it into a series of bifurcations by removing and re-adding
+lineages and making the new branches have lengths zero, and then once the tree
+is bifurcating, use it as an input tree with Fitch.
+<P>
+<li> Promlk seems not to be functioning properly.  (Fortunately, Promlk is
+one of the less-used programs in the package).  When it searches for the
+best tree it seems to get a tree with all branch lengths of zero, which is
+blatantly wrong.  When it is used in U (user tree) mode with an input
+tree file, but re-estimating the branch lengths, it also gets zero branch
+lenghts.  Only when it uses the U (user tree) mode, not re-estimating
+the branch lengths, but using the ones in the user-defined tree, does it
+work properly. These problems seem to have been present since version 3.69.
+Be cautious about any runs with this program.
+<P>
+<LI> When Fitch is used on only three species, it results in blank output.
+We need to put in an error message about this.  People needing to do a
+distance matrix tree on three species should use Neighbor instead.  Of
+course, for three species there is only one possible unrooted tree, and
+that's what you get, with the sums of the branch lengths between each
+pair of species adding up exactly to the observed distances.
+<P>
+<LI>When Seqboot is used on discrete morphological (0/1) data, and
+one uses the Factors feature while choosing the option of
+permuting the order of characters, invalid (null) characters are
+produced in the output file, and the output is presumably invalid.
+It may take some time to untangle this one.
+<P>
+<LI>On Mac OS X, Retree crashes if you construct a tree yourself but make it
+only 2 species.
+<P>
+<LI>On Mac OS X, when Drawtree is asked to show in the preview a label which has a non-Hershey font at an
+angle in a preview, it instead shows it horizontally.  The final plot is OK,
+however.
+<P>
+<LI>On Mac OS X, when Drawgram is asked to show in the preview a label which
+has a non-Hershey font at an angle, it shows it as a Hershey font instead,
+and the spacing of the labels is then wrong, both there and in the final
+plot.
+<P>
+<LI> On Mac OS X, running the 32-bit executables that we distribute,
+there can be memory problems with Proml for large data sets.   In particular,
+Proml allocates some more memory for each data set run, so in a
+multiple-data-set run such as a bootstrap run, with enough replicates one can
+exceed the 4 GB of memory that is all that can be addressed with
+32-bit code.  We think that this problem does not affect the results, as
+it is most likely just failure to deallocate the memory before allocating
+again.  Here are two possible solutions:
+<ul>
+<li> Recompile Proml in such a way that
+64-bit code can be created, which would enable Proml to use all the
+available system memory.
+<li> Another is to take the bootstrap replicates, divide them into
+separate files, each with (say) 1/5 of the replicates.  Run Proml on each
+separately, and then take the resulting tree files and
+concatenate them into one bigger tree file before running Consense.
+</ul>
+</UL>
+<P>
+&nbsp;
+<P>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+R</FONT><FONT SIZE=+2 COLOR="cyan">ecently fixed bugs</FONT></STRONG>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+These are listed by the version of the package that fixed them, in reverse
+chronological order (i.e., latest first).  To see what bugs you have in
+the version of PHYLIP that you have, read down, stopping when you reach
+your version.
+<DL>
+<DT> <strong>version 3.698</strong> (October, 2019)
+<DD> A serious problem arose due to recent changes in Microsoft
+Windows.  Here is the background and some suggested workarounds:
+<P>
+For the two tree-plotting programs (Drawgram and Drawtree) the Java environment
+that we use to develop the front end ended up making Java code that calls a
+compiled C program that is in a Dynamic Link Library (DLL).  Originally that program
+was 32-bit code that would run on Windows systems that were either 32-bit or
+64-bit.
+<P>
+Lately, however, the Java systems installed on Windows were only willing to
+run 64-bit executables. And only willing to look for those executables in
+DLLs that contain 64-bit compiled code.  But the compiled executables for
+Windows for 3.695 make 32-bit code, put it in the DLLs, and put those in
+a different folder than Java looks at.  So the "path" Java uses is wrong.
+<P>
+I finally managed to recompile the code so as to have everything be 64-bit code.
+So everything works in version 3.698.  Our downloads page now has both a
+Windows 64-bit version and a Windows 32-bit version available.
+<P>
+If you can't install those for some reason, here were some possible work-arounds:
+<ol>
+<li> Find an old Windows system that is happy with 32-bit executables and whose
+installed Java is happy with 32-bit code in DLLs, and install
+PHYLIP and run it there.
+<li> Move your tree to a MacOS system and have PHYLIP installed there.  It should
+run correctly there.
+<li> Move your tree to a Linux system and have PHYLIP installed there.  It should
+run correctly there.
+</ol>
+<P>
+</DT>
+<DT> <strong>version 3.697</strong> (December, 2017)
+<DD>
+The bug recently found in the consensus-tree code by Makoto Shimada and
+Tsunetoshi Nishida, and described in their paper in Molecular Phylogenetics
+and Evolution (volume 109, pages 409-414, 2017) is now fixed using the fix
+that they provided.  This is for the source code.  The executables are
+currently still at version 3.695, and so still have this bug.  The bug makes
+no difference if the product of the number of species times the number of
+trees is less than 32767, as it only has an effect when the hash table of
+partitions found overflows, and has to be expanded and repopulated.
+<P>
+</DD>
+<DT> <strong>version 3.695</strong> (April, 2013)
+<DD>
+<ul>
+<li> Thanks to Brian Fristensky for pointing out that the L option (restriction
+site length) in the menu of Restml does not work.  When you select it, nothing
+happens.  This is because of a simple error in line 930 of <tt>restml.c</tt>
+where the letter L got left out of the string.  But there is an easy workaround
+without recompiling Restml.  Just (1) select the U option (user-defined tree),
+(2) now the L option can be selected and you can change the restriction site
+length, and (3) if you're not going to use a user-defined tree, then just
+select U again.  You'll be back to searching for the best tree and the
+restriction site length will have been changed.
+<LI> We have received a number of reports that Drawgram and Drawtree will not
+run on some (all?) Mac OS X 10.6 (Snow Leopard) systems.  Instead an error
+message appears saying that the Classic environment is not available (which is
+weird since Classic was for Mac OS 9 code, which this is not).  An alternative
+is to
+<ol>
+<li> Go into the <tt>src</tt> folder in the PHYLIP folder and recompile
+Drawgram and Drawtree by issuing the commands <tt>make drawgram</tt> and
+<tt>make drawtree</tt>.   This will cause the GCC compiler to compile
+versions of Drawgram and Drawtree that do not use the Mac OS X Aqua windowing
+system but use X Windows instead.
+<li> These two executables can then be
+moved to the <tt>exe</tt> folder.
+<li> They can be run by activating the X Windows system.   The
+X Windows icon will be found in the Utilities folder which is in the
+Applications folder (use the Finder window).
+<li> Once the X11 terminal window appears (if it does not appear it can be
+activated by using the Applications menu of the X11 application), navigate to
+the <tt>exe</tt> folder using commands such as <tt>cd
+Desktop/phylip-3,69/exe</tt>
+<li> The program can then be run by typing the command <tt>./drawgram</tt> or
+<tt>./drawtree</tt>
+</ol>
+A full fix for this problem will be difficult.  We have been aware for some
+time that Mac OS X has ceased support for the Carbon windowing system and
+wants us to instead use the more recent Cocoa system, and the Objective C
+programming language.  This will require some serious programming, and we
+do not currently have a programmer to do it.  If any of you want to try, you
+should contact me.
+<LI> Treedist is using too much memory, which makes cases with large
+numbers of species and large numbers of trees unable to run.
+If you can recompile, the following fix should help:
+<ol>
+<li> In cons.c, add a line after line 1382:
+<pre>
+        *timesseen[i] = 0;
+</pre>
+<li> In treedist.c, add a line after line 1206:
+<pre>
+   maxgrp = 4*tip_count;
+</pre>
+</ol>
+These will reduce the memory useage while allowing the program to
+still calculate the distances.
+</ul>
+</dd>
+<DT> <strong>version 3.69</strong> (September, 2009)
+<DD>
+<UL>
+<LI> If there are more than about 50 species in the tree, Treedist can fail to
+compute distances among the trees.  This is due to an overflow problem
+inadvertently introduced in version 3.68.  There is no workaround with the
+3.68 executable, but if you can recompile you can fix it by
+replacing line 1179 of <tt>treedist.c</tt>, which is currently
+<PRE>
+  maxgrp = pow(2,tip_count);
+</PRE>
+by
+<PRE>
+  maxgrp = 100000;
+</PRE>
+This is fixed in version 3.69.
+Versions prior to 3.68 will not have this problem.
+<LI> In Dnacomp, Pars, and Dollop, if the Shimodaira-Hasegawa test is performed
+and there are trees perfectly tied with the best tree,
+the P values were incorrect (being 0 instead of 1).
+<LI> A team from Iowa State University noticed that time was being wasted
+in calculations in Dnapenny in the bound calculations.  This has now been
+remedied and it should be noticeably faster.
+<LI> In the molecular likelihood programs, ancestral state probabilities were being incorrectly calculated for
+user trees that had internal multifurcations.  This has been corrected.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.68</STRONG> (August, 2008)
+<DD>
+<ul>
+<li> We received some reports that Dnaml was freezing on some data sets in
+the Windows executables.  This seems to have been because of incorrect
+handling of small increases in the log-likelihood, causing the
+algorithm to fall into loops.  It was temporarily cured in version
+3.67 by changing the compiler optimization level, downwards from
+-O3 to -O1.  Now the underlying problem of small differences of
+log-likelihood has been addressed too, so you should use the new
+Windows executables (3.68) to avoid having these problems on Windows
+systems.
+<li> We found that the .DMG (disk image) archive for Mac OS X contained
+executables for the Intel Mac but not universal binaries that would work on
+both Intel Mac and PowerPC systems.  Oops.  We recompiled and reposted
+the archives (on 23 August 2007).  They should work on both kinds of systems
+now.
+<li> We were told that on a Linux computer with a 64-bit Intel
+Itanium chip the bootstrapping program Seqboot creates blatantly wrong
+bootstrap samples with characters sampled too many times (or none).  On a
+64-bit AMD processor the program works fine.  The problem is in the
+random number function "randum" in phylip.c.  It seems to be a problem
+with optimization on the GCC compiler.  It is cured by dropping the
+compiler optimization level from -O3 to -O2.
+<li> In Protdist the program would blow up if it computes a distance greater
+than 100.0.  This is owing to a subscript error in the code that writes
+out the distances, in line 1874 where<br>
+<pre>
+            else if (d[j][k] < 1000.0)
+</pre>
+should have been
+<pre>
+            else if (d[i][j-1] < 1000.0)
+</pre>
+If you have this problem and cannot upgrade to version 3.68 or
+recompile the program with this change,
+and your data comes from bootstrapping, try omitting just that replicate, or
+else rerunning the bootstrapping with a different random number seed (which
+might not happen to drop as many of the sites that caused these two
+sequences to be so distant).
+<li> When Dnadist is used and the lower-triangular output format is chosen,
+the resulting file has headers at the top of columns and is human-readable but
+is not machine readable.  The (temporary) solution is not to use this option
+for the time being.
+<li> In Mac OS X, Drawgram produces some alarming lines of text at the top
+of its terminal window when it first runs.  These are just scripting commands
+that were not erased because we do not clear the screen at the right moment.
+The workaround is simply to ignore these commands.
+</ul>
+</dd>
+<DT> <STRONG>version 3.67</STRONG> (July, 2007)
+<DD>
+<ul>
+<li> We had our first reports on the behavior of PHYLIP Windows executables
+on Windows Vista.  The programs work fine.  The only thing that did not
+work is the self-extraction program that unpacks the archives.  For some
+reason it did not work on Vista.  The work-around was that, after you got
+an archive file like  phylipwx.exe  onto your system, you had to change the
+file extension
+from "exe" to "zip".  Then you had to click on the file.  You were presented
+with options including "Extract all files".  If you chose that the archive
+was unpacked.  The programs would then work.  Although we provided "zip" archive
+versions of the package, we have now got a new version of WinZip which is
+supposed to have a self-extractor that works on Windows Vista, and it was
+used to produce the self-extracting archive since 27 August 2007.
+<li> On Mac OS X systems, if our distributed executables are placed in
+a folder whose path contains a name with an internal blank, such as
+<tt>/Users/ianr/the files/</tt> then the script that causes each of our
+programs to run when you click on the corresponding icon does not work, and
+there is an error message.  This is a scripting error in our Mac OS X setup,
+and it was corrected in version 3.67. In the meantime, if you have this
+problem, the solution is to put PHYLIP in a folder whose path does not have any
+folder that has a blank in its name.  In the above example, all that would be
+necessary is to rename the folder <tt>the files</tt> to <tt>the_files</tt>
+<li> We are still getting reports of stickiness of the tree, and occasionally
+of negative branch lengths, in Dnamlk and Promlk which do not do as good a job
+of searching for best trees as they should.  This has turned out to be an
+issue of nodes getting stuck when they collide in moving them on the "time"
+scale.  Some major changes were in the code in the 3.67 release to
+eliminate this stickiness and give a good search.
+<li> An error was made in putting together the matrices for the PAM
+mutation model in Protdist, Proml, and Promlk.  These programs will
+give PAM calculations inconsistent with earlier (v3.65 and before)
+versions, and with other programs.  The matrices were corrected
+in version 3.67.  This does not affect JTT or PMB models.
+<li> The W (within-species varation) option of CONTRAST uses somewhat incorrect
+equations to infer within-species covariances and phylogenetic covariances.
+These were corrected in version 3.67.  Anyone severely impacted by the
+problem in the meantime should contact me.
+<li> Protdist sometimes results in distances greater than or equal to 100.000.
+When this happens, the distance can run together with the previous number in
+the output file.  For example, a distance of 0.31766 followed by one which is
+127.43986 might look like this: "0.31766127.43986".  This causes trouble in
+any program that tries to use this distance matrix.  One symptom of this
+may be the program reporting that two distances which are expected to be
+equal are unequal -- but then printing them both out, and they appear to be
+equal!  In this case it would print out a message warning you that
+0.31766 was not equal to 0.31766.  It is doing so because one of them is
+actually seen by it as 0.31766127 and the other 0.31766.  In all future
+versions, there will be a blank printed between the two numbers.  For the
+present, use an editor to find them and insert the blank by hand.  If this
+is difficult, a Sed script (which can be used on Linux or Unix machines)
+has been written by Doug Scofield, and is available from him at:
+<a href="http://intron.bio.indiana.edu/~scofield/physed.htm">this link</a>.
+Many thanks to him for this.  As you can see, this problem is the result
+of us not thinking of what happens when the distances are big, and the
+fix in the code is trivial -- just ensuring that there is at least one
+blank between successive distances.
+<li> Contml, with gene frequencies, has a bug in the transformation to
+variables that have approximate Brownian motion as their evolutionary
+process.  This can lead to wierd trees.  It might be preferable to go back
+to the 3.5c version if you need to use Contml for this.  We believe that
+this will be correctly fixed in the 3.67 version.  If people can recompile
+the source code, they replace the function <tt>transformgfs</tt> with 
+<a href="transformgfs.c">this one</a> and recompile (you should be able
+to save it from your browser using the <tt>Save As</tt> choice in its
+<tt>File</tt> menu.
+</ul>
+</DD>
+<P>
+<DT> <STRONG>version 3.66</STRONG> (August, 2006)
+<DD>
+<UL>
+<LI> Program Treedist was found to compute the Branch Score Distance
+incorrectly.  It will, in most cases, get the branch lengths in 
+terminal branches incorrect and then be likely to find a nonzero distance
+between trees when they are really identical, and incorrect distances
+when they are not identical.  Alas, there is no workaround to avoid this.
+All distances done with this option before version 3.66 should be regarded as
+incorrect
+unless all terminal branches have the same length, or unless the order
+of species in the tree is the same as in the first tree in the file.
+The Symmetric Difference option, which does not use branch lengths,
+works properly.
+<LI> Program Dnamlk, when run on Linux or Windows systems, sometimes gave
+negative branch lengths for some branches on the tree.  This is bad.
+Although we at first thought that this was a compiler bug, it seems to
+be a lack of initialization of some pointers.  Program Promlk may have
+the same problem, as they share code.
+If you have this problem you can work around it by
+not using the Global menu option when running Dnamlk (or Promlk).  If you
+need more
+extensive tree search the J (Jumble) option may be your best bet.
+<LI> On Windows (at least, on Windows xp), our executables for version 3.65
+produce output files (<tt>outfile</tt>) and output tree files
+(<tt>outtree</tt>) that have end-of-line characters that result in their
+being hard to read on the Notepad editor.  They appear as one big line.  If you
+use the Wordpad editor, or Microsoft Word itself, the files will be readable.
+This is and end-of-line compiler setting we got wrong when compiling the
+programs.
+<LI> Programs Dnaml and Proml sometimes failed to iterate branch lengths in
+trees enough -- this can result in them failing to find as good a tree as
+the molecular clock versions Dnamlk and Promlk, a phenomenon that is not
+supposed to occur.  The problem results from the iteration code in
+function <tt>makenewv</tt> giving up too easily when branch lengths are
+very short.   The resulting branches get "stuck" at length 0 when they
+should not.   If you can recompile the programs, the problem can be solved by
+the following changes:
+<ul>
+<li> In file <tt>phylip.h</tt> change the value of the constant <tt>iterations</tt> to 8 instead of 4.
+<li> In files <tt>dnaml.c</tt> and <tt>proml.c</tt>, change function
+<tt>makenewv</tt> to replace
+<pre>
+   done = fabs(y-yold) < epsilon; 
+</pre>
+by
+<pre>
+   done = fabs(y-yold) < 0.1*epsilon; 
+</pre>
+<li> In dnaml.c, in function <tt>makenewv</tt>, also replace*
+<pre>
+     if (yold < epsilon)
+        yold = epsilon;
+</pre>
+by
+<pre>
+     if (y < epsilon)
+        y = epsilon;
+</pre>
+</ul>
+We think these fix the problem.  Some more thorough fixes are implemented in
+the 3.66 code.
+<LI> The Mac OS X archives (in .dmg form) appeared at first sight not to have
+any executables directory in the package.  This is owing to strange placement
+of icons once we package the files.  The
+OS X executables <em>are</em> there -- their folder is just way down the
+window.  Use the scroll bar to look for them.
+You should be able to use the View/Rearrange menus to
+make the folder icons appear in a more reasonable place. (Or this can be
+done once all of the contents of the .dmg archive are copied out to another
+folder).
+<LI>Programs Dnaml and Proml (but not Dnamlk or Promlk), from version 3.64
+on, crashed if the Categories (C) option is used, even if all categories are
+given
+the same rate of change.  This unpleasant behavior does not occur if the
+menu option for "Speedier but rougher analysis" is changed to "No, not rough".
+That slows down the run but allows it to succeed.<p>  The fix turns out to
+be that all instances in <tt>dnaml.c</tt> of calls to function <tt>copynode</tt>
+(or all instances in <tt>proml.c</tt> of calls to <tt>prot_copynode</tt>) that
+involve an argument <tt>lrsaves</tt> should have the third argument be
+<tt>rcategs</tt> instead of <tt>categs</tt>.
+<LI>In Seqboot, when menu item J is set to <tt>Permute species within characters</tt> it is impossible to change menu item W (character weights).  This is
+a glitch in the menuing code.  If you can change the source code and recompile,
+change at line 215 of seqboot.c:
+<pre>
+        ((permute || ild || lockhart)
+          && (strchr("ACDEFSJPRXNI%1.20",ch) != NULL)) ||
+to be:
+        (permute && (strchr("ACDEFSJPRWXNI%1.20",ch) != NULL)) ||
+        ((ild || lockhart) && (strchr("ACDEFSJPRXNI%1.20",ch) != NULL)) ||
+</pre>
+If you are stuck with our executables and need this feature, you can also
+work around it in the following devious way:
+<ol>
+<li>Set menu item J to some other setting where menu item W appears in the menu,
+such as Bootstrap,
+<li>Change menu item W
+<li>Then change item J to <tt>Permute species within characters</tt>
+<LI> Our Makefile for Unix had some problem finding some of the
+X-windows libraries on Mac OS X systems on Intel Macs.  This prevented
+the compilation of Drawtree and Drawgram.  You might have had to use
+those two programs by using their PowerMac Mac OS X executables.
+All the other programs did compile and run correctly on Intel Macs.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.65</STRONG> (August, 2005)
+<DD>
+<UL>
+<LI> Protpars sometimes gave the result "0 trees found" or else simply hung and 
+did not complete its run.  This was a bug.  The program
+should always get at least one tree -- if it does not, that is a bug and not
+a judgement on your data, provided the data file is in our format!
+<LI> Proml and Restml, and maybe some others, seg-faulted when run on enough
+multiple data sets, as in bootstrapping.
+If you have a version that has this problem and can recompile the programs,
+here is a fix for Proml and Restml.  In function "inputdata", replace the lines
+<PRE>
+  makeweights();
+  if ( firstset ) alloclrsaves();
+  else resetlrsaves();
+</PRE>
+by
+<PRE>
+  if ( !firstset ) freelrsaves();
+  makeweights();
+  alloclrsaves();
+</PRE>
+and you can also eliminate the now-unnecessary function "restlrsaves".
+(Thanks to Jacques Rougemont for this).
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.64</STRONG> (July, 2005)
+<DD>
+<UL>
+<LI>Treedist had trouble on Windows systems
+reading trees.  This was due to problems with the ftell command on
+CygWin.  It has been fixed by having the files read as binary files.
+<LI>Trees with branch lengths compared using Treedist may have
+incorrect distances when evaluated as unrooted trees, owing to
+miscalculation of branch lengths for the bottommost branches.
+<LI>Runs of Seqboot on Mac OS X systems with gene frequencies data have
+showed incorrect results -- wrong numbers of loci sampled, for example.
+This is due to bad code generated by the Metrowerks Codewarrior compiler
+when set to higher levels of optimization (our source code is OK).  We
+will recompile the program at a lower level of optimization in the next
+bug-fixing release.  If you can follow our compiling instructions and have
+this compiler, you can produce a correctly working executable.  Alternatively
+you can use the gcc compiler and use our Unix Makefile to recompile this
+program (by typing "<tt>make seqboot</tt>").  This is quite easy to do and all Mac OS X releases have the
+gcc compiler in them -- it only needs to be installed.
+<LI>In runs of Proml, Dnaml or Restml with user trees, if one puts in a user
+tree with an internal multifurcation and asks the program to re-estimate
+the branch lengths for that tree, the branch lengths in only two of the
+furcs will be re-estimated if they already have branch lengths.
+This is due to a bug in the function "initrav"
+causing it to fail to enter one or more of the subtrees.  A workaround until
+the next release is as follows:  Use Retree to remove all branch lengths
+on the tree.  The tree's branch lengths will then all be re-estimated
+when it is used as a user tree.
+<LI>The example output in the Treedist documentation gives distances
+computed by version 3.62 or earlier, in which the tree distance is not
+square-rooted.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.63</STRONG> (December, 2004)
+<DD>
+<UL>
+<LI> The DNA and protein likelihood programs could have problems with
+underflow if very large numbers of sequences were analyzed.  Underflow
+protection code was needed to make this much less likely to happen.
+<LI> A number of programs had the problem that when M (multiple
+data set) runs are done, if the data sets differ in the number of
+characters from data set to data set, they only allocate enough memory for
+the first data set, and then can crash on subsequent, larger, data sets.
+For bootstrap and permutation runs this should not be a problem, but
+for jackknife runs it might be.  One work-around until we fixed this was to
+move the data set with the most characters to the front, so that enough
+space is allocated.  The programs we think had this problem are: 
+Clique, Dnacomp, Proml, Promlk, Protdist, Dollop, Gendist, Pars, Restml, and
+Restdist.
+<LI>When the Branch Score distances are computed in program Treedist, the
+sum of squares of differences between branches was not square-rooted, as the
+documentation web page says it is.
+<LI>Fitch and Contml may die when asked to do Jumbling, in some cases.
+<LI>Dnaml had inconsistencies in results when branch lengths of a user tree
+were estimated, and when the same numbers were provided in the user tree.
+<LI>Trees fed into Contrast could cause trouble if they contained unifurcations
+(forks with only one descendant).  The program did not complain about this, as
+it should have.
+<LI>End-of-line characters in input files
+in certain cases caused trouble in Mac OS X  (for example when the files came
+over from Windows).
+<LI>When printing a rooted tree out in Kitsch, the root was not placed
+intermediate between its two decsendants.
+<LI>The variable <tt>numtrees</tt> was sometimes used when still uninitialized
+in Pars.
+<LI>Restdist had a site-aliasing bookkeeping bug that could lead to incorrect
+results.
+<LI>Restml would not allow site lengths greater than 8, because an array
+was of fixed size when it should have been dynamically allocated.
+<LI>The variable name <tt>howmany</tt> conflicts with predefined names in
+some older Sun compilers.  It will henceforth be deliberately misspelled to
+avoid this.
+<LI>With larger data sets being analyzed, Proml, Promlk, Dnaml, and Dnamlk
+have had to have underflow protection code installed, as likelihoods were
+getting too small.
+<LI>Treedist was giving wrong answers when asked to compute all distances
+between trees in two files that had unequal numbers of trees.  This was a
+bookkeeping error.
+<LI>The variable <tt>scanned</tt> was uninitialized in the Drawtree and
+Drawgram programs, which could sometimes cause problems.
+<LI>The lack of initialization of a variable, <TT>delta</TT> in Dnadist
+meant that different results could be obtained from interactive runs than
+were obtained in runs under the control of a command file.
+<LI>Dnadist was sometimes stopping when encountering sequences that had an
+infinite or indeterminate distance (i.e. when the sequences were too different
+or when they had no sites in common), when it should have printed out "-1"
+and continued.   When it was supposed to print "-1" in some recent versions
+of PHYLIP it printed "1.0000" instead.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.62</STRONG> (September, 2004)
+<DD>
+<UL>
+<LI> The ftp link used by our "Get Me PHYLIP" page to fetch the version 3.62
+Linux gzip'ed sources and documentation archive was incorrect until recently (I
+hadn't updated it to fetch version 3.62).  If you had trouble fetching
+this archive in version 3.62, please try one more time.  It will work now.
+<LI> A number of people have found, with Fitch and with Contml, that version
+3.61 crashes on multiple Jumbling (option J) or on bootstrap runs.  This is
+fairly serious.  It does not happen with versions of these programs earlier
+than 3.6 (such as 3.6a3 or 3.573c).  This release fixes these problems.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.61</STRONG> (August, 2004)
+<DD>
+<UL>
+<LI>In <tt>dnaml.c</tt> there was some mistaken code doing rate
+standardization that made the program compute incorrect likelihoods
+for user-defined trees where the program is using their branch lengths.
+<LI>In <tt>dnaml.c</tt> some bookkeeping code associated with tree
+structures caused it to crash after only a few replicates when you
+do a multiple data sets run (for bootstrapping).
+<LI>The code for the Shimodaira-Hasegawa test has been in error for some
+time. The effect of this will be to cause the test to fail to find
+significance in some cases where it should.  This affects Shimodaira-Hasegawa
+tests (ones with more than two user trees) for many of the programs.
+If you have downloaded
+version 3.6, I urge you to replace it with 3.61 as soon as you can.  If you
+have done SH (Shimodaira-Hasegawa) tests, I recommend strongly that you
+rerun those using version 3.61.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.6</STRONG> (July, 2004)
+<DD>
+<UL>
+<LI> The transform of gene frequencies to Brownian motion in Contml was not
+very good.  It has been replaced by an extension of the 1975 method in
+Elizabeth Thompson's book <em>Human Evolutionary Trees</em>, using orthogonal
+coordinates on a plane tangent to the mean of the gene frequencies among species.
+<LI> In Retree, when you delete two adjacent clades, the stem connecting
+them wasn't marked on the screen as deleted.
+<LI> Numbers in the Contrast output could run into each other if too big.
+<LI> There was no error message for negative branch lengths in Contrast.
+<LI> Dnadist was blowing up if two sequences are identical for some distances.
+<LI> Gendist sometimes made 0.00001 diagonal elements in the distance matrix.
+<LI> Consense generated segmentation-faults on larger cases with more than 1,000 trees.
+<LI> Dnamlk and Promlk could get wrong likelihoods and wrong reconstructions
+of ancestral states, when there were all of these: gamma-distributed or HMM
+rates, some autocorrelation among sites, and some sites with weight 0.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.6b</STRONG> (July, 2003)
+<DD>
+<UL>
+<LI> Dnadist versions 3.6a2 and 3.6a3 have a bug that makes it calculate zero
+values for the similarity between two sequences when the table of fractions of
+similarity between two sequences is being computed, and when one or both of the
+sequences has a nucleotide that is ambiguous other then "N", "?", or "-".  It
+affects only similarity values, not any of the distances that Dnadist can
+compute.  To calculate similarity values for those sequences, make a version of
+your sequence input file that omits those sites.  This is necessary only for
+those sequences -- for all other purposes you should use the values from the
+full sequences.
+<LI> Proml has a bug that apparently prevents it (in User tree mode) from
+re-estimating the branch lengths of a tree.  This means that if you take a
+consensus tree and try to re-estimate its branch lengths, it will instead
+leave them with the branch lengths that Consense gave them.  In the meantime,
+there is no workaround to let you infer branch lengths with the U option, alas.
+<LI> When distances between trees in a file are computed by Treedist, the
+Windows executables have a segmentation fault on the case where we do distances
+among all pairs of trees in one file.  Users can work around this by
+duplicating the file and computing instead all distances between trees in one
+file and trees in the other, which somehow works.
+<LI> Treedist does not give sensible results when the trees in an input
+tree file do not all have the same list of species.  We only intended
+Treedist to be used with the same list of species in all trees, but there
+is no error message preventing data of this sort from being analyzed at
+present.
+<LI> On G3 or G4 Powermacs with MacOS 9.2.1 or earlier, the PHYLIP 3.6a2.1 and
+3.6a3 executables for most programs sometimes fail to allow you to give them
+valid output file names, complaining that they are invalid (when they aren't).  This is
+presumably some interaction between our Metrowerks Codewarrior compiler
+and those versions of MacOS.  If you have this problem you can fix it
+either by upgrading to MacOS 9.2.2 or by running MacOS 9 under MacOS X.
+We would be interested in hearing which versions of MacOS our code
+works in, and with which processors.
+<LI> When two adjacent branches on a tree have zero length, and one plots
+the tree using Drawtree, the labels are sometimes superimposed on each other
+and also plotted in the wrong place.  A temporary fix until we correct this is
+to make the branches have nonzero but tiny lengths such as 0.00001.
+<LI> When you use a data set with three species on some of the programs,
+it will not process them properly because the algorithm assumes that
+there are at least 4 species.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.6a3.1</STRONG>
+A revised version of the Mac executables and sources corrected some bugs
+that were causing trouble only on that platform:
+<DD>
+<UL>
+<LI> Treedist would not open an output file.
+<LI> Lines in the Macintosh previewing for Drawgram and Drawtree were
+sometimes too thin to be visible.
+<LI> Drawgram and Drawtree had their default memory size set larger as Drawgram
+would usually refuse to run.
+<LI> Error messages for being unable to open an output file repeated the
+word "file" unnecessarily.
+<LI> Pars had the wrong icon, owing to an obscure resource problem.
+</UL>
+We have not yet upgraded the non-Mac sources and executables as these
+problems were Mac-specific.
+<P>
+<DT> <STRONG>version 3.6a3</STRONG> (July, 2002)
+<DD> <UL>
+<LI> The JTT protein substitution model calculations in Proml, Promlk, and Protdist in PHYLIP 3.6a2.1 used incorrect matrices.  These have since been corrected.  
+<LI> Versions 3.6a-3.6a2 of Protdist incorrectly computed the Kimura
+protein distance.  For each pair of species compared, sites having a
+Serine are omitted from the computation, leading to a distance that may
+be either bigger or smaller than the correct one.  In the C code in line
+1737 of file <TT>protdist.c</TT> replace the line
+<PRE>
+          if ((long)b1 <= (long)val && (long)b2 <= (long)val) {
+</PRE>
+by
+<PRE>
+          if ((((long)b1 <= (long)val) || ((long)b1 == (long)ser))
+           && (((long)b2 <= (long)val) || ((long)b2 == (long)ser))) {
+</PRE>
+to fix the bug.  If you cannot recompile the program and wish to use
+the Kimura distance, use the 3.5c version of Protdist which is correct.
+<LI> The program Mix did not handle weights at all.  You could use
+Pars instead (where the weights are specified in a separate file
+whose default name is <tt>weights</tt>).  Or use Mix from version 3.5c.
+</UL>
+</DD>
+<P>
+<DT> <STRONG>version 3.6a2.1</STRONG>
+<DD> A quick correction of 3.6a2 since:
+<DD> <UL>
+     <LI>The coefficients of variation of rates among sites (and
+therefore the alpha shape parameter of the Gamma distribution
+were set incorrectly after being input by the user.
+     <LI> The documentation said Old Style programs read their
+      user-defined trees read from file <TT>infile</TT> -- this was
+      corrected in the documentation to say file <TT>intree</TT>.
+</UL>
+<DT> <STRONG> version 3.6a2 </STRONG> (July, 2001)
+<DD> These bugs which were present in version 3.6a were corrected
+   <UL>
+     <LI> Kitsch: couldn't process user trees.
+     <LI> Dnacomp, Dnamove, Move, Dolmove, Dollop: couldn't read
+        User with branch lengths successfully
+     <LI> Dnamlk: was a tendency for nodes to get stuck together.
+     <LI> In Treedist identical trees had nonzero distances if the
+        names of the species were numbers.
+     <LI> Dnadist: there was a problem with data sets that had a space
+          after last nucleotide of a segment of sequence.
+     <LI> Some of the programs had trouble with jackknife-sampled
+      data sets (produced by Seqboot) which had different numbers of
+      sites (characters) in different replicates.
+     <LI> Some of the sequence programs had data-reading problems
+       when there were blanks before a segment of sequences in the
+       interleaved data format.
+  </UL>
+<DT> <STRONG> version 3.6a </STRONG> (July, 2000)
+<DD> This "alpha release of 3.6 fixed some bugs that had been encountered
+     over the years since version 3.573.  Here are some of them:
+  <UL>
+<LI> <TT>PROTDIST</TT> read in weights but did not use them.  To get
+it to use them one can replace the code in line 1446 of <TT>protdist.c</TT>
+by:<BR>
+<TT>
+&nbsp;&nbsp;lnlike += weight[k]*log(p);<BR>
+&nbsp;&nbsp;slope += weight[k]*dp / p;<BR>
+&nbsp;&nbsp;curv += weight[k]*(d2p / p - dp * dp / (p * p));<BR>
+</TT>
+<LI>The output file generated by <TT>PROTDIST</TT> contained a section at
+its front that gives a table of the weights.  This would prevent it from working
+as an input file in the distance matrix program.  If this section
+is edited out, the distance matrix programs will read it properly.
+<LI> The 3.573c Windows95/98/NT executables had trouble
+running <TT>DRAWTREE</TT> and <TT>DRAWGRAM</TT> on many systems.  If you see an
+error saying: <TT>DOS/4GW fatal error (1004): syntax is DOS4GW &lt;executable.xxx&gt;</TT> you should try various placements for <TT>DOS4GW.EXE</TT>.
+If none works you can use an MSDOS window to execute the command<BR>
+&nbsp;<TT>DOS4GW DRAWTREE.EXE</TT>.
+<LI> When you put a data set that has one or more nucleotides absent
+(such as having no G's at all), DNAML and DNADIST's Maximum Likelihood
+option could get upset and divide by zero.  A temporary solution was to
+use the F option to input four base frequencies, none of which are 0.
+<LI> If you used "outfile" as the input file name for most programs,
+terrible things happened.  The program opened "outfile" as a
+file to put output into (thus erasing its contents) and then tried to
+read its data from this empty file, causing a psychological crisis.
+The solution is to rename "outfile" (to "infile" or almost anything
+else) before using it as an input file for the next program.
+The 3.6 fix of this problem is to warn the user when about to
+write output that the file already was in use, and give the user
+the opportunity to use a different file name.
+<LI> Retree and the user trees options of many programs choked on trees
+that have comments like "[0.1000]" at the end of the tree, which is the way
+some of our programs such as Dnapars have of indicating what
+fraction that tree is of all trees generated by a run.  If you want to
+get versions before 3.6a to accept these trees, you
+should remove these extra comments at the end of the trees and see
+if this fixes it.  <EM> However </EM> that error message is also the one you
+get when you incorrectly try to use a rooted tree in a program that wants an
+unrooted tree (see our <A HREF="faq.html"> Frequently Asked Questions </A>).
+<LI> If a data set that has two or more species that have the same name was
+used to create a set of trees, and these were fed into Consense, one could get
+groups appearing in the consensus trees that have more than 100% support, and
+there is no error message about this.
+This can be avoided by making all species names different before producing the
+trees.
+<LI> When species names in the data had underscores in them (the "_" character)
+and a tree file was used, the underscores in the tree file got translated into
+blanks, and then the program would complain that it can't find that species
+in the data.  Changing the underscores in the species names of the data file to blanks or
+changing the names in both files to dashes (or anything) will solve this.
+  </UL>
+<DT> <STRONG> version 3.573 </STRONG>
+<DD>
+<UL>
+<LI> There were multiple reports of PHYLIP programs not working on
+MacOS 8.5.  We cured this by recompiling it on an 8.5
+system with a newer version of the Metrowerks compiler.
+<LI> Our PowerMac executables had been crashing if a row of dots was printed out
+that reached the right-hand margin of the text window.  Some programs
+would do this on large data sets (unfortunately those windows are too
+primitive to be resized).  To cure this, you spreviously had to turn off the
+option in the menu that instructed the program to report on the progress of the
+run.  In some cases this meant that you did not know when the run had
+finished, except that then the File menu once again responded to the
+mouse.  This problem has now been cured by recompiling with a later version
+of the Metrowerks compiler.
+<LI> Fixed memory allocation bug in Dnapars which caused it to crash on
+long runs such as multiple bootstraps.
+<LI> Our Windows version has not been a good citizen when running on
+Windows95 systems.  It tended to hog the machine and not let other
+programs and processes get enough processor time.  This has been
+a result of having only 16 bit (Windows 3.1) style Windows
+executables.  With this version we have now made
+available 32 bit Windows executables as well.  These work on
+Windows95, Windows98, and WindowsNT, and they should allow other processes
+and programs to proceed.
+</UL>
+</DD>
+<P>
+<DT> <STRONG> version 3.572 </STRONG>
+<DD>
+<UL>
+<LI> DnaMLK failed to correctly iterate branch lengths in some user tree
+     cases.
+<LI> SeqBoot generated bootstrap files of sequences that had the number of  
+     sequences and the number of sites running into each other, with no
+     blank in between, when there were 10,000 sites of more.
+<LI> Our PCL (Hewlett-Packard Laserjet) drivers in Drawtree and Drawgram
+   generated code that will not print correctly on inkjet printers such as
+   the HP Deskjet series.  This was apparently due to the version of the
+   PCL language that we assume being later than the version implemented in
+   those machines.
+<LI> Mix printed out the wrong numbers of steps for user trees after the
+   first user tree.  When it is asked to evaluate several users trees it
+   assigns them all the same number of steps, which is the number for the
+   first user tree.
+</UL>
+</DD>
+<P>
+<DT> <STRONG> version 3.57 </STRONG>
+<DD>
+<UL>
+<LI> The Windows executables were not able to run on Windows 95, so we
+     recompiled them with the Watcom C++ 10.5 compiler, and now they should
+     run well under either Windows 3.1 or Windows 95.
+<LI> Removed the flawed program Coallike (use our other package <A HREF="../lamarc.html"> LAMARC </A> instead).
+<LI> Memory allocation problems in Dnapars prevented some bootstrap runs from
+     finishing.
+<LI> File ownership problems in PICT files produced by our executables of Drawgram
+     and Drawtree in the 680x0 Macintosh and PowerMacintosh versions.
+</UL>
+<DT> <STRONG> versions 3.56 </STRONG>
+<DD>
+<UL>
+<LI> The input for the Categories option in various programs would not
+read correctly in the Macintosh versions.
+<LI> The Categories and Weights options would not work together properly
+in DnaML, DnaMLK, and Dnadist, which have both of these options.
+<LI> More species were allowed in Retree (500 instead of 100).
+<LI> PICT files output was being written incorrectly in Drawgram and Drawtree.
+<LI> New icons were drawn for the Macintosh executables.  These icons were
+     also set up for the Windows executables.
+<LI> The BinHex (.hqx) file format was added to our ftp area as an alternative
+     method of distributing our 680x0 Macintosh executables.
+</UL>
+</DD>
+<P>
+<DT> <STRONG> versions 3.54 and some executables of 3.55 </STRONG>
+<DD>
+<UL>
+<LI> The PowerMac executables became available, thanks to Don Gilbert of
+Indiana University, who  first compiled them.
+<LI> Problems reading options in our Macintosh code.
+<LI> Incorrect algorithm for generating permutations in SeqBoot (thanks to
+     James Brown of AFRC in England for detecting this and suggesting the fix).
+<LI> Some problems with the DnaMLK categories (C)  and jumble (J) options.
+<LI> Executables for 386 Windows and for 386 DOS were recompiled to allow
+     more adequate stack size.
+<LI> 386 Windows executables had math coprocessor emulation set up incorrectly
+     and would give strange results (fortunately, easily noticeable strange
+     results) on 386 or 486 systems that did not have math coprocessors (such
+     and 486sx processors).  This was fixed by using the WEMU387.386 emulation
+     library.
+</UL>
+</DD>
+<P>
+</DL>
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+
+</BODY>
+</HTML>

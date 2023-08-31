@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE>PHYLIP Distance and bootstrap programs </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<H1> Distances or bootstrap samples </H1>
+
+<P> <IMG SRC="icons/DNA.gif" ALT="[Icon]"> <STRONG>DNADIST</STRONG>.  Computes
+four different distances between species from nucleic acid
+   sequences.  The distances can then be used in the distance matrix programs.
+   (See the <A HREF="progs.data.dist.html">Distance Matrix programs</A> pages for information on them).
+   The distances are the Jukes-Cantor formula, one based on Kimura's 2-
+   parameter method, the F84 model used in DNAML, and the LogDet distance.
+   The distances can also be corrected for gamma-distributed and
+   gamma-plus-invariant-sites-distributed rates of change in different sites.
+   Rates of evolution can vary among sites either in a prespecified way, or
+   according to a Hidden Markov model.  The program can also make a table of
+   percentage similarity among sequences.
+
+<P> <IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROTDIST</STRONG>.
+Computes a distance measure for protein sequences, using
+   maximum likelihood estimates based on the Dayhoff PAM matrix,
+   the JTT matrix model, the PBM model, Kimura's 1983 approximation to these,
+   or a model based on the genetic code plus a constraint on changing to a
+   different category of amino acid.  The distances can also be corrected for
+   gamma-distributed and gamma-plus-invariant-sites-distributed rates of change   in different sites.  Rates of evolution can vary among sites in a
+   prespecified way, and also according to a Hidden Markov model.  The program
+   can also make a table of percentage similarity among sequences.  The
+   distances can then be used in the <A HREF="progs.data.dist.html">distance matrix programs</A>.
+                                                                               
+<P> <IMG SRC="icons/GENDIST.gif" ALT="[Icon]"> <STRONG>GENDIST</STRONG>.  Computes one of three different genetic distance formulas from gene
+   frequency data.  The formulas are Nei's genetic distance, the Cavalli-
+   Sforza chord measure, and the genetic distance of Reynolds et. al.  The
+   former is appropriate for data in which new mutations occur in an infinite
+   isoalleles neutral mutation model, the latter two for a model without
+   mutation and with pure genetic drift.  The distances are written to a file
+   in a format appropriate for input to the <A HREF="progs.data.dist.html">distance matrix programs</A>.
+                                                                               
+<P> <IMG SRC="icons/RESTRICT.gif" ALT="[Icon]"> <STRONG>RESTDIST</STRONG>.
+Distances calculated from restriction sites data or
+   restriction fragments data.  The restriction sites option is the one to
+   use to also make distances for RAPDs or AFLPs.  The distances can then
+   be used with the <A HREF="progs.data.dist.html">distance matrix programs</A>                                                                               
+<P> <IMG SRC="icons/BOOT.gif" ALT="[Icon]"> <STRONG>SEQBOOT</STRONG>.
+Reads in a data set, and produces multiple data sets from
+   it by bootstrap resampling.  Since most programs in the current version of
+   the package allow processing of multiple data sets, this can be used
+   together with the consensus tree program CONSENSE to do bootstrap (or
+   delete-half-jackknife) analyses with most of the methods in this package.
+   This program also allows the Archie/Faith technique of permutation of
+   species within characters.  It can also rewrite a data set to convert
+   it from between the PHYLIP Interleaved and Sequential forms, and into
+   a preliminary version of a new XML sequence alignment format
+   which is under development and which is described in the
+   SEQBOOT documentation web page.
+
+<P> <IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>FACTOR</STRONG>.
+Takes discrete multistate data with character state trees and
+   produces the corresponding data set with two states (0 and 1).  Written by
+   Christopher Meacham.  This program was formerly used to accomodate
+   multistate characters in MIX, but this is less necessary now that PARS is
+   available.
+
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
+

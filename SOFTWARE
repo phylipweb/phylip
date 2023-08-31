@@ -1,0 +1,149 @@
+From apache@evolution.gs.washington.edu Fri Apr  1 16:35:39 2022
+Delivered-To: felsenst@gamail.uw.edu
+Received: by 2002:a05:6a06:1d1a:b0:4a2:16c5:63ea with SMTP id x26csp1104308pis;
+        Fri, 1 Apr 2022 16:35:39 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJz0GxRXBFVwC4In+vOI5Df49VfTEynSEZRpug7RifBhwUy2vIxW01JWe8jgYrea8IVbD5+d
+X-Received: by 2002:a25:32cc:0:b0:633:c9ed:9e1a with SMTP id y195-20020a2532cc000000b00633c9ed9e1amr11021308yby.179.1648856139548;
+        Fri, 01 Apr 2022 16:35:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1648856139; cv=none;
+        d=google.com; s=arc-20160816;
+        b=v5m51QxC/iYC/QJLa6Fjp++Yct26I7pQvfIPaNQJL9VVMnR5FTTPDmUEboZkg7HHHh
+         6n6lR9/uTYERiRRzVUkXW8t0fwMtlhM1q8xNsLSSmWgZNG4yiq760a78zi6n13XKp4+v
+         LME9cpwv7zRlLT6/fiwNMkFJM3pSOWznY2DXpXVZof/b/cdrKIRs0vjZm2Q4CGPVFQZA
+         vVKAO5kbuAXoyA/2/y/smZIBrP1RB0IFyRQFT6VsL74eJYN22M0rrG05UBNVwYwKyrLb
+         YZ2sE25r7GGweAA/N8fYKMj9kjEtHdSm0JZ9N0NaPdgPOxlO1xK0ojwki0WLZxafW+8Y
+         l25Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:subject:from:to;
+        bh=NrkD1C+49FEv+sWqizWQNjQhvy3W1OJ9M6Hymn4RTyA=;
+        b=ZonAv9fGe3A7qIhG48841wS1ILvRH9Aui7G5z6o2UdhvU8utqbC4pYZFMTOb4cr2mS
+         kZT6002wjh14iqS6OOJ+4FPm8VhsmbHoomxWxeQ2w9LkZ1TVRmWcAJmjTo3z0qcLfUL9
+         FOn/0ecUnHhLy162bsj5dGrhsUpi81CvZcW+tuuJZDvcglaNB8rAaKZbRLTPcZrm05Mh
+         F0vaQwk2Eng5p0HflKubAezvpX6dECSKANikoOV9pW1sb8VAig5JfCS2Q8sVFr9bZAr5
+         BJTa6I5qzZWeh0eksnInf9BjIj7JoLCdQwTyP+PZedd/WALtJNrgcD1/C51tFqACKYS7
+         j1nA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: best guess record for domain of apache@evolution.gs.washington.edu designates 128.208.8.134 as permitted sender) smtp.mailfrom=apache@evolution.gs.washington.edu
+Return-Path: <apache@evolution.gs.washington.edu>
+Received: from mx0b-00641c01.pphosted.com (mx0b-00641c01.pphosted.com. [205.220.177.146])
+        by mx.google.com with ESMTPS id j127-20020a815585000000b002e5bb9dc9e8si3324393ywb.113.2022.04.01.16.35.38
+        for <felsenst@gamail.uw.edu>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 01 Apr 2022 16:35:39 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of apache@evolution.gs.washington.edu designates 128.208.8.134 as permitted sender) client-ip=128.208.8.134;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: best guess record for domain of apache@evolution.gs.washington.edu designates 128.208.8.134 as permitted sender) smtp.mailfrom=apache@evolution.gs.washington.edu
+Received: from pps.filterd (m0247477.ppops.net [127.0.0.1])
+	by mx0a-00641c01.pphosted.com (8.16.1.2/8.16.1.2) with ESMTP id 231NTJCU014168
+	for <felsenst@u.washington.edu>; Fri, 1 Apr 2022 23:35:38 GMT
+Received: from mx.gs.washington.edu (mx.gs.washington.edu [128.208.8.134])
+	by mx0a-00641c01.pphosted.com (PPS) with ESMTPS id 3f65gx2dj7-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <felsenst@u.washington.edu>; Fri, 01 Apr 2022 23:35:37 +0000
+Received: from evolution.gs.washington.edu ([128.208.8.142])
+	by mx.gs.washington.edu with esmtp (Exim 4.94.2)
+	(envelope-from <apache@evolution.gs.washington.edu>)
+	id 1naQjQ-0001sb-FF
+	for joe@gs.washington.edu; Fri, 01 Apr 2022 16:35:36 -0700
+Received: by evolution.gs.washington.edu (Postfix, from userid 48)
+	id 1F63080043; Fri,  1 Apr 2022 16:35:34 -0700 (PDT)
+To: joe@gs.washington.edu
+From: apache@evolution.gs.washington.edu
+Subject: [SOFTWARE form] Mail from evolution web user
+Message-Id: <20220401233534.1F63080043@evolution.gs.washington.edu>
+Date: Fri,  1 Apr 2022 16:35:34 -0700 (PDT)
+X-Spam-Score: -0.0 (/)
+X-Spam-Report: Spam detection software, running on the system "mx.gs.washington.edu",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  software-form.pl on evolution.gs has this to say: Bernd Gruber,
+    Arthur Georges, Jose Luis Mijangos, Oliver Berry and Carlo Pacioni of the
+    Centre for Conservation Ecology and Genomics of the University of Canberra
+    (luis.mijangosaraujo (at) canberra.edu.au) has released dartR version 2.0.3,
+    an accessible genetic analysis platform for conservation, ecology, and agriculture.
+    dartR provides many functions for importing, exporting and linking to other
+    packages, to provide an easy-to-navigate conduit between data generation
+   and analysis options already available via other packages. We also implemented
+    simulation functions whose results can be analysed seamlessly with several
+    other dartR functions. It is described in the paper: dartR v2: an accessible
+    genetic analysis platform for conservation, ecology, and agriculture Jose
+    Luis Mijangos, Bernd Gruber, Oliver Berry, Carlo Pacioni, Arthur Georges
+   bioRxiv 2022.03.30.486475; doi: https://doi.org/10.1101/2022.03.30.486475
+   It is available as an R package. It can be downloaded from its web siteat
+   https://github.com/green-striped-gecko/dartRIt is available at a price of
+   from . See the web site http://georges.biomatix.org/dartR [...] 
+ 
+ Content analysis details:   (-0.0 points, 8.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 HTML_OBFUSCATE_05_10   BODY: Message is 5% to 10% HTML obfuscation
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Proofpoint-GUID: xWHia8Tu_1tg2T-how0JKJWCYR82wfxP
+X-Proofpoint-ORIG-GUID: xWHia8Tu_1tg2T-how0JKJWCYR82wfxP
+X-CLX-Shades: MLX
+X-CLX-Response: 1TFkXGBIZEQpMehcaEQpZRBdnRQFFeWloHWVOQxEKWFgXa2VfbB14EnwbRGE RCnhOF2ITARNYBWdYZR5hEQp5TBdsYlpyHUlfWBoZchEKQ0gXBx4cGBEKQ1kXBxgcGhEKQ0kXGg QaGhoRCllNF2dmchEKWUkXGR5xGwYcHXcGGBoaBhoGGgYcEwYZGnEbEBp3BhoGBx8aBhoGGgYaB
+ hpxGhAadwYaEQpZXhdoY3kRCklGF19FTF1HS1leT1h1QkVZXk9OEQpDThdSfWJDSxJ+X3UbXk0Y fgdCRV0aYGFgfWlzeBIYXUxSehEKWFwXHwQaBBgfGwUbGgQbGxoEHQQbGRkQGx4aHxoRCl5ZF3B Mfm5BEQpNXBcbGRMRCkxaF2xpTWtrEQpMRhdpEQpCTxduXBsdfxNbWBN8SREKQ1oXGxgSBBgaEg
+ QSBBsZHhEKQl4XGxEKQkUXa2VfbB14EnwbRGERCkJOF2ITARNYBWdYZR5hEQpCTBdrZV9sHXgSf BtEYREKQmwXa2VfbB14EnwbRGERCkJAF2ZSTENFU09LXXpeEQpCWBdjXXBHUhhZb2FgExEKTV4X GxEKWlgXGREKeUMXZG8eHG5SWwFPXGMRCllLFxsYExMZEQpwaBdpfBtfY2hsTGlHEhAZGhEKcGg
+ XaQVLXwUcUG9jWGEQGRoRCnBoF20deWleHGdrZXphEBkaEQpwaBdhSxpOH0FsXFpEWxAZGhEKcG gXZUBHWE9IT1MTaBIQGRoRCnBoF2lTX01rH1xfEmlZEBkaEQpwaBdrfXhLT2tOT0Z6RxAZGhEKc GgXaHtPWURPekBPGk4QGRoRCnB9F2VdYFMeG2gTckEaEBkaEQpwfRdlX1MBa1plXgVSRRAZGhEK
+ cH0XbFp5Tx8aZGITTGgQGRoRCnB9F3oTGxpzHxNwZ1h4EBkaEQpwfRdoaV5CaG9EU3tgQhAZGhE KcH8XbFx/aRNNQUtnXxgQEh0RCnBfF2dYXB5TAUFweUtAEBsaHBEKcH8Xax1rHlN7Z2NLbXoQHR kRCnBfF2BQWGFcWB9lW1NuEBkaEQpwXxduEhJSfW5bBW1oexAZGhEKcH8XaH9YaGdrbmQfTR4QG
+ RoRCnBfF29dSE9lUBljR3xjEBkaEQpwXxdue0l/cEVZZ3xEUhAZGhEKbX4XGxEKWE0XSxEg
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.205,Aquarius:18.0.850,Hydra:6.0.425,FMLib:17.11.64.514
+ definitions=2022-04-01_08,2022-03-31_01,2022-02-23_01
+X-Proofpoint-Spam-Details: rule=inbound_notspam policy=inbound score=0 impostorscore=0 spamscore=0
+ lowpriorityscore=35 bulkscore=35 clxscore=283 mlxlogscore=258 phishscore=0
+ malwarescore=0 priorityscore=0 mlxscore=0 suspectscore=0 adultscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-2202240000
+ definitions=main-2204010114 domainage_hfrom=12993
+X-UW-GSuite-Rule-Spam_Add_Headers: True
+X-Gm-Spam: 0
+X-Gm-Phishy: 0
+Status: RO
+Content-Length: 2301
+Lines: 37
+
+<html>
+<p>software-form.pl on evolution.gs has this to say:</p>
+
+
+<A NAME="dartR">
+<HR>
+<P>
+Bernd Gruber, Arthur Georges, Jose Luis Mijangos, Oliver Berry and Carlo Pacioni</A>
+of the Centre for Conservation Ecology and Genomics
+of the University of Canberra
+<tt>(luis.mijangosaraujo<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;canberra.edu.au)</tt>
+has released <strong>dartR</strong>
+version 2.0.3,  an accessible genetic analysis platform for conservation, ecology, and agriculture.  dartR provides many functions for importing, exporting and linking to other packages, to provide an easy-to-navigate conduit between data generation and analysis options already available via other packages. We also implemented simulation functions whose results can be analysed seamlessly with several other dartR functions. 
+It is described in the paper:
+ dartR v2: an accessible genetic analysis platform for conservation, ecology, and agriculture
+Jose Luis Mijangos, Bernd Gruber, Oliver Berry, Carlo Pacioni, Arthur Georges
+bioRxiv 2022.03.30.486475; doi: https://doi.org/10.1101/2022.03.30.486475 
+It is available as an R package.  It can be downloaded from
+<a href="https://github.com/green-striped-gecko/dartR">its web site</a>at <code>https://github.com/green-striped-gecko/dartR</code>It is available at a price of  from .  See
+<a href="http://georges.biomatix.org/dartR">the web site </a> <code>http://georges.biomatix.org/dartR</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>General-purpose packages, Distance matrix methods, Computation of distances, Simulation of trees or data and Tree plotting/drawing</p>
+
+<h3>Comments:</h3>
+<p>dartR was released in 2018 to lessen the intrinsic complexity of analysing genetic data by providing user-friendly data quality control and marker selection functions. dartR users have grown steadily since its release and provided valuable feedback on their interaction with the package allowing us to enhance dartR capabilities.
+
+We are pleased to announce the release of dartR version 2. We have substantially increased the number of functions from 45 to 144 to enhance the user experience by extending plot customisation, function standardisation, and growing user support and function speed.</p>
+
+<h3>This form would be great, if only you would...</h3>
+<p></p>
+
+
+
+</html>
+
+

@@ -1,0 +1,19 @@
+<A NAME="SeaView">
+<HR>
+<P>
+Manolo Gouy</A>
+of the Laboratoire de Biometrie et Biologie Evolutive
+of the Centre National de la Recherche Scientifique, France
+<tt>(manolo.gouy<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univ-lyon1.fr)</tt>
+has released <strong>SeaView</strong>
+version 4.3.3, a multiplatform graphical user interface for sequence alignment and phylogenetic tree building.  SeaView version 4 is a multiplatform program designed to facilitate multiple alignment and phylogenetic tree building from molecular sequence data through the use of a graphical user interface. SeaView allows multiple sequence alignment with the muscle and clustalw programs, and can also pilot many external multiple alignment algorithms. It also pilots GBlocks to help select blocks of evolutionarily conserved sequence sites. Tree-building can be done using the parsimony, distance, or maximum likelihood (using PhyML) approaches. SeaView also allows network access to sequence databases, and display, printing, and copy-to-clipboard of rooted or unrooted, binary or multifurcating phylogenetic trees. In relation to the wide present offer of tools and algorithms for phylogenetic analyses, SeaView is especially useful for teaching and for occasional users of such software.
+It is described in the paper:
+Gouy M., Guindon S. & Gascuel O. (2010) SeaView version 4 : a multiplatform graphical user interface for sequence alignment and phylogenetic tree building. Molecular Biology and Evolution 27(2):221-224. 
+It is available as C++ source code, Windows executables, Linux executables and Mac OS X universal executables, and SeaView is also available as Linux packages (Debian, Fedora, Gentoo).  It can be downloaded from
+<a href="http://pbil.univ-lyon1.fr/software/seaview.html">its web site</a>
+at <code>http://pbil.univ-lyon1.fr/software/seaview.html</code>
+<P>
+<HR>
+<h3>Categories:</h3>
+<p>General-purpose packages, Parsimony programs, Distance matrix methods, Computation of distances and Maximum likelihood and Bayesian methods</p>
+

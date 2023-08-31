@@ -1,0 +1,3391 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Final//EN">
+<HTML>
+
+<HEAD>
+<TITLE>Phylogeny Programs (continued)</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+
+<A HREF="software.html">To go to top of the Software pages</A>
+<P>
+<A HREF="software.dist.html#bottom">To previous part of Software pages</A>
+<HR>
+<A NAME="MOLPHY"><P>
+Jun Adachi and Masami Hasegawa</A> have written a package <STRONG>MOLPHY</STRONG>, version 2.3b3,
+carrying out maximum likelihood inference of phylogenies for either nucleotide
+sequences or protein sequences.  Their protein sequence maximum likelihood
+program, ProtML, is a successor to the one they made available to me and
+which I formerly distributed on a nonsupported basis in PHYLIP.
+The package is
+distributed free in C source code, with documentation.
+MOLPHY is available from <A HREF="http://www.ism.ac.jp/ismlib/softother.e.html">its
+web site</A>
+from <CODE>http://www.ism.ac.jp/ismlib/softother.e.html</CODE>&nbsp;&nbsp;
+A monograph describing MOLPHY (number 28 in the Computer Science
+Monographs of the Institute of Statistical Mathematics) is available
+from the same source (see folder <tt>csm96</tt> on the distribution web page),
+as TeX source and as a .dvi
+file.  The monograph can also be ordered from the Institute.
+An executable version of MOLPHY 2.2 for Windows95 or Windows NT on Intel
+processors, and also one that works on Windows NT on DEC Alpha processors, is
+available from Russell Malmberg at the Botany Department of the
+University of Georgia (<CODE>russell<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>plantbio.uga.edu</CODE>)
+at <A HREF="http://www.plantbio.uga.edu/~russell/index.php?s=1&n=5&r=0">his software
+web site</A>
+at <CODE>http://www.plantbio.uga.edu/~russell/index.php?s=1&n=5&r=0</CODE>
+<P>
+
+<HR>
+<A NAME="fastDNAml"><P>
+Gary Olsen</A>, of the Department of Microbiology,
+University of Illinois, Urbana, Illinois (<TT>gary<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>life.uiuc.edu</TT>)
+has developed a speeded-up replacement for my program DNAML coded in C, called
+<STRONG>fastDNAml</STRONG> version 1.2.2.  It achieves a number of economies and also is organized so that
+it can be run on parallel processors -- he and his co-workers have constructed
+trees of very large size on a high-speed parallel processor.  The program can
+be compiled using the "p4" portable parallel processing toolkit.  It can also
+be run in ordinary serial mode on workstations where it is faster than DNAML.
+fastDNAml is described in a paper:  Olsen, G. J., H. Matsuda, R. Hagstrom, and
+R. Overbeek. 1994. fastDNAml: A tool for construction of phylogenetic trees of
+DNA sequences using maximum likelihood. <em>Computer Applications in the
+Biosciences (CABIOS)</em> <b>10:</b> 41-48.
+It is available in the following places:
+<UL>
+<LI>The C program and MacOS 9 and MacOS X executables are available
+<A HREF="ftp://ftp.bio.indiana.edu/molbio/evolve">by ftp</A>
+from the Indiana University Biology ftp server at <CODE>ftp.bio.indiana.edu</CODE>
+in directory <CODE>molbio/evolve</CODE>.
+<LI> A Debian Linux executable package for fastDNAml was made available
+by Stephane Bortzmeyer and is maintained by Andreas Tille.  It is available
+through
+<A HREF="http://packages.debian.org/unstable/science/fastdnaml">its web page</A>
+at <CODE>http://packages.debian.org/unstable/science/fastdnaml</CODE>.
+</UL>
+<P>
+
+<HR>
+<A NAME="fastDNAmlRev"><P>
+Bette Korber</A> of the Theoretical Division,
+Los Alamos National Laboratory , Los Alamos, New Mexico
+(<TT>btk<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>t10.lanl.gov</TT>) and her colleagues have released
+<STRONG>a version of fastDNAml</STRONG> which uses the REV (general
+reversible) model of DNA evolution.  They used it for the
+results in the paper: B. Korber, M. Muldoon, J. Theiler, F. Gao, R. Gupta,
+A. Lapedes, B. H. Hahn, S. Wolinksy and T. Bhattacharya. 2000. Timing the
+ancestor of the HIV-1 pandemic strains. <EM>Science</EM>  <B>288:</B>
+1789-1796.  The program is available both in a version using the MPI
+Message-Passing Interface for parallel computers or a non-parallel
+version.  It is available as C source code for Unix from
+<A HREF="http://www.santafe.edu/~btk/science-paper/bette.html">
+the web site for the programs from that paper</A> at
+<CODE>http://www.santafe.edu/~btk/science-paper/bette.html</CODE>.
+<P>
+
+<HR>
+<A NAME="RAXML"><P>
+Alexandros Stamatakis</A> (<tt>alexandros.stamatakis<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>h-its.org</tt>) of the
+Heidelberger Institut f&uuml;r Theoretische Studien, Heidelberg, Germany
+and his colleagues have released <strong>RAxML</strong>, version 7.2.8,
+a program for faster
+reconstruction of
+phylogenies by maximum likelihood.  It provides faster heuristic
+search, use of parallel processing, and a simulated annealing algorithm,
+RAxML can also carry out parsimony, bootstrapping, and consensus tree methods.
+There are a number of papers describing RAxML:
+<UL>
+<LI>Stamatakis, A., T. Ludwig, H. Meier, and M. J. Wolf.  2002. AxML: A fast program for sequential and parallel phylogenetic tree calculations based on the maximum likelihood method. pp. 21-28 in <em>Proceedings of 1st IEEE Computer Society Bioinformatics Conference (CSB2002), Palo Alto, California, August 2002</em>.
+<LI>Stamatakis, A., T. Ludwig, and H. Meier  2003. RAxML-II: A program for sequential, parallel and distributed inference of large phylogenetic trees.
+<em>Concurrency and Computation: Practice and Experience (CCPE)</em>
+<b>16:</b> 975-988.
+<LI>Stamatakis, A., T. Ludwig, and H. Meier.  2004. RAxML-III: A fast program for maximum likelihood-based inference of large phylogenetic trees. <em>Bioinformatics</em> Advance Access published on December 17, 2004.
+</UL>
+RAxML is available in two versions: RAxML-Light, now at verson 1.0.9, and
+the regular version, RAxML.   RAxML-Light uses an approximate model of rate 
+variation among sites,
+and can only analyze DNA sequence data, but is able to run on larger cases
+than the full version of RAxML.
+The programs are available as C source code, Windows executables, and Mac OS X
+executables at the Exelexis Lab
+<A HREF="http://sco.h-its.org/exelixis/software.html">software web page</A>
+at <code>http://sco.h-its.org/exelixis/software.html</code>.
+<P>
+
+<A NAME="raxmlGUI">
+<HR>
+<P>
+<IMG SRC="icons/raxmlgui.jpg" ALT="[raxmlGUI icon]"> &nbsp;&nbsp; Daniele Silvestro and Ingo Michalak</A>
+of the Department of Botany and Molecular Evolution
+of the Senckenberg Research Institute, Frankfurt am Main, Germany
+<tt>(raxmlgui.help<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;googlemail.com)</tt>
+have released <strong>raxmlGUI</strong>
+(RAxML Graphical User Interface),
+version 1.0, A graphical user interface for RAxML.  RaxmlGUI is intended to 
+accelerate and simplify the usage of RAxML, enabling an interactive control of 
+all its major features (as of RAxML version 7.2.8). The graphical interface is 
+designed to be self-explanatory and to make its use very intuitive. In 
+addition, a detailed built-in help file is available. Through the 
+implementation of multi-thread versions of RAxML, the GUI enables the optimal 
+utilization of the available computational resources.
+It is described in the paper:
+Silvestro, D. and I. Michalak. 2011. raxmlGUI: a graphical front-end for RAxML. <i>Organisms Diversity &amp; Evolution</i> DOI: 10.1007/s13127-011-0056-0.
+It is available as Python script and Intel Mac OS X executables.  It can be downloaded from
+<a href="https://sites.google.com/site/raxmlgui/">its web site</a>
+at <code>https://sites.google.com/site/raxmlgui/</code>
+<P>
+
+<HR>
+<A NAME="DPRML"><P>
+Thomas Keane</A> (<tt>thomas.m.keane&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>nuim.ie</tt>)
+and Thomas Naughton (<tt>tom.naughton<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;nuim.ie</tt>), both of the Department of Computer Science of the
+National University of Ireland, Maynooth have released <strong>DPRML</strong>,
+a distributed cross-platform tree-building program that can use the idle
+clock cycles of machines, allowing idle time on hundreds of machines to be
+harnessed for tree-building.   It uses the <a href="software.pars.html#PAL">PAL</A> Java framework.  It is described in a paper: Keane, T.M., T. J. Naughton,
+S. A. A. Travers, J. O. McInerney, and G. P. McCormack. 2005. DPRml:
+Distributed Phylogeny Reconstruction by Maximum Likelihood. <em>Bioinformatics</em> <b>21:</b> 969-974.  DPRML can be downloaded from <a href="
+http://distributed.cs.nuim.ie/dprml.php">its web page</a> at
+<code>http://distributed.cs.nuim.ie/dprml.php</code>   Its authors note
+that it is slower than their more recent distributed phylogeny platform
+<a href="#MultiPhyl">MULTIPHYL</a>, and they urge use of that instead of DPRML.
+<P>
+
+<HR>
+<A NAME="MultiPhyl">
+<p>
+T. M. Keane, T.J. Naughton, S.A.A. Travers, J.O. McInerney, and G.P. McCormack, of the Department of Computer Science at the the National University of Ireland, Maynooth, Ireland <tt>(tkeane <!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.nuim.ie )</tt> have produced <b>MultiPhyl</b>,
+version 1.06, a distributed phylogeny platform enabling maximum likelihood
+runs across a large number of heterogeneous machines.
+MultiPhyl is a high-throughput implementation of a distributed phylogenetics 
+platform that is capable of using the idle computational resources of many 
+heteogeneous non-dedicated machines to form a phylogenetics supercomputer. It 
+allows a user to upload hundreds or thousands of amino acid or nucleotide 
+alignments simultaneously and perform computationally intensive tasks such as 
+model selection, tree searching, and bootstrapping of each of the alignments. 
+The program implements a set of 80 amino acid models and 56 nucleotide ML 
+models and a variety of statistical methods for choosing between alternative models.
+It is described in the paper:
+Keane, T.M., T.J. Naughton, S.A.A. Travers, J.O. McInerney, and G.P. McCormack. 2005. DPRml: Distributed Phylogeny Reconstruction by Maximum Likelihood. <em>Bioinformatics</em> <b>21(7):</b>  969-974. 
+It is available as Java code.
+It can be downloaded from <a href="http://distributed.cs.nuim.ie/downloads.php">the downloads web site</a>
+at <code>http://distributed.cs.nuim.ie/downloads.php</code>
+for the distributed Java-based platform produced by this group.   The platform
+itself can also be downloaded from the same site.
+Multiphyl can also be tested by using their <a href="software.serv.html#MultiPhyl server">web server</a> version.
+<P>
+
+<HR>
+<A NAME="PAML"><P>
+Ziheng Yang</A> of the Department of
+Genetics and Biometry, University College London,
+(<CODE>z.yang<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ucl.ac.uk</CODE>) has released
+<STRONG>PAML</STRONG>, version 4.4, a package of programs for the maximum
+likelihood analysis of nucleotide or protein sequences, including codon-based
+methods that take into account both amino acids and nucleotides.
+The programs can estimate branch lengths in a phylogenetic tree and parameters
+in the evolutionary model such as the transition/transversion rate ratio, the
+gamma parameter for variable substitution rates among sites, rate
+parameters for different genes, and synonymous and nonsynonymous substitution
+rates.  They can also test evolutionary models, calculate
+substitution rates at particular sites, reconstruct ancestral nucleotide or
+amino acid sequences, simulate DNA and protein sequence evolution,
+compute distances based on the synonymous and nonsynonymous changes,
+and of course do phylogenetic tree reconstruction by
+maximum likelihood and Bayesian Markov Chain Monte Carlo methods.  The
+strength of the package lies in its rich implementation of 
+evolutionary models, though Yang coments that
+tree-making is not a strong point of the current version.
+Another notable point is the availability of codon models, which Yang
+pioneered.  The package is
+available as Windows executables and as
+C source code for Unix and MacOS X systems.  An Old Versions folder
+in the ftp site that distributes these also contains Mac OS executables for
+the earlier versions 3.0a and 3.0c.
+See the <A HREF="http://abacus.gene.ucl.ac.uk/software/paml.html" >PAML
+web page</A> at <CODE>http://abacus.gene.ucl.ac.uk/software/paml.html</CODE>
+where it is available.
+<P>
+
+<A NAME="IDEA">
+<HR>
+<P>
+<IMG SRC="icons/idea.jpg" ALT="[IDEA icon]">&nbsp;&nbsp; Amy Egan and Joana Silva</A>
+of The Institute for Genomic Research (TIGR)
+in  Rockville, Maryland
+<tt>(aegan<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;jcvi.org)</tt>
+have produced <strong>IDEA</strong>
+(Interactive Display for Evolutionary Analysis),
+version 2.4, a graphical interface for
+<a href="software.etc1.html#PAML">PAML</a>.  IDEA allows you to run either of 
+the PAML programs <tt>codeml</tt> or <tt>baseml</tt> on a single dataset or on 
+multiple datasets simultaneously.  They allow you to obtain maximum likelihood 
+estimates of numbers of substitutions per branch and per site and to compare 
+multiple models of molecular evolution given the data and a phylogenetic tree 
+for the sequences.  You can optionally generate phylogenies with
+<a href="software.pars.html#PHYLIP">PHYLIP</a>, using maximum parsimony (on 
+small datasets) or neighbor-joining.  IDEA can perform multiple runs of 
+<tt>codeml</tt> with different starting (dN/dS) values and merge their results 
+for increased accuracy.  It can also analyze multiple datasets in parallel and 
+save parameter values for future use, and monitor progress step by step. For 
+codeml analyses of sites-based evolutionary models features an interactive 
+tabular summary of results, visualizations of selective pressure along genes, 
+interactive histograms and depictions of phylogenetic trees with branch 
+lengths proportional to the estimated number of nucleotide substitutions.
+It is available as a combination of Perl script, Java executables and Linux
+or Solaris executables.  It can be run on systems that have Perl, Java,
+PAML 3.14 or 3.15, and PHYLIP.  If parallel execution is desired you need to have SGE or Condor, otherwise it will just run on the machine on which it is launched.  It can be downloaded from
+<a href="http://ideanalyses.sourceforge.net/main.html">its web site</a>
+at <code>http://ideanalyses.sourceforge.net/main.html</code>
+<P>
+
+<A NAME="SLR">
+<HR>
+<P>
+Tim Massingham and Nick Goldman </A>
+of the Eurpean Bioinformatics Institute
+in  Hinxton, U. K.
+<tt>(timm<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ebi.ac.uk and <!deathtospam>goldman&nbsp;(at)<!deathtospam>&nbsp;ebi.ac.uk)</tt>
+have produced <strong>SLR</strong>
+(Sitewise Likelihood Ratio),
+a program to compute and test the nonsynonymous/synonymous ratio of 
+substitutions at each site.  For coding sequences it makes a maximum 
+likelihood estimate for each amino acid position of the ratio of nonsynonymous 
+substitutions to synonymous substitutions, and does a likelihood ratio test 
+for that site. The many sitewise tests are then corrected for multiple 
+comparisons to indicate which sites have strong evidence of purifying or 
+positive selection and so whether there is any reliable evidence for the 
+presence of selection in the alignment. Alternatively SLR can restricted to 
+only detect unusually variable sites, indicating such sites and providing 
+evidence for the presence of positive selection in the alignment.
+It is described in the paper:
+Massingham, T. and N. Goldman. 2005. Detecting amino acid sites under positive 
+selection and purifying selection. <em>Genetics</em> <b>169:</b> 1853-1762.
+It is available as C source code, Windows executables, Linux executables and 
+Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://www.ebi.ac.uk/goldman/SLR/">its web site</a>
+at <code>http://www.ebi.ac.uk/goldman/SLR/</code>
+<P>
+
+<HR>
+<A NAME="treefinder"><P>
+<IMG SRC="icons/treefinder.gif">&nbsp; Gangolf Jobb</A> (<tt>gangolf (at)
+treefinder.de</tt>), formerly of the
+Institut f&uuml;r Statistik of the University of M&uuml;nchen, Germany,
+has produced <strong>Treefinder</strong>, a maximum likelihood program for
+nucleotide sequence data.
+It makes available a variety of models of base change, including codon-position-specific models.  It carries out search for best trees by its own method of
+tree rearrangement, and can assess statistical support for groups by either
+bootstrap or a local paired-sites method.  All parameters of the models can be
+optimized by searching for the values that maximize the likelihood.  The
+program is fast, and has both a graphical user interface and a general
+language in which its operation can be programmed. Trees can be interactively
+manipulated and constrained in various ways.  Treefinder is described in
+a paper: Jobb, G., A. von Haeseler, and K. Strimmer. 2004. TREEFINDER: A
+powerful graphical analysis environment for molecular phylogenetics.
+<em>BMC Evolutionary Biology</em> <b>4:</b> 18.  It has been available for
+download from
+<A HREF="http://www.treefinder.de">its web site</A> at
+<code>http://www.treefinder.de</code> as executables for Windows, Mac OS X, and
+Linux.  It requires the Java runtime environment to be present.
+However currently Jobb has declared himself "on strike" at this web site
+and asks that people first email him to discuss whether he should be 
+compensated for his work.  I do not know whether that means that the program 
+is available for free currently, or whether he will soon start charging for it.
+He certainly deserves compensation for this good program.
+<P>
+
+<HR>
+<A NAME="PHYML"><P>
+St&eacute;phane Guindon (currently at the University of Auckland, New Zealand,
+<tt>s.guindon &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>auckland.ac.nz</tt>) and Olivier Gascuel (<tt>gascuel&nbsp;(at)<!deathtospam>&nbsp;lirmm.fr</tt>) at the
+LIRMM, of the CNRS and the University of Montpellier II, France, have
+released <strong>PHYML</strong> version 3.0, a fast maximum likelihood
+program for
+nucleotide or protein sequence data.  It has 6 possible DNA substition
+models, 5 amino acid substitution models, allowing estimation of many of
+the model parameters, and can allow for a gamma
+distribution of rates among sites and a proportion of invariable sites.
+It can also do bootstrapping of the trees.
+PHYML is described in a paper: Guindon, S., and O. Gascuel. 2003.  A simple,
+fast, and accurate algorithm to estimate large phylogenies by maximum
+likelihood. <em>Systematic Biology</em> <b>52:</b> 696-704.   It is
+available as Linux, SunOS, Windows, and Mac OS X executables from
+<A HREF="http://www.atgc-montpellier.fr/phyml/binaries.php">its web site</A> in Montpellier at
+<CODE>http://www.atgc-montpellier.fr/phyml/binaries.php</CODE>, where it is also available as a
+<A HREF="software.serv.html#ATGC servers">web server</A>.
+<P>
+
+<HR>
+<A NAME="BootPHYML"><P>
+Johan Nylander (<tt>Johan.Nylander<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>abc.se</tt>)
+has written
+<strong>BootPHYML</strong> version 3.4.  This is a Perl script that performs
+bootstrapping using programs from <a href="software.pars.html#PHYLIP">PHYLIP</a>
+, substituting <a href="#PHYML">PHYML</a> for the PHYLIP program DNAML.
+It works with Mac OS X and Linux or Unix.  It is available on
+<a href="http://www.abc.se/~nylander/bootphyml/bootphyml.html">a web page</a>
+at Nylander's web site in Sweden.
+<P>
+
+<A NAME="nhPhyML">
+<HR>
+<P>
+Bastien Boussau</A>
+of the Laboratoire de Biom&eacute;trie et Biologie Evolutive
+of the Universit&eacute; Lyon 1, CNRS, Lyon
+<tt>(bastien.boussau<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univ-lyon1.fr)</tt>
+has released <strong>nhPhyML</strong>
+(<i>n</i>on-<i>h</i>omogeneous <i>PhyML</i>),
+version 1.00, a program based on <a href="#PhyML">PHYML</A> to reconstruct 
+trees with a non-homogeneous model of DNA sequence evolution.  nhPhyML can 
+reconstruct phylogenies by Maximum Likelihood framework using the Galtier and 
+Gouy (1998) nonhomogenous model of DNA sequence evolution. This model 
+allows different equilibrium G+C content to be associated to different 
+branches of the phylogeny. nhPhyML will locally rearrange a given rooted 
+phylogeny without changing the root position, and will optimize parameters of 
+the model of sequence evolution.  It is described in the paper:
+Boussau, B., and M. Gouy. 2006.  Efficient likelihood computations with 
+nonreversible models of evolution.  <i>Systematic Biology</i> <b>55 (5):</b>
+756-768.
+It is available as C source code and Linux executables.  It can be downloaded from
+<a href="http://pbil.univ-lyon1.fr/software/nhphyml/">its web site</a>
+at <code>http://pbil.univ-lyon1.fr/software/nhphyml/</code>
+<P>
+
+<A NAME="PhyML-Multi">
+<HR>
+<P>
+Bastien Boussau</A>
+of the Laboratoire de Biom&eacute;trie et Biologie Evolutive
+of the Universit&eacute; Lyon 1, CNRS, Lyon
+<tt>(bastien.boussau<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univ-lyon1.fr)</tt>
+has released <strong>PhyML-Multi</strong>
+(a <i>PhyML</i>-derived program to detect recombination which uses <i>multi</i>ple trees for one alignment),
+version 1.00, a program that can infer recombination breakpoints and infer 
+multiple phylogenetic from one alignment.  PhyML-Multi can find recombination 
+breakpoints in an alignment and infer phylogenies. It takes as input a 
+sequence alignment and a putative number <i>k</i> of trees to reconstruct. 
+Then, using a HMM or a mixture model, it will infer <i>k</i> trees from the 
+alignment and predict recombination breakpoints, under the Maximum Likelihood 
+criterion. PhyML-Multi can work on DNA sequences as well as protein sequences, 
+and can handle dozens of sequences.
+It is described in the paper:
+Boussau, B., L. Gu&eacute;guen, and M. Gouy. 2009. A mixture model and a hidden
+markov model to simultaneously detect recombination breakpoints and reconstruct
+phylogenies. <i>Evolutionary Bioinformatics Online</i> <b>5 (June 25):</b> 67-79.
+It is available as C source code and Linux executables.  It can be downloaded from
+<a href="http://pbil.univ-lyon1.fr/software/phyml_multi/">its web site</a>
+at <code>http://pbil.univ-lyon1.fr/software/phyml_multi/</code>
+<P>
+
+<HR>
+<P>
+<A NAME="PARBOOT"><P>
+Pierre Rioux and Tim Littlejohn</A>, then of the Informatics
+Division of the
+Organelle Genome Megasequencing Program at the Universit&eacute; de
+Montr&eacute;al (LittleJohn is currently at BioLateral Group,
+in Sydney, Australia, <tt>tim<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>biolateralgroup.com</tt>) made available <STRONG>PARBOOT</STRONG> (PARallel
+BOOTstrapping), a program that
+takes bootstrap sampled data sets and splits
+them up, submitting each to a different computer, so as to run bootstrapping
+quickly on networks of computers.  It is intended for use with
+<a href="software.pars.html#PHYLIP">PHYLIP</a> programs.
+It is available free as C source code
+<A HREF="http://microbe.bio.indiana.edu:7131/soft/iubionew/molbio/evolution/phylo/ParBoot/">from the Indiana University IUBIO software archive</A>
+at <CODE>http://microbe.bio.indiana.edu:7131/soft/iubionew/molbio/evolution/phylo/ParBoot/</CODE>.  It is no longer available by ftp from Montr&eacute;al.
+It is described <A HREF="http://megasun.bch.umontreal.ca/aboutpb.html">on a web page</A> at the Universit&eacute; de Montr&eacute;al at
+<CODE>http://megasun.bch.umontreal.ca/aboutpb.html</CODE>.  It requires a
+networked system of computers with PHYLIP, a Perl interpreter, and
+appropriate accounts and permissions.
+<P>
+
+<A NAME="SSA">
+<HR>
+<P>
+Laura Salter Kubatko</A>
+of the Departments of Statistics and Evolution, Ecology, and Organismal Biology
+at the Ohio State University, Columbus, Ohio
+<tt>(lkubatko<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;stat.ohio-state.edu)</tt>
+has written <strong>SSA</strong>
+(inference of maximum likelihood phylogenetic trees using a Stochastic Search Algorithm),
+version 1.0
+, a program that uses a stochastic search to find maximum likelihood 
+phylogenies.  SSA is a program for inferring maximum likelihood phylogenies 
+from DNA sequences. Two versions of the program are available: one which 
+assumes a molecular clock and one which does not make this assumption. The 
+method for searching the space of trees for the ML tree is based on a 
+simulated-annealing type algorithm. The program implements the F84 model of 
+nucleotide substitution and associated sub-models. It estimates the ML tree 
+and branch lengths, and can optionally estimate the transversion/transversion 
+ratio. Upon termination, the program returns the <em>k</em> trees of highest likelihood 
+found during the search, where <em>k</em> can be set by the user.
+It is described in the paper:
+Salter, L. A. and D. K. Pearl. 2001. Stochastic search strategy for estimation of maximum likelihood phylogenetic trees.  <em>Systematic Biology</em> <b>50(1):</b> 7-17.
+It is available as executables for Windows, Linux, AIX, and SPARC systems.
+Laura is also willing to send the source code to users who own the book
+<em>Numerical Recipes in C</em> by Press, Teukolsky, Vetterling and Flannery,
+and who thus have permission to use routines from that book.
+The documentation and executables can be downloaded from
+<a href="http://www.stat.ohio-state.edu/~lkubatko/software/ssa/ssa.html">its web site</a>
+ at  <code>http://www.stat.ohio-state.edu/~lkubatko/software/ssa/ssa.html</code>
+<P>
+
+<A NAME="SEMPHY">
+<HR>
+<P>
+Nir Friedman, Matan Ninio, Tal Pupko, Eval Privman, and Itshak Pe'er</A>
+of the Department of Computer Science and Engineering of Hebrew University, Jerusalem, Israel,
+and the Department of Cell Research and Immunology of Tel Aviv University,
+Israel
+<tt>(semphy<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.huji.ac.il)</tt>
+have written <strong>SEMPHY</strong>
+(Structural EM PHYlogenetic reconstruction),
+version 2.0, Uses the structural EM algorithm to search for maximum likelihood 
+phylogenies.  The Structural EM algorithm is one proven to go uphill on the 
+likelihood surface, and should gain in efficiency and adequacy of search of 
+the likelihood surface compared to other likelihood algorithms.  The program 
+can use DNA or protein sequences, and can use a variety of DNA models and 
+amino acid replacement models including the general reversible model and the 
+HKY model (for DNA) and the JTT model (for protein sequences).  It also allows 
+for Gamma-distributed among-sites rate variation.  SEMPHY also makes available
+an iterative distance matrix method which computes Bayesian posterior rates of
+change at individual sites, uses these to compute distances and find a
+neighbor-joining tree.  The program and methods are described in the papers:
+<UL><LI>Friedman, N., M. Ninio, I. Pe'er, and T. Pupko.  2002.  A Structural EM Algorithm for phylogenetic inference. <em>Journal of Computational Biology</em> <b>9(2):</b> 331-353.
+<LI>Ninio, M., E. Privman,  T. Pupko, and N. Friedman. 2007. Phylogeny reconstruction: increasing the accuracy of pairwise distance estimation using bayesian inference of evolutionary rates. <em>Bioinformatics</em> <b>23: </b> e136-e141.
+</UL>
+It is available as C++ source code, Windows executables, Linux executables and Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://compbio.cs.huji.ac.il/semphy/">its web site</a>
+at <code>http://compbio.cs.huji.ac.il/semphy/</code>
+<P>
+
+<A NAME="Leaphy">
+<HR>
+<P>
+Simon Whelan</A>
+of the Faculty of Life Sciences
+at the University of Manchester, U.K.
+<tt>(simon.whelan<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;manchester.ac.uk)</tt>
+has released <strong>Leaphy</strong>
+(Likelihood Estimation Algorithms for PHYlogenetics),
+version 1.0beta, a fast and accurate program for maximum likelihood
+phylogenetic inference.  Leaphy uses maximum likelihood to estimate trees from
+aligned amino acid and nucleotide sequences under a variety of commonly used
+and popular models.  The methods for searching for the best tree
+topology are described in the paper:
+Whelan, S. 2007. New approaches to phylogenetic tree search and their
+application to large numbers of protein alignments. <em>Systematic Biology</em>
+<b>56:</b> 727-740.
+It is available as Windows executables and Linux executables.  It can be downloaded from
+<a href="http://www.bioinf.manchester.ac.uk/leaphy/Leaphy.htm">its web site</a>
+at <code>http://www.bioinf.manchester.ac.uk/leaphy/Leaphy.htm</code>
+<P>
+
+<A NAME="PhyloCoCo">
+<HR>
+<P>
+Daniele Catanzaro</A>
+of the Computer Science Department
+of the Universit&eacute; Libre de Bruxelles (U.L.B.)
+<tt>(dacatanz<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;@ulb.ac.be)</tt>
+has released <strong>PhyloCoco</strong>
+version 2.3, a molecular phylogeny package for Intel-iMac with OS 10.4.9 or
+higher and Java 1.4 or higher.  PhyloCoco is a minimalist tool for rebuilding
+molecular phylogenies by means of the likelihood criterion or the
+minimum evolution criterion. Phylococo
+selects the best substitution model of DNA evolution for the dataset of
+sequences to be analyzed and displays the best phylogeny found so far.
+It uses the GTR model of DNA evolution and uses different optimization
+methods including the Very Large Scale Neighborhood (VLSN) search for the
+topology and Iterated Local Search (ILS) to explore the solution space.
+PhyloCoCo uses <a href="software.etc2.html#FigTree">FigTree</a>
+to display the resulting phylogeny.  It is described in the paper:
+Catanzaro, D., R. Pesenti and M. C. Milinkovitch. 2007. Estimating phylogenies
+under maximum likelihood: a very large-scale neighborhood approach.
+<em>Submitted to BMC Bioinformatics</em>.
+It is available as Java source code and Intel Mac OS X executables.  It can be downloaded from
+<a href="http://homepages.ulb.ac.be/~dacatanz/Site/PhyloCoco.html">its web site</a>
+at <code>http://homepages.ulb.ac.be/~dacatanz/Site/PhyloCoco.html</code>
+<P>
+
+<HR>
+<A NAME="PHASE"><P>
+<img src="icons/phase.gif" alt="[PHASE icon]"> &nbsp; Vivek Gowri-Shankar</A> and Howsun Jow (<tt>vivek.gowri-shankar<! death to spam>&nbsp;(at)<! death to spam>&nbsp;s.man.ac.uk</tt>) of the Department of Computer Sciences of the University of Manchester,
+Manchester, U.K. have written <strong>PHASE</strong>, version 1.1,
+a software package for PHylogenetics And Sequence Evolution.  It infers
+phylogenies with models for RNA evolution that include models for both
+paired sites and unpaired sites.  The models for the unpaired sites have the
+usual 4 states, while the models for the paired sites have 6, 7, or 16
+states, depending on the model chosen.  The programs carry out a Bayesian
+Markov chain Monte Carlo (MCMC) analysis that samples trees from the
+posterior distribution given the data.  PHASE is described in two papers:
+<UL>
+<LI>Hudelot, C., V. Gowri-Shankar, H. Jow, M. Rattray and P. Higgs. 2003.
+RNA-based phylogenetic methods: Application to mammalian mitochondrial RNA sequences. <em>Molecular Phylogenetics and Evolution</em> <b>28:</b> 241-252.
+<LI>Jow, H., C. Hudelot, M. Rattray and P. Higgs. 2002. Bayesian phylogenetics
+using an RNA substitution model applied to early mammalian evolution.
+<em>Molecular Biology and Evolution</em> <b>19:</b> 1591-1601.
+</UL>
+It is available as C++ source code and Linux or Windows executables from
+<A HREF="http://www.bioinf.man.ac.uk/resources/phase/">its web page</A> at
+<code>http://www.bioinf.man.ac.uk/resources/phase/</code>.
+<P>
+
+<HR>
+<A NAME="PhyNav"><P> Le Sy Vinh</A> (<tt>vinh<!deathtospam>&nbsp; (at)<!deathtospam>&nbsp; cs.uni-duesseldorf.de</tt>)
+and Heiko Schmidt (<tt>heiko<!deathtospam>&nbsp; (at)<!deathtospam>&nbsp; cs.uni-duesseldorf.de</tt>)
+of the Institut f&uuml;r Bioinformatik of the University of D&uuml;sseldorf,
+Germany and  Arndt von Haeseler (<tt>arndt.von.haeseler<!deathtospam>&nbsp; (at)<!deathtospam>&nbsp; univie.ac.at</tt>)
+of the Center for Integrative Bioinformatics Vienna (CIBIV), Austria,
+have written <strong>Phylogenetic Navigator (PhyNav)</strong> version 1.0.
+This program finds subsets of species in a dataset that are "minimal k-distance
+subsets" and analyses these each by maximum likelihood.  Then it stitches these
+groups together using likelihood.  This makes it possible to analyze larger
+datasets.  The program is described in a paper: Vinh, L. S.,  H. A. Schmidt,
+and A. von Haeseler. 2005. PhyNav: A novel approach to reconstruct large
+phylogenies. pp. 386-393 in <em>Classification, the Ubiquitous Challenge (Proceedings of the 28th Annual Conference of the GfKl 2004),</em> ed. C. Weihs and
+W. Gaul.  Series Studies in Classification, Data Analysis, and Knowledge
+Organization.  Springer-Verlag, Heidelberg/New York.  It is available
+as Linux executables from
+<a href="http://www.cibiv.at/software/phynav/">its web site</a> at
+<code>http://www.cibiv.at/software/phynav/</code>
+<P>
+
+<A NAME="MixtureTree">
+<HR>
+<P>
+<IMG SRC="icons/mixturetree.jpg" ALT="[MixtureTree icon]"> &nbsp;&nbsp;Shu-chuan (Grace) Chen</A>
+of the School of Mathematical and Statistical Sciences
+of Arizona State University, Tempe, Arizona
+<tt>(shu-chuan.chen<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;asu.edu)</tt>
+has released <strong>MixtureTree</strong>
+version 2.0, A phylogenetic tree package based on mixture models for reconstructing phylogeny from binary sequence data.  MixtureTree is a Linux based program (written in C/C++) which implements an algorithm for binary sequence data, such as single-nucleotide polymorphisms (SNPs). In addition to 
+the mixture algorithm with three different optimization options, the program
+also implements a bootstrap procedure with a majority-rule consensus tree.
+The program is described in the papers:
+<ul>
+<li> Chen, S. C., M. Rosenberg, and B. Lindsay. 2011.  MixtureTree: a program
+for constructing phylogeny, <i>BMC Bioinformatics</i> <b>12:</b> 111.
+<li> Chen, S. C., M. Li, M. Rosenberg, and B. Lindsay. 2011.  Mixture tree
+construction and its applications. pp 135-147 in
+pp. 135-147 in <i>Handbook of Statistical Bioinformatics</i>, ed. by H. S. Lu,
+B. Scholkopf, and H. Zhao. Springer Handbooks of Computational Statistics. Springer-Verlag 
+</ul>
+The methods are described in the paper: Chen, S. C., and B. Lindsay, B. 2006.
+Building mixture trees from binary sequence data, <i>Biometrika</i> <b>93
+(4):</b> 843-860.
+MixtureTree is available as C source code and Linux executables.  It can be downloaded from
+<a href="http://www.mixturetree.net/download.html">its web site</a>
+at <code>http://www.mixturetree.net/download.html</code>
+<P>
+
+<A NAME="FastTree">
+<HR>
+<P>
+Morgan Price</A>
+of the Adam Arkin's group in the Physical Biosciences Division
+of Lawrence Berkeley National Laboratory, Berkeley, California
+<tt>(fasttree<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;microbesonline.org)</tt>
+has produced <strong>FastTree</strong>
+version 2, a fast maximum likelihood program that starts from a
+neighbor-joining-like distance matrix estimate of the tree, which is
+inferred using profiles of sequences instead of a distance matrix. It then
+rearranges
+that tree using a minimum evolution criterion, and finally optimizes the
+tree by nearest-neighbor rearrangements using likelihood as the criterion.
+The final tree is thus at least a local optimum using likelihood.
+It is described as having run times proportional to N<sup>2</sup>L,
+where N is the 
+number of species and L the sequence length.  It can handle either nucleotide 
+or protein sequences.  It also computes a measure of local support for nodes 
+using bootstrapping and a Shimodaira-Hasegawa (SH) method involving nearby 
+nodes.
+It can use multithreading to take advantage of multiple processors.
+It is described as much faster than other likelihood programs.
+FastTree uses a GTR model of substitution, with gamma-distributed rate 
+variation.
+It is described in two papers:
+<UL>
+<LI> Price, M. N., P. S. Dehal, and A. P. Arkin 2009. FastTree: Computing
+large minimum-evolution trees with profiles instead of a distance matrix.
+<I> Molecular Biology and Evolution</i> <b>26:</b> 1641-1650
+<LI> Price, M. N., P. S. Dehal, and A. P. Arkin 2010. FastTree 2 --
+approximately maximum-likelihood trees for large alignments. <i>PLoS ONE</i>
+<b>5(3):</b> e9490
+</UL>
+FastTree is available as C source code, Windows executables and Linux executables.  
+It can be downloaded from
+<a href="http://www.microbesonline.org/fasttree/">its web site</a>
+at <code>http://www.microbesonline.org/fasttree/</code>
+<P>
+
+
+<A NAME="Mac5">
+<HR>
+<P>
+Paul Michael Agapow</A>, then
+of the Department of Biology
+of  Imperial College, Silwood Park, U.K. and more recently of the
+Health Protection Agency, U.K.,
+<tt>(agapow<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;agapow.net)</tt>
+has written <strong>Mac5</strong>, version 1.7.3,
+a program for phylogenetic reconstruction using gapped data.
+MAC5 implements MCMC sampling to estimate a phylogenetic tree from a DNA
+multiple alignment. What differentiates MAC5 from similar programs is its use
+of five-state sequence evolution models as a means to include the gap
+information.
+It is available as C source code, Windows executables and Powermac Mac OS X executables.
+Its author says that owing to other projects, Mac5 is not being further
+developed and is not being supported by him.  It can be downloaded from
+<a href="http://www.agapow.net/software/mac5">its web site</a>
+ at  <code>http://www.agapow.net/software/mac5</code>
+<P>
+
+<HR>
+<A NAME="Modeltest"><P>
+<IMG SRC="icons/Modeltest.gif" ALT="[Modeltest icon]">
+David Posada</A> (<tt>dposada<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>uvigo.es</tt>)
+of the Department of Biochemistry, Genetics and Immunology of the
+University of Vigo, Spain and Keith Crandall
+of the Department of Biology, Brigham Young University
+released 
+<STRONG>Modeltest</STRONG> version 3.7, a program to test a hierarchy
+of statistical models of DNA evolution using the Likelihood Ratio Test
+criterion and the AIC (Akaike Information Criterion).  The likelihood
+values are obtained by running <A HREF="software.pars.html#PAUP">PAUP*</A>.
+MODELTEST accepts likelihood scores corresponding to 56 models of DNA
+substitution including whether transition and transversion rates are
+equal, whether rates at different sites are equal, and whether there are
+invariant sites.  Modeltest is described in the paper:
+Posada, D. and K. A. Crandall. 1998. MODELTEST: testing the model of DNA
+substitution. <EM>Bioinformatics</EM> <B>14:</B> 817-818.
+It is available as executables for Macintosh, for Windows,
+and source code in C for that can be compiled on many other systems.
+It is distributed from
+<A HREF="http://darwin.uvigo.es/software/modeltest.html">its web site</A> at
+<CODE>http://darwin.uvigo.es/software/modeltest.html</CODE>.
+Modeltest was the basis for two further developments: the MrModeltest
+program which uses <A HREF="software.etc1.html#MrBayes">MrBayes</A>
+and the FindModel server at Los Alamos National laboratories which
+is a revised version of Modeltest that uses the <A HREF="software.dist.html#weighbor">weighbor</A> program to infer the trees.
+<P>
+
+<HR>
+<A NAME="jMODELTEST"><P>
+<IMG SRC="icons/Modeltest.gif" ALT="[jMODELTEST icon]">
+David Posada</A> (<tt>dposada<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>uvigo.es</tt>)
+of the Department of Biochemistry, Genetics and Immunology of the
+University of Vigo, Spain has released <strong>jMODELTEST</strong> version
+0.1.1, a
+Java version of <a href="#Modeltest">Modeltest</a>.   Like Modeltest, it
+carries out statistical selection of best-fit models of nucleotide substitution.
+It implements five different model selection strategies: hierarchical and
+dynamical likelihood ratio tests (hLRT and dLRT), Akaike and Bayesian
+information criteria (AIC and BIC), and a decision theory method (DT). It also
+provides estimates of model selection uncertainty, parameter importances and
+model-averaged parameter estimates, including model-averaged phylogenies.  
+It is described in the paper:  Posada D. 2008. jModelTest: Phylogenetic Model
+Averaging. <i>Molecular Biology and Evolution</i> <b>25:</b> 1253-1256.
+It is distributed as Java executables that will run on Java-equipped Windows
+systems, on Mac OS X, and on Linux systems that have Java installed.   It
+also uses <a href="#PHYML">PHYML</a> to comput maximum likelihood trees under
+the various models.  I do not know whether it comes with PHYML installed
+or requires the user to install it.  jMODELTEST
+will be found at
+<a href="http://darwin.uvigo.es/software/jmodeltest.html ">its web site</a> at
+<code>http://darwin.uvigo.es/software/jmodeltest.html</code>
+<P>
+
+<HR>
+<A NAME="MrMTgui"><P>
+Paulo Nuin (<tt>nuinp<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>mcmaster.ca</tt>) of the Department of Biology,
+McMaster University, Hamilton, Ontario, Canada has released
+<strong>MrMTgui</strong> version 1.01.  This is a graphic user interface for
+running <a href="#Modeltest">Modeltest</a> and <a
+href="#MrModeltest">MrModeltest</a>.  It is available for Windows
+as executables from
+<a href="http://genedrift.org/mtgui.php">the MrMTgui web site</a>
+at <code>http://genedrift.org/mtgui.php</code>.   Source code of a
+Linux version is also available which can be compiled using the WxWindows
+windowing software.  The Linux sources are available by accessing a
+svn (subversion) version-control code base, using instructions available
+at the above site.  MrMTgui was formerly known as MTgui in the earlier
+version which could not access MrModeltest.
+<P>
+
+<HR>
+<A NAME="MrModeltest"><P>
+Johan Nylander (<tt>Johan.Nylander<!deathtospam> 
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>abc.se</tt>)
+has released <strong>MrModeltest</strong> version 2.2.  This is a program which is a simplified version of
+<a href="#Modeltest">Modeltest</a> 3.7.  It is performs hierarchical
+likelihood ratio tests and calculates approximate AIC, AICc, and Akaike weights
+of the nucleotide substitution models currently implemented in both
+<a href="software.pars.html#PAUP">PAUP*</a> and <a href="#MrBayes">MrBayes</a>.
+Version 2 has added use of four different hierarchies for the likelihood ratio
+tests and the selected model being printed in a MrBayes block.  
+MrModeltest is available as an executable and source code for Windows,
+for Mac OS, and for Mac OS X, and as source code for Linux and Unix.
+It is available from
+<a href="http://www.abc.se/~nylander/">Nylander's software download site</a>
+at <code>http://www.abc.se/~nylander/</code> in Sweden.
+<P>
+
+<HR>
+<a name="Modelfit"><P></a>
+Johan Nylander (<tt>Johan.Nylander<!deathtospam> 
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>abc.se</tt>)
+has written <strong>Modelfit</strong> version 1.2, and <strong>MrModelfit</strong> version 1.2.  These are Perl
+scripts that can run (respectively) <a href="#Modeltest">Modeltest</a> and
+<a href="#MrModeltest">MrModeltest</a> simply by typing a single command
+line.  They are available from
+<a href="http://www.abc.se/~nylander/">Nylander's software download site</a>
+at <code>http://www.abc.se/~nylander/</code> in Sweden.
+<P>
+
+<HR>
+<A NAME="Porn*"><P>
+Charles Bell</A> of the Department of Biology of Xavier University of
+Louisiana, New Orleans (<tt>cbell3<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>xula.edu</tt>)
+has written <strong>Porn*</strong>
+(Phylogenetics On Rick's Network, as it was originally hosted on Rick
+Ree's site)
+verson 2.0, a Linux clone of <a href="Modeltest">Modeltest</a> using the Python
+language.  It enables command-line computations equivalent to Modeltest
+under the Linux operating system.  It creates command blocks for <a href="software.pars.html#PAUP">PAUP*</a> which can be used when running PAUP*.
+Porn* is written as a shell script invoking Python modules.
+It is available at <a href="http://www.phylodiversity.net/cbell/pornstar/">its web site</a> at <code>http://www.phylodiversity.net/cbell/pornstar/</code>
+<P>
+
+<HR>
+<A NAME="ProtTest"><P>
+<IMG SRC="icons/prottest.jpg" ALT="[ProtTest icon]">
+&nbsp; David Posada</A> (<tt>dposada<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>uvigo.es</tt>)
+of the Department of Biochemistry, Genetics and Immunology of the
+University of Vigo, Spain has released <strong>ProtTest</strong>,
+version 2.4, a Java program allowing testing of 64 different models of protein
+evolution, using the AIC, AICc, and BIC criteria for choosing among
+models that include different substitution models, invariant sites,
+rate heterogeneity, and empirical amino acid frequency variants of the
+models.  ProtTest uses the <a href="software.pars.html#PAL">PAL</a> library
+of phylogenetic java routines and also uses the <a href="software.etc1.html#PHYML">PHYML</a> program to compute likelihoods.
+It is described in the paper: Abascal, F., R. Zardoya and D. Posada. 2005.
+ ProtTest: Selection of best-fit models of protein evolution.
+<em>Bioinformatics</em> <b>21:</b> 2104-2105.  It is available from
+<a href="http://darwin.uvigo.es/software/prottest.html">its web site</a>
+at <code>http://darwin.uvigo.es/software/prottest.html</code>
+<P>
+
+<HR>
+<A NAME="ModelGenerator"><P> Thomas Keane, of the Bioinformatics and
+Pharmacogenomics Lab of the Department of Biology,
+National University of Ireland, Maynooth
+(<tt>thomas.m.keane&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>nuim.ie</tt>)
+has written <strong>ModelGenerator</strong>, version 0.85.
+It is a Java program for model selection that selects
+amino acid and nucleotide substitution models using
+Fasta or <a href="software.pars.html#PHYLIP">PHYLIP</a> alignments.
+It supports 56 nucleotide and 80 amino acid substitution models.
+It is described in the paper: Keane, T. M., C. J. Creevey, M. M.
+Pentony, T. J. Naughton and J. O. McInerney. 2006, Assessment of methods
+for amino acid matrix selection and their use on empirical data shows that ad
+hoc assumptions for choice of matrix are not justified. <em>BMC Evolutionary
+Biology</em> <b>6:</b> 29.
+It is available from <a href="http://bioinf.may.ie/modelgenerator/">its web site</a> at <code>http://bioinf.may.ie/modelgenerator/</code>.
+<P>
+
+<HR>
+<a name="MrAIC"><P></a>
+Johan Nylander (<tt>Johan.Nylander<!deathtospam> 
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>abc.se</tt>)
+has written <strong>MrAIC</strong> 
+verion 1.4.4.  This is a Perl script that carries out AIC, AICc, BIC, and
+Akaike weights model comparison methods for nucleotide substitution models
+by invoking the <a href="#PHYML">PHYML</a> program.  It is distributed from
+<a href="http://www.abc.se/~nylander/">Nylander's software download site</a>
+at <code>http://www.abc.se/~nylander/</code> in Sweden.
+<P>
+
+<HR>
+<A NAME="DT-ModSel">
+<P>
+Vladimir Minin, Zaid Abdo, Paul Joyce, and Jack Sullivan</A>
+of the Department of Biological Sciences
+at the University of Idaho, Moscow, Idaho
+<tt>(jacks<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;uidaho.edu)</tt>
+or
+<tt>(vminin<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;u.washington.edu)</tt>
+(Minin is now at the University of Washington)
+have released <strong>DT-ModSel</strong>
+(Decision Theory MODel SELection),
+a performance-based method for selecting a likelihood model for phylogenetic estimation .
+It implements a model selection method which is based on the Bayesian Information Criterion, but incorporates relative branch-length error as a performance measure in a decision theory (DT) framework. This DT method includes a penalty for overfitting, is applicable prior to running extensive analyses, and simultaneously compares all models being considered and thus does not rely on a series of pairwise comparisons of models to traverse model space.  It can compare 56 different models of molecular sequence evolution on a given tree.
+Minin, V., Z. Abdo, P. Joyce, and J. Sullivan. 2003. Performance-based selection of likelihood models for phylogeny estimation. <em>Systematic Biology</em> <b>52:</b> 674-683.
+It is available as Perl script.  It can be downloaded from
+<a href="http://www.webpages.uidaho.edu/~jacks/DTModSel.html">its web site</a>
+ at  <code>http://www.webpages.uidaho.edu/~jacks/DTModSel.html</code>
+<P>
+
+<HR>
+<A NAME="HY-PHY"><P>
+<IMG SRC="icons/HyPhy.gif" ALT="[HyPhy icon]">
+Sergei Kosakovsky Pond</A> and Simon Frost of the Anitviral Research Center,
+University of California, San Diego
+and Spencer Muse of the Department of Statistics, North Carolina State
+University, Raleigh, North Carolina (<TT>muse<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>stat.ncsu.edu</TT>)
+have released <STRONG>HY-PHY</STRONG> (HYpothesis testing using
+PHYlogenies), version 0.99Beta.  HY-PHY has general ways of
+enabling the user to perform a wide variety of statistical tests of
+different models of molecular sequence change.  It is actually a
+higher-level programming language which enables the user to set
+up many different kinds of tests.  The user can define their own
+alphabet of symbols and test any reversible subtitution model.
+Examples of tests that can be performed include molecular clock tests,
+relative rate tests, relative ratio tests, and tests of positive
+selection.
+It is described in a paper: Kosakovsky Pond, S. L., S. D. Frost, and S. V. Muse.
+2005. HyPhy: hypothesis testing using phylogenies. <em>Bioinformatics</em>
+<B>21(5):</B> 676-679.
+<P>
+Although not primarily intended as a
+phylogeny estimation package, it also can infer trees by
+Neighbor-Joining and UPGMA methods, and a number of search
+strategies are also available for likelihood inference.
+HY-PHY is freely available as executables for Mac OS, for Mac OS X, for
+Windows, and as source code for for Unix and Linux.  It is available at
+<A HREF="http://www.hyphy.org/">the HY-PHY web page</A>
+at <TT>http://www.hyphy.org</TT>.
+<P>
+
+<HR>
+<P>
+<img src="icons/kakusan4.gif" alt="[Kakusan icon]"><A NAME="Kakusan">
+Akifumi S. Tanabe</A>
+of the Division of Ecology and Evolutionary Biology, Department of 
+Environmental Life Sciences, Graduate School of Life Sciences
+of Tohoku University, Japan
+<tt>(astanabe<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;mail.tains.tohoku.ac.jp)</tt>
+has released <strong>Kakusan4</strong>,
+a parallelized nucleotide substitution model selection 
+script written in the Perl language for data sets with multiple partitions.
+Kakusan3 supports nucleotide substitution model selection on each partition and/or each 
+codon position by AIC, AICc or BIC. Because the optimization of likelihoods 
+is executed using <a href="software.etc1.html#PAML">BASEML</a>,
+<a href="software.pars.html#PAUP">PAUP*</a> or
+<a href="software.etc1.html#treefinder">Treefinder</a> and these can be run in
+parallel, Kakusan can take advantage of multi-core systems or multiple
+processor systems.  The Kakusan Perl script can be run on Windows, 
+MacOS X, Linux, FreeBSD and on other UNIX operating systems. It accepts
+several different input file formats.
+It outputs configuration files for Treefinder, MrBayes and PAUP*.
+It is described in the paper:
+Tanabe, A. S., 2007, Kakusan: a computer program to automate the selection of 
+a nucleotide substitution model and the configuration of a mixed model on 
+multilocus data. <i>Molecular Ecology Notes</i> <b>7:</b> 962-964.
+It is available as Perl script, Windows executables and Mac OS X universal executables.  It can be downloaded from
+<a href="http://www.fifthdimension.jp/products/kakusan/">its web site</a>
+at <code>http://www.fifthdimension.jp/products/kakusan/</code>.  Earlier
+versions, Kakusan, Kakusan2, and Kakusan3 can also be downloaded there.
+<P>
+
+<HR>
+<A NAME="MAPPS">
+<P>
+<IMG SRC="icons/mapps.jpg" ALT="[MAPPS icon]">&nbsp;&nbsp;Jonathan Bollback</A>
+of the University of Edinburgh, Edinburgh, U.K., and of the Institute
+of Science and Technology, Austria
+<tt>(j.p.bollback <!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ed.ac.uk)</tt>
+has written <strong>MAPPS</strong>
+(Model Adequacy in Phylogenetics by Predictive Simulation)
+version 1.1.6, a program to evaluate the fit of a group of phylogenetic models 
+to DNA sequence data.  The rationale behind this approach is that an adequate 
+model should be able to predict future data (nucleotide site patterns). In the 
+absence of future data the model's predictive ability is compared to the 
+original data set. The model's predictive ability is evaluated through 
+simulation under the model. Comparison of simulated (or predictive) data sets 
+is evaluated using the multinomial test statistic.  The program uses data and 
+trees in a format compatible with the output from
+<a href="software.etc1.html#MrBayes">MrBayes</a>.
+It is described in the paper:
+Bollback, J. P. 2002. Bayesian model adequacy and choice in phylogenetics.
+<em>Molecular Biology and Evolution</em> <b>19(7):</b> 1171-1180.
+It is available as Mac OS X universal executables.  It can be downloaded from
+<a href="http://www.simmap.com/bollback/software.html">its web site</a>
+at <code>http://www.simmap.com/bollback/software.html</code>
+<P>
+
+<HR>
+<A NAME="CONSEL"><P>
+Hidetoshi Shimodaira ("Shimo")</A> of the Department of
+Mathematical and Computing Sciences, Tokyo Institute
+of Technology, Japan (<TT>shimo<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>is.titech.ac.jp</TT>)
+has released <STRONG>CONSEL</STRONG> version 0.1k, a package of small
+programs to calculate P values for tests of phylogenies.  It uses
+output from other phylogeny programs (in particular it can use output
+from <A HREF="software.pars.html#PAUP">PAUP</A>,
+<A HREF="software.etc1.html#PAML">PAML</A>,
+<A HREF="software.etc1.html#PHYML">PHYML</A>, and
+<A HREF="software.etc1.html#MOLPHY">MOLPHY</A>) which makes available
+to it the sitewise log-likelihoods for some trees and the trees themselves.
+It uses these to carry out the Kishino-Hasegawa test, the Shimodaira-Hasegawa
+test, a weighted version of the SH test, and a new "approximately
+unbiased" test of Shimodaira's.  CONSEL is available as C source code
+that will compile on Linux and Unix systems that have the <TT>gcc</TT>
+compiler, and it is also available as a DOS executable that will
+run on DOS or Windows systems.   It can be downloaded from
+<A HREF="http://www.is.titech.ac.jp/~shimo/prog/consel/">its web site</A>
+at <CODE>http://www.ism.ac.jp/~shimo/prog/consel/index.html</CODE>.
+It is described in a paper: Shimodaira, H. and M. Hasegawa. 2001.
+CONSEL: for assessing the confidence of phylogenetic tree selection. 
+<EM>Bioinformatics</EM> <B>17:</B> 1246-1247 which cites the statistical
+papers describing the methods.
+<P>
+
+<A NAME="scaleboot">
+<HR>
+<P>
+Hidetoshi Shimodaira</A> ("Shimo")
+of the Department of Mathematical and Computing Sciences
+of the Tokyo Institute of Technology, Ookayama, Meguroku, Tokyo, Japan
+<tt>( shimo<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;is.titech.ac.jp)</tt>
+has written <strong>scaleboot</strong>
+(approximately unbiased P-values via multiscale bootstrap),
+version 0.3-2, an R package for making approximately unbiased P values for 
+tree topologies.  savelboot implements Shimodaira's Approximately Unbiased 
+method of putting P values on regions of parameter space, including tree 
+topologies.  The P-values are computed from a set of multiscale bootstrap 
+probabilities , computed by sampling different fractions of the characters. 
+The multiscale bootstrap method has also been implemented in the program
+<a href="software.etc1.html#CONSEL">CONSEL</A> as well.  scaleboot has an 
+interface for the pvclust clustering package in R.  It also has a front end 
+for phylogenetic inference, and it can replace the CONSEL program for testing 
+phylogenies. Currently, scaleboot does not have a method for file conversion 
+from other phylogeny packages, so we must use CONSEL for this purpose before 
+applying scaleboot to calculate an improved version of AU p-values for trees 
+and branches.  The methods are described in the papers:
+<UL>
+<LI>Shimodaira, H. 2002. An approximately unbiased test of phylogenetic tree selection, <em>Systematic Biology</em> <b>51</b> 492-508.
+<LI>Shimodaira, H. 2004. Approximately unbiased tests of regions using multistep-multiscale bootstrap resampling, <em>Annals of Statistics</em> <b>32</b> 2616-2641.
+</ul>
+It is available as an R package.  It can be downloaded from
+<a href="http://www.is.titech.ac.jp/~shimo/prog/scaleboot/index.html">its web site</a>
+at <code>http://www.is.titech.ac.jp/~shimo/prog/scaleboot/index.html</code>
+<P>
+
+<A NAME="aLRT">
+<HR>
+<P>
+Maria Anisimova, Olivier Gascuel, and Jean-Fran&ccedil;ois Dufayard </A>
+of the Laboratoire d'Informatique, de Robotique et de Micro&eacute;lectronique de Montpellier (LIRMM)
+of the Universit&eacute; de Montpellier II, Montpellier, France
+<tt>(manisimova<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;hotmail.com)</tt>
+have produced <strong>PHYML-aLRT</strong>
+(PHYML approximate Likelihood Ratio Test),
+version 1.1, a program to carry out likelihood ratio tests of the presence of 
+branches in a phylogeny.  PHYML-aLRT is a modification of the original
+<a href="#PHYML">PHYML</a> program, and is designed to compute test of the 
+reality of branches in a known phylogeny.  Five branch support tests are 
+available: (1) the bootstrap, (2) aLRT statistics, (3) aLRT parametric 
+(Chi<sup>2</sup>-based) branch support, (4) aLRT non-parametric branch support 
+based on a Shimodaira-Hasegawa-like procedure, and (5) a combination of these 
+two latters supports, that is, the minimum value of both.
+The methods are described in the paper:
+Anisimova, M., and O. Gascuel. 2006. Approximate likelihood ratio test for branchs: A fast, accurate and powerful alternative. <em>Systematic Biology</em> <b>55(4):</b> 539-552. 
+It is available as Windows executables, Linux executables, Solaris executables,
+Powermac Mac OS X executables and Intel Mac OS X executables.  It can be downloaded from
+<a href="http://atgc.lirmm.fr/phyml/alrt/">its web site</a>
+at <code>http://atgc.lirmm.fr/phyml/alrt/</code>  This program was of temporary
+usefulness; the
+method was made available in PHYML 3.0 and should probably be used from that
+program, athough these executables are still available for download.
+<P>
+
+<A NAME="PLATO"><P>
+<IMG SRC="icons/plato.gif" ALT="[PLATO icon here]">
+&nbsp;&nbsp;Nick Grassly</A>,
+of the Department of Infectious Disease Epidemiology of
+the School of Public Health,
+Imperial College School of Medicine, St. Mary's Campus, London
+(<tt>n.grassly (at) imperial.ac.uk</tt>)
+has written <STRONG>PLATO</STRONG>,
+version 2.11, (Partial Likelihoods Assessed Through Optimisation),
+a program that takes sequential PHYLIP-style DNA sequences
+followed by their maximum likelihood phylogeny, and using a likelihood approach 
+with sliding window analysis and Monte Carlo simulation
+of the null distribution detects anomalously evolving regions in the DNA
+sequences and assesses their significance.
+This may lead to the detection of, for example, recombination, gene conversion
+or convergence, or reveal variable selective pressures along the gene sequence.
+A general substitution model is used that can allow the test to reveal
+differences due to recombination while ignoring those due to varying rate
+of evolution.
+The method is described in the paper: Grassly, N. C., and E. C. Holmes. 1997.
+A likelihood method for the detection of selection and recombination using
+sequence data.  <EM>Molecular Biology and Evolution</EM> <B>14:</B> 239-247.
+It is available as a Mac OS Macintosh binary executable, or in source code for
+Unix systems.  Although no longer distrubuted by Grassly, it is available
+<a href="http://microbe.bio.indiana.edu:7131/soft/iubionew/molbio/dna/analysis/Plato/">at the IUBIO web site</a>
+at <code>http://microbe.bio.indiana.edu:7131/soft/iubionew/molbio/dna/analysis/Plato/</code>
+<P>
+
+<A NAME="TOPALi">
+<HR>
+<P>
+<IMG SRC="icons/topali.gif" ALT="[Topali icon]">&nbsp;&nbsp; Iain Milne, Dominik Lindner, and Frank Wright</A>
+of Biomathematics and Statistics Scotland
+at the Scottish Crop Research Institute, Invergowrie, Dundee, Scotland
+<tt>(help<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;topali.org)</tt>
+have released <strong>TOPALi</strong>
+version 2, a program for statistical and evolutionary analysis of multiple
+sequence alignments.   It is currently at version 2.5. It checks for evidence 
+of past recombination events by looking for changes in the inferred
+phylogenetic tree <em>TOP</em>ology between adjacent regions of a multiple
+sequence <em>ALi</em>gnment. Their method detects recombinations by sliding a
+window along a sequence alignment, and measuring the discrepancy between
+the trees suggested by the first and second halves of the window, using
+distance matrix methods.  Version 2 includes further statistical tests
+for recombination based on nonparametric bootstrapping and allowing for rate
+heterogeneity between sites.   It can also launch a range of statistical and 
+evolutionary analyses of multiple sequence alignments as web services running 
+(either locally on your PC) or on the HPC cluster in Dundee. These
+include phylogenetic model selection (via
+<a href="software.etc1.html#ModelGenerator">ModelGenerator</a>), Bayesian 
+and maximum Likelihood phylogenetic tree estimation (via
+<a href="software.etc1.html#PHYML">PHYML</a> and
+<a href="software.etc1.html#MrBayes">MrBayes</a>), 
+detection of sites under positive selection (using
+<a href="software.etc1.html#PAML">PAML</a>), and the recombination 
+breakpoint location analysis methods.
+The versions of TOPALi are described in two papers:
+<ul>
+<LI> Milne, I., D. Lindner, M. Bayer, D. Husmeier, G. McGuire,
+D. F. Marshall and F. Wright.  2009.  TOPALi v2: a rich graphical interface 
+for evolutionary analyses of multiple alignments on HPC clusters and 
+multi-core desktops.  <i>Bioinformatics</i> <b>25 (1):</b> 126-127
+<li> Milne, I., F. Wright, G. Rowe, D. F. Marshal, D. Husmeier, and G. McGuire.
+2004. TOPALi: Software for automatic identification of recombinant sequences
+within DNA multiple alignments. <em>Bioinformatics</em> <b>20 (11):</b>
+1806-1807.
+</ul>
+It is available as Java source code, Java executables, Windows
+executables and Linux executables.  They can be downloaded from
+<a href="http://www.topali.org">its web site</a>
+at <code>http://www.topali.org</code>.  Version 1 of TOPALi has been superseded
+by version 2 but is also available, at
+<a href="http://www.topali.org/topali-v1/">the version 1 web page</a>
+at <code>http://www.topali.org/topali-v1/</code>
+<P>
+
+<HR>
+<A NAME="RecPars"><P>
+Kim Fisker</A>, then
+of the Computer Science Department at Aarhus University, Denmark
+released <STRONG>RecPars</STRONG>, which does
+a parsimony analysis of DNA sequences.   It was more
+recently maintained by Thomas Christensen of that department.  It tries to find
+the best phylogenies for different regions of the sequences and
+thereby postulating a recombination event between these segments.
+The method is described in a paper: Hein, J. 1993. A heuristic method to 
+reconstruct the history of sequences subject to recombination.
+<EM>Journal of Molecular Evolution</EM> <B>36:</B> 396-406.
+RecPars is available as C source code for Unix.  It is distributed from
+<A HREF="http://www.daimi.au.dk/~compbio/recpars/recpars.html">its
+web site</A>
+at <CODE>http://www.daimi.au.dk/~compbio/recpars/recpars.html</CODE>.
+A web server is available there as well.
+<P>
+
+<HR>
+<A NAME="PPH"><P>
+Dan Gusfield (<tt>gusfield<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>cs.ucdavis.edu</tt>) and Ren-Hua Chung
+(<tt>rchung<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ucdaavis.edu</tt>), both of the Department of Computer Science
+at the University of California, Davis, have released <strong>PPH</strong>
+(Perfect Phylogeny Haplotyper).  PPH takes a set of diploid genotypes for SNP
+(single nucleotide polymorphism) markers, and infers haplotypes for them.  It
+does this by seeing whether it can find a set of haplotypes that resolve all
+diploid genotypes and that fit onto a tree without requiring any extra changes
+of nucleotides (in other words, they are all compatible with the same tree).
+The result is not only the haplotype resolution but the resulting tree, if any.
+The method is described in a paper: Gusfield, D., 2002 Haplotyping as perfect
+phylogeny: conceptual framework and efficient solutions, pp. 165-175 in
+<em>Proceedings of RECOMB 2002</em>, edited by G. Myers, S. Hannenhalli,
+D. Sankoff, S. Istrail, P. Pevzner et al. ACM Press, New York. The program is
+available as C++ and Perl source code, and as executables for Windows, for
+SUN SPARC Solaris, for Intel/AMD-compatible Linux, and for Mac OS X from
+<A HREF="http://wwwcsif.cs.ucdavis.edu/~gusfield/pph.html">its web site</A> at <CODE>http://wwwcsif.cs.ucdavis.edu/~gusfield/pph.html</CODE>.
+<P>
+
+<A NAME="DualBrothers">
+<HR>
+<P>
+Marc Suchard and Vladimir Minin</A>
+of the Department of Biomathematics
+at the University of California, Los Angeles
+<tt>(msuchard<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ucla.edu)</tt>
+have released <strong>DualBrothers</strong>
+version 1.1
+, recombination detection software based on the dual Multiple Change-Point (MCP) model.
+.  The model allows for changes in topology and evolutionary rates across sites in a multiple sequence alignment. It uses a Bayesian approach together with an MCMC (Markov chain Monte Carlo) sampling to simulate from the posterior distribution of the dual MCP model parameters. 
+It is described in the papers:
+<ul><li>Minin, V. N., K. S. Dorman, and M. A. Suchard.  2005. Dual multiple change-point model leads to more accurate recombination detection,
+<em>Bioinformatics</em> <b>21:</b> 3034-3042.
+<li> Suchard M. A., R. E. Weiss, K. S. Dorman.  and J. S. Sinsheimer. 2003. Inferring spatial phylogenetic variation along nucleotide sequences: a multiple change-point model. <em>Journal of the American Statistical Association</em> <b>98:</b> 427-437.
+<li> Suchard M. A., R. E. Weiss, K. S. Dorman, and J. S. Sinsheimer. 2002. Oh brother, where art thou? a Bayes factor test for recombination with uncertain heritage. <em>Systematic Biology</em> <b>51:</b> 715-728. 
+</ul>
+It is available as Java code which needs the user to also download
+the Colt scientific library for Java.  It can be downloaded from
+<a href="http://www.biomath.ucla.edu/msuchard/DualBrothers/">its web site</a>
+ at  <code>http://www.biomath.ucla.edu/msuchard/DualBrothers/</code>
+<P>
+
+<A NAME="cBrother">
+<HR>
+<P>
+Karin Dorman</A>
+of the Department of Genetics, Development and Cell Biology
+of  Iowa State University, Ames, Iowa
+<tt>(kdorman<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;iastate.edu)</tt>
+has written <strong>cBrother</strong>, a C version of the DualBrothers program, 
+with extensions.  cBrother is a C version of the Java code of
+<a href="software.etc1.html#DualBrothers">DualBrothers</a>, developed by
+Suchard et al. as a Bayesian multiple change point model to test for the presence of rare recombination events in the history of a set of sampled sequences.
+It is available as C source code.  It can be downloaded from
+<a href="http://rumi.gdcb.iastate.edu/software/index.xml">its web site</a>
+at <code>http://rumi.gdcb.iastate.edu/software/index.xml</code>
+<P>
+
+<A NAME="HGT">
+<HR>
+<P>
+Simone Linz, Achim Radtke, and Arndt von Haeseler</A>
+of the Center of Integrative BioInformatics Vienna
+of the University of Vienna, Austria
+<tt>(jarndt.von.haeseler<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univie.ac.at
+&nbsp; and&nbsp; linz<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.uni-duesseldorf.de)</tt>
+have written <strong>HGT</strong>
+(Horizontal Gene Transfer),
+a program to test for the presence of horizontal gene transfer.  HGT considers 
+the distribution of trees obtained from a set of different genes, and then 
+simulates the trees obtained with a single species tree and different rates of 
+horizontal gene transfer.  The estimation of the rate of horizontal gene 
+transfer is made based on the extent of differences among individual gene 
+trees in the simulation and in the observed set of loci.
+The methods are described in the paper:
+Linz, S., A. Radtke, and A. von Haeseler. 2007. A Likelihood framework to 
+measure horizontal gene transfer. <em>Molecular Biology and Evolution</em> 
+<b>24:</b> 1312-1319. 
+HGT is available as C source code.  It can be downloaded from
+<a href="http://www.cibiv.at/software/hgt/">its web site</a>
+at <code>http://www.cibiv.at/software/hgt/</code>
+<P>
+
+<A NAME="RDP3">
+<HR>
+<P>
+Darren P. Martin and Ed Rybicki</A>
+of the Microbiology Department
+of the University of Cape Town, Cape Town, South Africa 
+<tt>Darrin.Martin<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;uct.ac.za)</tt>
+have released <strong>RDP3</strong>
+(Recombination Detection Program),
+version 3.27, a program that applies a large number of recombination detection
+and analysis algorithms.  This includes many of the methods used in other
+recombination-detection programs.  In all it has about 12 different methods.
+The software runs under Windows
+and combines highly automated screening of large numbers of sequences with a 
+highly interactive interface for examining the results of the analyses. 
+It is described in the paper:
+Martin, D.  P., and E. P. Rybicki.  2000.  RDP: detection of recombination
+amongst aligned sequences. <em>Bioinformatics</em> <b>16:</b> 562-563.
+It is available as Windows executables.  It can be downloaded from
+<a href="http://darwin.uvigo.es/rdp/rdp.html">its web site</a>
+at <code>http://darwin.uvigo.es/rdp/rdp.html</code> &nbsp;&nbsp;  An older
+version, RDP2, is also available there, as is an "unstable" early release of
+RDP4.
+<P>
+
+<A NAME="EEEP">
+<HR>
+<P>
+Robert Beiko and Nicholas Hamilton</A>
+of the Institute for Molecular Bioscience
+at the University of Queensland, Australia
+<tt>(beiko<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.dal.ca)</tt>
+have released <strong>EEEP</strong>
+(Efficient Evaluation of Edit Paths),
+version 1.0, a program for inference of lateral genetic transfer by
+comparison of phylogenetic trees.  EEEP performs subtree prune-and-regraft
+(SPR) operations on a rooted reference tree to reconcile it with a
+user-supplied tree inferred from data. The rooting of the reference tree is
+used to constrain the SPR operations that are allowed.  The test tree need not 
+be rooted or binary, and may contain an incomplete subset of the taxa 
+represented in the reference tree.
+EEEP has been successfully compiled under RedHat Linux and AIX, as well as
+in Mac OS X and Windows XP.  It is described in the paper:
+Beiko, R.G., and N. Hamilton. 2006. Phylogenetic identification of lateral
+genetic transfer events. <em>BMC Evolutionary Biology</em> <b>6:</b> 15,
+in which it was used to infer LGT events on 16,000 genes.
+It is available as C++ source code, Windows executables and Linux executables.  It can be downloaded from
+<a href="http://bioinformatics.org.au/eeep">its web site</a>
+at <code>http://bioinformatics.org.au/eeep</code>
+<P>
+
+<HR>
+<A NAME="dnarates"><P>
+Gary Olsen</A> of the Department of Microbiology, University
+of Illinois, Urbana, Illinois (<TT>gary<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>phylo.life.uiuc.edu</TT>) has written
+<STRONG>dnarates</STRONG> version 1.1.0.  It reads a set of DNA sequences
+and a tree, and for that tree makes a maximum likelihood estimate of the
+rate of evolution at each site.  This is done by taking the rate at each
+site as a separate parameter and maximizing the likelihood with respect to
+all those parameters.  The program is available as generic C source code.
+It is based in part (with my permission) on code from my <A HREF="software.pars.html#PHYLIP">PHYLIP</A> program <TT>DNAML</TT>.  dnarates is available from
+<A HREF="http://iubio.bio.indiana.edu/soft/molbio/evolve/">the IUBIO phylogeny software page</A> at
+<CODE>http://iubio.bio.indiana.edu/soft/molbio/evolve/</CODE>
+<P>
+
+<HR>
+<A NAME="RevDNArates"><P>
+Bette Korber</A> of the Theoretical Division,
+Los Alamos National Laboratory , Los Alamos, New Mexico
+(<TT>btk<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>t10.lanl.gov</TT>) and her colleagues have released
+<STRONG>RevDNArates</STRONG> which is a version of Gary Olsen's
+program <A HREF="#dnarates">dnarates</A> which uses the REV (general
+reversible) model of DNA evolution and calculates the maximum likelihood
+estimate of rate of change at each site (one parameter per site).  They
+used it for the
+results in the paper: B. Korber, M. Muldoon, J. Theiler, F. Gao, R. Gupta,
+A. Lapedes, B. H. Hahn, S. Wolinksy and T. Bhattacharya. 2000. Timing the
+ancestor of the HIV-1 pandemic strains. <EM>Science</EM>  <B>288:</B>
+1789-1796.  The program is available as C source code for Unix from
+<A HREF="http://www.santafe.edu/~btk/science-paper/bette.html">
+the web site for the programs from that paper</A> at
+<CODE>http://www.santafe.edu/~btk/science-paper/bette.html</CODE>.
+<P>
+
+<HR>
+<A NAME="PARAT"><P> Sonja Meyer and Arndt von Haeseler, then of the Insititut
+f&uuml;r Bioinformatik, Heinrich Heine Universit&auml;t, D&uuml;sseldorf,
+Germany (von Haeseler is now at the Center for Integrative Bioinformatics
+Vienna, and his email address is <tt>arndt.von.haeseler<!deathtospam>&nbsp;(at)
+<!deathtospam>&nbps;univie.ac.at</tt>) have released <strong>PARAT</strong>,
+version 0.9.1.  This program infers a phylogeny and also site-specific
+evolutionary rates (one for each site).  It can do so for up to 100 sequences
+directly.  Above 100 sequences, it samples sets of sequences and estimates
+the rates from each such set, and then averages the resulting rates.
+It is distributed as open source C source code, which can readily be compiled
+and installed.  PARAT is decscribed in a paper:  Meyer, S. and A. von Haeseler.
+2003. Identifying site specific substitution rates. <em>Molecular Biology
+and Evolution</em> <b>20:</b> 182-189.  It is available at
+<a href="http://www.cibiv.at/software/parat/">its web site</a>
+at <code>http://www.cibiv.at/software/parat/</code>
+<P>
+
+<A NAME="Rate4Site">
+<HR>
+<P>
+Itay Mayrose</A>
+of the Department of Cell Research and Immunology
+of the George S. Wise Faculty of Life Sciences, Tel Aviv University, Israel
+<tt>(itaymay <!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;post.tau.ac.il  )</tt>
+has written <strong>Rate4Site</strong>
+version 2.01, a program to estimate rates of evolution at different sites in 
+protein sequences.  Rate4Site uses aligned protein sequences, constructs a 
+tree by a neighbor-joining or uses a user-defined input tree, and then infers 
+the branch lengths and the rates of evolution at the sites.  These are assumed 
+to be drawn from a Gamma distribution and can be estimated either by 
+maximizing the likelihood of the tree with respect to each of the rates, or by 
+using a Bayesian inference with the Gamma distribution as the prior (the 
+parameters of the Gamma distribution are estimated empirically so that this is 
+an Emprical Bayes method).
+The methods are described in the paper:
+Mayrose, I., D. Graur, N. Ben-Tal and T. Pupko. 2004. Comparison of 
+site-specific rate-inference methods: Bayesian methods are superior. 
+<em>Molecular Biology and Evoution</em> <b>21:</b> 1781-1791.
+It is available as C++ source code and Windows executables.  It can be downloaded from
+<a href="http://www.tau.ac.il/~itaymay/cp/rate4site.html">its web site</a>
+at <code>http://www.tau.ac.il/~itaymay/cp/rate4site.html</code>
+<P>
+
+<A NAME="McRate">
+<HR>
+<P>
+Itay Mayrose and Tal Pupko</A>
+of the Department of Cell Research and Immunology
+of  Tel Aviv University, Tel Aviv, Israel
+<tt>(itaymay<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;post.tau.ac.il)</tt>
+have produced <strong>McRate</strong>
+(Markov Chain monte carlo RATE estimation),
+version 1.0, a program to estimate rates of evolution at different sites.  
+McRate calculates the relative evolutionary rate at each site using a 
+probabilistic-based evolutionary model. This allows taking into account the 
+stochastic process underlying sequence evolution within protein families. Most 
+importantly, McRate uses Bayesian Markov chain Monte Carlo (MCMC) methodology 
+to integrate over the space of all possible trees. Hence, McRate does not 
+assume a pre-existing phylogenetic tree under which the sequences relate. 
+McRate is described as superior to methods that rely on a single tree only. 
+Its methods and the program are described in the papers:
+<UL>
+<LI> Mayrose I, D. Graur, N. Ben-Tal, and T. Pupko. 2004. Comparison of site-specific rate-inference methods for protein sequences: Bayesian methods are superior. <em>Molecular Biology and Evolution</em> <b>21:</b> 1781-1791.
+<LI> Mayrose, I., A. Mitchell, and T. Pupko. 2004. Site-specific evolutionary rate inference: taking phylogenetic uncertainty into account. <em>Journal of Molecular Evolution</em> <b>60(3):</b> 315-326.
+</UL>
+It is available as C++ source code and Windows executables.  It can be downloaded from
+<a href="http://www.tau.ac.il/~talp/MCMC/McRate.html">its web site</a>
+at <code>http://www.tau.ac.il/~talp/MCMC/McRate.html</code>
+<P>
+
+<A NAME="GZ-Gamma">
+<HR>
+Jianzhi George Zhang, now of the Laboratory of Genomic and Molecular Evolution
+in the Department of Ecology and Evolutionary Biology of the University of
+Michigan, Ann Arbor, Michigan
+<tt>(jianzhi<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;umich.edu)</tt>
+and Xun Gu, now at the Department of Genetics, Development, and Cell Biology at
+Iowa State University, Ames, Iowa
+<tt>(xgu<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;iastate.edu)</tt>
+wrote <strong>GZ-Gamma</strong>, a program
+for estimation of the expected number of substitutions at each amino acid
+or nucleotide site and the shape parameter of a Gamma distribution of rates of 
+evolution at different sites.  The program
+takes a phylogeny and infers the sequences at interior nodes of the tree using
+a Bayesian method, and then uses these to infer changes and make a histogram
+of changes among sites, then using that to infer the shape parameter of a
+Gamma distribution that fits that histogram.  The method and
+program was described in a paper:
+Gu, X. and J. Zhang. 1997. A simple method for estimating the parameter of
+substitution rate variation among sites. <i>Molecular Biology and Evolution</i>
+<b>14:</b> 1106-1113.  It is available as C source code and as MSDOS
+executables from <a href="https://homes.bio.psu.edu/people/faculty/nei/software.htm">the software web site of Masatoshi Nei's lab</a> in
+which the work was done.  A zip archive of the files can be downloaded from
+the link there for &ldquo;Gamma&rdquo;.  A documentation file is also available
+there from the &ldquo;readme&rdquo; link.
+<P>
+
+<A NAME="Concaterpillar">
+<HR>
+<P>
+Jessica Leigh, Ed Susko, Manuela Bumgartner, and Andrew Roger</A>
+of the Department of Biochemistry and Molecular Biology and the Department
+of Mathematics and Statistics of Dalhousie University, Halifax,
+Nova Scotia, Canada
+<tt>(jleigh<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;dal.ca)</tt>
+have written <strong>Concaterpillar</strong>
+version 1.2, a program that carries out a hierarchical likelihood ratio test 
+for phylogenetic congruence.  It tests for two kinds of hypotheses in 
+supermatrix analysis. The first is the null hypothesis (H0) that the 
+phylogenies of markers in the supermatrix are congruent. If we cannot reject 
+congruence for a set of markers, the second hypothesis to test is whether or 
+not the markers to be combined have significantly different evolutionary 
+dynamics (branch lengths and rates-across-sites parameters); that is, whether 
+they should be concatenated or subjected to separate analysis.
+The methods are described in the paper:
+Leigh, J. W., E. Susko, M. Baumgartner, Roger AJ. 2008.  Assessing congruence 
+in phylogenomic data.  <em>Systematic Biology</em> <b>57:</b> 104-115.
+It is available as Python script. It uses the program
+<a href="software.etc1.html#RAXML">RAxML</a> to infer trees, and the SciPy
+Python library as well.  It can be downloaded from
+<a href="http://rogerlab.biochemistryandmolecularbiology.dal.ca/Software/Software.htm#Concaterpillar">its web site</a>
+at <code>http://rogerlab.biochemistryandmolecularbiology.dal.ca/Software/Software.htm#Concaterpillar</code>
+<P>
+
+<A NAME="PROCOV">
+<HR>
+<P>
+Haichun Wang, Matthew Spencer, Ed Susko, and Andrew Roger</A>
+of the Department of Mathematics and Statistics and of the Department of Biochemistry and Molecular Biology 
+of  Dalhousie University, Halifax, Nova Scotia, Canada
+<tt>(hcwang<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;mathstat.da.ca)</tt>
+have produced <strong>PROCOV</strong>
+(PROtein COVarion analysis),
+version 1.3.2, a program for maximum likelihood estimation of phylogeny under 
+protein covarion models.  PROCOV computes the likelihood of a given tree under 
+the rates-across-sites model or under the covarion-like model of Tuffley and 
+Steel, the model of Huelsenbeck, and the model of Galtier, as well as for a 
+general model that combines features of both the Huelsenbeck and Galtier 
+models. Procov can also optimize tree topologies with subtree 
+pruning-regrafting to search tree space.  Procov is very computationally slow, 
+so this is most useful for small trees.
+It is described in the paper:
+Wang, H-C, M. Spencer, E. Susko, and A. J. Roger. 2007. Testing for covarion-like evolution in protein sequences. <em>Molecular Biology and Evolution</em> <b>24:</b> 294-305.
+It is available as C source code. The authors suggest using the BLAS matrix
+library when compiling it.  It can be downloaded from
+<a href="http://www.mathstat.dal.ca/~hcwang/procov.html">its web site</a>
+at <code>http://www.mathstat.dal.ca/~hcwang/procov.html</code>
+<P>
+
+<HR>
+<A NAME="EDIBLE"><P>
+<IMG SRC="icons/edible.gif">&nbsp; Nick Goldman</A> (<tt>goldman<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ebi.ac.uk</tt>) of the European
+Bioinformatics Institute, Hinxton, UK and his group have produced
+<strong>EDIBLE</strong>, a program for Experimental Design and Information By
+Likelihood Exploration, version 1.00.   It allows the user to read in a phylogeny,
+explore the effect on the likelihood and
+on the information matrix (the second derivatives of the likelihood with
+respect to the parameters) and measures of overall information of changing
+branch lengths in the tree and
+moving branch lengths around. 
+It also can carry out simulations, producing multiple data sets on the
+tree in question.
+The program is described in two papers:
+<UL>
+<LI>Goldman, N. 1998. Phylogenetic information and experimental design in molecular systematics. <em>Proceedings of the Royal Society London B</em> <b>265:</b>
+1779-1786
+<LI>Massingham, T. and N. Goldman. 2000. EDIBLE: experimental design and information calculations in phylogenetics. <em>Bioinformatics</em>
+<b>16:</b> 294-295.
+</UL>
+The program is available as C source
+code and as Windows and Digital Unix executables.  It can be downloaded from
+<A href="http://www.ebi.ac.uk/goldman/info/edible.html">its web site</a> at 
+<CODE>http://www.ebi.ac.uk/goldman/info/edible.html</CODE> at the EBI site.
+<P>
+
+<HR>
+<A NAME="BAMBE"><P>
+Bret Larget, of the Departments of Statistics and Botany at the
+University of Wisconsin, Madison (<tt>larget<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>stat.wisc.edu</tt>)
+and Donald Simon</A> of the Department of
+Mathematics and Computer Science, Duquesne University, Pittsburgh,
+Pennsylvania (<tt>simon<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>mathcs.duq.edu</tt>) have written
+<STRONG>BAMBE</STRONG> (Bayesian Analysis in Molecular Biology and
+Evolution) version 4.01a, a program for Bayesian analysis of phylogenies
+with DNA sequence data.  It uses a prior distribution of trees
+and arearrangement mechanism introduced in the paper:
+Mau, B., M. A. Newton, and B. Larget.  1997.  Bayesian phylogenetic inference
+via Markov chain Monte Carlo methods.  <EM>Molecular Biology and
+Evolution</EM> <B>14:</B> 717-724.
+The trees and parameter values are sampled by a Metropolis
+algorithm Markov Chain Monte Carlo sampling.
+The resulting posterior
+distribution can be used to characterize the uncertainty about not
+only the tree, but the parameters of the substitution model as
+well.
+The program is in C++ source code for Unix, and is distributed from
+<a href="http://www.stat.wisc.edu/~larget/">his web site</a>
+at <code>http://www.stat.wisc.edu/~larget/</code>.  A Windows executable
+of an earlier version is also available there.  The 2.03 and earlier
+versions are also available at <a
+href="http://www.mathcs.duq.edu/larget/bambe.html">a web page at Duquesne
+University</a>.  BAMBE is also
+available as <a href="software.serv.html#Pasteur-Serv">a web server</a>
+at the Institut Pasteur in Paris.
+<P>
+
+<A NAME="BayesPhylogenies">
+<HR>
+<P>
+Mark Pagel and Andrew Meade</A>
+of the School of Biological Sciences
+of the University of Reading, Reading, U.K.
+<tt>(m.pagel<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;reading.ac.uk)</tt>
+have written <strong>BayesPhylogenies</strong>, version 1.1, a program for 
+estimating phylogenies by Bayesian inference.  BayesPhylogenies uses Bayesian 
+Markov Chain Monte Carlo (MCMC) or Metropolis-coupled Markov chain Monte Carlo
+(MCMCMC) methods. The program allows a range of models of gene sequence
+evolution, models for morphological traits, models for rooted trees, gamma and
+beta distributed rate-heterogeneity, and implements a mixture model that allows
+the user to fit more than one model of sequence evolution without partitioning
+the data.  It is described in the paper:
+Pagel, M. and Meade, A. 2004. A phylogenetic mixture model for detecting pattern-heterogeneity in gene sequence or character-state data. <em>Systematic Biology</em> <b>53:</b> 571-581.
+It is available as Windows executables, Linux executables, and Powermac Mac OS
+X executables.  It can be downloaded from
+<a href="http://www.evolution.rdg.ac.uk/BayesPhy.html">its web site</a>
+at <code>http://www.evolution.rdg.ac.uk/BayesPhy.html</code>
+<P>
+
+<A NAME="PhyloBayes">
+<HR>
+<P>
+Nicolas Lartillot</A>
+of the LIRMM (Laboratoire d'Informatique de Robotique et de Micro&eacute;lectronique de Montpellier)
+of the Universit&eacute; de Montpellier II, Montpellier, France
+<tt>(nicolas.lartillot<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;lirmm.fr)</tt>
+has written <strong>PhyloBayes</strong>
+version 2.1c, a Bayesian phylogeny package for protein sequences using a mixture model.  PhyloBayes is a Bayesian Monte Carlo Markov Chain (MCMC) sampler for phylogenetic reconstruction using protein alignments. Compared to other phylogenetic MCMC samplers, the main distinguishing feature of PhyloBayes is the underlying probabilistic model, CAT. This is a mixture model especially devised to account for site-specific features of protein evolution. It is particularly well suited for large multigene alignments.  PhyloBayes can also  
+do divergence time estimation with a relaxed molecular clock, posterior predictive analyses, including a compositional homogeneity test,
+and data recoding (analogous to R/Y coding, but for amino-acids).
+The CAT model is described in the paper: Lartillot, N. and H. Phillipe. 2004. A Bayesian mixture model for across-site heterogeneities in the amino-acid replacement process. <em>Molecular Biology and Evolution</em> <b>21(6):</b> 1095-1109.
+PhyloBayes is a package of programs that operate together to do the steps of
+the analysis.  It is distributed as C++ source code and Linux executables.  The
+C++ source code can be compiled on Linux, Windows, or Mac OS X systems.
+It can be downloaded from
+<a href="http://www.atgc-montpellier.fr/phylobayes/binaries.php">its web site</a>
+at <code>http://www.atgc-montpellier.fr/phylobayes/binaries.php</code>
+A server is <a href="software.serv.html#ATGC servers">here</a>
+<P>
+
+<A NAME="MrBayes"><HR>
+<P>
+<IMG SRC="icons/mrbayes.gif">&nbsp; John Huelsenbeck</A> (<TT>johnh<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>berkeley.edu</TT>)
+of the the Department of Integrative Biology of the University of
+California, Berkeley, and Fredrik Ronquist
+(<tt>Fredrik.Ronquist<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>nrm.se</tt>)
+of the Naturhistoriska riksmuseet, Stockholm, Sweden
+have written
+<STRONG>MrBayes</STRONG>, version 3.1.2, a program for Bayesian inference of
+phylogenies from nucleic acid sequences, protein sequences, and
+morphological characters.  It assumes a
+prior distribution of tree topologies and uses Markov Chain Monte
+Carlo (MCMC) methods to search tree space and infer the posterior
+distribution of topologies.  It reads sequence data in the NEXUS file
+format, and outputs posterior distribution estimates of trees and
+parameters.  It can also use a hierarchical Bayesian framework to infer
+sites that are under natural selection.  It allows for rate variation
+among sites and a variety of models of sequence evolution.
+MrBayes is available as a Macintosh (PowerMac) executable, a Windows
+executable, or as source code in C.  It allows for multiple-chain
+Metropolis-coupled Markov Chain Monte Carlo (MC<sup>3</sup>) runs for
+more extensive search, and can be asked to spread jobs over a cluster of
+computers using the MPI message-passing interface.
+<EM>(Incidentally, since
+Bayes was Reverend Bayes, shouldn't it be named RevBayes?)</EM>.
+MrBayes executables, source code, and documentation are available from
+<A HREF="http://mrbayes.net">the MrBayes web page</A>
+at <CODE>http://mrbayes.net</CODE>.
+<P>
+
+<HR>
+<A NAME="MrBayesTreeScan"><P>
+Torsten Eriksson</A> of the Bergius Botanical
+Garden, Stockholm, Sweden (<CODE>torsten<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>bergianska.se</CODE>)
+makes available <strong>MrBayes tree scanners</strong>.  These are
+two Perl scripts that scan the output parameter files produced by MrBayes.
+One saves the tree corresponding to the best sample.  The other saves all
+trees that contain a specific node (a specific grouping).  They are
+distributed together, and available from
+<a href="http://www.bergianska.se/index_forskning_soft.html">his software distribution site</a>
+at <code>http://www.bergianska.se/index_forskning_soft.html</code>.
+<P>
+
+<A NAME="MrBayesPlugin">
+<HR>
+<P>
+Marc Suchard</A>
+of the Department of Biomathematics
+of the David Geffen School of Medicine at UCLA, Los Angeles
+<tt>(msuchard<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ucla.edu)</tt>
+has written <strong>MrBayesPlugin</strong>, a Java plugin module enabling
+Geneious to run MrBayes.  With it, <a href="software.etc2.html#Geneious">Geneious</a> v2.5.4 (or above) is enabled perform and analyze simple Bayesian phylogenetic reconstruction using <a href="software.etc1.html#MrBayes">MrBayes</a>.
+It is available as Java executables.  It can be downloaded from
+<a href="http://www.biomath.ucla.edu/msuchard/software/software.htm">its web site</a>
+at <code>http://www.biomath.ucla.edu/msuchard/software/software.htm</code>
+<P>
+
+<HR>
+<A NAME="BEAST"><P>
+<IMG SRC="icons/beast.gif">&nbsp; Alexei Drummond, of the Department of
+Computer Science of the University of Auckland, New Zealand (<tt>alexei<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.auckland.ac.nz</tt>)
+and Andrew Rambaut
+(<tt>a.rambaut<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ed.ac.uk</tt>)), of
+the Institute for Evolutionary Biology, University of Edinburgh, Scotland, and
+formerly of the Department of Zoology, University of Oxford,
+Oxford, U.K., have developed <strong>BEAST</strong> (Bayesian Evolutionary
+Analysis Sampling Trees), version 1.4.1.  This is a general Bayesian
+inference program for parameters of evolutionary models when the trees
+are coalescent trees.  A variety of nucleotide substitution models
+including relaxed molecular clocks are allowed, and population models that
+include exponential population growth and divergence time between populations
+are included.  Most of the analyses use Bayesian sampling to infer
+parameters by averaging over the posterior on the trees.  For the purposes
+of this listing, the two relevant features are the ability to output a
+sample of the trees, so that the program can be used for Bayesian tree
+inference in clocklike models, and the ability to infer the divergence time
+between populations.  The general approach used by BEAST is described
+in the paper: Drummond, A. J., G. K. Nicholls, A. G. Rodrigo, and W. Solomon.
+2002.   Estimating mutation parameters, population history and genealogy
+simultaneously from temporally spaced sequence data.  <em>Genetics</em>
+<b>161:</b> 1307-1320.  BEAST is available as a Java executable which will
+run on any system with Java 1.4 or later.  There are specific packages
+available for Mac OS X and for Windows as well as the general distribution.
+These are all distributed from <a href="http://beast.bio.ed.ac.uk/Main_Page">
+its web site</A> at <code>http://beast.bio.ed.ac.uk/Main_Page</code>
+<P>
+
+<HR>
+<A NAME="Tracer"><P>
+<IMG SRC="icons/tracer.gif">&nbsp;Alexei Drummond, of the Department of
+Computer Science of the University of Auckland, New Zealand 
+(<tt>alexei<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.auckland.ac.nz</tt>)
+and Andrew Rambaut 
+(<tt>a.rambaut<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ed.ac.uk</tt>)), of the 
+Institute of Evolutionary Biology at the University of Edinburgh, Scotland, U.K.
+have released <strong>Tracer</strong>, version 1.2.  This is
+a program for analyzing the results of Bayesian sampling runs using either
+<A HREF="#BEAST">BEAST</A> or <A HREF="#MrBayes">MrBayes</A>.  It allows
+analysis of the progress of sampling the parameters.  For the purposes of
+this listing, the relevant feature is an ability to use the trees sampled
+by these programs to do a Bayesian skyline plot analysis of birth and death
+rates of lineages.  Tracer is available as a Java executable from <A HREF="http://tree.bio.ed.ac.uk/software/tracer/">its web site</A>
+at <code>http://tree.bio.ed.ac.uk/software/tracer/</code>
+with specific packages for Mac OS X and Windows as well.
+<P>
+
+<A NAME="burntrees">
+<HR>
+<P>
+Johan Nylander</A>
+of the Department of Botany of the University of Stockholm, Stockholm, Sweden
+<tt>(johan.nylander<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;abc[dot]se)</tt>
+has released <strong>burntrees</strong>
+version 0.1.7, a script for manipulating the output from MCMC programs
+(<a href="#MrBayes">MrBayes</a>, <a href="#BEAST">BEAST</a>).
+It is a script for manipulating tree (<tt>*.t</tt>, <tt>*.trprobs</tt>,
+<tt>*.con</tt>) and parameter (<tt>*.p</tt>) files from MrBayes (v.3), and
+other MCMC programs. The script can extract any contiguous interval of trees,
+or make a random selection of a fraction of them. It can also thin the chain 
+by sampling every <i>n</i>th iteration. Branch lengths can also be removed from
+trees when they are sampled. Trees can also be converted from Nexus to Phylip
+(Newick) format or to altnexus format (sequence labels instead of numbers). In 
+a similar fashion, lines can also be extracted from a MrBayes *.p file. The
+script comes with a helper script, catmb.pl, that concatenates files from
+several runs
+It is available as Perl script.  It can be downloaded from
+<a href="http://www.abc.se/~nylander">its web site</a>
+at <code>http://www.abc.se/~nylander</code>
+<P>
+
+<A NAME="laser">
+<HR>
+<P>
+Dan Rabosky</A>
+of the Department of Ecology and Evolutionary Biology
+of  Cornell University, Ithaca, New York
+<tt>(DLR32<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cornell.edu)</tt>
+has written <strong>laser</strong>
+(Likelihood Analysis of Speciation and Extinction Rates),
+version 2.1, an R package for a variety of analyses of changes in speciation and extinction rates.  laser implements maximum likelihood methods based on the birth-death process to test whether diversification rates have changed over time and whether rates vary among lineages.
+The methods are described in the papers:
+<ul>
+<li>Rabosky, D. L. 2006. Likelihood methods for inferring temporal shifts in diversification
+rates. <em>Evolution</em> <b>60:</b> 1152-1164.
+<li>Rabosky, D. L., S. C. Donnellan, A. L. Talaba, and I. J. Lovette. 2007. Exceptional among-lineage variation in diversification rates during the radiation of Australia's largest
+vertebrate clade. <em>Proceedings of the Royal Society of London, Series B</em> <b>274:</b> 2915-2923.
+</ul>
+It is available as an R package.
+It is described at <a
+href="http://www.eeb.cornell.edu/Rabosky/dan/software.html">its web site</a> at
+<code>http://www.eeb.cornell.edu/Rabosky/dan/software.html</code> and is
+distributed at
+<a href="http://cran.r-project.org/web/packages/laser/index.html">
+its web page in the CRAN-R archive</a> of R packages at <code>http://cran.r-project.org/web/packages/laser/index.html</code>
+<P>
+
+<A NAME="PHYLLAB">
+<HR>
+<P>
+Pavel Morozov and Andrey Rzhetsky</A>
+of the Department of Biomedical Informatics and the Columbia Genome Center
+of  Columbia University, New York, New York
+<tt>(pm259<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;columbia.edu</tt> and <tt>andrey.rzhetsky<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;dbmi.columbia.edu)</tt>
+have released <strong>PHYLLAB</strong>
+version 1.1, A toolbox for sequence manipulation and phylogenetic analysis in 
+MatLab.  PHYLLAB takes as input a set of aligned nucleotide or amino-acid 
+sequences, and performs phylogeny inference. Beside traditional phylogenetic 
+methods it uses a Markov chain Monte Carlo method, evaluating the posterior 
+distribution over tree topologies and a variety of model parameters, including 
+parameters of substitution-rate variation under a wavelet model. The graphical 
+interface helps users to manage input data and to visualize the most likely 
+trees; they can also view substitution-rate plots that show the maximum 
+posterior density (confidence) intervals. It is written in the MatLab 
+language, and interested users can extend it easily. The PHYLLAB toolbox is 
+continually expanding, and the authors expect to offer many more functions and 
+scripts for different purposes soon. 
+It is available as a MATLAB  package.  It can be downloaded from
+<a href="http://amdec-bioinfo.cu-genome.org/html/misc/Pavel/phyllab.html">its web site</a>
+at <code>http://amdec-bioinfo.cu-genome.org/html/misc/Pavel/phyllab.html</code>
+<P>
+
+<HR>
+<A NAME="p4"><P>
+Peter Foster (<tt>p.foster<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>nhm.ac.uk</tt>) of the Natural History Museum,
+London, England has released <strong>p4</strong> version 0.81, a Python
+package for maximum likelihood and Bayesian phylogenetic analyses of molecular
+sequences.  This is not a program with menus and buttons; it is invoked
+using the Python language, which the user should know before attempting to
+use it.  It can do Bayesian inference of phylogenies, as well as computation
+of likelihoods of trees.  It also has facilties for viewing large trees and for
+manipulation of trees. It needs Python 2.3 or better and the Gnu Scientific 
+Library (GSL) installed on the machine.  It is distributed as Python source code
+at <a href="http://www.bmnh.org/web_users/pf/p4.html">its web site</a> at
+<code>http://www.bmnh.org/web_users/pf/p4.html</code>
+<P>
+
+<HR>
+<A NAME="Spectrum"><P>
+<IMG SRC="icons/spectrum.gif" ALT="[Spectrum icon here]">
+Mike Charleston</A> (<CODE>mcharles<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>it.usyd.edu.au</CODE>)
+of the Sydney University Biological Informatics and Technology Centre,
+Sydney, Australia
+has developed <STRONG>Spectrum</STRONG>, a program for finding bipartition spectra
+from phylogenetic
+molecular and distance data, according to the method of Hendy et al.
+(1994) (Hadamard transforms)
+for moderately sized data sets (up to 18 taxa).  The program also
+implements a
+branch-and-bound search for the "closest tree" - that is, the tree whose
+expected spectrum is closest to the spectrum derived from the observed
+data.  Mac OS PowerMac, 68k Mac OS, and Windows executables are
+available from his software
+<A HREF="http://www.it.usyd.edu.au/~mcharles/">web site</A>
+at <CODE>http://www.it.usyd.edu.au/~mcharles/</CODE>.
+<P>
+
+<HR>
+<A NAME="partimatrix"><P>
+Ingrid Jakobsen</A>, Susan Wilson, and Simon Easteal,
+of Australian National University,
+Canberra, released <STRONG>partimatrix</STRONG>. (Ingrid Jakobsen is
+currently at the Department of Mathematics of the University of Queensland, Australia,
+<tt>i.jakobsen<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>uq.edu.au</tt>).
+This program
+computes a "partition matrix" from aligned DNA sequence data.  The method
+finds partitions of the sequences into two groups and presents a matrix
+which describes the conflict and agreement among these partitions.  The
+objective is to discover parts of the DNA sequence which imply different
+trees.  It is described in the paper
+by I. B. Jakobsen, S. R. Wilson and S. Easteal. 1997.
+The Partition Matrix: Exploring variable phylogenetic signals along nucleotide sequence alignments.
+<EM>Molecular Biology and Evolution</EM> <B>14:</B> 474-484.
+The program is distributed as C source code for Unix systems with X Windows.
+It seems not to be available from Dr. Jakobsen, but is `
+available from
+<A HREF="http://www.cecalc.ula.ve/BIOINFO/servicios/herr1/PARTIMATRIX/manual.htm">a site at the Centro Nacional de C&aacute;lculo Cient&iacute;fico
+de la Universidad de Los Andes, Venezuela</A>
+at <CODE>http://www.cecalc.ula.ve/BIOINFO/servicios/herr1/PARTIMATRIX/manual.htm</CODE>
+<P>
+
+<A NAME="TIGER">
+<HR>
+<P>
+Carla Cummins and James McInerney</A>
+of the Department of Biology
+of the National University of Ireland Maynooth
+<tt>(james.o.mcinerney<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;nuim.ie)</tt>
+has released <strong>TIGER</strong>
+version 1.02, A program for identifying rapidly-evolving characters in a matrix
+of evolutionary characters.  TIGER is open source software for identifying
+rapidly evolving sites (columns in an alignment, or characters in a
+morphological dataset). It can deal with many kinds of data (molecular,
+morphological etc.). Sites like these are often removed or reweighted in order
+to improve phylogenetic reconstruction, as they might not hold much phylogenetic information and therefore might simply be a source of noise.
+It is described in the paper:
+Cummins, C. A. and J. O. McInerney. 2011. A method for inferring the rate of
+evolution of homologous characters that can potentially improve phylogenetic
+inference, resolve deep divergence and correct systematic biases. <i>Systematic
+Biology</i> <b>60 (6):</b> 833-844. doi: 10.1093/sysbio/syr064.
+It is available as Python script and Mac OS X universal executables.  It can be downloaded from
+<a href="http://bioinf.nuim.ie/tiger">its web site</a>
+at <code>http://bioinf.nuim.ie/tiger</code>
+<P>
+
+<HR>
+<A NAME="ODEN"><P>
+Yasuo Ina</A> of the National Institute of Agrobiological
+Resources, Tsukuba, Japan
+developed <STRONG>ODEN</STRONG> version, a package of programs for doing
+distance matrix analyses on nucleotide or protein sequences.  It is described
+in a paper: Ina, Y. 1994. ODEN: a program package for molecular evolutionary
+analysis and database search of DNA and amino acid sequences.  <em>Computer
+Applications in the Biosciences (CABIOS)</em> <b>10:</b> 11-12.
+It is available free
+<A HREF="ftp://ftp.dna.affrc.go.jp/pub/unix/oden/"> by anonymous ftp</A> from
+directory <CODE>pub/unix/oden</CODE> on <CODE>ftp.dna.affrc.go.jp</CODE> as C source code for Unix systems.
+<P>
+
+<HR>
+<A NAME="MacT"><P>
+Angela L&uuml;ttke and Rainer Fuchs</A> (then of the European
+Molecular Biology Laboratory; Fuchs is currently at
+Biogen, Inc., Cambridge, Massachusetts)
+wrote <STRONG>MacT</STRONG>, a package of programs for
+Mac OS Macintoshes that compute distances and compute
+Neighbor-Joining phylogenies for
+them.  The programs work on 4 through 26 sequences, and source code in
+Microsoft QuickBasic is provided as well as compiled executables.  The package
+is free and is available on the molecular biology software servers. 
+For example, it is available <A
+HREF="http://iubio.bio.indiana.edu/soft/molbio/mac/">at the Indiana University
+IUBIO server</a>
+at <CODE>http://iubio.bio.indiana.edu/soft/molbio/mac/</CODE>.
+It is described in a paper:   Luttke, A. and R. Fuchs.  1992.  MacT: Apple Macintosh
+programs for constructing phylogenetic trees.  <em>Computer Applications in
+the Biosciences</em> <b>8:</b> 591-594. 
+<P>
+
+<HR>
+<A NAME="Phylo_win"><P>
+Nicholas Galtier</A> of the University of Lyon (<CODE>galtier<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>biomserv.univ-lyon1.fr</CODE>)
+has written <STRONG>Phylo_win</STRONG>, a "graphic interface" for molecular
+phylogenetic inference. It performs neighbor-joining, parsimony and
+maximum likelihood methods and can bootstrap with any of them. Many distances
+can be used including Jukes and Cantor, Kimura, Tajima and Nei, Galtier and Gouy
+(1995), LogDet for nucleotidic sequences, Poisson correction for protein
+sequences, Ka and Ks for codon sequences. Species and sites to include in the
+analysis are selected by mouse. Reconstructed trees can be drawn, edited,
+printed, stored, evaluated according to numerous criteria.
+Taxonomic species groups and sets of conserved regions can be defined by
+mouse in both tools and stored into sequence files, thus avoiding multiple
+data files.  It is entirely mouse-driven.  Most usual sequence file formats are
+read: CLUSTAL, FASTA, PHYLIP, MASE.  It runs under X windows on many Unix
+workstations.
+It is described in the paper:
+Galtier, N., M. Gouy, and C. Gautier. 1996.  SeaView and Phylo_win, two graphic 
+tools for sequence alignment and molecular phylogeny. <EM>Computer Applications
+in the Biosciences</EM> <B>12:</B> 543-548. 
+Phylo_win is now considered by Galtier to have been superseded by his
+program SeaView.  Phylo_win is distributed as C source code (to compile it one 
+needs the NCBI Vibrant tool kit).  It is also available
+as executables for SunOS, Solaris, SGI Unix,
+IBM RISC Unix, Linux, HP/UX, and DEC Alpha (Digital Unix).  It can be
+fetched from <A HREF="http://pbil.univ-lyon1.fr/software/phylowin_legacy.html">
+its web page</A> at <CODE>http://pbil.univ-lyon1.fr/software/phylowin_legacy.html</CODE>.
+It can also be obtained <A HREF="ftp://biom3.univ-lyon1.fr/pub/mol_phylogeny">by anonymous ftp</A> from
+<CODE>biom3.univ-lyon1.fr</CODE> in directory <CODE>pub/mol_phylogeny</CODE>.
+A Digital OpenVMS executable is
+<A HREF="http://www.tmk.com/ftp/vms-freeware/mathog/">also available</A>
+as <CODE>http://www.tmk.com/ftp/vms-freeware/mathog/</CODE>.
+<P>
+
+<HR>
+<A NAME="TREE-PUZZLE">
+<P><IMG SRC="icons/puzzle.gif" ALT="[TREE-PUZZLE icon here]">
+Heiko Schmidt, of the
+Center for Integrative Bioinformatics of the University of Vienna
+(<tt>heiko.schmidt&nbsp;<!deathtospam>(at)&nbsp;univie.ac.at</tt>),
+Korbinian Strimmer</A>, now at
+the Department of Statistics of the University of M&uuml;nich, Germany
+(<TT>korbinian.strimmer<!deathtospam>&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>lmu.de</TT>),
+and Arndt von Haeseler, now at the Center for Integrative Bioinformatics
+Vienna (<tt>arndt.von.haeseler<!deathtospam>&nbsp;(at)
+<!deathtospam>&nbps;univie.ac.at</tt>)
+have developed <STRONG>TREE-PUZZLE</STRONG>
+version 5.2, (formerly called PUZZLE) a program for maximum likelihood
+analysis for nucleotide and amino
+acid alignments.
+TREE-PUZZLE infers phylogenies by &quot;quartet puzzling&quot;,
+a method that applies maximum likelihood tree reconstruction to all possible
+quartets of taxa and subsequently tries to combine most of the four-taxa
+maximum likelihood trees to construct an overall maximum likelihood tree.
+Usually there are several possible solutions. A consensus tree generated
+from the quartet puzzling trees shows nodes that are well supported. More
+details about the algorithm and on the phylogenetic accuracy can be found
+in the papers:
+<UL>
+<LI>Strimmer, K. and A. von Haeseler. 1996.  Quartet puzzling:
+A quartet maximum likelihood method for reconstructing tree topologies.
+<I>Molecular Biology and Evolution</I>
+<B>13:</B> 964-969.
+<LI>Strimmer, K., and A. von Haeseler. 1997. Likelihood-mapping: A simple method
+to visualize phylogenetic content of a sequence alignment. <EM>Proceedings
+of the National Academy of Sciences (USA)</EM> <B>94:</B> 6815-6819.
+<LI>Schmidt, H.A., K. Strimmer, M. Vingron, and A. von Haeseler. 2002. TREE-PUZZLE: maximum likelihood phylogenetic analysis using quartets and parallel computing. <em>Bioinformatics</em> <b>18:</b> 502-504.
+</UL>
+TREE-PUZZLE supports all popular
+models of sequence evolution of nucleotides and proteins, and can take
+rate heterogeneity among sites into account. It computes pairwise maximum
+likelihood distances for many different models of sequence evolution (TN,
+HKY, F84, SH, Dayhoff, JTT, mtREV24, BLOSUM62, WAG, and VT),
+and estimates parameters
+of the models. It can estimate maximum-likelihood branch-lengths for user-specified
+trees and perform likelihood ratio tests of clockness as well as Kishino-Hasegawa-Templeton
+tests. The program is written in ANSI C and is compatible with PHYLIP files.
+The current version also has features for parallel computation using the
+MPI message-passing interface, if this is available.
+Precompiled executables are distributed for Mac OS,
+Windows, and Linux. For
+Unix and VMS systems files for automated compilation are provided.
+A version capable of parallel execution is also available.
+TREE-PUZZLE is available from the <A HREF="http://www.tree-puzzle.de">TREE-PUZZLE
+web page</A> at <TT>http://www.tree-puzzle.de</TT>.  A number of places that
+mirrors of the distribution, or older versions, are available are listed there.
+Its <A HREF="http://www.tree-puzzle.de/manual.html">
+online manual</A> can be downloaded at <TT>http://www.tree-puzzle.de/manual.html</TT>.
+<P>
+
+<HR>
+<A NAME="puzzleboot"><P>
+<IMG SRC="icons/puzzleboot.gif" ALT="[Puzzleboot icon]">&nbsp;&nbsp;
+Mike Holder</A>, formerly of
+the High Performance Computing Center of the University of Houston
+and Andrew Roger (<CODE>aroger<!deathtospam>&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>is.dal.ca</CODE>) of the Department of
+Biochemistry and Molecular Biology of Dalhousie University, Halifax, Canada
+have produced a shell script program for
+Unix systems, <STRONG>puzzleboot</STRONG>, version 1.03, that allows the
+analysis of multiple bootstrapped data sets with
+<A HREF="software.etc1.html#TREE-PUZZLE">TREE-PUZZLE</A>.  It is
+designed for use with the distance matrix option of TREE-PUZZLE, to make use of
+the distance calculation methods.
+It is available from
+<A HREF="http://rogerlab.biochemistryandmolecularbiology.dal.ca/Software/Software.htm#puzzleboot">the Roger lab software page</A> at
+<CODE>http://rogerlab.biochemistryandmolecularbiology.dal.ca/Software/Software.htm#puzzleboot</CODE>
+<P>
+
+<HR>
+<A NAME="SplitsTree"><P>
+<IMG SRC="icons/SplitsTree.gif" ALT="[SplitsTree icon here]">
+Daniel Huson (<tt>huson<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>informatik.uni-tuebingen.de</tt>)
+of the ZBIT Center for Bioinformatics at the University of T&uuml;bingen,
+Germany and David Bryant (<tt>Bryant<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;math.auckland.ac.nz</tt>) of the University of Auckland, New Zealand,
+distribute a program <STRONG>SplitsTree</STRONG> for
+analysis of conflicts among splits implied by different quartets or
+different characters.
+It provides a number of methods for computing split networks from sequences 
+(e.g. median networks), distances (e.g. split decomposition or neighbor-net) 
+and trees (consensus networks and super-networks). Additionally, it contains 
+simple combinatorial methods for computing hybridization networks and 
+recombination networks.  It can process sequence or
+restriction site data, and can do bootstrapping.
+It is discussed in the papers:
+<UL>
+<LI>Huson, D. H. 1998. SplitsTree: analyzing
+and visualizing evolutionary data. <EM>Bioinformatics</EM> <B>14:</B> 68-73.
+<LI>Huson, D. H. and Bryant, D. 2006. Application of phylogenetic networks in
+evolutionary studies. <em>Molecular Biology and Evolution</em> <b>23</b>(2): 254-267.
+</UL>
+A number of versions of Splitstree are available at
+<A HREF="http://www.splitstree.org">the Splitstree web site</A>
+at <CODE>http://www.splitstree.org</CODE>.
+These include
+<UL>
+<LI>SplitsTree4, a Java version which can run under Linux, Windows,
+and Mac OS X.
+<LI>SplitsTree 3.2, which is available as a Windows executable, a Linux, and a
+Solaris executable, and also a Mac OS X version by Rod Page
+<LI>SplitsTree 3.1, also as a Windows and a Linux version
+<LI>SplitsTree 2.4, for Mac OS.
+</UL>
+<P>
+
+<HR>
+<A NAME="GEOMETRY"><P>
+Igor Kuznetsov and Pavel Morozov</A>, then of
+the Institute of Cytology and Genetics, Novosibirsk, Russia
+produced <STRONG>GEOMETRY</STRONG>,
+a package for nucleotide sequence analysis using the method of
+statistical geometry in sequence space.
+Kuznetsov
+(<tt>ikuznetsov<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;albany.edu</tt>)
+is currently at the Department of Epidemiology and Biostatistics
+at the State University of New York in Albany, Morozov
+(<tt>pm259<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;columbia.edu</tt>)
+is currently at the
+Irving Cancer Research Center at Columbia University.
+The method is described in this paper:
+Eigen, M., R. Winkler-Oswatitsch, and
+A. Dress. 1988. Statistical geometry in sequence space: A method of quantitative
+comparative sequence analysis, <EM> Proc. Natl. Acad. Sci. USA</EM> <B>85:</B> 5913-5917.  The program is described in the article:
+Kuznetsov, I. and P. Morozov.  1996.  GEOMETRY: a software package for
+nucleotide sequence analysis using statistical geometry in sequence space.
+<em>Computer Applications in the Biosciences (CABIOS)</em> <b>12:</B> 297-301. 
+The package uses the same data formats for sequence and tree input as
+the ones used in the VOSTORG package.
+GEOMETRY is available as a DOS executable.
+It is available for downloading by ftp
+<A HREF="ftp://ftp.ebi.ac.uk/pub/software/dos">from the
+EMBL file server</A> <CODE>ftp.ebi.ac.uk</CODE> in directory
+<CODE>pub/software/dos</CODE> as file <tt>geom.zip</tt>.
+<P>
+
+<HR>
+<A NAME="PhyloQuart"><P>
+<IMG SRC="icons/phyloquart.jpg" ALT="[PhyloQuart icon]">&nbsp;&nbsp;Vincent Berry</A> of the LIRMM, Universit&eacute; de
+Montpellier, France (<tt>vberry<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>lirmm.fr</tt>) has released
+<STRONG>PhyloQuart</STRONG> version 1.4, a package of programs inferring
+phylogenies from quartets.  It is able to use either nucleotide sequences or
+distances.  It implements the Q* method of tree reconstruction, which is
+inspired by the work of Bandelt and Dress, and is described in the
+paper: Berry, V. and O. Gascuel. 2000. Inferring evolutionary trees with
+strong combinatorial evidence.  <EM>Theoretical Computer Science</EM>
+<b>240:</b> 271-298.
+PhyloQuart is available as C source code which can be compiled on
+Unix systems, from
+<A HREF="http://www.lirmm.fr/~vberry/PHYLOQUART/phyloquart.html">its web site</A> at
+<CODE>http://www.lirmm.fr/~vberry/PHYLOQUART/phyloquart.html</CODE>.
+<P>
+
+<HR>
+<a name="IQPNNI"><P></a> Le Sy Vinh, now of the 
+Computer Science Department, University of Engineering and Technology, Vietnam
+National University Hanoi
+(<tt>vinhbio<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;gmail.com</tt>), and Arndt von Haeseler, now of the Center for Integrative Bioinformatics
+Vienna (<tt>arndt.von.haeseler<!deathtospam>&nbsp;(at)
+<!deathtospam>&nbsp;univie.ac.at</tt>)
+have released <strong>IQPNNI</strong> version 3.3.2
+(Important Quartet Puzzling and NNI Operation).  This program uses selected
+quartets called Important Quartets of species to build a preliminary
+tree, rearrange it using the maximum likelihood criterion
+by nearest-neighbor interchanges, and then use further
+examination of quartets to remove and reposition some of the species.
+It is described in some papers:
+<UL>
+<LI> Vinh, L. S. and A. von Haeseler. 2004.
+IQPNNI: Moving fast through tree space and stopping in time. <em>Molecular
+Biology and Evolution</em> <b>21:</b> 1565-1571.
+<LI>Bui Quang Minh,, B. Q. L. S. Vinh, A von Haeseler and H. A. Schmidt. 2005.
+pIQPNNI: Parallel reconstruction of large maximum likelihood phylogenies.
+<i>Bioinformatics</i> <b>21(19):</b> 3794-3796.
+<li>Minh, B. Q., L. S. Vinh, H. A. Schmidt, and A. von Haeseler. 2006.
+Large maximum likelihood trees. <i>Proceedings of the NIC Symposium 2006</i>
+pp. 357-365, Forschungszentrum J&uuml;lich, Germany.
+</UL>
+It is available as
+C source code and Windows, Linux, and Mac OS X
+binary executables (including a version that works with MPI parallel
+execution) and source code from
+<a href="http://www.cibiv.at/software/iqpnni/">its web site</a>
+at <code>http://www.cibiv.at/software/iqpnni/</code>
+<P>
+
+<HR>
+<A NAME="Willson"><P> Stephen J. Willson</A> (<TT>swillson<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>iastate.edu</TT>)
+of the Department of Mathematics, Iowa State University, has produced
+a package of programs to infer phylogenies from quartets of species.
+They infer phylogenies of individual quartets by parsimony, and in
+combining them use information on how strongly the phylogeny for that
+quartet is preferred over its alternatives, or by measures of
+how well the group fits into a given placement on a tree, as judged by
+quartets.  The methods are described in two papers:
+<UL>
+<LI>Willson, S. J. 1998. Measuring inconsistency in phylogenetic trees,
+<EM>Journal of Theoretical Biology</EM> <B>190:</B> 15-36
+<LI> Willson, S. J. 1998. Building phylogenetic trees from quartets by
+using local inconsistency measures . <EM>Molecular Biology and Evolution</EM>
+<B>16:</B> 685-693.
+</UL>
+The programs are in C and are described as having successfully been
+compiled on Mac OS systems using the Codewarrior C compiler.  Mac OS
+executables are also provided.  The programs are available at
+<A HREF="http://www.public.iastate.edu/~swillson/software.html">
+Willson's software web site</A> at
+<TT>http://www.public.iastate.edu/~swillson/software.html</TT>.
+<P>
+
+<HR>
+<A NAME="Gambit"><P>
+James Lake</A> of the Department of Molecular, Cell and
+Developmental Biology of the University of California, Los Angeles
+<TT>(lake<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>mbi.ucla.edu)</TT> has released <STRONG>Gambit</STRONG>, which
+implements a method called Boostrapper's Gambit.  The method involves
+bootstrap sampling sequences, computing trees for quartets of species, and
+assembling larger trees out of quartets that have significant boostrap
+support.  One of the methods available to estimate trees from
+the quartets is paralinear (LogDet) distances.  Other distance methods and
+parsimony are also available.  The Bootstrapper's Gambit method is
+described in a paper: Lake, J. A. 1995.  Calculating the probability of
+multitaxation evolutionary trees: Bootstrappers gambit.  <em>Proceedings of
+the National Academy of Sciences, USA</em> <b>92:</b> 9662-9666.
+The program is available as a DOS executable,
+free as a beta release to noncommercial users on a trial basis until January 1,
+2003.  (It is unclear from the web site whether a free version is to be
+available
+to noncommercial users after that point -- a previous deadline was
+extended).  Commercial users are asked to pay $50 on a shareware basis.
+The program is available at
+<A HREF="http://genomics.ucla.edu/gambit/">its web site</A> at
+<CODE>http://genomics.ucla.edu/gambit/</CODE>.
+<P>
+
+<HR>
+<A NAME="Network"><P>
+<IMG SRC="icons/network.gif">&nbsp; Arne R&ouml;hl, Peter Forster, and Hans-J&uuml;rgen
+Bandelt</A> (Forster has more recently been Senior Lecturer Forensic Science 
+in the Faculty of Science and Technology of Anglia Ruskin University,
+Cambridge, U.K.),
+e-mail address <TT>pf223<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>cam.ac.uk</TT>, and Bandelt is at the
+Fachbereich Mathematik, University of Hamburg, Bundesstrasse 55,
+20146 Hamburg, Germany, e-mail address <TT>bandelt<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>math.uni-hamburg.de</TT>)
+have written <STRONG>Network</STRONG> version 4.516, a program to infer
+networks (which have more connections than trees) from non-recombining
+DNA, STR, amino acid, and RFLP data.
+The networks are either <EM>reduced median networks</EM> or 
+<EM>median-joining networks</EM>, method which are described
+in the papers:
+<UL>
+<LI> Bandelt H.-J., P. Forster, B. C. Sykes, and M. B. Richards.
+1995.  Mitochondrial portraits of human populations using median networks.
+<EM>Genetics</EM> <B>141:</B> 743-53.
+<LI>Bandelt, H-J., P. Forster, and A. R&ouml;hl. 1999. Median-joining
+networks for inferring intraspecific phylogenies. <EM>Molecular Biology
+and Evolution</EM> <B>16:</B> 37-48.
+</UL>
+The program is available for free
+as a Windows executable from Fluxus Engineering at
+<A HREF="http://www.fluxus-engineering.com/sharenet.htm">its web site</A> at
+<CODE>http://www.fluxus-engineering.com/sharenet.htm</CODE>.
+<P>
+
+<HR>
+<A NAME="Spectronet"><P>
+<IMG SRC="icons/spectronet.gif">&nbsp; Mike Hendy</A>, Katharina T. Huber, Michael Langton, Vincent Moulton, and
+David Penny have written <strong>Spectronet</strong> version 1.27, a
+program that computes a collection of weighted splits or partitions
+and allows the user to interactively analyze the results with a series of
+tools.  Hendy and Penny are at Massey University, New Zealand (<tt>m.hendy (at)
+massey.ac.nz</tt> and <tt>d.penny<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>massey.ac.nz</tt>), Huber and Moulton
+are at the School of Computational Science of the University of East Anglia,
+U.K. (<tt>Katharina.Huber<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>cmp.uea.ac.uk</tt> and <tt>Vincent.Moulton
+(at) cmp.uea.ac.uk</tt>).  Spectronet can read molecular sequence or discrete
+character data, compute splits by Hadamard conjugation or directly, compute
+and display compatibility matrices of characters, make reduced median networks,
+and plot networks by making a Lentoplot.
+Spectronet is described in a paper: Huber, K. T., M. Langton, D. Penny,
+V. Moulton and M. Hendy.  2002.  Spectronet: A package for computing spectra
+and median networks.  <em>Applied Bioinformatics</em> <b>1:</b> 159-161.
+It is available as a Windows executable from
+<a href="http://awcmee.massey.ac.nz/spectronet/index.html">its web site</a>
+at <code>http://awcmee.massey.ac.nz/spectronet/index.html</code>.
+<P>
+
+<A NAME="LEVEL2">
+<HR>
+<P>
+Steven Kelk, Leo van Iersel, Judith Keijsper, and Leen Stougie</A>
+of the Centrum voor Wiskunde en Informatica (CWI) and Technische Universiteit
+Eindhoven (TU/e), Netherlands
+<tt>(S.M.Kelk<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cwi.nl)</tt>
+have produced <strong>LEVEL2</strong>
+version 0.91, which constructs level-2 phylogenetic networks from dense sets of
+rooted triplets.
+This program takes as input a dense set of rooted triplets and attempts
+to construct a level-2 phylogenetic network from them (or level-1, or
+level-0, if level-2 is not necessary). Triplets are the rooted analogue of 
+quartets, and a dense set of triplets is one where for every subset of three 
+taxa there is at least one triplet. A level-k phylogenetic network is a
+rooted phylogenetic network where every biconnected component in the 
+underlying, undirected graph contains at most k recombination vertices.
+The program produces an image of the resulting network, if it is found.
+It is described in the paper:
+van Iersel, L., J. Keijsper, S. Kelk, and L. Stougie. 2007. Constructing
+level-2 phylogenetic networks from triplets. arXiv:0707.2890v1 [q-bio.PE].
+It is available as Java source code, and also requires that the DOT graph
+description package be installed.  It can be downloaded from
+<a href="http://sourceforge.net/projects/level2/">its web site at Sourceforge</a>
+at <code>http://sourceforge.net/projects/level2/</code> and a general
+web page about it is at
+<a href="http://homepages.cwi.nl/~kelk/level2triplets.html">its web site</a>
+at <code>http://homepages.cwi.nl/~kelk/level2triplets.html</code>
+<P>
+
+<A NAME="PhyloNet">
+<HR>
+<P>
+Luay Nakhleh, Derek Ruths, and Cuong Than</A>
+of the Department of Computer Science
+of the Rice University, Houston, Texas
+<tt>(nakhleh<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.rice.edu)</tt>
+have released <strong>PhyloNet</strong>
+(<i>Phylo</i>genetic <i>Net</i>work analysis ),
+version 2.3, a phylogeny package with tools for reconstructing and analyzing 
+phylogenetic networks.  It has programs for inferring horizontal gene transfer 
+events, by estimating the SPR distance between two trees (along with a 
+bootstrap-based measure of support), and interspecific recombination, by using 
+maximum parsimony. It also has tools for enumerating the trees and clusters of 
+taxa within a given network, comparing the topologies of networks, estimating 
+the strain tree of bacterial genomes from multi-locus data, and enumerating 
+valid coalescent  histories of a gene tree within the branches of a species tree. 
+It is described in the paper:
+Than, C., D. Ruths, and L. Nakhleh, 2008.  PhyloNet: A Software Package for 
+Analyzing and Reconstructing Reticulate Evolutionary Relationships.  <em>Under Review</em>.
+It is available as Java executables.  It can be downloaded from
+<a href="http://bioinfo.cs.rice.edu/phylonet/index.html">its web site</a>
+at <code>http://bioinfo.cs.rice.edu/phylonet/index.html</code>
+<P>
+
+<A NAME="NEPAL">
+<HR>
+<P>
+Guohua Jin and Luay Nakhleh</A>
+of the Department of Computer Science
+of  Rice University, Houston, Texas
+<tt>(jin<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.rice.edu</TT> and <TT>nakhleh<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.rice.edu)</tt>
+have produced <strong>NEPAL</strong>
+(NEtwork Parsimony And Likelihood),
+version 1.1, a suite of tools for reconstructing and analyzing reticulate 
+(non-treelike) evolutionary relationships using the maximum parsimony and 
+maximum likelihood  criteria.  It is used to identify horizontal gene (or 
+partial gene) transfers between species. NEPAL reads in a species tree in 
+Newick format or a network from NEPAL or RIATA-HGT output, and sequence data. 
+It returns the maximum parsimony or maximum likelihood score of the input or 
+generated trees or networks.  The user can control the number of additional 
+edges added to the input tree.  The methods are described in the papers:
+<ul>
+<li>Jin, G., L. Nakhleh, S. Snir, and T. Tuller. 2006. Maximum likelihood of phylogenetic
+networks. <em>Bioinformatics</em> <b>22(21):</b> 2604-2611.
+<li>Jin, G., L. Nakhleh, S. Snir, and T. Tuller. 2007. Efficient parsimony-based methods for phylogenetic network reconstruction. <em>Bioinformatics</em> <b>23:</b> e123-e128.
+</ul>
+It is available as Mac OS X and Linux executables.  It can be downloaded from
+<a href="http://bioinfo.cs.rice.edu/nepal/index.html">its web site</a>
+at <code>http://bioinfo.cs.rice.edu/nepal/index.html</code>
+<P>
+
+<A NAME="IM"><P>
+<HR>
+Rasmus Nielsen, of the Centre for Bioinformatics of the University of
+Copenhagen, Denmark and of the Department of Integrative Biology of the
+University of California, Berkeley (<tt>rasmus<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>binf.ku.dk</tt>),
+Jody Hey, of the Department of Genetics, Rutgers University, Picataway, New
+Jersey
+(<tt>hey<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;biology.rutgers.edu</tt>)
+and Sang Chul Joi
+have released <strong>IMa2</strong>, a program that estimates divergence
+times between several populations along with the population sizes before and
+after divergence, as well as the migration rate between the populations
+after divergence.  The program uses Markov chain Monte Carlo (MCMC)
+coalescent methods.  It is described in two papers:
+<UL>
+<LI>Hey, J., and R. Nielsen. 2004.
+Multilocus methods for estimating population sizes, migration rates and
+divergence time, with applications to the divergence of <em>Drosophila
+pseudoobscura</em> and <em>D. persimilis</em>. <em>Genetics</em> <b>167:</b>
+747-760.
+<LI> Hey J, and R. Nielsen, 2007,
+Integration within the Felsenstein equation for improved Markov chain Monte
+Carlo methods in population genetics.
+<i>Proceedings of the National Academy of Sciences USA</i> <b>104(8): </b>2785-2790.
+</UL>
+It allows Bayesian inference from a number of loci, each assumed to
+be without intra-locus recombination.  It can use a DNA mutation model,
+a stepwise microsatellite mutation model, or an infinite-sites model.
+The program estimates the population sizes, the times of divergence,
+each relative to the mutation rate.  It can
+also estimate growth rates of population sizes after speciation.
+IMa2 is distributed as a Windows executable with generic
+C source code that can easily be compiled on Unix systems including Mac OS X.
+It is available from
+<a href="http://genfaculty.rutgers.edu/hey/software#IMa2">its web page</a>
+at the Hey lab web site, 
+<code>http://genfaculty.rutgers.edu/hey/software#IMa2</code>.  Earlier
+versions, IMa and IM, are also available there.
+<P>
+
+<A NAME="BEST">
+<HR>
+<P>
+<img src="icons/best.jpg" ALT="[BEST logo]">&nbsp;&nbsp; Liang Liu</A>
+of the Department of Agriculture and Natural Resources
+of Delaware State University
+<tt>(lliu<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;desu.edu)</tt>,
+together with Dennis Pearl of the Department of Statistics
+at Ohio State University and Scott
+Edwards of the Department of Organismic and Evolutionary Biology
+at Harvard University,
+has released <strong>BEST</strong>
+(Bayesian Estimation of Species Trees),
+version 2.2, a phylogeny package for estimating species trees from multilocus 
+DNA sequence data.  BEST finds the joint posterior distribution of coalescent
+gene trees and the species tree for multi-locus data under a hierarchical 
+Bayesian model.  Proposal gene trees are made using a gene tree MCMC procedure
+chosen by the user in <a href="software.etc1.html#MrBayes">MrBayes</a>
+This vector of gene trees is then paired with a species tree chosen under the
+constraint that the gene trees be consistent with the species tree.  An
+MCMC importance samplier is then used to sample the species trees.
+It is described in the papers:
+<ul>
+<li> Liu, L. and D. K. Pearl.  2007.  Species trees from gene trees:
+reconstructing Bayesian posterior distributions of a species phylogeny using
+estimated gene tree distributions.  <em>Systematic Biology</em> <b>56:</b>
+504-514.
+<li> Edwards, S. V., L. Liu, and D. K. Pearl.  2007. High resolution
+trees without concatenation.  <em>Proceedings of the National Academy of
+Sciences</em> <b>104:</b> 5936-5941.
+<li> Liu, L., D. K. Pearl, R. T. Brumfield, and S. V. Edwards. 2008. 
+Estimating species trees using multiple-allele DNA sequence data.
+<i>Evolution</i> <b>62:</b> 2080-2091.
+</ul>
+It is available as C source code, Windows executables and Mac OS X universal executables.  It can be downloaded from
+<a href="http://www.stat.osu.edu/~dkp/BEST/">its web site</a>
+at <code>http://www.stat.osu.edu/~dkp/BEST/</code>
+<P>
+
+<A NAME="iGTP">
+<HR>
+
+<P>
+<img src="icons/iGTP.jpg"> &nbsp; &nbsp; Ruchi Chaudhary, Mukul S. Bansal, Andr&eacute; Wehe, David 
+Fern&aacute;ndez-Baca, and Oliver Eulenstein</A> of the Department of Computer 
+Science at  Iowa State University, Ames, IA 
+<tt>(oeulenst<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.iastate.edu)</tt> 
+have released <strong>iGTP</strong> version 1.0, a software package for 
+large-scale phylogenetic analyses using gene tree parsimony.  iGTP implements 
+algorithms for inferring species supertrees that best reconcile the input gene 
+trees under the gene-duplication, gene-duplication and loss, and deep 
+coalescence cost models. iGTP extends the functionality and performance of 
+existing gene tree parsimony software and features building effective initial 
+trees using greedy stepwise leaf addition and the ability to have unrooted 
+gene trees in the input. Moreover, iGTP provides a user-friendly graphical 
+interface with integrated tree visualization software to facilitate analysis 
+of the results.  It is described in the paper: Chaudhary, R., M. S. Bansal, A. 
+Wehe, D. Fern&aacute;ndez-Baca and O. Eulenstein. 2010. iGTP: A software 
+package for large-scale gene tree parsimony analysis.<i>BMC Bioinformatics</i> 
+<b>11:</b> 574.
+It is available as Windows executables, Linux executables and Mac OS X 
+universal executables. The authors can be contacted for the source code.
+The executables can be downloaded from
+<a href="http://genome.cs.iastate.edu/CBL/iGTP/">its web site</a>
+at <code>http://genome.cs.iastate.edu/CBL/iGTP/</code>
+<P>
+
+<HR>
+<A NAME="ELW"><P><IMG SRC="icons/elw.jpg" ALT="[ELW icon]"> &nbsp;&nbsp; Andrew Roger</A>, of the
+Department of Biochemistry and Molecular Biology, Dalhousie University,
+Halifax, Nova Scotia, Canada
+(<tt>aroger<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;is.dal.ca</tt>)
+has written <strong>ELW</strong> (Expected Likelihood Weights),
+two PERL scripts -- <tt>elw.pl</tt> and <tt>calcwts.pl</tt> -- that, 
+together with <a href="software.pars.html#PAUP">PAUP*</a> and the <a href="software.pars.html#PHYLIP">PHYLIP</a> program Seqboot can be used to
+implement the "expected likelihood weights" method of Strimmer and Rambaut,
+described in the paper by Strimmer, K. and A. Rambaut. 2002. Inferring
+confidence sets of possibly misspecified gene trees. <em>Proceedings of the
+Royal Society of London Series B</em> <b>269:</b> 137-142.  It
+calculates a confidence interval for the maximum likelihood tree using the
+variation of the likelihoods among bootstrap estimates of the tree.
+ELW can be downloaded from its entry on
+<a href="http://rogerlab.biochemistryandmolecularbiology.dal.ca/Software/Software.htm#elw">Roger's software web page</a>
+at <code>http://rogerlab.biochemistryandmolecularbiology.dal.ca/Software/Software.htm#elw</code>
+<P>
+
+<HR>
+<A NAME="Lintre"> <P>
+Naoko Takezaki</A> of the Life Science Research Center
+of Kagawa University, Japan
+(<code>takezaki<!deathtospam>&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>med.kagawa-u.ac.jp</code>)
+wrote <STRONG>Lintre</STRONG> (Phylogenetic tests of
+the molecular clock and linearized tree), a package of programs for
+Sun workstations.  The programs include:
+<UL>
+<LI><STRONG>njboot</STRONG> -- construct a neighbor-joining (NJ) tree
+<LI><STRONG>postree</STRONG> -- create a postscript file of trees
+<LI><STRONG>tpcv</STRONG> -- conduct the two-cluster test
+<LI><STRONG>branch</STRONG> -- conduct the branch length test
+<LI><STRONG>branbst</STRONG> -- conduct the branch length test by bootstrap
+</UL>
+The two-cluster test is essentially the relative rate test for
+many sequences. The branch length test is the test of rate difference for each
+sequence under the tree root from the average rate of all sequences.
+The tests are described in: Takezaki, N., A. Rzhetsky, and M. Nei.  1995.
+Phylogenetic test of the molecular clock and linearized trees.  <EM>Molecular
+Biology and Evolution</EM> <B>12:</B> 823-33.  The programs are
+available as C source code and also as DOS executables.  They are distributed 
+(as a compressed tar archive of the source code with examples and 
+documentation, and also as a self-extracting archive of sources and DOS 
+executable)
+They are available at <A HREF="http://www.kms.ac.jp/~genomelb/takezaki.eng.html#software"> Naoko Takezaki's software web site</a> at
+<code>http://www.kms.ac.jp/~genomelb/takezaki.eng.html#software</code>
+and also at
+<A HREF="http://www.bio.psu.edu/people/faculty/nei/software.htm">the Nei lab
+software web site</A> at
+<CODE>http://www.bio.psu.edu/people/faculty/nei/software.htm</CODE>.  They
+are also available at
+<A HREF="http://iubio.bio.indiana.edu/soft/molbio/evolve/lintr/">by ftp from the IUBio
+archive</A> at <CODE>http://iubio.bio.indiana.edu/soft/molbio/evolve/lintr/</CODE>.
+<P>
+
+<A NAME="TipDate">
+<HR>
+<P>
+<IMG SRC="icons/tipdate.gif" ALT="[TipDate icon]">
+Andrew Rambaut
+(<tt>a.rambaut<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ed.ac.uk</tt>)), of
+the Institute for Evolutionary Biology, University of Edinburgh, Scotland, and
+formerly of the Department of Zoology, University of Oxford,
+has written <STRONG>TipDate</STRONG> version 1.2.
+TipDate is an application for estimating the rate molecular evolution
+(and hence a time-scale) for a
+phylogeny consisting of dated tips. These will most frequently be from viruses
+or other
+fast-evolving pathogens that have been isolated over a range of dates. The
+program can also return
+the likelihood for the simple molecular clock model (i.e., assuming that all
+sequences are
+contemporary), for a model in which rates of change at different times are
+drawn from a distribution, or the non-clock model. These are useful for
+likelihood ratio tests of the fit of the model to the data.
+TipDate is described in a paper: Rambaut, A. 2000.  Estimating the rate of
+molecular evolution: incorporating non-contemporaneous sequences into maximum
+likelihood phylogenies. <em>Bioinformatics</em> <b>16:</b> 395-399.
+TipDate is available as Mac OS executables and as source code for
+Linux or Unix from
+<A HREF="http://microbe.bio.indiana.edu:7131/soft/iubionew/molbio/evolution/evolve/TipDate/">the IUBIO software site</A>
+at <CODE>http://microbe.bio.indiana.edu:7131/soft/iubionew/molbio/evolution/evolve/TipDate/</CODE>.
+It is also available in a web-based server version from the
+<A HREF="software.serv.html#Pasteur-Serv">Pasteur Institute server</A>.
+<P>
+
+<A NAME="Cadence">
+<HR>
+<P>
+<IMG SRC="icons/Cadence.jpg" ALT="[Cadence icon]">&nbsp;&nbsp; Thomas Wilcox,</A> formerly
+of the Center for Computational Biology and Informatics
+of the University of Texas, and more recently of Long Key Tropical Research Center, Florida
+<tt>(tpwilcox<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;lktrc.org)</tt>
+has produced <strong>Cadence</strong>
+version 1.0.1, a program for Bayesian relative rate tests.  
+It is described in the paper:
+Wilcox, T. P., F. J.Garc&iacute;a de Leon, D. A. Hendrickson, and D. M. Hillis. 2004. Convergence among cave catfishes: Long-branch attraction and a Bayesian relative rates test. <em>Molecular Phylogenetics and Evolution</em> <b>31:</b> 1101-1113.
+It is available as Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://www.zo.utexas.edu/faculty/antisense/DownloadComputerPrograms.html">its web site at the University of Texas</a>
+at <code>http://www.zo.utexas.edu/faculty/antisense/DownloadComputerPrograms.html</code>
+<P>
+
+<HR>
+<A NAME="TreeAlign"><P>
+Jotun Hein,</A> of the Department of Statistics, University of Oxford
+(<tt>hein<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>stats.ox.ac.uk</tt>) produced <STRONG>TreeAlign</STRONG>, a
+multiple sequence alignment
+program that builds trees as it aligns DNA or protein sequences.  It uses a
+combination of distance matrix and approximate parsimony methods, inspired
+by the 1973 approach of David Sankoff.  It is described in two papers:
+<UL>
+<LI>Hein, J. J.  1990.  A unified approach to phylogenies and alignments. 
+<em>Methods in Enzymology</em> <b>183:</b> 625-644.
+<LI>Hein, J. J. 1994. TreeAlign.  pp. 349-364 in <em>Computer Analysis of
+Sequence Data</em>. edited by A. M. Grffin and H. G. Griffin. Humana Press,
+Tolowa, New Jersey.
+</UL>
+TreeAlign is available as C source code.  It uses enough memory to run
+that it will not be practical on older desktop systems.
+It is available 
+<A HREF="ftp://ftp.ebi.ac.uk/pub/software/unix/treealign.tar.Z">by anonymous ftp</A> at
+the European Bioinformatics Institute molecular biology software
+distribution site <CODE>ftp.ebi.ac.uk</CODE>
+in directories <CODE>pub/software/unix</CODE> and <CODE>pub/software/vms</CODE>.
+<P>
+
+<HR>
+<A NAME="ClustalW"><P>
+<IMG SRC="icons/clustalx.gif">&nbsp; A widely-used multisequence alignment program</A> that estimates trees as it
+aligns multiple sequences is <STRONG>ClustalW</STRONG>.  Currently it is 
+in version 2.0.12.  It is the latest incarnation
+of the Clustal family of tree-based alignment programs.
+Clustal was originally written by Des Higgins (now at the Conway Institute,
+University College Dublin, Ireland)
+(<CODE>des.higgins<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ucd.ie</CODE>), and later versions were developed by
+Julie Thompson (now at the Institut de G&eacute;n&eacute;tique, et de Biologie
+Mol&eacute;culaire et Cellulaire at the Universit&eacute; de Strasbourg, France,
+<CODE>julie<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>igbmc.u-strasbg.fr</CODE>), Toby Gibson,
+(<CODE>Toby.Gibson<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>embl.de</CODE>), and
+Fran&ccedil;ois Jeanmougin (<CODE>jeanmougin<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>igbmc.u-strasbg.fr</CODE>) and many
+others. 
+Recent features include the
+ability to detect read different input formats (NBRF/PIR, Fasta,
+EMBL/Swissprot), align old alignments, produce phylogenetic trees after
+alignment (Neighbor Joining trees with a bootstrap option), write different
+alignment formats (Clustal, NBRF/PIR, GCG, PHYLIP) and the presence of
+a full command line interface.  Clustal exists in two major variants:
+<OL>
+<LI> <strong>ClustalW</strong> which has a character-mode interface, in which the user
+types responses to choose options from a menu.
+<LI> <strong>ClustalX</strong> which has a graphical user interface.
+</OL>
+It is described in a number of papers:
+<UL>
+<LI> Larkin, M. A., G. Blackshields, N. P. Brown, R. Chenna, P. A. McGettigan,
+H. McWilliam, F. Valentin, I. M. Wallace, A. Wilm, R. Lopez, J. D. Thompson, T.
+J. Gibson, and D. G. Higgins.  2007. Clustal W and Clustal X version 2.0.
+<i>Bioinformatics</i> <b>23:</b> 2947-2948.
+<LI>Jeanmougin, F., J. D. Thompson, T. J. Gibson, M. Gouy, and D. G. Higgins.
+1998. Multiple sequence alignment with Clustal X. <em>Trends in Biochememical
+Sciences</em> <b>23:</b> 403-405.
+<LI>Thompson, J. D., T. J. Gibson, F. Plewniak, F. Jeanmougin,
+and D. G. Higgins. 1997. The ClustalX windows interface:
+flexible strategies for multiple sequence alignment aided by quality analysis 
+tools. <EM>Nucleic Acids Research</EM> <B>24:</B> 4876-4882.
+<LI>Higgins, D. G., J. D. Thompson, and T. J. Gibson. 1996. Using CLUSTAL
+for multiple sequence alignments. <EM>Methods in Enzymology</EM> <B>266:</B> 383-402.
+<LI>Thompson, J.D., D. G. Higgins and T. J. Gibson. 1994. CLUSTAL W: improving the sensitivity of progressive
+multiple sequence alignment through sequence weighting, positions-specific gap
+penalties and weight matrix choice.  <EM>Nucleic Acids Research</EM> <B>22:</B> 4673-4680.
+</UL>
+ClustalW is available from <a href="http://www.clustal.org">its main distribution page</a>
+at <code>http://www.clustal.org</code>.   The downloads of the current version
+there are also
+<A HREF="ftp://ftp.ebi.ac.uk/pub/software/clustalw2/">available by ftp from the
+European Bioinformatics Institute</a> ftp server.
+<P>
+For the older ClustalV, there exists a Macintosh Hypercard stack, ClustToTree, that can
+convert its tree files to Newick Standard format (used by many other programs).
+ClustToTree is
+<A HREF="http://aaa-proteins.uni-graz.at/Archiv/ClustToTreecomp.html">
+made available</A> by Kai-Uwe
+Fr&ouml;hlich at the University of Graz, Austria at
+<CODE>http://aaa-proteins.uni-graz.at/Archiv/ClustToTreecomp.html</CODE>.
+<P>
+ClustalW is made available on web servers by the <a href="software.serv.html#Genebee server">Genebee web server</a> at the Belozersky Institute
+in Moscow, and <a href="software.serv.html#EBI-ClustalW-server">at the European Bioinformatics
+Institute</a>.
+<P>
+
+<HR>
+<A NAME="T-Coffee"><P> C&eacute;dric Notredame</A>
+of the Comparative Bioinformatics Group of the Center for Genomic Regulation
+(CRG), Barcelona, Spain
+(<tt>cedric.notredame<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;europe.com</tt>), Olivier Poirot,
+Fabrice Armougom, and Sebastien Moretti of the Centre National de la Recherche
+Scientifique Marseille-Nice G&eacute;nopole, France have produced
+<strong>T-Coffee</strong> (Tree-based Consistency Objective Function For
+alignmEnt Evaluation), version 8.93.  This is a multiple sequence alignment
+program that aims to improve on <a href="Clustal">ClustalW</a>.  It is of the
+same general approach as ClustalW, a "progressive alignment" method, but it
+avoids some of the problems with the "greedy" nature of the ClustalW
+algorithm by taking into account more information about how the sequences
+all align with each other.  T-Coffee is described in the paper: Notredame, C.,
+D. Higgins, and J. Heringa. 2000.  T-Coffee: A novel method for multiple
+sequence alignments. <em>Journal of Molecular Biology</em> <b>302:</b> 205-217.
+From the point of view of this listing, the relevant features of T-Coffee are
+that it makes a "guide tree" and can write that tree out.  It also can
+read in a guide tree supplied by the user.  Versions from 2.00 on can align
+both sequences and structures.  T-Coffee is available as Unix
+source code which can easily be compiled, and as Linux, Mac OS X and Windows
+binaries.  It is available from
+<a href="http://www.tcoffee.org/Projects_home_page/t_coffee_home_page.html">its web site</a>
+at <code>http://www.tcoffee.org/Projects_home_page/t_coffee_home_page.html</code>
+<P>
+
+<HR>
+<A NAME="MALIGN"><P>
+Ward Wheeler</A> of the Division of Invertebrate Zoology, American Museum of Natural History, New York (<CODE>wheeler<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>amnh.org</CODE>) and
+David Gladstein (<tt>gladstein<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>gladstein.org</tt>)
+have written <STRONG>MALIGN</STRONG>, version 2.7, a parsimony-based alignment program for molecular sequences.  It implements the original
+suggestion by Sankoff, Morel, and Cedergren (1973) that alignment and
+phylogenies could be done at the same time by finding that tree that minizes
+the total alignment score along the tree.  Jotun Hein's program TreeAlign
+(mentioned above) is another, more approximate but possibly faster, attempt to
+implement the Sankoff-Morel-Cedergren suggestion.  MALIGN is one of the only
+programs to calculate this optimality criterion exactly (Wheeler and
+Gladstein's other program <A HREF="#POY">POY</A> is the other).
+MALIGN is described in a paper: Wheeler, W. C. and D. S. Gladstein.  1994.
+MALIGN - A multiple sequence alignment program. <em>Journal of Heredity</em>
+<b>85:</b> 417-418.  MALIGN is available
+<A HREF="http://research.amnh.org/scicomp/projects/malign.php">from its download web site</A>
+at the Program in Scientific Computation of the American Museum of Natural
+History at <code>http://research.amnh.org/scicomp/projects/malign.php</code>.
+It is available as C source code and as binaries for
+Linux, Windows, Sun Solaris, SGI, and HPUX.  The
+C source code is distributed in two forms, the ordinary one and a special
+version for parallel computation.
+<P>
+
+<HR>
+<A NAME="DNASIS"><P>
+<IMG SRC="icons/dnasis_b.jpg" ALT="[DNASIS icon]">
+MiraiBio</A>, a Hitachi Software company
+<STRONG>DNASIS</STRONG>, a general-purpose DNA and protein sequence analysis
+system, produced by
+Molecular Biology Insights, Inc. of Cascade, Colorado (but sold through
+Hitachi).
+It has many functions including primer design, plasmid maps, contig assembly,
+alignment, database searching, and many kinds of protein plots.  For our
+purposes what is relevant is the ability to do multiple sequence alignment
+by the Higgins-Sharp method of progressive sequence alignment (the one used
+in ClustalV), with one of the results being a UPGMA tree based on pairwise
+sequence alignment scores.  DNASIS is available from MiraiBio
+as version 3.0 (called DNASIS MAX) Windows executables, including
+a demo version at <A HREF="http://www.miraibio.com/dnasis-max/dnasis-max-overview.html">its web site</A> at <code>http://www.miraibio.com/dnasis-max/dnasis-max-overview.html</code>.
+Prices are not stated there -- there is Order form that can be sent to
+them by email.  It was formerly also available from MBI, and at that time
+a Windows version cost $1,895 and a Mac OS X version cost $2,995 for a 1-10 
+user network license.
+<P>
+
+<HR>
+<A NAME="GeneDoc"><P>
+<IMG SRC="icons/genedoc.gif" ALT="[GeneDoc icon here]">
+Karl Nicholas</A> (<CODE>karlnicholas<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>hotmail.com</CODE>)
+with help from Hugh Nicholas (<CODE>nicholas<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>psc.edu</CODE>)
+of the National Resource for Biomedical Supercomputing (NRBSC; www.nrbsc.org) 
+at the Pittsburgh Supercomputing Center has produced <STRONG>GeneDoc</STRONG>,
+version 2.6.0.2, a program for the shading and
+editing of multiple sequence alignments. Its reads .MSF files and Fasta Files.
+The alignment can be edited by changing the position of residues in the 
+sequences. GeneDoc includes scoring functions to assist in determining 
+whether your aligment changes are improving the score. Support for obtaining 
+a score via sum-of-pairs or by a phylogenetic tree is included. Phylogenetic 
+trees can be built with either the GUI interface or imported NEXUS or PHYLIP
+format tree descriptions.  The program runs on Windows
+and both 16-bit and 32-bit executables are distributed.
+The source code is also available there.
+It can be downloaded from <A HREF="http://www.nrbsc.org/gfx/genedoc/gddl.htm">its Web site</A> at <CODE>http://www.nrbsc.org/gfx/genedoc/gddl.htm</CODE>
+A Windows NT version for Digital Alpha processors was formerly available from
+Russell Malmberg at the Botany Department of the
+University of Georgia but is not currently in distribution.
+<P>
+
+<HR>
+<A NAME="POY"><P>
+Ward Wheeler</A> of the Division of Invertebrate Zoology, American Museum of Natural History, New York (<CODE>wheeler<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>amnh.org</CODE>),
+David Gladstein (<tt>gladstein<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>gladstein.org</tt>)
+and Jan De Laet of the Royal Belgian Institute of Natural Sciences,
+Brussels (<tt>jdelaet<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>natuurwetenschappen.be</tt>) have written
+<STRONG>POY</STRONG> version 4.1.2, a program that approximately implements
+David Sankoff's method of
+searching for the tree that minimizes a parsimony criterion that includes
+penalties for gaps, accomplishing both searching for phylogenies and
+alignments.  POY has algorithmic improvements by Wheeler and Gladstein that
+speed up the algorithm.  (Their program <A HREF="#MALIGN">MALIGN</A> is the
+only program carrying out the full Sankoff proposal).
+POY implements two approximate methods, Fixed States Optimization and
+Direct Optimization.  The methods used are described in three papers:
+<UL>
+<LI> Var&oacute;n, A., L. S. Vinh, and W. C. Wheeler. 2010. POY version 4: phylogenetic
+analysis using dynamic homologies. <i>Cladistics</i> <b>26:</b> 72-85.
+<LI>Wheeler, W. C. 1999. Fixed character States and the optimization of molecular sequence data. <em>Cladistics</em> <b>15:</b> 379-385.
+<LI>Wheeler, W. 1996.  Optimization alignment: the end of multiple sequence alignment in
+phylogenetics? <EM>Cladistics</EM> <B>12:</B>1-9.
+</UL>
+POY is available in C source or in executables for
+Linux, Mac OS X, and Windows.  It is distributed
+<A HREF="http://research.amnh.org/scicomp/projects/poy.php">from its download web site</A>
+at the Program in Scientific Computation of the American Museum of Natural
+History at <code>http://research.amnh.org/scicomp/projects/poy.php</code>.
+<P>
+
+<HR>
+<A NAME="ALIGN"><P>
+Russell Doolittle (<TT>rdoolittle<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ucsd.edu</TT>) and Dafei
+Feng</A>, of the Section of Molecular Biology of the Division of Biological
+Sciences of the University
+of California at San Diego, released <STRONG>ALIGN</STRONG> in 1990.  A
+version for Macintoshes was coded by Peter Markeiwicz.  ALIGN
+implements the "progressive alignment" strategy described in their paper:
+Feng, D.-F. and R. F. Doolittle. 1987. Progressive sequence aligment as a
+prerequisite to correct phylogenetic trees.  <EM>Journal of Molecular
+Evolution</EM> <B>25:</B> 351-360.  This is also the basis for the
+<A HREF="software.etc1.html#ClustalW">Clustal</A> family of programs as well as the
+(formerly distributed)
+<A HREF="software.old.html#GCG">Pileup</A> program in the GCG package.
+The ALIGN program can align as well as print out a tree (which does not
+have branch lengths).  It uses Doolittle's own formats, and so three other
+programs are included with ALIGN to convert formats.  The programs are
+distributed by ftp from the <A HREF="ftp://ftp.ebi.ac.uk/pub/software/mac">EBI ftp software server</A> at <TT>ftp.ebi.ac.uk</TT>
+in directory <TT>pub/software/mac</TT> as file <TT>align.hqx</TT>.
+A set of C source programs presumably equivalent to these is also made
+available by Milton Saier at UCSD on a
+<A HREF="http://www-biology.ucsd.edu/~msaier/transport/software.html">web page</A>
+at <code>http://www-biology.ucsd.edu/~msaier/transport/software.html</code>.
+<P>
+
+<A NAME="ALIFRITZ"><HR>
+<P> Roland Flei&szlig;ner</A> of the Institut f&uuml;r Bioinformatik,
+University of Duesseldorf, Germany
+(<tt>fleissner <!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.uni-duesseldorf.de</tt>), Dirk Metzler of the Institut f&uuml;r Informatik, University of
+Frankfurt, Germany (<tt>metzler<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;informatik.uni-frankfurt.de</tt>) and Arndt von Haeseler
+of the Center for Integrative Bioinformatics Vienna (<tt>arndt.von.haeseler<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univie.ac.at</tt>)
+have written <strong>ALIFRITZ</strong> version 1.0.  It simultaneously
+infers phylogenies and alignments using a model of insertions,
+deletions, and substitutions, using a Markov chain Monte Carlo method
+to sample from alignments within given phylogenies.
+It is described in the paper: Fleissner, R., D. Metzler, and A. von Haeseler.
+2005.  Simultaneous statistical multiple alignment and phylogeny reconstruction.
+<em>Systematic Biology</em> <b>54:</b> 548-561. 
+ALIFRITZ is available as C source code and as a Linux executable from
+<a href="http://www.cibiv.at/software/alifritz/">its web page</a> at
+<code>http://www.cibiv.at/software/alifritz/</code>
+<P>
+
+<A NAME="BAli-Phy">
+<HR>
+<P>
+<IMG SRC="icons/baliphy.jpg" ALT="[BAli-Phy icon here]">&nbsp;&nbsp; Ben
+Redelings, currently of the National Evolutionary Synthesis Center 
+(<tt>benjamin.redelings<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;nescent.org</tt>) and Marc Suchard</A>
+of the Department of Biomathematics
+of the University of California, Los Angeles
+<tt>(msuchard<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ucla.edu)</tt>
+have produced <strong>BAli-Phy</strong>
+(Bayesian ALIgnments and PHYlogenies),
+version 2.1.0, a program for joint Bayesian estimation of alignment and phylogeny.  Instead of inferring trees based on a single fixed alignment, BAli-Phy considers near-optimal alignments when estimating the phylogeny. BAli-Phy can also make use of information in shared insertions or deletions to infer the phylogeny. It uses a Markov chain Monte Carlo (MCMC) sampling to draw from the posterior distribution of alignments and trees.  It can provide maximum posterior probability estimates the tree and the alignment and indicate the extent of support for groups and alignment positions.  It can analyze either DNA or protein sequences,
+allowing for rate variation among sites and allowing a variety of substitution
+models.  It is described in the papers:
+<UL>
+<LI>Redelings B. D, and M. A. Suchard  2005. Joint Bayesian estimation of alignment and phylogeny, <em>Systematic Biology</em> <b>54(3):</b> 401-418.
+<LI>Suchard, M. A. and B. D. Redelings. 2006.  BAli-Phy: simultaneous Bayesian inference of
+alignment and phylogeny. <i>Bioinformatics</i> <b>22:</b> 2047-2048.
+</UL>
+It is available as C++ source code, Windows executables, Powermac Mac OS X executables, Intel Mac OS X executables, and Windows executables.  It can be
+downloaded from
+<a href="http://www.biomath.ucla.edu/~msuchard/bali-phy/">its web site</a>
+at <code>http://www.biomath.ucla.edu/~msuchard/bali-phy/</code>
+<P>
+
+<A NAME="MAFFT">
+<HR>
+<P>
+Kazutaka Katoh, Hiroyuki Toh, K. Kuma, T. Miyata, and K. Misawa</A>
+of the Division of Bioinformatics
+of the University of Kyushu, Japan
+<tt>(katoh<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;bioreg.kyushu-u.ac.jp.)</tt>
+have written <strong>MAFFT</strong>
+(Multiple sequence Alignment by Fast Fourier Transform),
+version 6.821, a fast multiple sequence alignment program using Fast Fourier Transforms and progressive alignment.  MAFFT has several methods for fast progressive alignment of very large numbers of sequences, allowing for large gaps, though tending to be limited to cases in which the blocks of aligned sites stay in the same order.  It can build and output a tree as one option.
+It is described in the paper:
+<ul>
+<li>Katoh, K. and H. Toh. 2007.   PartTree: an algorithm to build an approximate tree from a large number of unaligned sequences. <em>Bioinformatics</em> <b>23:</b> 372-374.
+<li>Katoh, K., K. Kuma, H. Toh and T. Miyata, 2005.  MAFFT version 5: improvement in accuracy of multiple sequence alignment. <em>Nucleic Acids Research</em> <b>33:</b> 511-518.
+<li>Katoh, K., K. Misawa, K. Kuma and T. Miyata. 2002. MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transform.<em>Nucleic Acids Research</em> <b>30:</b> 3059-3066 
+</ul>
+It is available as C++ source code, Windows executables, Linux executables and Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://align.bmr.kyushu-u.ac.jp/mafft/software/">its web site</a>
+at <code>http://align.bmr.kyushu-u.ac.jp/mafft/software/</code> &nbsp;&nbsp;A
+<a href="software.serv.html#MAFFT_server">web server</a> is also available there.
+<P>
+
+<A NAME="SATCHMO">
+<HR>
+<P>
+Robert C. Edgar and Kimmen Sjolander</A>
+<tt>(bob<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;drive5.com)</tt>
+(Sjolander is of the Department of Bioengineering
+of the University of California, Berkeley)
+have produced <strong>LOBSTER</strong>, a package carrying out
+Simultaneous alignment and tree construction using hidden markov models
+(SATCHMO), which
+aligns protein sequences while constructing Hidden markov Models of the 
+alignments.  It creates a hidden markov model of each protein structure, 
+aligning sequences to a profile and constructing a tree by clustering the most 
+similar sequences.  The HMM profile constructed shows different numbers of 
+positions as alignable as one moves through the tree, so an interactive tree 
+viewer and sequence viewer is included to view the result.
+It is described, and related methods described, in the papers:
+<UL>
+<li>Edgar, R. C. and K. Sjolander. 2003. SATCHMO: Sequence alignment and tree construction using hidden Markov models,  <em>Bioinformatics</em> <b>19(11):</b> 1404-1411.
+<li>Edgar, R. C. and K. Sjolander. 2004. COACH: profile-profile alignment of protein families using hidden Markov models, Bioinformatics 20(8):1309-1318
+</UL>
+It is available as C++ source code, Windows executables and Linux executables.  It can be downloaded from
+<a href="http://www.drive5.com/lobster/">the LOBSTER web site</a>
+at <code>http://www.drive5.com/lobster/</code> &nbsp;There is also a
+<a href="software.serv.html#SATCHMO_server">web server</A> available to run
+the program.
+<P>
+
+<A NAME="MUSCLE">
+<HR>
+<P>
+Robert Edgar</A>
+of  Mill Valley, California
+<tt>(muscle<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;drive5.com)</tt>
+has written <strong>MUSCLE</strong>
+(Multiple Sequence Comparison by Log-Expectation),
+version 3.8.31, a program for creating multiple alignments of amino acid or nucleotide sequences.  MUSCLE counts k-tuples shared among pairs of sequences and makes a preliminary phylogenetic tree for the sequences from this.  It then makes a preliminary multiple-sequence alignment, and iteratively reconsiders the tree and the alignment.  The result is many times faster than <a href="software.etc1.html">ClustalW</a> and more accurate as well.  The trees produced by the first or second tree-building procedures can be written out as well.
+It is described in the papers:
+<UL>
+<LI> Edgar, R. C. 2004. MUSCLE: multiple sequence alignment with high accuracy and high throughput, <em>Nucleic Acids Research</em> <b>32(5):</b> 1792-1797.
+<LI> Edgar, R. C. 2004. MUSCLE: a multiple sequence alignment method with
+reduced time and space complexity. <i>BMC Bioinformatics</I> <b>5</b> 113.
+</UL>
+It is available as C++ source code, Windows executables, Linux executables and Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://www.drive5.com/muscle/">its web site</a>
+at <code>http://www.drive5.com/muscle/</code><br>
+There is also <a href="http://phylogenomics.berkeley.edu/muscle/muscle_form.html">web server of MUSCLE</a> available at Kimmen Sj&ouml;lander's group, but it does not return the trees inferred.
+<P>
+
+<A NAME="SeaView">
+<HR>
+<P>
+Manolo Gouy</A>
+of the Laboratoire de Biometrie et Biologie Evolutive
+of the Centre National de la Recherche Scientifique, France
+<tt>(manolo.gouy<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univ-lyon1.fr)</tt>
+has released <strong>SeaView</strong>
+version 4.3.3, a multiplatform graphical user interface for sequence alignment
+and phylogenetic tree building.  SeaView allows multiple sequence alignment
+with the <a href="#MUSCLE">MUSCLE</A> and <a href="#ClustalW">ClustalW</A>
+programs, and can also drive many other external multiple alignment algorithms.
+It also drives GBlocks to help select blocks of evolutionarily conserved
+sequence sites. Tree building can be done using parsimony, distance, or maximum
+likelihood (using <a href="#PHYML">PHYML</a>) approaches. SeaView also allows
+network access to sequence databases, and display, printing, and
+copy-to-clipboard of rooted or unrooted, binary or multifurcating phylogenetic
+trees.   Given this availability of many different methods for phylogenetic
+analyses, SeaView will be especially useful for teaching and for occasional users of such software.
+It is described in the paper:
+Gouy M., S. Guindon, and O. Gascuel. 2010. SeaView version 4: a multiplatform
+graphical user interface for sequence alignment and phylogenetic tree building.
+<i>Molecular Biology and Evolution</i> <b>27 (2):</b> 221-224. 
+It is available as C++ source code, Windows executables, Linux executables and
+Mac OS X universal executables, and SeaView is also available as Linux packages
+for Debian, Fedora, and Gentoo Linux.  It can be downloaded from
+<a href="http://pbil.univ-lyon1.fr/software/seaview.html">its web site</a>
+at <code>http://pbil.univ-lyon1.fr/software/seaview.html</code>
+<P>
+
+<HR>
+<A NAME="PASSML"><P>
+<IMG SRC="icons/passml.gif" ALT="[PASSML icon here]">
+Pietro Li&ograve;, of the Computer Laboratory at the
+University of Cambridge (<CODE>Pietro.Lio<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>cl.cam.ac.uk</CODE>),
+has written <STRONG>PASSML</STRONG> and <STRONG>PASSML_TM</STRONG>,
+which use likelihood methods with Hidden Markov models to infer
+phylogeny and also secondary structure from protein data.  PASSML is for
+general proteins and PASSML_TM is for membrane proteins.
+The methods used are described in the papers: Goldman, N., J. L. Thorne,
+and D. T. Jones.  1998.  Assessing the impact of secondary structure and
+solvent accessibility on protein evolution.  <EM>Genetics</EM> <B>149:</B>
+445-458, 
+PASSML is described in the paper: Li&ograve;, P., N. Goldman, J. L. Thorne
+and D. T. Jones. 1998.  PASSML: combining evolutionary inference and protein
+secondary structure prediction.  <EM>Bioinformatics</EM> <B>14:</B> 726-733,
+and PASSML_TM is described in the paper:
+Li&ograve;, P. and N. Goldman. 1999 Using protein structural information in
+evolutionary inference: transmembrane proteins.  <EM>Molecular Biology and
+Evolution</EM> <B>16:</B> 1696-1710.
+The programs are available as ANSI C source code.
+The source code is available via
+<A HREF="http://www.ebi.ac.uk/goldman/hmm/passml.html">its web page</A> at
+<CODE>http://www.ebi.ac.uk/goldman/hmm/passml.html</CODE>.
+<P>
+
+<HR>
+<P>
+<IMG SRC="icons/cpwicon.gif" ALT="[COMPONENT icon here]">
+<A NAME="COMPONENT">Rod Page</A> (<CODE>r.page<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>bio.gla.ac.uk</CODE>), of
+the Division of Environmental and Evolutionary Biology of the University
+of Glasgow has written <STRONG>COMPONENT</STRONG> version 2.0, a program for
+Windows systems for
+comparing cladograms for use in phylogeny and biogeography studies.  It has
+many tree comparison and consensus methods, and far more features for
+biogeographic studies (such as comparing species and area cladograms) than any
+other package.  It also can generate random trees.  It runs under Windows 3.0
+or higher.  There is a review of the
+program in:  Slowinksi, J.  1993. Review of Component, Version 2.0, by Roderick D. M. Page. <EM>Cladistics</EM> <B>9:</B> 351-353.  COMPONENT is
+available free from its
+<A HREF="http://taxonomy.zoology.gla.ac.uk/rod/cpw.html">web site</A> at
+<CODE>http://taxonomy.zoology.gla.ac.uk/rod/cpw.html</CODE>.
+Source code in Pascal and documentation (as PDFs) are also available there.
+A very early development Macintosh version ("COMPONENT Lite") is available
+from the
+<A HREF="http://taxonomy.zoology.gla.ac.uk/rod/cplite/guide.html">COMPONENT Lite web site</A>
+at <CODE>http://taxonomy.zoology.gla.ac.uk/rod/cplite/guide.html</CODE>.
+<P>
+
+<HR>
+<A NAME="TREEMAP"><P>
+<IMG SRC="icons/treeicon.gif" ALT="[TREEMAP icon here]">
+<IMG SRC="icons/treemap2.gif" ALT="[TREEMAP2beta icon here]">&nbsp;
+Rod Page</A>(<CODE>r.page<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>bio.gla.ac.uk</CODE>), of the Division of Environmental and
+Evolutionary Biology of the University of Glasgow
+and Michael Charleston (<CODE>mcharles<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>it.usyd.edu.au</CODE>)
+of the Biological Informatics and Technology Centre of the School of 
+Information Technologies of the University of Sydney,
+Sydney, Australia have written <STRONG>TREEMAP</STRONG>, version 3,
+a free program for comparing host and parasite
+phylogenies. It allows you to interactively compare host and parasite
+trees, construct reconstructions of the history of the association, and
+perform some simple randomisation tests of hypotheses of cospeciation.
+It also can use Charleston's "Jungles" method to fit parasite trees to host
+trees by
+parsimony.  That method is described in his paper: Charleston, M. A. 1998
+Jungles: A new solution to the host/parasite phylogeny reconciliation problem.
+<em>Mathematical Biosciences</em> <b>149:</b> 191-223.
+For a description of the method used by TreeMap, see Page, R.D.M. 1994.
+Parallel phylogenies: Reconstructing the history of host-parasite
+assemblages. <EM>Cladistics</EM> <B>10:</B> 155-173.
+It can also estimate the number of randomized parasite trees that map as well
+to the host tree as does the original parasite tree.
+The program is available as a Java executable, which can be downloaded from
+<a href="http://www.it.usyd.edu.au/~mcharles/software/treemap/treemap3.html">its web site</a>
+at <code>http://www.it.usyd.edu.au/~mcharles/software/treemap/treemap3.html</code>.
+A beta release executable for Mac OS of version 2.0, called version 2.0&beta;,
+is available at
+<a
+href="http://www.it.usyd.edu.au/~mcharles/software/treemap/treemap.html">the
+Treemap 2.0&beta; web site</a>
+at <code>http://www.it.usyd.edu.au/~mcharles/software/treemap/treemap.html</code>.
+An earlier version, 1.0,
+is available as an executable for Mac OS or as an executable for Windows PCs.
+They can be downloaded from <A HREF="http://taxonomy.zoology.gla.ac.uk/rod/treemap.html">
+its WWW site:</A> <CODE>http://taxonomy.zoology.gla.ac.uk/rod/treemap.html</CODE>.
+<P>
+
+<HR>
+<A NAME="DIVA"><P>Fredrik Ronquist (<tt>Fredrik.Ronquist<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>nrm.se</tt>)
+of the Naturhistoriska riksmuseet, Stockholm, Sweden
+has released <strong>DIVA</strong> version 1.2, a program for
+DIspersal Vicariance Analysis.  It is for analyses in historical
+biogeography, where one is reconstructing the distribution history of a group
+of organisms from the distribution areas of extant species and their phylogeny.
+It is a parsimony-style analysis based on optimization of the numbers of
+dispersal and extinction events, where one assumes that speciations divide
+species ranges allopatrically.  It does not make any assumption about
+the hierarchical nature of vicariance events.
+It was formerly available as either a Windows executable or a Mac OS executable from
+<A HREF="http://www.ebc.uu.se/systzoo/research/diva/diva.html">its web page</A>
+at <CODE>http://www.ebc.uu.se/systzoo/research/diva/diva.html</CODE>.
+Currently there is some download, not well described, including perhaps source
+code, <a href="http://diva.sourceforge.net/">available from the Sourceforge site</a> at
+<code>http://diva.sourceforge.net/</code>.
+<P>
+
+<A NAME="S-DIVA">
+<HR>
+<P>
+Yu Yan</A>,
+of the College of Life Sciences
+of Sichuan University, Chengdu, China
+<tt>(yuyan<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;mnh.scu.edu.cn)</tt>
+and A. J. Harris of the Department of Botany, Oklahoma State University,
+Stillwater, Oklahoma, USA
+have produced <strong>S-DIVA</strong>
+(Statistical Dispersal-Vicariance Analysis),
+version 1.9&beta; and 1.5c, a tool for inferring biogeographic histories.  It 
+uses statistical 
+dispersal-vicariance analysis to check the ancestral reconstructions 
+and evaluate the alternative ancestral areas at each node in the tree. S-DIVA 
+provides a graphical user interface
+and can export high resolution graphical results for further analysis.
+It expands on the methods provided by <a
+href="software.etc1.html#DIVA">DIVA</a> by using a Bayesian approach to
+uncertainty in the phylogeny.
+It is described in a paper: Yu, Y., A. J. Harris, and X. J. He. 2010.  S-DIVA 
+(Statistical Dispersal-Vicariance Analysis): a tool for inferring 
+biogeographic histories. <i>Molecular Phylogenetics and Evolution</i>
+<b>56:</b> 848-850.
+It is available as a Windows executable.  Microsoft .NET 2 Framework should
+be installed on the system to enable S-DIVA to be run.  S-DIVA can be 
+downloaded from
+<a href="http://mnh.scu.edu.cn/s-diva/">its web site</a>
+at <code>http://mnh.scu.edu.cn/s-diva/</code>
+<P>
+
+<HR>
+<A NAME="TreeFitter"><P>
+Fredrik Ronquist (<tt>Fredrik.Ronquist<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>nrm.se</tt>)
+of the Naturhistoriska riksmuseet, Stockholm, Sweden
+has written <strong>TreeFitter</strong> version 1.0.  It fits parasite
+trees to a host tree, and can also use them to infer the best host tree.
+The program, which has many options, uses an event-based parsimony
+method, which penalizes events using penalties chosen to reflect their
+improbability.  The NEXUS file format is used for the tree files.
+It is available from <A HREF="http://www.ebc.uu.se/systzoo/research/treefitter/treefitter.html">its web site</A> at
+<CODE>http://www.ebc.uu.se/systzoo/research/treefitter/treefitter.html</CODE>
+as either a Windows executable or a Mac OS executable.  An on-line manual
+is available at the web site.
+<P>
+
+<A NAME="Tarzan">
+<HR>
+<P>
+Steffen Junick, Daniel Merkle, and Martin Middendorf</A>,
+of the research group on Parallel Computing and Complex Systems of the Faculty of Mathematics and Computer Science
+at the the Universit&auml;t Leipzig, Germany (Merkle is currently
+in the Department of Mathematics and Computer Science at the University
+of Southern Denmark)
+<tt>(daniel<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;imada.sdu.dk)</tt>
+have written <strong>Tarzan</strong>
+(it is called this because pairs of trees that are cophylogenies have been
+called "Jungles"),
+Tarzan is in version 0.9.  It is a program for the reconstruction of
+cophylogenies (host/parasite trees or fits of trees to biogeographic vicariance
+patterns).
+Tarzan uses an event-based method to find cost minimal or reconstructions or 
+reconstructions that have a minimal (or maximal) number of certain 
+evolutionary events. Five different types of evolutionary events are 
+considered: cospeciation, duplication, sorting, switching, and extinction. For 
+host-parasite systems cospeciation events refer to simultaneous host and 
+parasite speciation, duplication events are independent parasite speciations, 
+sorting events correspond to lineage sorting, and switches correspond to host shifts. 
+It is described in the paper:
+Merkle, D. and M. Middendorf. 2005. Reconstruction of the cophylogenetic history of related phylogenetic trees with divergence timing information <em>Theory in Biosciences</em> <b>123(4):</b> 277-299. 
+Tarzan is available as Java code.  It can be downloaded from
+<a href="http://pacosy.informatik.uni-leipzig.de/pv/Software/Tarzan/PV-Tarzan.engl.html">its web site</a>
+at  <code>http://pacosy.informatik.uni-leipzig.de/pv/Software/Tarzan/PV-Tarzan.engl.html</code>
+<P>
+
+<A NAME="ParaFit">
+<HR>
+<P>
+Pierre Legendre</A>
+of the D&eacute;partement de Sciences Biologiques
+of the Universit&eacute de Montr&eacute;al, Montr&eacute;al, Quebec
+<tt>(Pierre.Legendre<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;umontreal.ca)</tt>
+has written <strong>ParaFit</strong>, a program that tests host-parasite
+evolution.  It tests the hypothesis of coevolution between a clade of hosts and a clade of parasites. The null hypothesis of the global test is that the evolution of the two groups, as revealed by the two phylogenetic trees and the set of host-parasite association links, has been independent. The method requires some estimates of the phylogenetic trees or phylogenetic distances, and also a description of the host-parasite associations (H-P links) observed in nature. Two types of test are produced by the program: a global test of coevolution and a test on each H-P link.
+It is described in the paper:
+Legendre, P., Y. Desdevises and E. Bazin. 2002. A statistical test for host-parasite coevolution. <em>Systematic Biology</em> <b>51(2):</b> 217-234.
+It is available as FORTRAN source code, Windows executables, Powermac Mac
+OS X executables, and Mac OS 9 executables.  It can be downloaded from
+<a href="http://www.bio.umontreal.ca/casgrain/en/labo/parafit.html">its web site</a>
+at <code>http://www.bio.umontreal.ca/casgrain/en/labo/parafit.html</code>
+<P>
+
+<A NAME="AxParafit">
+<HR>
+<P>
+Alexandros Stamatakis, A. Auch, J. Meier-Kolthoff, and M. G&ouml;ker </A>,
+of the Laboratory for Computational Biology and Bioinformatics (LCBB)
+of the &Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne,
+Switzerland and of the Center for Bioinformatics
+(ZBIT) of the University of T&uuml;bingen, Germany
+and the Lehrstuhl f&uuml;r Spezielle Botanik und Mykologie of the
+Botanisches Institut, Universit&auml;t T&uuml;bingen
+(Stamatakis is currently at Lehrstuhl XII - Machine Learning and Data Mining in
+Bioinformatics at the Technische Universit&auml;t M&uuml;nchen, Germany)
+<tt>(Alexandros.Stamatakis<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;h-its,org)</tt>
+have written <strong>AxParafit</strong>
+(AleXandros's version of Parafit),
+a parallel version of the program ParaFit for fitting host and parasite 
+trees.  AxParafit and AxPcoords are highly optimized versions of Pierre 
+Legendre's <a href="software.etc1.html#ParaFit">ParaFit</a> and DistPCoA 
+programs for statistical analysis of host-parasite coevolution. AxParafit has 
+also been parallelized with MPI (Message Passing Interface) for compute 
+clusters.  The AxParafit site also includes a parallel version of the program 
+AxPcoords which is used with AxParafit.
+They are described in the paper:
+Stamatakis, A., A. Auch, J. Meier-Kolthoff, and M. G&ouml;ker. 2007. AxPcoords and Parallel AxParafit: Statistical co-phylogenetic analyses on thousands of taxa. <em>BMC Bioinformatics</em> <b>8:</b> 405.
+They are available as C source code, Windows executables, Linux executables and
+Mac OS X universal executables.  They can be downloaded from
+<a href="http://icwww.epfl.ch/~stamatak/AxParafit.html">its web site</a>
+at <code>http://icwww.epfl.ch/~stamatak/AxParafit.html</code>
+<P>
+
+<A NAME="CoRe-PA">
+<HR>
+<P>
+Daniel Merkle, Martin Middendorf, and Nicolas Wieseke</A>
+of the Department of Computer Science
+of the University of Leipzig, Germany
+<tt>(middendorf<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;informatik.uni-leipzig.de)</tt>
+has released <strong>CoRe-PA</strong>
+version 1.0, tool for reconstructing the coevolutionary history of host parasite systems.  CoRe-PA is a tool for reconstructing the coevolutionary history of host parasite systems. As Tarzan it uses an event-based method to find cost minimal reconstructions. These events are cospeciation, sorting, duplication and (host)switching.
+With CoRe-PA you can design host parasite scenarios with a graphical editor,
+generate random coevolutionary scenarios using the beta-split model with beta
+0, -1 or -1.5, generate random coevolutionary scenarios by simulating 
+coevolution, generate random coevolutionary scenarios which retain the
+characterof given host parasite systems, handle non-binary host and parasite
+phylogenies,
+choose between different ways of handling host switches,
+use divergence timing information,
+compute the best reconstructions for a given set of costs,
+compute the best cost vector for a given host parasite system (where the cost
+vector fits best to the reconstructed event frequencies),
+do randomization tests for given host parasite systems to analyze the
+evidence for coevolution,
+and export host parasite scenarios and their reconstructions to SVG graphics
+files.  It is described in the paper:
+Merkle, D., M. Middendorf, and N. Wieseke.  2010.
+A parameter-adaptive dynamic programming approach for inferring cophylogenies.
+<i>BMC Bioinformatics</i> <b>11 (Suppl 1):</b> S60.
+It is available as Java executables, Windows executables, Linux executables and Mac OS X universal executables.  It can be downloaded from
+<a href="http://pacosy.informatik.uni-leipzig.de/58-1-Downloads.html">its web site</a>
+at <code>http://pacosy.informatik.uni-leipzig.de/58-1-Downloads.html</code>
+<P>
+
+<A NAME="Jane">
+<HR>
+<P>
+Ran Libeskind-Hadas</A> of the Computer Science of Harvey Mudd College in
+Claremont, California
+<tt>(hadas<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.hmc.edu)</tt>
+has released <strong>Jane</strong>
+version 3, a cophylogeny reconstruction package. The input to Jane is a file 
+containing a host tree, a parasite tree, and a mapping of the tips of the 
+parasite tree to tips of the host tree. The user may specify the costs of each 
+of five types of events: cospeciations, duplications, host switches, losses, 
+and failure to diverge. Jane then endeavors to find least cost mappings of the 
+parasite tree onto the host tree subject to the given tip mapping. Jane also 
+has a features to perform randomization tests.  It is described in the paper:
+Conow, C., D. Fielder, Y. Ovadia and R. Libeskind-Hadas. 2010.
+Jane: A new tool for the cophylogeny reconstruction problem. <i>Algorithms for 
+Molecular Biology</i> <b>5:</b> 16.
+It is available as Java executables.  It can be downloaded from
+<a href="http://www.cs.hmc.edu/~hadas/jane/">its web site</a>
+at <code>http://www.cs.hmc.edu/~hadas/jane/</code>
+<P>
+
+<A NAME="MANTiS">
+<HR>
+<P>
+<IMG SRC="icons/mantis.gif" ALT="[MANTiS icon]">&nbsp;&nbsp;Athanasia C. 
+Tzika, Rapha&euml;l Helaers, and Michel Milinkovitch</A>
+of the Laboratory of Artificial and Natural Evolution (LANE) of the Department 
+of Zoology and Animal Biology at the University of Geneva, Switzerland, and 
+Yves Van de Peer, of the Department of Plant Systems Biology of the University 
+of Gent, Belgium 
+<tt>(info<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;mantisdb.org</TT>) or (<TT>Michel.Milinkovitch<!deathtospam>&nbsp;(at)&nbsp;<!deathtospam>unige.ch)</tt>
+have produced <strong>MANTiS</strong>
+version 1.1, a program using molecular databases to reconstruct gene 
+duplications and losses .  MANTiS builds a relational database integrating, in 
+a phylogenetic framework, all Ensembl genes, corresponding PANTHER molecular 
+functions and biological processes, as well as GNF, e-genetics, and HMDEG 
+expression data.  It makes use of the Ensembl ortholog/paralog prediction 
+pipeline to reconstruct gene duplication events, and implements a dynamical 
+programming approach for the mapping of gene gains, duplications, and losses 
+on the phylogenetic tree.
+<P>
+It allows the user to identify gains and losses on specific branches of the 
+tree, see the genome content of ancestral species, statistically over- or 
+under-represented molecular functions, biological processes and anatomical 
+systems (expression data), and reconstruct tissue specificity of gained, 
+duplicated, and lost genes.
+It is described in the paper:
+Tzika, A. C., R. Helaers, Y. Van de Peer and M. C. Milinkovitch. 2008. MANTiS: a phylogenetic framework for multi-species genome comparisons. <i>Bioinformatics</i> <b>24(2):</b> 151-157.
+It is available as Java executables with a Windows executable installer, a
+Linux executable installer, and a Mac OS X universal executable installer.  It 
+can be downloaded from
+<a href="http://www.mantisdb.org">its web site</a>
+at <code>http://www.mantisdb.org</code>
+<P>
+
+<A NAME="SIMMAP"><P>
+<HR>
+<IMG SRC="icons/simmap.jpg">&nbsp;&nbsp; Jonathan Bollback</A>, of the
+Institute of Science and Technology Austria,
+Klostemeuberg, Austria (<tt>bollback<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ist.ac.at</tt>)
+has written <strong>SIMMAP</strong> (SIMulation MAPping) version 1.5.2.
+It stochastically maps characters onto a tree, given the tree and a 
+probability model of character change among discrete states.  It can handle
+general models of nucleotiden substitution as well as the Mk model of change
+of discrete morphological characters.  It is also able 
+to estimate covariation between molecular or morphological characters,
+estimate dN and dS, while accounting for model and tree uncertainty,
+and estimate a wide variety of descriptive statistics for patterns in
+molecular or morphological evolution.
+The method it uses was introduced in the papers:
+<ul>
+<li>Nielsen, R. 2002. Mapping
+mutations on phylogenies. <em>Systematic Biology</em> <b>51:</b> 729-739.
+<li>Huelsenbeck, J. P., R. Nielsen, and J. P. Bollback. 2003. Stochastic
+mapping of morphological characters. <em>Systematic Biology</em> <b>52:</b>
+131-158.
+<li>Bollback, J. P. 2006. SIMMAP: Stochastic character mapping of discrete traits on phylogenies. <em>BMC Bioinformatics</em> 7:88. 
+</ul>
+SIMMAP is a Mac OS X executable, available
+from <a href="http://www.simmap.com">its web page</a> at
+<code>http://www.simmap.com</code>
+at the University of Copenhagen.
+<P>
+
+<A NAME="EREM">
+<HR>
+<P>
+Liran Carmel, Yuri I. Wolf, Igor B. Rogozin, and Eugene V. Koonin</A>
+of the National Center for Biotechnology Information, National Library of Medicine
+of the National Institutes of Health, Bethesda, Maryland (Carmel is now at
+the 
+the Department of Computer Science at Hebrew University, Jerusalem, Israel
+with email address&nbsp;
+<tt>liran.carmel<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;carmellab.com</tt>) released <strong>EREM</strong>
+(Evolutionary Reconstruction by Expectation-Maximization),
+a program for parameter estimation and ancestral reconstruction for evolution
+of binary characters.  EREM assumes a probabilistic model for evolution of
+binary characters on a given bifurcating tree. EREM estimates rates of change
+between states 0 and 1 of the model, and reconstructs ancestral states
+(presence and absence in internal nodes) and the location of events (gains
+and loss along branches). It can also be used to simulate data on a tree.
+It is available as C++ source code and Windows executables.  It can be downloaded from
+<a href="http://carmelab.huji.ac.il/software/EREM/erem.html">its web site</a>
+at <code>http://carmelab.huji.ac.il/software/EREM/erem.html</code>
+<P>
+
+<A NAME="Tree Tracker">
+<HR>
+<P>
+Antonio Marco and Ignacio Mar&iacute;n</A>
+of the Departamento de Gen&eacute;tica
+of the Universitat de Val&egrave;ncia and of the Instituto de Biomedicina de
+Val&egrave;ncia, of the Consejo Superior de Investigaciones Cient&iacute;ficas,
+Val&egrave;ncia, Spain
+<tt>(marcasan<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;uv.es)</tt>
+have written <strong>Tree Tracker</strong>, a Perl script to detect
+overrepresented clusters in a tree.  It takes a user-supplied tree and a
+list of genes.  The program uses a permutation analysis of ranked clusters to
+test whether groups within the tree are overrepresented for having one state of
+genes that have two possible states.  It is described in the paper:
+Marco, A. and I. Mar&iacute;n. 2007. A general strategy to determine the
+congruence between a hierarchical and a non-hierarchical classification.
+<em>BMC Bioinformatics</em> <b>8:</b> 442.
+It is available as a Perl script.  It can be downloaded from
+<a href="http://www.uv.es/~genomica/treetracker/">its web site</a>
+at <code>http://www.uv.es/~genomica/treetracker/</code>
+<P>
+
+<A NAME="Ancestor">
+<HR>
+
+<P>Jianzhi George Zhang of the Department of Ecology and Evolutionary
+Biology of the University of Michigan, Ann Arbor, Michigan 
+<tt>(jianzhi<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;umich.edu)</tt>
+produced <strong>Ancestor</strong>, a program for inferring the ancestral 
+protein sequence of a set of species from their protein sequences.
+The tree of the sequences is inferred by the minimum evolution
+distance matrix method of Rzhetsky and Nei.  I can estimate the ancestral
+sequences at all nodes of the tree.  The methods are described in a
+paper:   Zhang, J., and M. Nei. 1997. Accuracies of ancestral amino acid
+sequences inferred by the parsimony, likelihood, and distance methods.
+<i>Journal of Molecular  Evolution</i> <b>44:</b> S139-S146.
+The program is distributed as a DOS executable with C source code.  It will
+run in a Windows Command Prompt window.  It is 
+available from Masatoshi Nei's lab software site <a href="https://homes.bio.psu.edu/people/faculty/nei/software.htm">software site</a>
+at <code>https://homes.bio.psu.edu/people/faculty/nei/software.htm</code>
+<P>
+
+<A NAME="ANC-GENE">
+<HR>
+
+<P>
+Jianzhi George Zhang of the Department of Ecology and Evolutionary
+Biology of the University of Michigan, Ann Arbor, Michigan 
+<tt>(jianzhi<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;umich.edu)</tt>
+has produced <strong>ANC-GENE</strong>, a program to infer ancestral
+protein and DNA sequences from DNA sequences of a coding gene when the
+phylogeny of the species is known.   It first infers the amino acids by a
+distance-based Bayesian method, and then infers the underlying nucleotide
+sequences by fixing the inferred amino acids.  It estimates branch lengths
+on the phylogeny by a distance method before inferring the ancestral sequences.
+It uses one of two possible models of amino acid changes (the Poisson-f or
+JTT-f models), as well as the Jukes-Cantor model of nucleotide substitution.
+It outputs both inferred pathways of change at each amino acid position and
+inferred sequences at each node of the tree.  The methods are discussed in'
+this paper:    Zhang, J., and M. Nei. 1997. Accuracies of ancestral amino acid
+sequences inferred by the parsimony, likelihood, and distance methods.
+<i>Journal of Molecular Evolution</i> <b>44 (Suppl 1):</b> S139-S146.
+ANC-GENE is available as a DOS executable and C souce code.  These
+can be executed in
+Windows in a Command Prompt windows.  It  can be downloaded from
+<a href="https://homes.bio.psu.edu/people/faculty/nei/software.htm">the Nei laboratory software web site</a>
+at <code>https://homes.bio.psu.edu/people/faculty/nei/software.htm</code>
+<P>
+
+<A NAME="Mgenome">
+<HR>
+
+<P>
+Xun Gu, of the Department of Genetics, Development and Cell Biology
+and the Center for Bioinformatics and Biological Statistics at
+Iowa State University, Ames, Iowa (<tt>xgu<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>iastate.edu</tt>) has
+release <strong>Mgenome</strong> version 1.0.  It finds trees for multiple
+genome rearrangement by signed reversals.  For a collection of genomes
+represented by signed permutations of genes, it finds a tree that connects
+all given genomes by reversal paths such that the number of all signed
+reversals is as small as possible. The methods seem to be described in a paper:
+Wu, S., and X. Gu.  2003.  Algorithms for multiple genome rearrangement by
+signed reversals. <em>Pacfic Symposium on Biocomputing</em> <b>8:</b> 363-74,
+although the paper does not refer to the program.
+The paper is available <a href="http://xungulab.com/publications/wuS03PSB.pdf">as a PDF at the Gu lab web site</a>.
+The program is available as a Windows executable
+at <A HREF="http://xungulab.com/software.html">the Gu lab software web site</A> at
+<CODE>http://xungulab.com/software.html</CODE>.
+<P>
+
+<HR>
+<A NAME="BPAnalysis">
+<P></A> Mathieu Blanchette, of the School of Computer Science, McGill
+University, Montr&eacute;al, Qu&eacute;bec
+(<tt>blanchem &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>mcb.mcgill.edu</tt>) has written <strong>BPAnalysis</strong>,
+a program that infers phylogenies from a set of gene orders by minimizing
+the number of breakpoints required in genome rearrangement (this is not the
+same as minimizing the number of rearrangement events).  It is a C++
+program which is also distributed in source code and in an executable
+for DOS and Windows.  The method employed is described in the paper:
+Sankoff, D. and M. Blanchette. 1998. Multiple genome rearrangement and 
+breakpoint phylogeny. <em>Journal of Computational Biology</em> <b>5:</b>
+555-570.  It is available from
+<a href="http://www.mcb.mcgill.ca/~blanchem/software.html">Blanchette's software page</a>
+at <code>http://www.mcb.mcgill.ca/~blanchem/software.html</code>
+<P>
+
+<A NAME="Notung">
+<HR>
+<P><IMG SRC="icons/Notung.gif">&nbsp;&nbsp;
+Benjamin Vernot, Aiton Goldman and Dannie Durand</A>
+of the Departments of Biological Sciences and Computer Science
+of the Carnegie Mellon University, Pittsburgh, Pennsylvania
+<tt>(notung<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cs.cmu.edu)</tt>
+have released <strong>Notung</strong> version 2.6, a unified framework for
+incorporating gene duplication/loss parsimony in phylogenetic inference.
+Given a gene and species tree as input, Notung can:
+(1) Reconcile the trees, (2) Estimate upper and lower bounds on duplication
+times in terms of speciation events, (3) Root an unrooted tree by minimizing
+gene duplications and losses, and (4) Rearrange regions of a gene tree with
+weak support in the sequence data to obtain alternate hypotheses.
+Notung's graphical user interface supports exploratory data analysis
+of very large trees and rapid review of many alternate
+hypotheses. Notung also provides a command-line interface for
+automated analysis of many trees in high-throughput genomic studies.
+Notung can read and save trees in Newick, NHX, or Notung file format.
+Images can be outputted in PNG format for use in
+publications.
+Notung is freely available in a Java executable which can run on Mac OS X,
+Windows and Linux systems.  The distribution includes: Notung java executable,
+a manual in PDF format with worked examples, sample trees, sample scripts for
+automated analysis. Java 1.4 or higher is required.
+It is described in the paper: Durand, D., B. V. Halldorsson, and B. Vernot.
+2005.  A hybrid micro-macroevolutionary approach to gene tree reconstruction.
+<em>Journal of Computational Biology</em> <b>13(2):</b> 320-335.
+It can be downloaded from
+<a href="http://www.cs.cmu.edu/~durand/Notung/">its web site</a>
+ at  <code>http://www.cs.cmu.edu/~durand/Notung/</code>
+<P>
+
+<A NAME="DTscore">
+<HR>
+<P>
+Olivier Elemento,
+then of the IMGT, the International imMunoGeneTics database and the LIRMM (Laboratoire d'Informatique de Robotique et de Micro&eacute;lectronique de Montpellier)
+of the Universit&eacute; de Montpellier II, Montpellier, France
+(He is now at the Institute for Computational Biomedicine
+at Weill Cornell Medical College in New York City and his email
+address is
+<tt>ole2001<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;med.cornell.edu</tt>)
+has written <strong>DTscore</strong>
+(Duplication, Tandem - score),
+a distance-based tandem duplication tree reconstruction program.  It takes as input a distance matrix between copies in a family of tandem repeats. The rows and columns need to be ordered in the same way as the copies are in the locus. DTscore can be applied to relatively large datasets (more than a hundred copies). 
+It is described in the paper:
+Elemento O. and O. Gascuel. 2002. A fast and accurate distance algorithm to reconstruct tandem duplication trees. <em>Bioinformatics</em> <b>18:</b> S92-S99.
+It is available as C source code, Windows executables and Linux executables.  It can be downloaded from
+<a href="http://www.lirmm.fr/%7Eelemento/DTscore/">its web page</a> at
+<code>http://www.lirmm.fr/%7Eelemento/DTscore/</code>&nbsp; and also at
+<a href="http://www.atgc-montpellier.fr/dtscore/binaries.php">its web site at
+ATGC</a>
+at <code>http://www.atgc-montpellier.fr/dtscore/binaries.php</code>
+<P>
+
+<A NAME="gtp">
+<HR>
+<P>
+Michael Sanderson</A>
+of the Department of Ecology and Evolutionary Biology
+of the University of Arizona, Tucson, Arizona
+<tt>(sanderm<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;email.arizona.edu)</tt>
+has written <strong>gtp</strong>
+(Gene Tree Parsimony),
+version 0.15, a program to reconcile gene trees with species trees using a 
+gene tree parsimony criterion.  The program reads a NEXUS-format file 
+containing the species tree and a series of gene trees, which have at their 
+tips the names of the species.  The gene trees are reconciled with the species 
+trees using a gene duplication count.  The gene trees can either be considered 
+to be rooted as given, or optionally they can be considered to be unrooted, in 
+which case the count of duplications is made by considering the minimum over 
+all possible rootings of each gene tree.  The methods are described in the paper:
+Zmasek, C. M. and S. R. Eddy. 2001.  A simple algorithm to infer gene 
+duplication and speciation events on a gene tree.  <em>Bioinformatics</em> <b>17:</b> 821-828.
+It is available as C source code.  It can be downloaded from
+<a href="http://loco.biosci.arizona.edu/gtp/gtp.html">its web site</a>
+at <code>http://loco.biosci.arizona.edu/gtp/gtp.html</code>
+<P>
+
+<HR>
+<P>
+<A HREF="software.etc1.html#">To top of this page</A>
+<P>
+<A HREF="software.etc2.html">To next section of software pages</A>
+<A NAME="bottom"><BR></A>
+
+<div> 
+<P>
+<font color="#666666">Notices added in compliance with University of Washington
+requirements for web sites hosted at the University: &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.washington.edu/online/privacy" target="_blank"><font
+color="#888888">Privacy</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.washington.edu/online/terms"
+target="_blank"><font color="#888888">Terms</font></a></font>
+</div>
+</BODY>
+</HTML>

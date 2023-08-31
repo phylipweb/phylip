@@ -1,0 +1,1610 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+<HEAD>
+<TITLE>Phylogeny Programs (continued)</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+
+<A HREF="software.html">To go to top of the Software pages</A>
+<P>
+<A HREF="software.pars.html#bottom">To previous part of Software pages</A>
+<P>
+
+<HR>
+<A NAME="DISPAN">
+<P>Tatsuya Ota</A>, most recently at the Hayama
+Information Network Center at the
+Graduate University of Advanced Studies, Hayama, Japan
+(<CODE>ota<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>soken.ac.jp</CODE>)
+written a package,
+<STRONG>DISPAN</STRONG>, (Genetic Distance and Phylogenetic Analysis),
+which computes for gene frequency data the heterozygosity, gene diversity, Nei's standard genetic
+distance or the DA distance, and their standard error.
+It also constructs phylogenies using the 
+neighbor-joining (NJ) method or the UPGMA method.  These trees can also be
+bootstrapped.  A tree editor allows the user to rearrange the tree and print it out.
+The package consists of two programs, GNKDST and TREEVIEW.  The first is a
+rewrite of a program by A. K. Roychoudhury, Y. Tateno, D. Graur, N. Saitou,
+and R. Schwartz, the second was written by Koichiro Tamura.  DISPAN
+is distributed as DOS executables (which can run under Windows in a Command
+tool window. The package and its Readme file are available
+<A HREF="http://iubio.bio.indiana.edu/soft/molbio/ibmpc/">at the IUBIO software
+server</A>
+at <code>http://iubio.bio.indiana.edu/soft/molbio/ibmpc/</code>
+and at <A HREF="http://www.bio.psu.edu/People/Faculty/Nei/Lab/dispan2.htm"> a
+web page describing it</a>  at
+<code>http://www.bio.psu.edu/People/Faculty/Nei/Lab/dispan2.htm</code>
+at the software pages of
+Masatoshi Nei's laboratory at Molecular Evolution and Phylogenetics
+at Pennsylvania State University.
+<P>
+
+<HR>
+<A NAME="QuickTree"><P></A>
+Kevin Howe, Alex Bateman, and Richard Durbin of the Wellcome Trust Sanger
+Institute in Hinxton, U.K. (<tt>klh<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>sanger.ac.uk</tt>, <tt>agb<!deathtospam>&nbsp; (at)<!deathtospam>&nbsp; sanger.ac.uk</tt>,
+and <tt>rd<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>sanger.ac.uk</tt>) have released <strong>QuickTree</strong>,
+a program for rapid calculation of Neighbor-Joining trees.  The algorithms
+used are O(n<sup>3</sup>) like most other implementations of that
+method, but have been optimized for speed.  The program is
+described in the paper:  Howe, K., A. Bateman, and R. Durbin.  2002.
+QuickTree: building huge Neighbour-Joining trees of protein sequences.
+<i>Bioinformatics</i> <b>18:</b> 1546-1547.  QuickTree is distributed as
+C source code from
+<A HREF="http://www.sanger.ac.uk/resources/software/quicktree/">its web site</A> 
+at <CODE>http://www.sanger.ac.uk/resources/software/quicktree/</CODE>
+<P>
+
+<A NAME="NINJA">
+<HR>
+<P>
+Travis Wheeler</A>
+of the Janelia Farm Research Campus of the Howard Hughes Medical Institute
+<tt>(travis<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;nimbletwist.com)</tt>
+has released <strong>NINJA</strong>
+version 1.0.4, software for inferring large-scale neighbor-joining 
+phylogenies from distance matrices.  NINJA is argued by Wheeler to be the 
+fastest available tool for computing correct neighbor-joining phylogenies for 
+inputs of more than 10,000 sequences, and to be more than 10x faster than the 
+fastest implementation of the canonical neighbor-joining algorithm 
+(QuickTree).  It is described in the paper:
+Wheeler, T. J. 2009. Large-scale neighbor-joining with NINJA. pp. 375-389 in
+Salzberg , S. L.  and T. Warnow (eds.), <i>Proceedings of the 9th Workshop on
+Algorithms in Bioinformatics. WABI 2009</i> Springer, Berlin.
+It is available as Java source code and Java executables.  It can be downloaded from
+<a href="http://nimbletwist.com/software/ninja/">its web site</a>
+at <code>http://nimbletwist.com/software/ninja/</code> &nbsp;&nbsp; It is
+also available as part of the <a href="software.pars.html#Mesquite">Mesquite</a> package of Java programs.
+<P>
+
+<HR>
+<A NAME="PHYLTEST">
+<P>
+Sudhir Kumar,</A> (<CODE>S.Kumar<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>asu.edu</CODE>),
+of the Center for Evolutionary Functional Genomics at Arizona State
+University, Tempe, Arizona
+has written <STRONG>PHYLTEST</STRONG>, version 2.0.  It is a DOS
+executable program for testing phylogenetic hypotheses about four
+clusters of DNA sequences.  It implements comparison of three alternative
+phylogenetic trees for four monophyletic clusters of sequences, the
+four-cluster analysis: Rzhetsky, A, S. Kumar,  and M. Nei.  1995.
+Four-cluster analysis: a simple method to test phylogenetic hypotheses.
+<i>Molecular Biology and Evolution</i>  <B>12:</B> 163-167.
+It can also carry out the interior branch test of the null hypothesis that an interior
+branch length is significantly longer than zero (Rzhetsky, A. and M. Nei. 1992.
+A simple method for estimating and testing minimum-evolution trees.
+<i>Molecular Biology and Evolution</i> <B>9:</B> 945-967), as
+well as the estimation of average pairwise distances (and standard errors)
+within and between clusters of sequences and
+relative rate tests and the computation of the time of divergence.
+PHYLTEST is distributed from
+<A HREF="http://iubio.bio.indiana.edu/soft/molbio/ibmpc/">the IUBIO software
+server</A> at <CODE>http://iubio.bio.indiana.edu/soft/molbio/ibmpc/</CODE>
+<CODE>molbio/ibmpc</CODE>.  The "readme" file for it is distributed there
+and is also available at
+Masatoshi Nei's lab software page
+<A HREF="http://www.bio.psu.edu/People/Faculty/Nei/Lab/phyltest2.htm">web page</A>
+at Pennsylvania State University at
+<CODE>http://www.bio.psu.edu/People/Faculty/Nei/Lab/phyltest2.htm</CODE>.
+It is distributed as a self-extracting archive, containing the executables and
+examples, with a Readme file.  The
+program can be run under DOS or in the Command tool of Window.
+<P>
+
+<HR>
+<A NAME="TREECON"><P>
+<IMG SRC="icons/treecon1.gif" ALT="[TREECON icon here]">
+<STRONG>TREECON</STRONG></A> version 1.3b is a software package developed by
+Yves Van de Peer of the Bioinformatics and Evolutionary Genomics group at the
+Department of Plant Systems Biology, University of Ghent, Belgium
+(<CODE>yves.vandepeer<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>@psb.ugent.be</CODE>) for the
+construction and drawing of phylogenetic trees based on distance data.
+Several equations are included to convert dissimilarity into evolutionary
+distance and several methods (such as neighbor-joining) are included for
+inferring the tree topology.  It also includes bootstrap analysis.  It also
+has good facilities for rerooting and drawing trees.  The
+program is available for free for academic use, for other use you
+are asked to contact its author.  It on PCs under Windows.
+It is described in several papers:
+<UL>
+<LI>Van de Peer, Y. and R. De Wachter.  1993.  TREECON: a software package for
+the construction and drawing of evolutionary trees. <i>Computer Applications
+in the Biosciences (CABIOS)</i> <B>9:</B> 177-182.
+<LI>Van de Peer, Y. and R. De Wachter. 1994. TREECON for
+Windows: a software package for the construction and drawing of
+evolutionary trees for the Microsoft Windows environment.
+<i>Computer Applications in the Biosciences (CABIOS)</i> <B>10:</B> 569-570.
+<LI>Van de Peer, Y. and R. De Wachter. 1997. Construction of evolutionary
+distance trees with TREECON for Windows: accounting for variation in nucleotide substitution rate among sites. <i>Computer Applications in the Biosciences (CABIOS)</i>
+<B>13:</B> 227-230.
+<LI>Van de Peer, Y. 2003. Analysis of nucleotide sequences using TREECON.
+pp. 236-255 in <i>The Phylogenetic Handbook</i>, edited by M. Salemi and A.-M.
+Vandamme.  Cambridge University Press, Cambridge, U.K.
+</UL>
+It is described on
+<A HREF="http://bioinformatics.psb.ugent.be/software_details.php?id=3">its web site</A> at <CODE>http://bioinformatics.psb.ugent.be/software_details.php?id=3</CODE>, and it can be
+downloaded from there, and an online manual is also viewable there.
+<P>
+
+<HR>
+<A NAME="METREE"><P>
+Andrey Rzhetsky</A> (<CODE>andrey.rzhetsky<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>dbmi.columbia.edu</CODE>) of the Department
+of Biomedical Informatics at Columbia University, New York
+and Masatoshi Nei</A> of the Institute of Molecular and Evolutionary Genetics at Pennsylvania State
+University have produced
+<STRONG>METREE</STRONG> version 1.2, a program for carrying out the minimum-evolution
+distance matrix method.  METREE runs on
+DOS systems and on Windows (under a Command Tool window).  It computes
+minimum evolution distance matrix trees from DNA and amino acid sequence data
+and tests the statistical significance of
+topological differences and of the branch lengths.   Different distance
+matrix measures may be used.  The package is menu driven and the TREEVIEW
+program written by Koichiro Tamura for
+visualizing and printing out the final tree is also included.  The method is
+described in the paper by A. Rzhetsky and M. Nei. 1992. A simple method for
+estimating and testing minimum-evolution trees. <i>Molecular Biology and
+Evolution</i> <B>9:</B> 945-967, and the program is described in
+a paper by A. Rzhetsky and M. Nei. 1994. METREE: a program package for
+inferring and testing minimum-evolution trees. <i>Computer Applications in
+the Biological Sciences (CABIOS)</i> <B>10:</B> 409-12.
+METREE is distributed from
+<A HREF="http://iubio.bio.indiana.edu/soft/molbio/ibmpc/">the IUBIO
+server</A> from <CODE>http://iubio.bio.indiana.edu/soft/molbio/ibmpc/</CODE>.
+A Readme file is also available at its listing in its listing at
+<a href="http://www.bio.psu.edu/People/Faculty/Nei/Lab/software.htm">the
+software page of Masatoshi Nei's laboratory</a> at
+<code>http://www.bio.psu.edu/People/Faculty/Nei/Lab/software.htm</code>
+<P>
+
+<HR>
+<A NAME="FastME"><P>
+Richard Desper, most recently of Ziheng Yang's lab at the
+Department of Biology, University College, London, U.K.,
+and Olivier Gascuel of the LIRMM (Laboratoire d'Informatique de Robotique et de
+Micro&eacute;lectronique de Montpellier), Montpellier, France (<tt>gascuel (at)
+lirmm.fr</tt>) have written <strong>FastME</strong>, a fast program for the
+minimum evolution distance matrix method.  It is described as faster than
+neighbor-joining methods, more accurate than them, and as accurate as
+least squares methods. It can analyze multiple data sets as part of
+bootstrapping analyses.   Its methods are described in two papers:
+<UL>
+<LI>Desper, R., and O. Gascuel.  2002.  Fast and accurate phylogeny
+reconstruction algorithms based on the minimum-evolution principle.
+pp. 357-374 in <i>Proceedings of the Second International Workshop
+on Algorithms in Bioinformatics, WABI 2002, Rome, Italy, September 17-21,
+2002.</i>  ed. R. Guig&oacute; and D. Gusfield.  Lecture
+Notes in Computer Science, no. 2452.  Springer-Verlag, Berlin.
+<LI>Desper, R. and O. Gascuel.  2002.  Fast and accurate phylogeny
+reconstruction algorithms based on the minimum-evolution principle.
+<i>Journal of Computational Biology</i> <b>19:</b> 687-705.
+</UL>
+FastME is distribued as Windows, Linux, and Mac OS X executables and
+C source code from
+<A HREF="http://www.atgc-montpellier.fr/fastme/binaries.php">its web site</A>
+at <code>http://www.atgc-montpellier.fr/fastme/binaries.php</code>.
+<P>
+
+<A NAME="BIONJ"><HR>
+<P>
+Olivier Gascuel</A> (<CODE>gascuel<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>lirmm.fr</CODE>) of
+the Laboratoire d'Informatique, de Robotique et de Micro-Electronique de
+Montpellier (LIRMM) of the Universite de Montpellier II, France has written
+<STRONG>BIONJ</STRONG>, an improved version of Neighbor-Joining
+based on a simple model of sequence data.  It follows the same 
+agglomerative scheme as NJ but uses a simple, first-order 
+model of the variances and covariances of evolutionary distance 
+estimates. This model is appropriate when these estimates are 
+obtained from aligned sequences.  It retains the speed advantages of
+Neighbor-Joining while using a slightly different criterion to select
+pairs of taxa to join, one which will perform better when distances
+between taxa are large.  It is described in the paper: Gascuel, O. 1997.
+BIONJ:  An improved version of the NJ algorithm based on a simple model
+of sequence data. <i>Molecular Biology and Evolution</i> <B>14:</B> 685-695.
+C source code and Windows, Linux, and Mac OS X executables of BIONJ are
+available at 
+<A HREF="http://www.atgc-montpellier.fr/bionj/binaries.php">its web page</A> at
+<CODE>http://www.atgc-montpellier.fr/bionj/binaries.php</CODE>.
+It is also available as a web server <a href="software.serv.html#ATGC servers">here</a>.
+<P>
+
+<HR>
+<P>
+<A NAME="nneighbor">William J. Bruno</A> of the Los Alamos National
+Laboratory (<CODE>billb<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>lanl.gov</CODE>) has released
+<STRONG>nneighbor</STRONG>, a modification of the
+<A HREF="software.pars.html#PHYLIP">PHYLIP</A> Neighbor-Joining distance
+matrix program that avoids negative branch lengths (its name means
+Non-Negative Neighbor).  The program is available as generic C code.
+It is available at
+<A HREF="http://www.t10.lanl.gov/billb/related_links.html">one of Bruno's
+web pages</A> at
+<CODE>http://www.t10.lanl.gov/billb/related_links.html</CODE>.
+<P>
+
+<HR>
+<A NAME="weighbor"><P>
+William J. Bruno, Nicholas D. Socci, and Aaron L. Halpern</A>
+of the Los Alamos National Laboratory (<CODE>billb<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>lanl.gov</CODE>) have
+produced <STRONG>weighbor</STRONG> (Weighted nEIGHBOR-joining or perhaps
+WEIGHted neighBOR-joining), version 1.2.1,
+a distance matrix program for
+performing a weighted version of the Neighbor-Joining method.  The
+weighting used is for nucleotide sequences and more correctly reflects the
+uncertainty of the longer distances in the tree than does ordinary
+Neighbor-Joining.  It is thus closer to approximating maximum likelihood
+and will be more accurate than Neighbor-Joining on large trees.
+It is described in a paper:
+Bruno, W. J., N. D. Socci, and A. L. Halpern 2000.  Weighted
+neighbor joining: a likelihood-based approach to distance-based
+phylogeny reconstruction. <i>Molecular Biology and Evolution</i>  <B>17:</B>
+189-197.  Weighbor
+is available as C source code and as Windows, IRIX, Solaris, and Linux
+executables (plus some older executables for DOS and Mac OS) from
+<A HREF="http://www.t10.lanl.gov/billb/weighbor/index.html">its web site</A>
+at <CODE>http://www.t10.lanl.gov/billb/weighbor/index.html</CODE>.
+It is also available as <A HREF="software.serv.html#Pasteur-Serv">a web server</A> at the Institut Pasteur
+in Paris.
+<P>
+
+<HR>
+<P>
+<A NAME="GDA">Paul Lewis,</A> (<CODE>plewis<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>uconnvm.uconn.edu</CODE>),
+of the Department of Ecology and Evolutionary
+Biology, University of Connecticut, and Dmitri Zaykin, then of North Carolina
+State University.
+have written <STRONG>GDA</STRONG> version 1.1,
+a set of programs to carry out many of the statistical methods for
+analyzing gene frequencies and sequence data that are described in
+Bruce Weir's book <i>Genetic Data Analysis II</i>
+(Sinauer Associates, Sunderland, Massachusetts, 1996).  The programs run under
+Windows and include the calculation of UPGMA and Neighbor-Joining phylogenies.
+The program is described in a 
+<A HREF="http://hydrodictyon.eeb.uconn.edu/people/plewis/software.php">Web site</A>
+maintained by Paul Lewis at
+<CODE>http://hydrodictyon.eeb.uconn.edu/people/plewis/software.php</CODE>
+There is also a link there to a command-line-only version of GDA by
+Chris Basten that runs under Mac OS X.
+The relevant feature for the purposes of this listing is the ability of
+the programs to compute a number of distances.
+<P>
+
+<HR>
+<A NAME="TFPGA"><P>
+<IMG SRC="icons/tfpga.gif" ALT="TFPGA icon here">
+Mark Miller</A> (<CODE>MarkPerryMiller<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>gmail.com</CODE>) of the
+Forest and Rangeland Ecosystem Science Center of the U.S. Geological Survey
+has written <STRONG>TFPGA</STRONG> (Tools For Population Genetics
+Analyses), a Windows program for the analysis of allozyme and
+molecular population genetic data.  It can calculate genetic distances.
+In addition, this program calculates descriptive statistics,
+and F-statistics, and performs tests for Hardy-Weinberg equilibrium, exact tests for genetic
+differentiation, Mantel tests, and UPGMA cluster analyses. Additional features include the ability
+to analyze hierarchical data sets as well as data from either codominant markers such as allozymes
+or dominant markers such as AFLPs or RAPDs.  It is available from
+<A HREF="http://www.marksgeneticsoftware.net/">his software web page</A> at
+<CODE>http://www.marksgeneticsoftware.net/</CODE> as a Windows executable.
+<P>
+
+<HR>
+<A NAME="genetix"><P>
+<IMG SRC="icons/genetix.gif" ALT="[Genetix icon here]">
+Fran&ccedil;ois Bonhomme</A>
+of the Institut des Sciences de l'Evolution of the
+Universit&eacute; de Montpellier, France,
+along with K. Belkhir, P. Borsa, N. Raufaste and L. Chikhi
+(the program support email address is <CODE>genetix<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>univ-montp2.fr</CODE>)
+has released <STRONG>Genetix</STRONG> version 4.05.  This is a Windows
+executable program that does a wide variety of population genetic
+procedures.  The part relevant to the present list is that it
+computes the Nei and the Cavalli-Sforza genetic distances, both with and
+without bias correction.  It also calculates F statistics and linkage
+disequilibrium, and performs permutation tests on the results.
+One advantage (or limitation, depending on your perspective) is that
+the interface is in French.
+Genetix is available from
+<A HREF="http://www.univ-montp2.fr/~genetix/genetix/genetix.htm">its web site</A>
+(in French) at <CODE>http://www.univ-montp2.fr/~genetix/genetix/genetix.htm</CODE>.
+<P>
+
+<A NAME="TreeFit">
+<HR>
+<P>
+Steven Kalinowski</A> of the Department of Ecology
+of Montana State University, Bozeman, Montana
+<tt>(skalinowski<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;montana.edu)</tt>
+has written <strong>TreeFit</strong>
+version of 17 Dec 2007, a program to compare the fit of UPGMA and 
+Neighbor-Joining trees to the same data.  TreeFit creates neighbor-joining and 
+UPGMA trees from a genetic distance matrix, and then compares the observed 
+genetic distance between populations with the genetic distance in the tree. 
+The similarity between these distances is express as R-squared, the 
+correlation measure used in regression analyses.  TreeFit can take as input 
+either a distance matrix or genotypes in GenePop format.  In that case it 
+computes Fst genetic distances itself.
+It is available as Windows executables.
+It requires some pieces of the Microsoft .NET framework to run.
+It can be downloaded from
+<a href="http://www.montana.edu/kalinowski/Software/TreeFit.htm">its web site</a>
+at <code>http://www.montana.edu/kalinowski/Software/TreeFit.htm</code>
+<P>
+
+<A NAME="Winboot"><HR>
+<P>
+<IMG SRC="icons/winboot.gif">&nbsp; Immanuel Yap, now of the Department of
+Plant Breeding and Genetics at Cornell University, Ithaca, New York
+(<tt>noelyap<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ascus.plbr.cornell.edu</tt>)
+and Rebecca Nelson</A>, now of the Department of Plant Breeding and Genetics
+and the Department of Plant Pathology and Plant-Microbe Biology, Cornell
+University 
+<tt>rjn7<!deathtospam>&nbsp; (at)<!deathtospam>&nbsp; cornell.edu</tt>)
+when they were at the
+International Rice Research Institute in Manila, Philippines
+released <strong>Winboot</strong>, a package of two programs for calculating
+UPGMA trees for
+binary (0/1) data and computing bootstrap support for groups on those trees.
+The programs can read 0/1 data in either PHYLIP format or a tabbed Excel-like
+format.  They can compute a large variety of simple similarity coefficients
+and carry out bootstrapping on the input file before doing so.  The Winboot
+program uses this to compute
+a bootstrap consensus tree.  The Windist program is similar, but instead writes
+out the bootstrap sampled distance matrices to an output file in PHYLIP or
+<A HREF="software.etc1.html#NTSYS">NTSYS</A> format.  The package contains some
+code from <A HREF="software.pars.html#PHYLIP">PHYLIP</A>, by agreement.
+Winboot is available as Windows executables from
+<A HREF="http://archive.irri.org/science/software/winboot.asp">its web site</A>
+at <CODE>http://archive.irri.org/science/software/winboot.asp</CODE>.
+<P>
+
+<HR>
+<A NAME="OSA"><P>
+Mar&iacute;a Jes&uacute;s Mart&iacute;n and Joaqu&iacute;n Dopazo</A>, then of
+the  R&amp;D Department of TDI (TDI-EMBNet), Spain, (Dopazo is now at the
+Bioinformatics Department at the Centro de Investigaci&oacute;n Príncipe Felipe
+(CIPF), Valencia, Spain:
+<tt>jdopazo<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;cipf.es </tt>)
+>tdi.es</CODE> or <CODE>dopazo<!deathtospam>&nbsp; (at)<!deathtospam>&nbsp; tdi.es</CODE>) have developed <STRONG>OSA</STRONG> (Optimal Sequence
+Analysis), version 2.0.  It finds, whithin large sequences, those regions with an information
+content similar to that of the whole sequence and it selects, among
+them, the shortest ones.  This program was formerly called ORF.
+The algorithm used is based on comparing pairwise genetic distances, calculated
+for windows of variable size and position, to the
+distance matrix obtained for the whole sequence.  Either uncorrected
+genetic distances or Jukes-Cantor distances can be used.
+Two methods are used to set cutoff levels: simulation-based significance
+values or bootstrapping.  A variety of options for search among possible
+windows are available.  The method has been described in a paper:
+M. J. Mart&iacute;n, F. Gonzalez-Candelas, F. Sobrino and J. Dopazo. 1995.
+A method for determining the position and size of optimal sequence regions for
+phylogenetic analysis. <i>Journal of Molecular Evolution</i> <B>41:</B> 1128-1138.
+OSA uses aligned sequences in a number of common formats as input.
+It runs on UNIX-based machines. It is available in Gnu Pascal source code
+and also executable versions
+for Solaris and IRIX operating systems are available.
+The program can analyze up to 50 sequences of a maximum length of 10,000 bp.
+It can be obtained <a href="ftp://ftp.ebi.ac.uk/pub/software/unix/osa">by ftp</a>
+from <CODE>ftp.ebi.ac.uk</CODE> in directory <CODE>pub/software/unix/osa</CODE>,
+where the source code, a documentation file,
+and the Solaris and Irix executables are available.
+<P>
+
+<HR>
+<P>
+<A NAME="DISTREE">Johannes Schaefer and Michael Schoeniger</A>, then of the
+Lehrstuhl f&uuml;r Theoretische Chemie of the
+Technische Universit&auml;t M&uuml;nchen
+have written <STRONG>DISTREE</STRONG>.  It
+computes pairwise distances of
+aligned nucleotide sequences utilizing various models of base
+substitution. Moreover it provides the user with information
+on the goodness of fit of the models to the given set of
+sequence data. Each of the models is implemented in two
+variants, assuming identical and gamma distributed
+substitution rates across sequence sites.
+It is available as a DOS executable with C source code, or as source code for Unix
+systems.
+DISTREE is distributed through
+<A HREF="http://mirror.pscigrid.gov.ph/ebi-software/software/dos/distree/">the EBI software site archive</A>
+at
+<code>http://mirror.pscigrid.gov.ph/ebi-software/software/dos/distree/</code>,
+
+<P>
+
+<HR>
+<A NAME="LDDist"><P>
+Mikael Thollesson</A> (<tt>lddist<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>artedi.ebc.uu.se</tt>), of the
+Department of Molecular Evolution, Evolutionary Biology Centre, Uppsala
+University, Sweden has written <strong>LDDist</strong> version 1.3.2,
+which calculates LogDet distances from DNA and protein sequences.  It
+accomodates rate variation from site to site as well, by excluding invariant
+sites or by allowing different rates for different sites to be preassigned.
+LDDist is described in a paper: Thollesson, M. 2004. LDDist: a Perl module for
+calculating LogDet pair-wise distances for protein and nucleotide sequences.
+<i>Bioinformatics</i> <b>20:</b> 416-418.  LDDist is, as this says, written
+in Perl and C++.  With it is distributed <tt>PLD.pl</tt>, a companion script
+that serves as a front-end and example of how to use LDDist.  They are
+distributed in source code from
+<a href="http://artedi.ebc.uu.se/molev/software/LDDist.html">its web site</a>
+at <code>http://artedi.ebc.uu.se/molev/software/LDDist.html</code>
+<P>
+
+<HR>
+<A NAME="DISTANCE"><P>
+William J. Bruno and Lars Arvestad</A>
+(<CODE>billb<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>t10.lanl.gov</CODE>) of the Theoretical Biology and
+Biophysics Group at Los Alamos National Laboratory,
+have released <STRONG>DISTANCE</STRONG>, version 1.0.
+It estimates the most general reversible substitution matrix
+corresponding to a given collection of aligned DNA sequences.
+This matrix can then be used to calculate evolutionary distances between pairs
+of sequences.  The method is described in a paper:
+Arvestad, L. and W. J. Bruno.  1997.  Estimation of reversible substitution
+matrices from multiple pairs of sequences. <i>Journal of Molecular Evolution
+</i> <B>45:</B> 696-703. The program is written in C, and distributed from
+<A HREF="http://www.t10.lanl.gov/evolution/">its web site</A> at
+<CODE>http://www.t10.lanl.gov/evolution/</CODE>, along with Sun SPARC
+binaries.
+<P>
+
+<HR>
+<A NAME="RESTSITE"><P>
+Joyce Miller Hersh</A> (<CODE>msmead<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>doctorbeer.com</CODE>),
+formerly of the Whitehead Institute at MIT (and more recently a high-tech
+patent attorney) wrote <STRONG>RESTSITE</STRONG>, version 1.2,
+a package of DOS programs for computing distances between species based on
+restriction sites or restriction fragments.  The programs also include
+NJTREE and UPGMA which can infer phylogenies by the Neighbor-Joining and
+UPGMA distance matrix methods.  The programs are written in Microsoft C:
+source code is available too.   The programs, documentation, and source code are distributed by
+<A HREF="http://www-genome.wi.mit.edu/~jmiller/restsite.htm">its Web site</A>, <CODE>http://www-genome.wi.mit.edu/~jmiller/restsite.htm</CODE>.
+The programs and their methods were described in two papers:
+<ul>
+<li>Miller, J. C. 1991. RESTSITE: A phylogenetic program that sorts
+raw restriction data. <i>Journal of Heredity</i> <B>82:</B> 262-263.
+<li>Nei, M., and J. C. Miller. 1990. A simple method for estimating average
+number of nucleotide substitutions within and between populations from
+restriction data. <i>Genetics</i> <b>125:</b> 873-879.
+</UL>
+<P>
+
+<HR>
+<A NAME="REAP"><P>
+Doug McElroy</A> (<CODE>Doug.McElroy<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>wku.edu</CODE>) of 
+Western Kentucky University distributes <STRONG>REAP</STRONG>, the
+Restriction Enzyme Analysis Package, written by him, Paul Moran, Eldredge
+Bermingham, and Irv Kornfeld.  REAP can calculate distances from restriction sites,
+restriction fragments data, and from nucleotide sequences (the Kimura
+2-parameter distance).  REAP is a package of DOS executables available
+from <A HREF="http://bioweb.wku.edu/faculty/mcelroy/">McElroy's web site</A>.
+at <CODE>http://bioweb.wku.edu/faculty/mcelroy/</CODE>.
+It is described in the paper:
+McElroy, D., P. Moran, E. Bermingham, and I. Kornfield. 1992.  REAP: An integrated environment
+for the manipulation and phylogenetic analysis of restriction data.
+<i>Journal of Heredity</i> <B>83:</B> 157-158.
+<P>
+
+<A NAME="EMBOSS">
+<HR>
+<P>
+Peter Rice, Alan Bleasby, and Jon Ison</A>
+of the European Bioinformatics Institute
+in  Hinxton, England
+<tt>(emboss<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;emboss.open-bio.org)</tt>
+have produced <strong>EMBOSS</strong>
+(European Molecular Biology Open Software Suite),
+version 6.0.1, a package of programs for general sequence analysis with 
+phylogeny and alignment programs.  EMBOSS, developed by many developers, is a 
+general suite of programs for sequence analysis.  It is a full-featured 
+sequence analysis program developed intended to provide the same
+functionality as <a href="software.old.html#GCG">GCG</a>.  In addition
+to its own programs, it also has a suite of other programs, EMBASSY, that
+are configured to work with EMBOSS.  These include
+<a href="software.dist.html#ClustalW">ClustalW</a> and most 
+<a href="software.pars.html#PHYLIP">PHYLIP</a> programs.  EMBOSS and EMBASSY 
+are a properly constructed toolkit for creating robust bioinformatics 
+applications or workflows, with a comprehensive set of sequence analysis 
+programs. All sequence and many alignment and structural formats are handled.
+There is an extensive programming library for common sequence analysis tasks. 
+Several different GUI interfaces for it are available.
+It is described in the paper:
+Rice, P., I. Longden, and A. Bleasby. 2000. EMBOSS: The European Molecular 
+Biology Open Software Suite. 
+<i>Trends in Genetics</i> <b>16 (6):</b> 276-277.
+It is available as C++ source code and C source code.  It can be compiled on
+all known Unix and Linux systems.  It can be downloaded 
+from <a href="http://emboss.sourceforge.net/what/">its web site</a>
+at <code>http://emboss.sourceforge.net/what/</code>
+<P>
+
+<HR>
+<A NAME="MacVector"><P> MacVector, Inc., PMB 150, PO Box 582, 1939 High House
+Rd., Cary, NC &nbsp;27519 and PO Box 582, Cambridge, U.K. CB1 0FH
+(<tt>info<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;macvector.com</tt>)
+sells <strong>MacVector</strong> version 10.0.2, a
+sequence analysis program for Mac OS and Mac OS X systems.  The features that
+are relevant for this listing are its ability to do
+alignment and produce a guide tree
+using <a href="software.etc1.html#ClustalW">ClustalW</a>, and
+either UPGMA or Neighbor-Joining distance matrix methods.  It has many other
+features including sequence search, gene finding, motif searching,
+protein secondary structure
+and hydrophobicity prediction, and prediction of restriction digests and
+primer sites.  Version 7.2 onwards can run natively on Mac OS X systems.
+It can be ordered through
+<a href="http://www.macvector.com">its web page</a>
+at <code>http://www.macvector.com</code>. Its
+price for academic use was formerly $2,500, and for commercial use $5,000.
+Currently they do not give prices on their web page, but they have said to
+me that the above is slightly more expensive than what they charge now.
+<P>
+
+<HR>
+<A NAME="DENDRON"><P>
+Soll Technologies, Inc., (<tt>sales<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>solltechnologies.com</tt>)
+321 Lexington Ave., Iowa City, Iowa &nbsp;52246,
+USA distributes <STRONG>DENDRON</STRONG>, a
+computer-assisted system for Windows for analyzing DNA fingerprinting gels.  It
+reads and compares gel images.  One feature is an average-linkage clustering 
+algorithm that can produce trees from the gel images.  For information and 
+pricing, contact Soll Technologies.  The DENDRON
+<A HREF="http://www.solltechnologies.com/products.html">web page</A> is
+at <CODE>http://www.solltechnologies.com/products.html</CODE>.
+<P>
+
+<A NAME="FAMD">
+<HR>
+<P>
+Philipp Schl&uuml;ter</A>
+of the Institut f&uuml;r Systematische Botanik
+of the University of Z&uuml;rich, Switzerland
+<tt>(philipp.schlueter<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;systbot.uzh.ch)</tt>
+distributes <strong>FAMD</strong> (Fingerprint Analysis with Missing Data),
+version 1.108, a program for the analysis of dominant fingerprint data (AFLP, 
+RAPD, etc.).  It has a graphical user interface and functions for calculating 
+distances among individuals (Jaccard, Dice, SMC, Nei and Li, Euclidean) or 
+populations (CSE chord distance, pairwise PhiST), as well as tree building 
+(UPGMA, NJ), consensus tree, and principal coordinate analysis routines 
+including a flexible 3D viewer. FAMD handles missing data and allows the user to 
+investigate the impact of missing data on the analyses.  It contains routines 
+for data matrix management (e.g. data filtering, easy management of 
+groups/populations) and export filters to other programs' file formats (e.g., 
+Nexus, <a href="software.dist.html#Arlequin">Arlequin</a>, Hindex, Hickory,
+<a href="software.dist.html#genepop">GenePop</a>/BAPS,
+<a href="software.etc1.html#NTSYS">NTSYSpc</a>, Structure, Dfdist). 
+It can calculate Shannon's index, estimate its variance by 
+bootstrapping, perform AMOVA and Bayesian estimation of null allele frequencies.
+The methods are described in the paper:
+Schl&uuml;ter, P. M. and S. A. Harris. 2006. Analysis of multilocus fingerprinting data sets
+containing missing data. <i>Molecular Ecology Notes</i> <b>6:</b> 569-572.
+It is available as Windows executables.  It can be downloaded from
+<a href="http://www.famd.me.uk/famd.html">its web site</a>
+at <code>http://www.famd.me.uk/famd.html</code>
+<P>
+<HR>
+
+<A NAME="GCUA"><P>
+James McInerney</A> of the Department of Biology of the
+National University of Ireland, Maynooth, County Kildare, Ireland
+(<TT>james.o.mcinerney<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam
+>may.ie</TT>)
+has written <STRONG>GCUA</STRONG>
+(General Codon Usage Analysis).  It does codon usage and amino acid usage
+statistics, and also performs correspondence analysis/principle components
+analysis on both codon usage and amino acid usage statistics.  Its
+relevance to the present list is that it also produces a distance matrix,
+based on Relative Synonymous Codon Usage (RSCU) statistics, whose format is
+PHYLIP/PAUP*4.0 -compatible.  Although McInerney cautions that this matrix
+should not be used for phylogenetic inference, I wonder whether this
+distance does not have some phylogenetic information.
+The program is described in the paper: McInerney, J. O. 1998. GCUA (General
+Codon Usage Analysis). <i>Bioinformatics</i> <b>14 (4):</b> 372-373.
+It is available as Mac OS X, Mac OS, Windows, IBM AIX, Digital Unix, and
+Linux binaries.
+The code isn't available, he says "because it is so embarassingly poor".
+It is available <a href="http://bioinf.nuim.ie/downloads.html">at his software
+downloads site</a> at <code>http://bioinf.nuim.ie/downloads.html</code>.
+Earlier binaries, version 1.1  for Digital Unix, SunOS, Mac OS and Irix
+and version 1.2 for Linux, Digital Unix, Mac OS and SunOS
+can be retrieved <A HREF="ftp://ftp.nhm.ac.uk/pub/gcua">via anonymous ftp</A>
+from <CODE>ftp.nhm.ac.uk</CODE> in directory <CODE>pub/gcua</CODE>
+<P>
+
+<HR>
+<A NAME="Swaap"><P><IMG SRC="icons/Swaap.gif" ALT="[Swaap icon]">&nbsp; David T. Pride (<tt>dpride<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;partners.org</tt>),
+formerly of Vanderbilt University (currently an internal medicine specialist
+in Berkeley, California), has written <strong>Swaap</strong> version
+1.02.  Swaap performs sliding window analyses on nucleotide sequences, computing
+a large variety of statistics on the sequences.  The relevant feature for
+this listing is the ability to compute four different distance measures
+between sequences, either on full sequences or on sliding windows.
+Swaap is distributed as a Windows executable from
+<a href="http://www.bacteriamuseum.org/SWAAP/SwaapPage.htm#Swaap">the Swaap
+and Swaap PH web site</a>
+at <code>http://www.bacteriamuseum.org/SWAAP/SwaapPage.htm#Swaap</code>
+<P>
+
+<HR>
+<A NAME="SwaapPH"><P><IMG SRC="icons/SwaapPH.gif" ALT="[Swaap PH icon]">&nbsp; David T. Pride (<tt>dpride<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;partners.org</tt>),
+formerly of Vanderbilt University (currently an internal medicine specialist
+in Berkeley, California), has written <strong>Swaap PH</strong> version
+1.02.  Swaap PH computes many different kinds of statistics on nucleotide
+frequencies and oligonucleotide frequencies in sliding windows along
+nucleotide sequences.  It can compute distances based on these frequencies.
+Swaap PH is a a Windows executable available from
+<a href="http://www.bacteriamuseum.org/SWAAP/SwaapPage.htm#Swaap%20Phylogeny%20Helper%20(Swaap%20PH)">the Swaap and Swaap PH web site</a>
+at <code>http://www.bacteriamuseum.org/SWAAP/SwaapPage.htm#Swaap</code>
+<P>
+
+<HR>
+<A NAME="DERANGE2"><P>
+Mathieu Blanchette</A> of the McGill University Centre for
+Bioinformatics (<CODE>blanchem<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>mcb.mcgill.ca</CODE>) and David Sankoff
+of the Department of Mathematics and Statistics of the University of
+Ottawa, Canada
+have produced <STRONG>DERANGE2</STRONG>, a program to reconstruct the
+history of two gene maps using weighted inversions, transpositions
+and inverted transpositions.  It can thus construct a set of distances
+based on the gene orders (not the sequences of the genes themselves).
+It is available as a standard C source code and can readily be compiled on 
+Unix systems.  It is available
+<a href="ftp://ftp.ebi.ac.uk/pub/software/unix">by anonymous ftp</a>
+from <CODE>ftp.ebi.ac.uk</CODE> in directory <CODE>pub/software/unix</CODE>.
+<P>
+
+<HR>
+<A NAME="MINSPNET"><P>Laurent Excoffier</A> of the
+Computational and Population Genetics Lab of the Institute of Zoology,
+University of Bern, Switzerland
+(<TT>laurent.excoffier<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>zoo.unibe.ch</TT>)
+has produced
+<STRONG>MINSPNET</STRONG>, a program that produces a minimum spanning tree
+and network from a distance matrix.  It is available as a Windows
+executable.  It can be obtained from
+<A HREF="http://cmpg.unibe.ch/software.htm">a web page which lists software from that lab</A> at <TT>http://cmpg.unibe.ch/software.htm</TT>.
+<P>
+
+<HR>
+<P>
+<IMG SRC="icons/popgene.gif" ALT="[POPGENE icon here]">
+<A NAME="popgene">Francis Yeh</A> (<CODE>francis.yeh<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ualberta.ca</CODE>) of the
+Department of Renewable Resources at the University of Alberta, Canada, has
+released <STRONG>POPGENE</STRONG> version 1.32, a free program for the analysis of genetic
+variation among and within populations using co-dominant and dominant markers.
+The feature that is relevant to the present list is that it can compute
+a number of genetic distances for gene frequencies.
+It is distributed as a Windows executable from
+<A HREF="http://www.ualberta.ca/~fyeh/index.htm">its home page</A> at
+<CODE>http://www.ualberta.ca/~fyeh/index.htm</CODE>.
+<P>
+
+<HR>
+<A NAME="NTSYSpc"><P> 
+F. James Rohlf</A> has written <STRONG>NTSYSpc</STRONG>
+(Numerical Taxonomy System, Version 2.2), a clustering program that
+includes calculation of various kinds of distance measures, as well as
+Hierarchical clustering methods such as UPGMA as well as Neighbor-Joining
+and consensus trees.  It can also do a variety of other things including
+ordination, scatter diagrams, and elliptic Fourier transforms (for shape
+analysis).  NTSYSpc 2.1 is a Windows95 executable which will also run on
+Windows NT.  It is available for $350 ($250 for educational and government
+institutions).  10-user site licensese are also available. It is
+distrubuted by Exeter Software (the biological software
+company, not the warehouse-inventory-software house of the same name).
+Their e-mail address is <CODE>sales<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>exetersoftware.com</CODE>.  Their
+toll-free telephone number is 800-842-5892, their not-so-free
+phone number is +1-631-689-7838, and their fax number is +1-631-689-0103.
+Their mailing address is
+47 Route 25A, Suite 2, Setauket, NY 11733-2870 USA .
+Further information is available on their
+<A HREF="http://www.exetersoftware.com/cat/ntsyspc/ntsyspc.html">Web page</A>
+at <CODE>http://www.exetersoftware.com/cat/ntsyspc/ntsyspc.html</CODE>.
+<P>
+
+<HR>
+<A NAME="MVSP"><P>
+Warren Kovach</A> of Kovach Computing Services, Anglesey,
+Wales (<CODE>info<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>kovcomp.co.uk</CODE>) has produced <STRONG>MVSP</STRONG>,
+a comprehensive multivariate statistical package for the PC platform.
+It can do many kinds of analyses (principal components, clustering, etc.)
+but the features relevant to this listing are clustering with a variety
+of methods and a variety of distance measures, including Li and Nei's
+restriction sites distance.  MVSP may be ordered from Kovach Software
+through its
+<A HREF="http://www.kovcomp.com/mvsp/">web site</A>
+at <CODE>http://www.kovcomp.com/mvsp/</CODE>.
+MVSP 3.1 for Windows
+costs UK &#163;85 or US$ 150 for an academic license.
+A version on CD with a printed manual is &#163;20 ($35) more.
+Commercial licenses are &#163;115 ($185).
+Version 2.2 for DOS costs UK &#163;65 or US$ 100.
+Free evaluation versions which works for a limited period can be
+downloaded from <A HREF="http://www.kovcomp.co.uk/downl2.html#mvsp">
+the Kovach Computing download web page</A> at
+<CODE>http://www.kovcomp.co.uk/downl2.html#mvsp</CODE>. An evaluation
+version of version 2.2 for
+DOS is also available for downloading by ftp from
+<CODE>garbo.uwasa.fi</CODE> in directory <CODE>pc/stat/</CODE>.
+MVSP is also distributed by Exeter Software at
+<A HREF="http://www.ExeterSoftware.com/cat/kovach/mvsp.html">its web site</A>
+at <CODE>http://www.ExeterSoftware.com/cat/kovach/mvsp.html</CODE>
+Version 3.1 costs $185 for an academic license, $265 for a commercial license.
+There are discounts for multi-user licenses.
+Other vendors include <A HREF="http://www.rockware.com/catalog/pages/mvsp.html">Rockware</A> and
+<A HREF="http://www.dspace.dial.pipex.com/geomem/products/kovach/mvsp.html#newfeat">GeoMem</A>.
+<P>
+
+<HR>
+<A NAME="syntax"><P>
+<IMG SRC="icons/syntax.gif">&nbsp; J&aacute;nos Podani of the Department of Plant Taxonomy and Ecology,
+E&ouml;tv&ouml;s Lor&aacute;nd University, Budapest, Hungary (<tt>podani<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ludens.elte.hu</tt>)
+has developed <strong>SYN-TAX 2000</strong>, a general package for
+clustering.  It can calculate a wide variety of distance coefficients from
+numerical data, and can perform hierarchical clustering, nonhierarchical
+clustering, and ordination.  This includes, in addition to many clustering
+methods, minimum spanning trees and additive trees by Neighbor-Joining.
+SYN-TAX 2000 is available as commercial software from Exeter Software at
+<A HREF="http://www.ExeterSoftware.com/cat/syntax/syntax.html">its web site there</A>
+at <CODE>http://www.ExeterSoftware.com/cat/syntax/syntax.html</CODE>.  It costs $350 for an educational license, $450 for a commercial
+license.  Podani also maintains his own <A HREF="http://ramet.elte.hu/~podani/SYN2000.html">SYN-TAX web site</A> at <CODE>http://ramet.elte.hu/~podani/SYN2000.html</CODE> where there are descriptions, screen shots, some free upgrades of
+certain program components, and also an older DOS executable
+version, 5.1, and a Macintosh version, SYN-TAX 5.02.  There is a demo
+version available for the DOS version, and both the DOS and Mac versions
+are sold, each for $150 (for educational use $200), and both together for
+$300.  Over the years various versions of SYN-TAX have been described by papers.
+The most recent description in a journal is:   Podani, J. 1993. SYN-TAX 5.0: Computer programs for multivariate data analysis in ecology and systematics.
+<i>Abstracta Botanica</i> <b>17:</b> 289-302. 
+<P>
+
+<A NAME="CTree">
+<HR>
+<P>
+John Archer and David Robertson</A>
+of the Faculty of Life Science
+of the University of Manchester, Manchester, UK
+<tt>(john.archer<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;postgrad.manchester.ac.uk)</tt>
+has produced <strong>CTree</strong>
+version 1.02, which is a tree viewing software with an emphasis of quantifying 
+clusters present on tree topologies.  CTree has been designed for the 
+quantification of clusters within viral phylogenetic tree topologies.
+(it is not to be confused with the tree alignment program
+<a href="software.etc1.html#Ctree">Ctree</a>).
+Clusters 
+are stored as individual data structures from which statistical data, such as 
+the Subtype Diversity Ratio (SDR), Subtype Diversity Variance (SDV) and 
+pairwise distances can be extracted.  Clusters 
+can be selected manually or via a novel heuristic algorithm.
+Random trees can also be generated and used to generate control 
+distributions of the various statistic data generated. Tree viewing 
+features are also included along with output to PDF format.
+It is described in the paper:
+Archer, J., and D. L. Robertson. 2007. CTree: comparison of clusters between
+phylogenetic trees made easy. <i>Bioinformatics</i> <b>23(21):</b> 2952-2953.
+It is available as Java executables.  It can be downloaded from
+<a href="http://www.manchester.ac.uk/bioinformatics/ctree">its web site</a>
+at <code>http://www.manchester.ac.uk/bioinformatics/ctree</code>
+<P>
+
+<A NAME="PC-ORD">
+<HR>
+<P>
+<img src="icons/pc-ord.gif" alt="[PC-ORD icon]"> B. McCune and M. J.
+Mefford</A> of MjM Software,
+<tt>(mjm<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;centurytel.net)</tt>
+have released <strong>PC-ORD</strong> (PC Ordination),
+version 5.10, a package for clustering and ordination.  It can do a variety
+of kinds of clustering and ordination methods, including nonmetric
+multidimensial scaling, principal coordinates analysis, and indicator species
+analysis. For the purposes of this listing what is relevant is that it
+can make dendrograms by clustering.  This includes two-way clustering analysis
+that clusters individuals as well as variables.  These work directly
+from a spreadsheet of data.  I do not know what measures of distance it
+uses for this.  The package is primarily intended for multivariate analysis
+of ecological data.
+It is available as Windows executables.  It can be purchased and downloaded
+from
+<a href="http://home.centurytel.net/~mjm/pcordwin.htm">its web site</a>
+at <code>http://home.centurytel.net/~mjm/pcordwin.htm</code>.
+It is available at a price of $299 for a regular user, or $199 for a student
+license.  A license for each additional simultaneous user is $100 (or $50).
+<P>
+
+<HR>
+<A NAME="RSTCALC"><P>
+Simon Goodman, then of the Institute of Cell, Animal, and
+Population Biology of the University of Edinburgh produced
+<STRONG>RSTCALC</STRONG>, version 2.2.  It is primarily
+intended to perform analyses of population structure, genetic
+differentiation and gene flow using microsatellite data.
+IT calculates estimates the Rst measure of differentiation among a number of
+populations, but in
+addition you can also use RSTCALC to obtain estimates of the delta-mu^2 distance measure. 
+Its calculations are described in a paper:
+Goodman, S. J. 1997. Rst Calc: a collection of computer programs for
+calculating estimates of genetic differentition from microsatellite data and a determining their
+significance. <i>Molecular Ecology</i> <B>6:</B> 881-885. 
+The program runs on Windows and is available from
+<A HREF="http://www.biology.ed.ac.uk/research/institutes/evolution/software/rst/rst.html">its web site</A>
+<CODE>http://www.biology.ed.ac.uk/research/institutes/evolution/software/rst/rst.html</CODE> as a Windows executable.
+<P>
+
+<HR>
+<A NAME="YCDMA"><P>
+<IMG SRC="icons/YCDMA.gif">&nbsp;Daniel Montagnon (<tt>Daniel.Montagnon (at)
+wanadoo.fr</tt>) of the Institut d'Embryologie, Facult&eacute; de
+M&eacute;decine, Strasbourg, France has written
+<strong>YCDMA</strong> (Y Chromosome Data MAnagement), version 1.2.  This is
+a data management program for microsatellite data.  It can do a wide variety
+of management tasks, maintaining and manipulating databases of genotypes,
+calculating gene frequencies, and converting file formats.
+For the purposes of this listing, its relevant feature is the calculation of
+a variety of gene frequency genetic distances between populations, and
+a squared copy number microsatellite genetic distance.  YCDMA is written in
+Microsoft Visual Basic.  It is available as a Windows executable from
+<A HREF="http://perso.wanadoo.fr/daniel.montagnon/YCDMAAng.htm">its web site</A>
+at <code>http://perso.wanadoo.fr/daniel.montagnon/YCDMAAng.htm</code>.
+<P>
+
+<HR>
+<A NAME="DIVAGE"><P></A>
+Giorgio Bertorelle, of the Population Genetics and Genetic Epidemiology
+Group of the University of Ferrara, Italy (<tt>ggb<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>unife.it</tt>) has
+released <strong>DIVAGE</strong> and <strong>DIVAGE_C</strong>.  These
+programs estimate the time of divergence of two populations based on the
+frequencies of rare alleles in the two populations, where it is assumed
+that these have each originated in a single mutational event before the
+divergence of the populations.  The two programs make different
+assumptions about what is conditioned on what.  The methods are described in
+a paper: Bertorelle, G. and B. Rannala. 1998. Using rare mutations to estimate
+population divergence times: a maximum likelihood approach. <i>Proceedings of
+the National Academy of Sciences, USA</i> <b>95:</b> 15452-15457. 
+The programs are DOS executables that will run in a Command Tool window
+on Windows systems.  They can be downloaded from
+<a href="http://web.unife.it/progetti/genetica/Giorgio/giorgio_soft.html#DIVAGE">Bertorelle's software web site</a> at <code>http://web.unife.it/progetti/genetica/Giorgio/giorgio_soft.html</code>
+<P>
+
+<A NAME="GAME">
+<HR>
+<P>
+Stephane Guindon and Olivier Gascuel</A>
+of the LIRMM (Laboratoire d'Informatique de Robotique et de Micro&eacute;lectronique de Montpellier)
+of the Universit&eacute; de Montpellier II, Montpellier, France
+<tt>(guindon<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;lirmm.fr</tt> and <tt>gascuel<!deathtospam>&nbsp;@<!deathtospam>&nbsp;lirmm.fr)</tt>
+have released <strong>GAME</strong> (GAMma Estimation),
+version 1.0, a program to estimate the gamma parameter and use it to calculate distances and trees.  GAME computes the optimal value of the gamma shape parameter (&alpha;). It uses a fast distance method based on <a href="software.dist.html#BIONJ">BIONJ</a> or <a href="software.dist.html#FastME">FastME</a>, which allows very large data sets (up to 1000 taxa) to be dealt with using a standard PC.  It can use DNA or protein models and can analyze multiple data sets, such as result from bootstrapping.  The value of &alpha; can either be inferred for all data sets separately, or just from the first data set.
+It is described in the paper:
+Guindon, S. and Gascuel, O. 2002. Efficient biased estimation of evolutionary distances when substitution rates vary across sites. <i>Molecular Biology and Evolution</i> <b>19:</b> 534-543.
+It is available as C source code, Windows executables, Linux executables and Powermac Mac OS X executables.  It can be downloaded from
+<a href="http://www.lirmm.fr/~guindon/gamma.html">its web site</a>
+at <code>http://www.lirmm.fr/~guindon/gamma.html</code>
+It is also available as a web server <a href="software.serv.html#ATGC servers">here</a>.
+<P>
+
+<HR>
+<A NAME="Darwin"><P>
+Gaston Gonnet and Chantal Korostensky</A> of the
+Computational Biochemistry Research Group at ETH in
+Z&uuml;rich, Switzerland, have made available <STRONG>Darwin</STRONG>,
+<i>D</i>ata <i>A</i>nalysis and <i>R</i>etrieval <i>W</i>ith <i>I</i>ndexed
+<i>N</i>ucleotide/peptide sequences,
+version 2.1.
+It is an environment which enables the user to carry out a variety of
+kinds of analysis with sequences, including phylogeny methods
+These seem to include distance matrix, split decompositon,
+and a form of likelihood method.  Darwin is available
+as executables for Solaris, Intel-compatible Linux, Irix, and
+HP/Compaq/Digital Alpha machines.  These are available free if the user
+registers by filling out a form at the download page at the Darwin
+web page.  The executables can then be transferred to the user by ftp
+or by e-mail of encoded files.  It is described in the paper:
+Gonnet, G. H., M. T. Hallett, C. Korostensky, and L. Bernardin. 2000.
+Darwin v. 2.0: an interpreted computer language for the biosciences.
+<i>Bioinformatics</i> <b>16:</b> 101-103.
+Details and distribution policies are
+explained further at
+<A HREF="http://cbrg.inf.ethz.ch/darwin">Darwin's web page</A> at
+<code>http://cbrg.inf.ethz.ch/darwin</code>.
+Darwin is also made available as
+<A HREF="software.serv.html#CBRG server">a server</A>.
+<P>
+
+<HR>
+<A NAME="T-REX"><P>
+<IMG SRC="icons/TREX.gif" ALT="[T-REX icon]">
+Vladimir Makarenkov</A>
+<tt>(makarenkov.vladimir<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;uqam.ca)</tt>
+of the Departement d'Informatique of the
+Universit&eacute; du Qu&eacute;bec &agrave; Montr&eacute;al and
+the D&eacute;partement de Sciences Biologiques of the
+Universit&eacute; de Montr&eacute;al, and
+Philippe Casgrain <CODE>casgrain<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>magellan.umontreal.ca</CODE>) of the
+D&eacute;partement de Sciences Biologiques of the
+Universit&eacute; de Montr&eacute;al have released
+<STRONG>T-REX</STRONG> (Tree and Reticulogram rEconstruXion), version 4.0a1.
+This program performs four methods of fitting an additive distance
+(distance in a nonclocklike tree) to a given dissimilarity. The
+methods available include Sattath and Tversky's ADDTREE method,
+Nei and Saitou's Neighbor-Joining method, Gascuel's UNJ Unweighted
+Neighbor-Joining method, his BIONJ method, the
+Circular order reconstruction method of Makarenkov and Leclerc
+(1997), and Yushmanov (1984),
+and the MW weighted least-squares method by Makarenkov (1997) and
+Makarenkov and Leclerc (1998).  A number of methods for fitting trees to
+distance matrices that have missing values are also available.
+Nucleotide sequence distance can be computed from sequences using
+many of the widely-used distances.
+The program can also carry out bootstrap and jackknife resampling to
+assess strength of support for features of the trees.
+It also allows construction and plotting
+of "reticulograms" that show departures from treelike structure, and
+interactive manipulation of the tree and reticulogram diagrams.
+It is described in the paper: Makarenkov, V. 2001. T-Rex: reconstructing and
+visualizing phylogenetic trees and reticulation networks.
+<i>Bioinformatics</i> <b>17:</b> 664-668.
+Executables for Windows (the 4.0a1 version) and for Macintosh (the version
+1.2a4 executable for PowerMacs) and an executable for a 32-bit DOS version
+are available at
+<A HREF="http://www.labunix.uqam.ca/~makarenv/trex.html">
+The T-REX web site</A> at
+<CODE>http://www.labunix.uqam.ca/~makarenv/trex.html</CODE>.  C++ source
+code is also available there.  A <a href="software.serv.html#T-REX server">web
+server for T-REX</a> with more tree construction and manipulation methods is
+also available.
+<P>
+
+<HR>
+<A NAME="Permute"><P><IMG SRC="icons/permute.gif"></A> Philippe Casgrain (<tt>casgrain<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;magellan.umontreal.ca</tt>) and Pierre Legendre (<tt>Pierre.Legendre<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;umontreal.ca</tt>), of the
+D&eacute;partement des Sciences Biologiques at the Universit&eacute; de
+Montr&eacute;al have produced <strong>Permute!</strong> version 3.4 alpha 9,
+a program to do permutation tests of regression of variables.  It can
+permute distance matrices in a number of ways, one of which is to do so
+according to an ultrametric (clocklike) tree provided by the user.  The
+ultrametric permutation method is described in these papers:
+<ul>
+<li> Lapointe, F.-J., and P. Legendre.  1991. The generation of random
+ultrametric matrices representing dendrograms.
+<i>Journal of Classification</i> <b>8:</b> 177-200.
+<li> Lapointe, F.-J. and P. Legendre. 1992. A statistical framework to test the
+consensus among additive trees (cladograms). <i>Systematic Biology</i> <b>41:</b> 158-171. 
+</ul>
+The program is an Apple
+Mac OS binary that can be run on System 7 and later.  It is distributed from
+<a href="http://www.bio.umontreal.ca/casgrain/en/labo/permute/index.html">its web site</a>
+at <code>http://www.bio.umontreal.ca/casgrain/en/labo/permute/index.html</code>
+<P>
+
+<HR>
+<A NAME="FSTAT"><P>
+J&eacute;r&ocirc;me Goudet, of the Department of Ecology and Evolution of the
+University of Lausanne, Switzerland (<tt>jerome.goudet<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>unil.ch</tt>)
+has written <strong>FSTAT</strong>, version 2.9.3.2, a program to
+estimate and test gene diversity statistics from codominant markers.
+For our purposes, the important feature is its ability to calculate the
+Nei and Cockerham/Weir families of distance measures.  It can
+convert data in its own format to and from the format of <a href="#genepop">Genepop</a>.
+Version 2.9.2.3 is a Windows executable; an earlier version, 1.2, which
+is a DOS executable is also available.  Both can be downloaded
+from <A HREF="http://www2.unil.ch/popgen/softwares/fstat.htm">its web site</A>
+at <CODE>http://www2.unil.ch/popgen/softwares/fstat.htm</CODE>.
+<P>
+
+<HR>
+<A NAME="Genepop"><P>Michel Raymond and Fran&ccedil;ois Rousset
+of the Equipe G&eacute;n&eacute;tique et Environnement of the Institut des
+Sciences de l'Evolution at the University of Montellier II, France
+(<tt>Raymond&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>isem.univ-montp2.fr</tt> and <tt>Rousset&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>isem.univ-montp2.fr</tt>).
+have written distributed <strong>Genepop</strong> version 4.0,
+a program to carry out a variety of population genetics tests.  It can
+test assumptions of Hardy-Weinberg and linkage equilibrium,
+run log-likelihood G-based test of differentiation between populations,
+use Slatkin's rare allele method to estimate number of migrants per generation,
+and calculate allele frequencies. For our purposes the relevant feature is
+its ability to calculates Fst and Rst measures of population differentiation,
+which are genetic distances.  It is described in a paper: Raymond, M. and
+F. Rousset. 1995. GENEPOP (version 1.2) population genetic software for exact
+tests and ecumenicism. <i>Journal of Heredity</i> <b>86:</b> 248-249.
+Genepop is a DOS executable that can run under Windows in a Command Tool
+window.  It can be downloaded
+<a href="http://kimura.univ-montp2.fr/~rousset/Genepop.htm">its web page
+</a> at <code> http://kimura.univ-montp2.fr/~rousset/Genepop.htm</code>.
+An older version, 3.4, can be downloaded by ftp from <a
+<a href="ftp://ftp.cefe.cnrs.fr/PC/MSDOS/GENEPOP/">the University of
+Montpellier</a> at <code>ftp://ftp.cefe.cnrs.fr/PC/MSDOS/GENEPOP/</code>.
+A <a href="software.serv.html#Genepop server">web server for Genepop 3.4</a> is also available in Australia at the
+the John Curtin University of Technology.
+<P>
+
+<HR>
+<A NAME="Arlequin"><P>
+<IMG SRC="icons/arlequin.GIF" ALT="[Arlequin icon]">
+Laurent Excoffier</A> of the
+Computational and Population Genetics Lab of the Institute of Zoology,
+University of Bern, Switzerland
+(<TT>laurent.excoffier<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>zoo.unibe.ch</TT>),
+Stephan Schneider, and David Roessli have released
+<STRONG>Arlequin</STRONG> version 3.5.1, a program for population genetics
+analysis.  It can perform many kinds of population genetic tasks
+including estimation of gene frequencies, testing of linkage
+disequilibrium, and analysis of diversity between populations.
+For the purposes of this list, the relevant feature is its ability
+to compute a variety of genetic distance measures including
+of Jukes and Cantor, the Kimura
+2-parameter distance, and the Tamura-Nei distance, each of these
+with or without correction for gamma-distributed rates of evolution.
+It can also compute a Minimum Spanning Tree network.
+It is available as binaries for Windows, for either 32 or 64-bit
+processors.  A special version to compute some summary statistics is
+also included.
+An archive including the binaries and a PDF documentation file are available at
+<A HREF="http://cmpg.unibe.ch/software/arlequin3/">its web site</A>
+at <CODE>http://cmpg.unibe.ch/software/arlequin3/</CODE>.
+<P>
+
+<HR>
+<A NAME="poptrfdos"><P>
+Naoko Takezaki</A> of the Life Science Research Center
+of Kagawa University, Japan
+(<code>takezaki<!deathtospam>&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>med.kagawa-u.ac.jp</code>),
+Masastoshi Nei of the Institute of Molecular and Evolutionary Genetics
+of the Department of Biology. Pennsylvania State University, University Park,
+Pennsylvania, and Koichiro Tamura of Tokyo Metropolitan University, Tokyo,
+Japan
+have released <STRONG>POPTREE2</STRONG>, which
+computes various genetic distance measures and constructs
+trees of populations or closely related species from gene
+frequency data by using the Neighbor-Joining method and UPGMA.
+POPTREE2 can compute Nei's genetic distance and his Da
+genetic distance, as well as Latter's Fst* distance and the
+(&Delta;&mu;)<sup>2</sup> and Dsw measures of microsatellite genetic distance.
+It can also perform bootstrapping, and compute heterozygosity and Gst measures 
+of the extent of genetic variation in a population and genetic differentiation 
+among subdivided population.
+The program uses a Windows graphical user interface, and
+trees can be displayed in a publishable for and changed by the user.
+POPTREE2 is described in a paper:  Takezaki, N., M. Nei, and K. Tamura. 2009.
+POPTREE2: Software for constructing population trees from allele frequency
+data and computing other population statistics with Windows interface.
+<i>Molecular Biology and Evolution</i> <b>27:</b> 747-752.
+It is available from <a href="http://www.med.kagawa-u.ac.jp/~genomelb/takezaki/poptree2/index.html">its web site</a>
+at <code>http://www.med.kagawa-u.ac.jp/~genomelb/takezaki/poptree2/index.html</code>.
+A source code Unix version (POPTREE version 1) and an 
+executable DOS version (which is called poptrfdos) are also available there.
+It is also available
+<A HREF="http://iubio.bio.indiana.edu/soft/molbio/evolve">from the IUBIO archive</A>
+at <CODE>http://iubio.bio.indiana.edu/soft/molbio/evolve</CODE>.
+POPTREE was also formerly called njbafd, and
+under that name its earlier version is also available at the same IUBIO site.
+<P>
+
+<A NAME="SPAGeDi">
+<HR>
+<P>
+Olivier Hardy and Xavier Vekemans</A> of the Service d'Eco-Ethologie Evolutive
+at the the Universit&eacute; Libre de Bruxelles, Brussels, Belgium
+<tt>(ohardy<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;ulb.ac.be)</tt>
+distribute <strong>SPAGeDi</strong>
+(Spatial Pattern Analysis of Genetic Diversity),
+version 1.3, a program to compute a variety of different genetic diversity and
+genetic distance statistics.
+It can compute various statistics describing relatedness or differentiation
+between individuals or populations by pairwise comparisons, and analyze how
+these values are related to geographical distances in a way similar to a
+spatial autocorrelation analysis or by linear regression. The statistics
+computed include F<sub>st</sub>, R<sub>st</sub>, D<sub>s</sub> (Nei's standard
+genetic distance), and the microsatellite distance (delta mu)<sup>2</sup> for
+analyses at the population level and, for analyses at the individual level,
+pairwise kinship, relatedness and fraternity coefficients (with different
+estimators for each) as well as Rousset's distance between individuals and a
+kinship analogue based on allele size. It can also do bootstraps and
+permutation analyses on the distances and geographic locations.
+It is available as Windows executables.
+It is described in the paper:  Hardy, O. J. and X. Vekemans 2002. SPAGeDi: a
+versatile computer program to analyse spatial genetic structure at the
+individual or population levels. <i>Molecular Ecology Notes</i> <b>2:</b>
+618-620. 
+It can be downloaded from <a href="http://ebe.ulb.ac.be/ebe/Software.html">its web site</a> at <code>http://ebe.ulb.ac.be/ebe/Software.html</code>
+<P>
+
+<HR>
+<A NAME="DnaSP"><P>
+<IMG SRC="icons/dnasp.gif" ALT="[DnaSP icon]">
+Julio Rozas<A>, J. C. S&aacute;nchez-DelBarrio, X. Messeguer and Ricardo Rosas of the Departament de Gen&egrave;tica, Universitat
+de Barcelona, Spain (<CODE>jrozas<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ub.edu</CODE>) have released
+<STRONG>DnaSP</STRONG> version 5.10.00, a software package for the analysis of
+nucleotide polymorphism from aligned DNA sequence data. DnaSP can estimate
+several measures of DNA sequence variation within and between populations
+(in noncoding, synonymous or nonsynonymous sites), as well as linkage
+disequilibrium, recombination, gene flow and gene conversion parameters.
+It can also carry out several tests of neutrality:
+Additionally, it can estimate the confidence intervals of some test-statistics
+by the coalescent. The results of the analyses are displayed on tabular and graphic form. 
+For the purposes of this web site, the relevant features are the
+calculation of measures of population divergence, which include the
+Jukes-Cantor method which can be used as a
+distance in phylogeny reconstruction.  DnaSP is described in the papers:
+<UL>
+<LI>Rozas, J. and R. Rozas. 1995. DnaSP, DNA
+sequence polymorphism: an interactive program for estimating Population
+Genetics parameters from DNA sequence data. <i>Computer Applications
+in the Biosciences (CABIOS)</i> <B>11:</B> 621-625. 
+<LI>Rozas, J. and R. Rozas. 1997. DnaSP version 2.0: a novel software package
+for extensive molecular population genetics analysis. <i>Computer
+Applications in the Biosciences (CABIOS)</i> <B>13:</B> 307-311. 
+<LI>Rozas, J. and R. Rozas. 1999. DnaSP version 3: an integrated program for
+molecular population genetics and molecular evolution analysis.
+<i>Bioinformatics</i> <B>15:</B> 174-175. 
+</UL>
+It is distributed as a Windows executable from
+<A HREF="http://www.ub.es/dnasp">its web site</A>
+at <CODE>http://www.ub.es/dnasp/</CODE>.
+<P>
+
+<A NAME="Bn-Bs">
+<HR>
+Jianzhi George Zhang, now of the Laboratory of Genomic and Molecular Evolution
+in the Department of Ecology and Evolutionary Biology of the University of
+Michigan, Ann Arbor, Michigan
+<tt>(jianzhi<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;umich.edu)</tt>
+wrote <strong>Bn-Bs</strong>, a program
+to estimate branch lengths in terms of synonymous and nonsynonymous
+substitutions per site, while the tree topology is given. The program uses the
+modified Nei-Gojobori method to estimate pairwise
+synonymous and nonsynonymous distances among present-sequences and then
+estimates branch lengths and their variances by using the ordinary
+least-squares method.  The method is described in the paper:
+Zhang J., H. F. Rosenberg, and M. Nei. 1998. Positive Darwinian selection
+after gene duplication in primate ribonuclease genes. <i>Proceedings of the
+Natonal Academy of Sciences, USA</i> <b>95:</b> 3708-3713.
+It is available as C source code and as DOS
+executables from <a href="https://homes.bio.psu.edu/people/faculty/nei/software.htm">the software web site of Masatoshi Nei's lab</a> in
+which the work was done.  A zip archive of the files can be downloaded from
+the link there.  A documentation file is can also be read there.
+<P>
+
+<A NAME="HON-new">
+<HR>
+<P>
+Jianzhi George Zhang, now of the Laboratory of Genomic and Molecular Evolution
+in the Department of Ecology and Evolutionary Biology of the University of
+Michigan, Ann Arbor, Michigan
+<tt>(jianzhi<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;umich.edu)</tt>
+released <strong>HON-new</strong>, a program to compute the amounts of
+conservative and radical amino acid substitution between pairs of DNA
+sequences of coding region exons.  The program uses a classification of
+amino acids into categories.  Three types of amino acid classifications
+(by charge, by polarity and one of Miyata and Yasunaga) are provided. One can 
+also define conservative and radical amino acid oneself.
+The method is modified from the original method of
+Hughes, Ota, and Nei (1990) by taking into account transition bias.  It is
+described in the paper: Zhang J. 2000.  Rates of conservative and radical
+nonsynonymous nucleotide substitutions in mammalian nuclear genes. <i>Journal
+of  Molecular Evolution</i> <b>50:</b> 56-68.  It is available in C source
+code and as a Windows executable at the <a href="http://homes.bio.psu.edu/people/faculty/nei/software.htm">Nei laboratory software web site</a> at <code>http://homes.bio.psu.edu/people/faculty/nei/software.htm</code>
+<P>
+
+<A NAME="analysis">
+<HR>
+<P>
+Kevin Thornton</A>
+of the Department of Ecology and Evolutionary Biology
+of the University of California, Irvine, California
+<tt>(krthornton<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;uci.edu)</tt>
+has written <strong>analysis</strong>
+version 0.7.3, a package to do population-genetic analyses of samples of DNA 
+sequences.  This is a package of programs to compute various tests and 
+statistics on DNA sequence data within populations.  For the purposes of this 
+listing, the relevant feature is its ability to compute the Kimura K2P 
+2-parameter distance between sequences.  It requires Thornton's 
+<tt>libsequence</tt> C++ class library (available at the same site) and the 
+GNU Scientific Library.
+The <tt>libsequence</tt> library is described in the paper: Thornton, K. 2003. 
+libsequence: a C++ class library for evolutionary genetic analysis. 
+<i>Bioinformatics</i> <b>19(17):</b> 2325-2327.
+It is available as C++ source code.  It can be downloaded from
+<a href="http://molpopgen.org/software/lseqsoftware.html">its web site</a>
+at <code>http://molpopgen.org/software/lseqsoftware.html</code>
+<P>
+                                                                                
+<HR>
+<A NAME="NSA"><P>
+<IMG SRC="icons/NSA.gif">&nbsp;Daniel Montagnon (<tt>Daniel.Montagnon (at)
+wanadoo.fr</tt>) of the Institut d'Embryologie, Facult&eacute; de
+M&eacute;decine, Strasbourg, France has written <strong>NSA</strong>
+(Nucleotide Sequences Analyzer), version 3.3.  It is a general program
+for reading in sequences and writing them out in a variety of data
+formats, with the ability to select particular sets of sites and sequences.
+For our purposes, the relevant feature is the ability to calculate
+a number of different nucleotide sequence distances, as well as some
+simple protein sequence distances.  These include the Jukes-Cantor,
+Kimura, and Tamura-Nei distances, as well as a simple protein distance
+based on the fraction of similar amino acids.  These can also have a
+correction for a gamma distribution of rates across sites.  The program
+is written in Visual Basic, and is available as a Windows executable from
+<a href="http://perso.wanadoo.fr/daniel.montagnon/NSAAng.htm">its web site</a>
+at <code>http://perso.wanadoo.fr/daniel.montagnon/NSAAng.htm</code>
+
+<P>
+
+<HR>
+<A NAME="qclust"><P>
+John Brzustowski</A>,
+of the Department of Biological Sciences of the University of Alberta, Canada
+(<CODE>jbrzusto<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>ualberta.ca</CODE>),
+wrote <STRONG>qclust</STRONG>, a program to carry out a number of
+clustering methods including Neighbor-Joining.  The neighbor-joining method
+has been improved over our own Neighbor program, so as to be able to handle
+large numbers of taxa much more quickly.  The program is available
+along with another program, <STRONG>calcdist</STRONG> which calculates
+distances from 0/1 data.  The programs are available
+as C source and as DOS executables from
+<A HREF="http://www.biology.ualberta.ca/jbrzusto/dosclust.html">its web
+page</A> at <CODE>http://www.biology.ualberta.ca/jbrzusto/dosclust.html</CODE>.
+A more interactive version of the program is also available as Java from
+<A HREF="http://www2.biology.ualberta.ca/jbrzusto/cluster.php">a web page</A>
+at <CODE>http://www2.biology.ualberta.ca/jbrzusto/cluster.php</CODE>.
+(Brzustowski has declared that both of these programs are unsupported software,
+and he will not answer questions about them).
+<P>
+
+<HR>
+<a name="START"><P></a> <img src="icons/start.gif"> &nbsp; Keith Jolley, of
+the Epidemiology Group of the Department of Zoology, University of Oxford,
+Oxford, U.K. (<tt>keith.jolley<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;medawar.ox.ac.uk</tt>)
+has released <strong>S.T.A.R.T.2</strong> (Sequence Type Analysis and
+Recombinational Tests), version 2.   This is a set of tools for
+sumamrizing data, assigning lineages, and testing for recombination and
+selection.  These are used with Multilocus Sequence Typing (MLST) data,
+which starts with DNA sequences at multiple loci, assigns alleles to each
+sample at a number of loci and clusters
+strains on the basis of the presence and absence of alleles.  S.T.A.R.T.
+can calculate distances between strains based on these presences and
+absences, and cluster strains by the UPGMA method.  It can also
+assign strains to lineages, carry out several different tests for
+recombination among strains, and do a pairwise dN/dS testing for selection.
+S.T.A.R.T.
+is described in a paper: Jolley K. A., E. J. Feil, M. S. Chan, and M. C.
+Maiden.  2001.  Sequence type analysis and recombinational tests (START).
+Bioinformatics. <b>17:</b> 1230-1231.  It is available as a Windows
+executable from
+<a href="http://pubmlst.org/software/analysis/start2/">its web site</a> at
+<code>http://pubmlst.org/software/analysis/start2/</code>.  A previous
+version, S.T.A.R.T., is available <a
+href="http://pubmlst.org/software/analysis/start/manual/index.shtml">at
+another page at the same web site</a>.
+</code>.
+<P>
+
+<HR>
+<a name="ProfDist"><P></A><IMG SRC="icons/ProfDist.jpg">&nbsp; Joachim Friedrich, Thomas Dandekar, Matthias Wolf,
+and Tobias M&uuml;ller, of the Department of Bioinformatics, Biocenter,
+University of W&uuml;rzburg, Germany (<tt>ProfDist&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>biozentrum.uni-wuerzburg.de></tt> have written <strong>ProfDist</strong>, version 0.9.8, a program for constructing large trees from
+profile distances of nucleotide sequences.  Given a number of clades and
+DNA or RNA sequences, it constructs a profile for each clade, 
+computes profile distances among these, and uses Profile Neighbor
+Joining (PNJ) to compute a tree.
+ProfDist is described in the paper: M&uuml;ller, T., S. Rahmann, T. Dandekar,
+and M. Wolf.  2004.  Accurate and robust phylogeny estimation based on profile
+distances: a study of the Chlorophyceae (Chlorophyta).
+<i>BMC Evolutionary Biology</i> <b>4:</b> 20.
+ProfDist is available as a Windows executable, or as source code
+for Windows, Linux, or Mac OS X.  It is distributed from <a href="http://profdist.bioapps.biozentrum.uni-wuerzburg.de/">its web site</a> at <code>http://profdist.bioapps.biozentrum.uni-wuerzburg.de/</code>.
+<P>
+
+<HR>
+<A NAME="Populations"><P>
+Olivier Langella</A> (<CODE>Olivier.Langella<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>pge.cnrs-gif.fr</CODE>)
+of the Laboratoire PGE, CNRS UPR9034, Gif sur Yvette, France, distributes
+<STRONG>Populations</STRONG>, version 1.2.30.  It can calculate a wide
+variety of distances from multiple-allele diploid or haploid genotypes
+and from microsatellite data, and can
+also infer phylogenies by distance methods including Neighbor-Joining and
+UPGMA.  It can bootstrap the data across loci and/or across individuals 
+when constructing phylogenies.  The trees can be trees of populations or
+trees of individuals.
+Populations is available as a free download from <A HREF="
+http://bioinformatics.org/~tryphon/populations/">its web site</A> at <CODE>
+http://bioinformatics.org/~tryphon/populations/</CODE>, as source code, as executables for Windows.
+<P>
+
+<A NAME="GenoDive">
+<HR>
+<P>
+<IMG SRC="icons/genodive.gif" ALT="[GenoDive icon]">&nbsp;&nbsp;Patrick Meirmans</A>
+of the Department of Ecology and Evolution
+of the University of Lausanne, Switzerland
+<tt>(patrick.meirmans<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;unil.ch)</tt>
+has written <strong>GenoDive</strong>
+(Genotypic Diversity), version 2b9, a program for population genetic 
+analyses.  It can do Analysis Of Molecular VAriance, estimation of
+standardised coefficients of population differentiation, k-means clustering of
+populations using a simulated annealing approach, assigning genotypic identity
+(clones) to individuals, testing for clonal reproduction, testing
+Hardy-Weinberg equilibrium, calculation of the hybrid index for individuals,
+and different types of Mantel tests.  The distances that it can
+compute are the features relevant to this listing.  It can handle 
+genetic data as well as distance matrices and ecological data, enabling you to 
+combine data from several different sources into a single analysis.
+It is described in the paper:
+Meirmans, P. G. and P.H. Van Tienderen. 2004. GENOTYPE and GENODIVE: two
+programs for the analysis of genetic diversity of asexual organisms.
+<i>Molecular Ecology Notes</i> <b>4:</b> 792-794.
+It is available as Mac OS X universal executables.  It can be downloaded from
+<a href="http://www.bentleydrummer.nl/software">its web site</a>
+at <code>http://www.bentleydrummer.nl/software</code>
+<P>
+
+<HR>
+<A NAME="vCEBL"><P>
+Allen Rodrigo, Alexei Drummond, and Matthew Goode</A> of the
+Computational and Evolutionary Biology Laboratory, School of Biological
+Sciences, University of Auckland, New Zealand
+(<TT>a.rodrigo<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>auckland.ac.nz</TT> and <tt>m.goode<!deathtospam>&nbsp; (at)<!deathtospam>&nbsp; auckland.ac.nz</tt>) have released
+<STRONG>Pebble</STRONG>, version 1.0,
+(Phylogenetics, Evolutionary Biology, and Bioinformatics in a moduLar
+Environment)
+This is a graphical user interface around a functional programming language
+for evolutionary inferences.  The system is written in Java
+using the <A HREF="software.pars.html#PAL">PAL</A> project classes as
+its components.  This alpha
+release provides the basic user interface and some component packages.
+The following analyses and tools are available in vCEBL 0.3a:
+<UL>
+<LI> Construction of serial sample phylogenies using sUPGMA or sWPGMA with
+sampling times known exactly or ordinally.
+<LI> Construction of Neighbor-Joining, UPGMA and WPGMA phylogenies.
+<LI> Estimation of pairwise distance matrices using user-specified rate
+matrices (but not yet allowing variation of rates between sites).
+<LI> Estimation of population parameters including substitution/mutation rates
+using pairwise distances with or without parametric bootstrap confidence
+intervals.
+<LI> Maximum-likelihood branch-length optimization of user-specified
+tree, including serial sampled clocklike trees.
+<LI> ML estimation of divergence between serial samples assuming constant or
+varying mutation rates.
+<LI> Simulation of genealogies and sequences under a constant-sized population
+model with or without serial sampling.
+</UL>
+This package supersedes this laboratory's separate release of sUPGMA,
+which has therefore been withdrawn.
+Self-installing versions of PEBBLE for Macintosh or Windows can be
+obtained from:<A HREF="http://www.cebl.auckland.ac.nz/software2.php">
+its web page</A> at
+<CODE>http://www.cebl.auckland.ac.nz/software2.php</CODE>.  It requires
+Java VM 1.1.1 or higher.  It can also be obtained there as an applet for your
+browser, with some features lacking.
+<P>
+
+<HR>
+<A NAME="STC"><P>
+Le Sy Vinh</A> (<tt>Vinh<!deathstospam>&nbsp;(at)<!deathtospam>&nbsp;cs.uni-duesseldorf.de</tt>) of the Bioinformatics Institute of the University of
+D&uuml;sseldorf, Germany and Arndt von Haeseler
+(<tt>arndt.von.haeseler<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;univie.ac.at</tt>)
+of the Centre for Integrative Bioinformatics Vienna (CBIV)
+have released <strong>STC (Shortest Triplet Clustering)</strong>.  This method
+constructs k-representative sets from triplet of species.  The resuling
+clustering method is O(n<sup>2</sup>) in speed and can handle thousands of
+species with good accuracy.  It is described in a paper: Vinh, L. S. and A.
+von Haeseler. 2005. Shortest triplet clustering: reconstructing large
+phylogenies using representative sets. <i>BMC Bioinformatics</i> <b>6:</b>
+92.  The program is available as Linux and as Windows executables at
+<a href="http://www.cibiv.at/software/stc/">its web site</a> at
+<code>http://www.cibiv.at/software/stc/</code>
+<P>
+
+<HR>
+<A NAME="sendbs"><P>
+Naoko Takezaki</A> of the Life Science Research Center of Kagawa University,
+Japan (<code>takezaki<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>med.kagawa-u.ac.jp</code>) has written <STRONG>sendbs</STRONG>.
+It computes average nucleotide substitutions within and between populations. The
+method is described in the paper by M. Nei and L. Jin (1989, <i>Molecular
+Biology and Evolution</i> <B>6:</B> 290-300). However, sendbs differs from
+their method by using a bootstrap across sites obtain standard errors of
+the distances.
+It also constructs a tree of populations using a neighbor-joining method. 
+It is distributed as source code for Unix, and also as a DOS executable, from
+<A HREF="ftp://ftp.bio.indiana.edu/molbio/ibmpc/sendbsds.exe">by ftp from the Indiana ftp server</A>
+and through the <A HREF="http://www.bio.psu.edu/People/Faculty/Nei/Lab/software.htm">software page of Masatoshi Nei's lab</A>
+at Pennsylvania State University at
+<CODE>http://www.bio.psu.edu/People/Faculty/Nei/Lab/software.htm</CODE>.
+<P>
+
+<A NAME="GelCompar"><P>
+<HR>
+<P>
+Applied Maths BVBA</A> of Keistraat 120, 9830 Sint-Martens-Latem, Belgium 
+has released <STRONG>GelCompar II</STRONG>, a
+comprehensive 1-d gel analysis program.  It includes capabilities of
+clustering data taken from the gels.  These are described as "including
+phylogenetic and dimensioning algorithms".  The phylogeny
+algorithms include a number of distance-matrix clustering methods.
+It is also said to be able to carry out generalized parsimony.
+Gelcompar II is a Windows program.  It is described
+at <A HREF="http://www.applied-maths.com/gc/gc.htm">its web site</A> at
+<CODE>http://www.applied-maths.com/gc/gc.htm</CODE>.  A detailed
+brochure is available for downloading there.  Gelcompar II is commercial
+software.  For price and ordering information contact them by phone at 
++32 9 22222 100, fax them at +32 9 2222 102, e-mail them at
+<TT>info<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>applied-maths.com</TT>, or use the information request form at
+their web pages.  Their U.S. Sales Office is at Applied Maths Inc.,
+512 East 11th Street, Suite 207, Austin, Texas 78701. 
+phone +1 512-482-9700, fax +1 512-482-9708 (email is <tt>info-us<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>applied-maths.com</tt>).  (One company vending Gelcompar II sells the whole
+package for $20,000, though if only the basic module and the cluster analysis
+module are ordered the price is $5,400).
+<P>
+
+<A NAME="STATIO">
+<HR>
+<P>
+Andrey Rzhetsky, now of the Department of Human Genetics at the University of
+Chicago <tt>(arzhetsk<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;medicine.bsd.uchicago.edu)</tt>
+<strong>Statio</strong>, a program for testing stationarity of nucleotide
+composition or amino acid composition in pairs of sequences.  The program reads
+a pair of sequences and then tests stationarity under a number of possible
+models of DNA evolution or protein evolution.   The method is described in
+a paper:  Rzhetsky, A. and M. Nei.  1994.  Tests of applicability of several 
+substitution models for DNA sequence data.  <i>Molecular Biology and Evolution</i> <b>12(1):</b> 131-151.
+It can be downloaded as a set
+of MSDOS executables from <a href="https://homes.bio.psu.edu/people/faculty/nei/software.htm">the Nei lab software web site</a>
+at <code>https://homes.bio.psu.edu/people/faculty/nei/software.htm</code>.
+<P>
+
+<A NAME="SWORDS">
+<HR>
+<P>
+Probal Chaudhuri</A>
+of the Theoretical Statistics and Mathematics Division
+of the Indian Statistical Institute, Calcutta, India
+<tt>(probal<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;isical.ac.in)</tt>
+has released <strong>SWORDS</strong>
+(Statistical analysis of  WORDS in DNA sequences),
+a package for analyzeingthe frequencies and distribution of DNA words
+(subsequences) in multiple species.  It has programs for drawing frequency
+curves and star plots of DNA wonds of given size.  It can calculate distance
+matrices, infer phylogenies by UPGMA clustering.
+It also estimates the bootstrap values for the phylogenetic tress.  It also
+can analyze position of the sequences and do other descriptive statistics
+and tests.  As it does not need aligned sequences, SWORDS can
+handle large genome sizes.  The methods and the program are described in the
+papers:
+<UL>
+<LI> Chaudhuri, P. and S. Das. 2001. Statistical  
+   analysis of large DNA sequences using 
+   distribution of DNA words. <i>Current Science</i>
+   <b>80</b> 1161-1166. 
+<LI>Chaudhuri, P. and S. Das. 2002. SWORDS : a
+   statistical tool for analyzing large DNA  
+   sequences. <i>Journal of Biosciences</i> <b>27:</b>
+   1-6. 
+</UL>
+A trial Windows version is available from
+<a href="http://www.isical.ac.in/~probal/main.htm">its web site</a>
+at <code>http://www.isical.ac.in/~probal/main.htm</code>.  It is described as
+available as C++ source code, Windows executables, Linux executables and
+Mac OS X universal executables.
+<P>
+
+<HR>
+<A NAME="r8s"><P>
+Mike Sanderson</A> (<tt>sanderm<!deathtospam>
+&nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>email.arizona.edu</tt>)
+of Department of Ecology and Evolutionary Biology, University of Arizona, 
+Tucson, Arizona has written
+<strong>r8s</strong>, version 1.71, a program to adjust branch lengths and divergence
+times in a phylogeny to infer divergence times by smoothing rates of evolution
+to approximate a molecular clock (allow a "relaxed" clock).  The program
+is given the tree with branch lengths as input and smooths this tree and
+infers divergence times. Sanderson's main approaches to smoothing divergence
+times are described in his papers:
+<ul>
+<LI>Sanderson, M. J. 1997.  A nonparametric approach to estimating divergence
+times in the absence of rate constancy.  <i>Molecular Biology and Evolution</i> <b>14:</b> 1218-1231.
+<LI>Sanderson, M. J. 2002.  Estimating absolute rates of molecular evolution
+and divergence times: a penalized likelihood approach.
+<i>Molecular Biology and Evolution</i> <b>19:</b> 101-109.
+</ul>
+The program can also take a file of trees estimated from different bootstrap
+replicates and show profile distributions of divergence times for given
+nodes in the trees.  It is available as an x86 Linux executable
+or as a Mac OS X 10.2 executable from
+<A HREF="http://loco.biosci.arizona.edu/r8s/index.html">its web site</A>
+at <code>http://loco.biosci.arizona.edu/r8s/index.html</code>.
+<P>
+
+<HR>
+<A NAME="r8s-bootstrap"><P>
+Torsten Eriksson</A> of the Bergius Botanical
+Garden, Stockholm, Sweden (<CODE>torsten<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>bergianska.se</CODE>)
+has released the <strong>r8s bootstrap kit</strong>.  This is a number
+of Perl scripts and three general command blocks for <a href="software.pars.html#PAUP">PAUP*</a> and <a href="#r8s">r8s</a> which enable bootstrapping
+analyses with r8s.  It is available from his
+<a href="http://www.bergianska.se/index_forskning_soft.html">software web site</a>
+at <code>http://www.bergianska.se/index_forskning_soft.html</code>.
+<P>
+
+<HR>
+<A NAME="SymmeTREE"><P>
+<IMG SRC="icons/symmetree.gif">&nbsp;Kai Chan (<tt>kaichan<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>stanford.edu</tt>)
+of the Department of Biological Sciences, Stanford University, Stanford,
+California, and Brian Moore
+(<tt>brian.moore<!deathtospam> &nbsp;<!deathtospam>(at)&nbsp;<!deathtospam>yale.edu</tt>) of the Department of Ecology and
+Evolutionary Biology, Yale University, New Haven, Connecticut
+have released <strong>SymmeTREE</strong> version 1.1.  It is a program
+to test whether branches of a tree have diversified at different rates,
+and along which branches the significant shifts of diversity have occurred.
+This is evaluated using the species diversity of different parts of the tree.
+The program is described in a paper: Chan, K. M. A. and B. R. Moore. 2004.
+SYMMETREE: whole-tree analysis of differential diversification rates.
+<i>Bioinformatics</i> Advance Access publication November 30, 2004.
+The program is available as executables for Windows, Mac OS X, and Linux
+and as source code for other flavors of Unix.  It is distributed from
+<a href="http://www.phylodiversity.net/bmoore/software.html">its web site</a> at
+<code>http://www.phylodiversity.net/bmoore/software.html</code>.
+<P>
+
+<HR>
+<A NAME="TIMER">
+<P>
+Galina Glazko, now of the Department of Biomedical Informatics of the University of
+Arkansas Medical School, Little Rock, Arkansas
+<tt>(GVGlazko<!deathtospam>&nbsp;(at)<!deathtospam>&nbsp;uams.edu)</tt> and
+Masatoshi Nei of the Institute of Molecular Evolutionary Genetics at
+Pennsylvania State University, University Park, Pennsylvania have released
+<strong>TIMER</strong>, which estimates divergence times using a linearized
+tree approach.  It can use DNA or protein sequences at multiple loci.  It
+constructs a phylogeny using the Neighbor-Joining method, and then estimates
+branch lengths and divergenece times for the individual loci as well as for the
+full set of loci.  It can carry out the Two-Cluster Test for constancy of
+rate of divergence at an individual node in the tree.   The methods are
+explained in a paper:  Nei, M., P. Xu, and G. Glazko. 2001. Estimation of
+divergence times from multiprotein sequences for a few mammalian species and
+several distantly related organisms. <i>Proceedings of the National Academy of
+Sciences</i> <b>98:</b> 2497-2502.  TIMER is available as a Windows executable
+at <a href="https://homes.bio.psu.edu/people/faculty/nei/software.htm">the Nei lab software web site</a>
+at <code>https://homes.bio.psu.edu/people/faculty/nei/software.htm</code>
+<P>
+
+<HR>
+<P>
+<A HREF="software.dist.html">To top of this page</A>
+<P>
+<A HREF="software.etc1.html">To next section of software pages</A>
+<A NAME="bottom"><BR></A>
+<div> 
+<P>
+<font color="#666666">Notices added in compliance with University of Washington
+requirements for web sites hosted at the University: &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.washington.edu/online/privacy" target="_blank"><font
+color="#888888">Privacy</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.washington.edu/online/terms"
+target="_blank"><font color="#888888">Terms</font></a></font>
+</div>
+</BODY>
+</HTML>

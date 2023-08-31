@@ -1,0 +1,169 @@
+<html>
+<head><title>Getting PHYLIP 3.6 by ftp</title></head>
+<body>
+<pre>
+
+
+                        GETTING PHYLIP 3.6 BY ftp
+
+  Anyone with an Internet connection can now get PHYLIP 3.6 (my package of
+computer programs for inferring phylogenies) using "anonymous ftp",
+either directly or by using a Web browser.
+
+  The easiest way to get PHYLIP is to use a net browser such as Mozilla,
+Netscape, Internet Explorer, or Safari.   Our Web page is:
+     http://evolution.gs.washington.edu/phylip.html
+There is a menu selection that takes you to a page that you can use to
+fetch the form of PHYLIP that you need, and there is also a page that asks
+you to fill in a registration form.
+
+  As we have these web pages set up for use with browsers, the rest of
+these instructions will tell how to do it by ftp.
+
+  PHYLIP sources and executables exist for ftp distribution in four forms.
+One is as "Gnuzipped tar archives", a system of storing many files as one
+file and then compressing the size of the file that is used in Unix systems.
+Another is as Windows self-extracting archives.  A third is as Stuffit
+archives for Macintosh Mac OS 8 or Mac OS 9.  A fourth is Disk Image
+format for Mac OS X.  The names of the available archives are
+
+      Contents                Form                  Name
+      --------                ----                  ----
+ 
+  C Sources and docs      Gnuzipped tar         phylip-3.65.tar.gz
+  C Sources and docs      Self-extracting zip   phylip.exe
+  Windows executables     Self-extracting zip   phylipwx.exe, phylipwy.exe
+  Mac OS X, all files     Disk Image            Phylip3.65.dmg
+  Mac OS 8/9, all files   Stuffit               phylip3.65.sit
+  C Sources and docs      Stuffit               phylip3.65.0.sit
+  Mac OS 8/9 executables  Stuffit               exe.1.sit, exe.2.sit, exe.3.sit
+
+You will only want to get PHYLIP in one of these forms of archive.  For
+Mac OS 8/9 you will probably want the all-in-one Stuffit archive rather then
+the individual parts, unless, you need to transfer files to non-networked
+machine on diskettes.
+
+  To install the programs once you have transferred them, if you have a
+browser that works you can read the installation web page:
+  http://evolution.gs.washington.edu/phylip/install.html
+But of course, if you had to resort to reading this and doing the ftp transfer
+yourself, I suppose your browser isn't working.
+
+  To extract the Compressed tar archives you need to use the utilities
+"gunzip" and "tar" which are standard on almost all Unix systems.
+
+  To extract the self-extracting Windows archives, you can simply put them in a
+folder and execute the archives as if they were programs.  Each contains its
+own extraction program and will extract the separate files from the archive
+on its own.
+
+  To extract the Mac OS X Disk Image files, click on their icon (they will
+then be uncompressed).  Then enter them as if they were folders and copy out
+their contents into another folder.  Do *not* try to use them in the .dmg
+folder.
+
+The Mac OS 8/9 archives were also made by Stuffit. If you decide to use these
+you must do a binary ftp transfer and then use a program such as Stuffit.
+
+
+                      How to Transfer the Files by ftp
+
+If you for some reason cannot use our Web pages to transfer the files,
+here is how to use ftp to transfer the archives and how to extract the files
+from them:
+
+  1) Make sure you have enough room for PHYLIP on your system.  Most of
+the archives are compressed by a factor of 2-3, so that you will
+need enough space on your system to hold each archive (at least temporarily)
+plus the the files it extracts into.  Thus if an archive is 1090k in size
+you may need 1090k+3270k of disk space to extract it, 3270k being needed
+permanently.  Once you have connected to my machine by ftp, you will be able
+to see the archive file sizes by issuing a DIR command and can calculate
+whether you have enough space for the archives you want.
+
+  2) Use your local system's version of FTP to connect to my system,
+which is  evolution.gs.washington.edu.  If your system says it has never
+heard of this address, try the number 128.95.144.41 instead.
+
+  3) In response to the "Name" or "Login" prompt, type "anonymous".  In
+response to the "password:" prompt, type your full e-mail address.  If you are
+using ftp from a VAX VMS system or from some Telnet programs you may have to
+type "user anonymous" to get to log in.  It is important that the password you
+type be a proper e-mail address, preferably your full Internet address.
+
+  4) Once logged in, move into the directory "pub" by typing "cd pub".
+(On some systems the command may instead be "cwd pub".)
+
+  5) Move into the subdirectory "phylip" by typing "cd phylip".  (On some
+systems the command may instead be "cwd phylip".)
+
+  6) Give the appropriate command to tell ftp that the data will be binary
+(on my system you type "binary").  If you are moving the files to a Macintosh,
+you may need to make sure that the step that transfers it to the Macintosh
+uses the "MacBinary" protocol.  Some ftp programs such as "Fetch" usually do
+this automatically but others require that you choose this option.
+
+  7) Look at the above list of archive names and types and decide what you
+want to get.  If you are to get executables, make sure you also will get the
+source code and documentation archive.
+
+  8) To get the compressed tar archive version of the package, tell ftp to get
+the file phylip.tar.gz (on my system you type "get phylip.tar.gz").  To get the
+Windows executables you will want to get three archives: the source code
+and documentation archive and two executables archives.  Thus you might
+for example issue the commands:
+         get phylip.exe
+         get phylipwx.exe
+         get phylipwy.exe
+Similarly for the Macintosh executables or the Mac OS X executabes: you would
+issue commands to get the source code and documentation archive plus several
+executables archives.
+
+  9) Get out of ftp. (On my system you type "quit")
+
+  10a) If you are (say) going to move the archives to a different system by
+copying them to floppy disks, that can now be done.
+
+ 13) REGISTER YOUR COPY.   The best way is to use the registration page
+linked from the "Get Me PHYLIP" web page at out site.  If that is impossible,
+you can send electronic mail to me telling me that you have PHYLIP 3.65, and
+which version of the executables you got, that you got these by anonymous ftp,
+and also tell me:
+  Your name and address (no more than 5 lines total)
+  Your telephone number and electronic mail address (together on 1 line)
+  Name of your computer, operating system, and C compiler (if you are
+    going to recompile the programs, which is usually not necessary.  All of
+    these go together on 1 line)
+These should start in column 1 without indentation and fit into the required
+number of lines to make it easier for me to record them in my user database.
+
+For example, here is what this material would look like for me (except that
+I have munged the email address to avoid spammers getting it):
+------------------------------- cut here --------------------------------------
+Joe Felsenstein
+Genome Sciences Department
+University of Washington
+Box 357730
+Seattle, Washington  98195-7730, U.S.A.
+
++1-(206) 543-0150 (work), -0754 (fax), joe@greeneg.gs.washington.edu
+
+Athlon 2800 with Red Hat Linux 9 and GCC
+
+------------------------------- cut here --------------------------------------
+If you can do it in that format you will save me a lot of typing and editing.
+
+My email address starts with "joe" and then has an at-sign and then 
+gs dot washington dot edu
+
+and my phone numbers are:  
+     Work:   (206)-543-0150
+     Home:   (206)-526-9057
+
+                                         Joe Felsenstein
+                                         Genome Sciences Department
+                                         University of Washington
+                                         Box 357730
+                                         Seattle, Washington 98195-7730, U.S.A.
+</pre>
+</body>

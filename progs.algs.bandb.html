@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE> PHYLIP exact search programs </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<H1> Branch-and-bound exact search for best tree </H1>
+
+<P>
+<IMG SRC="icons/DNA.gif" ALT="[Icon]"> <STRONG>DNAPENNY</STRONG>.  Finds all most parsimonious phylogenies for nucleic acid sequences
+   by branch-and-bound search.  This may not be practical (depending on the
+   data) for more than 10 or 11 species.
+
+<P>
+<IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>PENNY</STRONG>.  Finds all most parsimonious phylogenies for discrete-character data
+   with two states, for the Wagner, Camin-Sokal, and mixed parsimony criteria
+   using the branch-and-bound method of exact search.  May be impractical
+   (depending on the data) for more than 10-11 species.
+
+<P>
+<IMG SRC="icons/DOLLO.gif" ALT="[Icon]"> <STRONG>DOLPENNY</STRONG>.  Finds all most parsimonious phylogenies for discrete-character data
+   with two states, for the Dollo or polymorphism parsimony criteria using the
+   branch-and-bound method of exact search.  May be impractical (depending on
+   the data) for more than 10-11 species.
+
+<P>
+<IMG SRC="icons/CLIQUE.gif" ALT="[Icon]"> <STRONG>CLIQUE</STRONG>.
+Finds the largest clique of mutually compatible characters, and
+   the phylogeny which they recommend, for discrete character data with two
+   states.  The largest clique (or all cliques within a given size range of
+   the largest one) are found by a very fast branch and bound search method.
+   The method does not allow for missing data.  For such cases the <TT>T</TT>
+   (Threshold) option of PARS or MIX may be a useful alternative.
+   Compatibility methods are particular useful when some characters are of
+   poor quality and the rest of good quality, but when it is not known in
+   advance which ones are which.
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>

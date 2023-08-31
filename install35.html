@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE> Installing PHYLIP </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+
+<CENTER>
+<TABLE WIDTH=60%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="navy"><STRONG><FONT SIZE=+3 COLOR="cyan">
+I</FONT><FONT SIZE=+2 COLOR="cyan">nstalling PHYLIP</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<P>
+Let's assume that you have fetched the appropriate executables archive (if any)
+for your machine, together with the Documentation and Sources archive.
+<P>
+These archives are <EM>not</EM> simply a single executable for general
+use.  Instead they are a (large) number of files, squished together into
+one file, and thus called an "archive".  You have to go through a step
+which involves getting all the files out of the archive and into a
+directory on your machine.
+<P>
+We will give these instructions for three
+different kinds of systems, Windows, Macintoshes, and Unix systems.
+<P>
+
+<CENTER>
+<TABLE WIDTH=50%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+W</FONT><FONT SIZE=+2 COLOR="cyan">indows</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+On a Windows NT, Windows95, or Windows98
+system you should have three archive files, called <CODE>phylip.exe</CODE>,
+<CODE>phylip95.exe</CODE>, and <CODE>phylip96.exe</CODE>.  These are self-extracting archives,
+respectively the Documentation
+and Source Code archive and two Executables archives.
+<P>
+On a Windows 3.1 or Windows 3.0 system you should have four archive
+files, called <CODE>phylip.exe, phylipwx.exe, phylipwy.exe,</CODE> and 
+<CODE>phylipwz.exe</CODE>.  These are self-extracting archives.
+<P>
+You should
+place them in a directory, which is best called <CODE>C:\PHYLIP</CODE> and
+then execute them as programs, one after another.  A self-extracting
+archive has a small self-extraction program on its front, and when you
+run them as programs they extract themselves and write many files into
+your directory.
+<P>
+You should be able to execute these archives by clicking on their
+icons, or by using the Run entry in the Start menu in the lower-left corner
+of your screen.
+<P>
+Or you may want to open an "MSDOS Window" (in Windows95 this is
+done using the Programs item on the Start menu which is in the lower-left
+corner of your screen).  In the MSDOS window, issue the command <CODE>CD C:\PHYLIP</CODE>
+to get to the directory that has the archives.  For Windows95/98/NT, execute
+them by issuing the commands:
+<TABLE BORDER = 0>
+<TR>
+<TD>
+<CODE>phylip</CODE>
+</TD>
+</TR>
+<TR>
+<TD>
+<CODE>phylip95</CODE>
+</TD>
+</TR>
+<TR>
+<TD>
+<CODE>phylip96</CODE>
+</TD>
+</TR>
+</TABLE>
+which run the archives as programs.
+<P>
+The documentation and source code archive <CODE>phylip.exe</CODE> contains
+the six font files <CODE>font1</CODE> through <CODE>font6</CODE>.  So do
+the executables archives <CODE>phylip96.exe</CODE> and
+<CODE>phylipwz.exe</CODE>.  The self-extraction
+code will ask you whether you want to overwrite the copies.  You can safely
+answer "Yes" as the two copies of each file are identical.  This is not
+an indication of any error or failure of the self-extraction.
+<P>
+On some Windows systems if you use an MSDOS Window the system will be unable
+to run the four archives as programs, claiming it has too little memory. In
+this case it may help to exit Windows (using the Start menu) and choose
+the option to "Exit to MSDOS".  Then it may have enough memory to carry out
+these operations. 
+<P>
+Once these archives are self-extracted, you will find a file called
+<CODE>README.WIN</CODE>.  You should read it, using Windows Notepad, or EDIT, or some
+word processor, for further hints on installation.
+<P>
+
+<CENTER>
+<TABLE WIDTH=50%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+M</FONT><FONT SIZE=+2 COLOR="cyan">acintosh and PowerMac</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+The archives for the PowerMac and Macintosh are BinHexed archives.  If you
+are fetching the files using a Web browser directly from your Mac, it will
+probably automatically invoke Stuffit Expander to unpack the archives into
+self-extracting archives.  Self-extracting archives are archives with a small
+self-extraction program on their front, so that when they are run as
+programs they write a great many files into a folder. 
+<P>
+If your system does have Stuffit Expander, two self extracting archives will
+be created on your desktop, and their file names will have a <CODE>.sea</CODE> in them.  One has the documentation and sources, and the other has the
+executables.  When you execute these two <CODE>.sea</CODE> files as programs,
+they will open a directory browsing window to allow you to find your way to
+the folder where you want to put PHYLIP.  I recommend that you have an empty
+folder ready somewhere to put PHYLIP in.  One of the two self-extracting
+archives will create two folders, one for the sources and one for the
+documentation file. The other will create one folder for the executables.
+The main documentation file <CODE>main.doc</CODE>
+will also be visible, and a file called <CODE>README</CODE>.  You should
+start by reading <CODE>README</CODE>, using SimpleText or some word
+processing program.
+<P>
+If you don't have Stuffit Expander, your web browser will probably
+instead leave the files <CODE>phylip.sea.hqx</CODE>
+and either <CODE>phylippmac.sea.hqx</CODE> or <CODE>phylipmx.seq.hqx</CODE>
+on your desktop.  These have to be extracted using BinHex, or you could
+alternatively use our ftp server and use a MacBinary ftp transfer to get
+the MacBinary versions of these two archives instead.
+<P>
+
+<CENTER>
+<TABLE WIDTH=50%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+3 COLOR="cyan">
+U</FONT><FONT SIZE=+2 COLOR="cyan">nix</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+The archive for Unix systems is just the Documentation and Sources archive.
+You can extract the files from the archive by putting it into a directory
+by itself, getting into that directory, and giving the command<BR>
+<DL>
+<DT>
+</DT>
+<DD><CODE>uncompress phylip.tar.Z</CODE></DD>
+</DL>
+This uncompresses the archive so
+that it will now be bigger and be called <CODE>phylip.tar</CODE>.  Now it
+is a "tar archive".  
+<P>
+Now just issue the command<BR>
+<DL>
+<DT>
+</DT>
+<DD><CODE>tar xvf phylip.tar</CODE></DD>
+</DL>
+The archive
+will be extracted and 93 different files will be written into the current
+directory.  These include documentation files (the ones that end in ".doc"),
+six font files ("<CODE>font1</CODE>" through "<CODE>font6</CODE>") and a lot of "<CODE>.c</CODE>" and "<CODE>.h</CODE>" files,
+plus some Makefiles and a file called <CODE>README</CODE>.  You should read it.
+<P>
+To make executables, use your C compiler.  You can probably just 
+make sure there is a directory "<CODE>bin</CODE>" within your current directory and type
+"<CODE>make install</CODE>".  If there are problems, look into changing the <CODE>CFLAGS</CODE> line
+and/or the <CODE>CC</CODE> line of the <CODE>Makefile</CODE>.
+<P>
+For some pre-prepared Unix/Linux executable packages and a test suite for
+Unix/Linux PHYLIP, see <A HREF="executables.html">our executables page</A>.
+<P>
+<HR>
+<P>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>

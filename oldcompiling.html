@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>Compiling PHYLIP with old compilers</title>
+</head>
+<BODY bgcolor="#ccffff">
+
+<H1>Compiling PHYLIP on old C compilers</H1>
+<P>
+This page is a repository of instructions for compiling PHYLIP on various
+older C compilers.  These instructions were valid for the version of
+PHYLIP for which they were written, and for the versons of these
+compilers for which they were written.  We hope to add to this collection soon.
+<P>
+<h2>Compiling with Microsoft Visual C++</B>  (2009, PHYLIP 3.69, Visual C++
+2010)</h2>
+<P>
+We have had success in the past compiling PHYLIP with Microsoft Visual
+C++ (the compiler in the Microsoft .NET package), although the
+Windows executables that we distribute are built
+using the Cygwin GCC compiler.  The following instructions are the ones we
+have used for Visual C++ for the .NET 2008 version with Visual C++ version 9.0.
+Microsoft also makes a free download version of their C++ compiler
+from 2005 available as Visual C++ Express Edition.  That version has a somewhat
+different content, and these instructions will not work with it.  If you
+figure out how to get the compiler and Makefiles to work together, please
+let us know -- we don't have the energy to figure this out for all possible
+configurations of the Microsoft C++ compiler.
+<P>
+The instructions use the <tt>nmake</tt> command that uses a Makefile which is
+called <tt>Makefile.msvc</tt> in our distribution.
+At the end of this section we have some comments on how to
+compile the programs with Visual C++ version 7.0, which also has a somewhat
+different file folder structure.
+<P>
+With Microsoft Visual C++, you can compile using a Makefile.  We have supplied
+this in the source code distrubution as <TT>Makefile.msvc</TT>.
+You may wish to preserve the Unix Makefile by renaming <TT>Makefile</TT> to,
+say, <TT>Makefile.unix</TT>, then make a copy of <TT>Makefile.msvc</TT>
+and call it <TT>Makefile</TT>.   (You may have to change your Windows desktop
+settings to make the three-letter extensions visible, or you could use
+the <TT>RENAME</TT> command in the Command tool).
+<UL>
+<LI><B>Setting the path.</B>
+Before using <TT>nmake</TT> you will need to have the paths
+set properly.  For this, use the Start menu to open in the Accessories
+a Command Prompt first.  To set the path type<BR>
+<PRE>
+set MSVC=Path
+</PRE>
+where Path is where Microsoft Visual Studio is installed. 
+On our Windows XP system, "Path" is
+<TT>C:\Program Files\Microsoft Visual Studio 9.0</TT>
+<P>
+Once you have set MSVC, type
+<PRE>
+PATH=%PATH%;%MSVC%\VC\bin;%MSVC%\Common7\IDE
+</PRE>
+(The "7" is correct here; it is not a typo.)
+<P>
+The Makefile has some paths in it, which are, I hope, in
+the correct form for Visual C++ 9.0 on your system.
+If not, the statement
+<PRE>
+MSVCPATH="C:\Program Files\Microsoft Visual Studio 9.0\VC"
+</PRE>
+</PRE>
+If this does not work with your Visual C++ 7.0 compiler,
+then the most likely reason is that your installation
+was not placed into the folder <TT>C:\Program Files</TT>,
+or has a name that is not exactly identical to
+<TT>Microsoft Visual Studio .NET</TT>.  In that case,
+you will need to find the correct path to the Visual C++
+7.0 installation on your system, and supply this in the
+MSVC variable above, and also in the Makefile.  (Note
+that in the Makefile, you will need to follow this path
+with <TT>\Vc7</TT>.)
+</PRE>
+will need to be changed so that 
+it points to wherever Microsoft Visual Studio is installed, followed by
+<TT>\VC</TT> (for Visual Studio 9.0).
+<P>
+<LI><B>Using the Makefile</B>. The Makefile is invoked using the
+
+<TT>nmake</TT> command.  To compile and install all
+programs type <TT>nmake install</TT>.  We have supplied all the
+support files and icons needed for the compilations.  They are
+in folder <TT>msvc</TT> in the main source code folder.  If you
+simply type <TT>nmake</TT> you
+will get a list of possible <TT>make</TT> commands.  For example,
+to compile a single program such as <TT>Dnaml</TT> but not
+install it, type <TT>nmake dnaml</TT>.
+</UL>
+<P>
+If instead you have an earlier version of Visual Studio .NET which
+has the Visual C++ 7.0 compiler, you should proceed as above, but
+instead, set MSVC to
+<TT>C:\Program Files\Microsoft Visual Studio .NET</TT>,
+and then type
+<P>
+<PRE>
+PATH=%PATH%;%MSVC%\Vc7\bin;%MSVC%\Common7\IDE
+</PRE>
+<P>
+You will also need to edit the line in the Makefile that
+defines the variable MSVCPATH.  You should change this to
+<PRE>
+MSVCPATH="C:\Program Files\Microsoft Visual Studio .NET\Vc7"
+</PRE>
+If this does not work with your Visual C++ 7.0 compiler,
+then the most likely reason is that your installation
+was not placed into the folder <TT>C:\Program Files</TT>,
+or has a name that is not exactly identical to
+<TT>Microsoft Visual Studio .NET</TT>.  In that case,
+you will need to find the correct path to the Visual C++
+7.0 installation on your system, and supply this in the
+MSVC variable above, and also in the Makefile.  (Note
+that in the Makefile, you will need to follow this path
+with <TT>\Vc7</TT>.)
+<P>
+<h2>Compiling with Borland C++</h2>  (2009, PHYLIP 3.69)
+<P>
+Borland C++ can be downloaded for free.  It is a compiler released
+in 2000, and which is now owned by Embarcadero Technologies, Inc.
+(see their site
+<A HREF="http://www.codegear.com/downloads/free/cppbuilder">
+http://www.codegear.com/downloads/free/cppbuilder</A>).  To download
+it you need to register with them.
+It has a somewhat restrictive license, so we cannot use it for the
+widely-distributed executables.
+<p>
+You should download the compiler as it includes all the utilities needed 
+to compile phylip.  It can compile using a Makefile. We have supplied 
+this in the source code distribution as <tt>Makefile.bcc</tt>. You will need to 
+preserve the Unix Makefile by renaming it to, say, <tt>Makefile.unix</tt>, then 
+make a copy of <tt>Makefile.bcc</tt> and call it <tt>Makefile</tt>. The
+<tt>Makefile</tt> is invoked using the make command.
+<P>
+You will first need to create an <tt>ilink32.cfg</tt> and a <tt>bcc32.cfg</tt>
+file and put the files into the <tt>src</tt> folder.  These files are text files
+and their contents are described in the <tt>readme.txt</tt> that comes with the 
+Borland tools.  If the Borland tools are in the default location the 
+contents of <tt>ilink32.cfg</tt> would be.
+<P>
+<PRE>
+-L"c:\Borland\Bcc55\lib"
+</PRE>
+<P>
+and the contents of <tt>bcc32.cfg</tt>
+<P>
+<PRE>
+-I"c:\Borland\Bcc55\include"
+-L"c:\Borland\Bcc55\lib"
+</PRE>
+<P>
+These files can be created in a text editor such as Notepad or Wordpad.
+<P>
+To invoke the <tt>make</tt> command you will first need to open a command
+prompt window.  Then set the path appropriately.  To set the path, type
+<P>
+<PRE>
+set BORLAND=Path
+</PRE>
+<P>
+Where "Path" is where Borland is installed, such as <tt>C:\Borland\BCC55</tt>.
+Then type
+<P>
+<PRE>
+PATH=%PATH%;%BORLAND%\Bin
+</PRE>
+<P>
+If you simply type <tt>make</tt> you will get a list of possible make commands. 
+For example, to compile a single program such as Dnaml but not install 
+it, type <tt>make dnaml</tt>. To compile and install all programs type
+<tt>make install</tt>. We have supplied all the the support files and icons
+needed for 
+the compilations. They are in folder <tt>bcc</tt> of the main PHYLIP
+ource code folder. 
+We have had to supply a complete second set of the resource files with 
+names <tt>*.brc</tt> because Borland resource files have a minor
+incompatibility with Microsoft Visual C++ resource files.
+<P>
+<h2>Compiling with GCC on Mac OS X with X Windows</h2>
+<P>
+(PHYLIP version 3.69)
+<P>
+On Mac OS X systems you can also use the GCC compiler and X Windows to
+compile a version of the executables that runs from the command line
+in native mode.
+To do that, you must have the GCC compiler and the X11 windows
+development kit materials installed.
+X Windows is an optional install present on the Mac OS X for version
+10.3 (Panther) and 10.4 (Tiger) distribution disks, and part
+of the default distribution for 10.5 (Leopard) on.
+You can search for the latest X11 release for your system by 
+looking at results after
+<a href="http://www.apple.com/search/downloads/?q=x11">searching for &quot;x11&quot;</a>
+on the <a href="http://www.apple.com/downloads/">Apple Downloads page</a>.
+It is easy to download and install on a Mac OS X system.
+<P>
+If you have the GCC compiler and the X11 libraries installed, you can use a
+Terminal window (which you
+will find available in the Utilities folder in the Applications folder) and
+compile PHYLIP by treating it as a Unix or Linux application and following the
+instructions given above under "Unix and Linux".  Basically you just get
+into the folder that contains the PHYLIP source code and type
+<P>
+<tt>make install</tt>
+<P>
+This uses the ordinary Unix/Linux Makefile, which works
+in creating programs using X11 for
+Mac OS X with the gcc compiler.  Note that to run the 
+programs <tt>drawgram</tt> and <tt>drawtree</tt> that actually use the X Windows, you
+will need to 
+<ul>
+<li>start the X11 program, 
+<li>get an Xterm terminal running within that, and 
+<li>run the programs from within the Xterm.
+</ul>
+<P>
+<h2>The Metrowerks Codewarrior compiler</h2>
+<P>
+We previously also supported the Metrowerks Codewarrior compiler, for
+both Mac OS 9 and Mac OS X (and even for producing Windows executables).
+Codewarrior required that one maintain "projects" for each program, and we
+distributed the projects as well as the source code.  As Metrowerks was
+bought out by Freescale and has retargeted its compilers for building
+embedded applications, we are ceasing this rather cumbersome support.  That
+means that we do not at present give you a way to recompile our programs
+if you have Mac OS 9.  We may not make a set of executables for Mac OS 9
+ourself.  If you absolutely need to obtain compilation support routines and
+projects for Metrowerks Codewarrior, contact us and we will send you what we
+have.  Of course, for Mac OS X the GCC compiler is available, and we describe
+above how to compile the programs with it.
+<P>
+<H2>VMS VAX systems</H2>
+<P>
+VMS VAX systems have almost disappeared, so
+we have not tried to compile version 3.6 on an OpenVMS system.  The
+following instructions should work.
+On the OpenVMS operating system with DEC VAX VMS C the programs will compile
+without alteration.  The commands for compiling a typical program
+(Dnapars, which depends on the separately compiled files <TT>phylip.c</TT>
+and <TT>seq.c</TT>) are:
+<P>
+<TT>$ DEFINE LNK$LIBRARY SYS$LIBRARY:VAXCRTL
+<BR>
+$ CC DNAPARS.C
+<BR>
+$ CC PHYLIP.C
+<BR>
+$ CC SEQ.C
+<BR>
+$ LINK DNAPARS,PHYLIP,SEQ
+<BR>
+</TT>
+<P>
+Once you use this <TT>$ DEFINE</TT> statement during a given interactive session,
+you need not repeat it again as the symbol <TT>LNK$LIBRARY</TT> is thereafter
+properly defined.  The compilation process leaves a file <TT>DNAPARS.OBJ</TT>
+in your directory: this can
+be discarded.  The executable program is named <TT>DNAPARS.EXE</TT>.  To run the program
+one then uses the command:
+<P>
+<TT>$ R DNAPARS</TT>
+<P>
+The compiler defaults to the filenames <TT>INFILE.</TT>, <TT>OUTFILE.</TT>, and
+<TT>TREEFILE.</TT>.
+If the input file <TT>INFILE.</TT> does not exist the program will prompt you to
+type in its name.  Note that some commands on VMS such as <TT>TYPE OUTFILE</TT>
+will fail because the name of the file that it will attempt to type out will be not
+<TT>OUTFILE.</TT> but <TT>OUTFILE.LIS</TT>.  To get it to type the write file you
+would have to instead issue the command <TT>TYPE OUTFILE.</TT>.
+<P>
+When you are
+using the interactive previewing feature of Drawgram (or Drawtree) on
+a Tektronix or DEC ReGIS compatible terminal, you will want before
+running the program to have issued the command:
+<P>
+<TT>$ SET TERM/NOWRAP/ESCAPE</TT>
+<P>
+so that you do not run into trouble from the VMS line length limit of
+255 characters or the filtering of escape characters.
+<P>
+To know which files to compile together, look at the entries in the
+<TT>Makefile</TT>.
+<P>
+</body>
+</html>

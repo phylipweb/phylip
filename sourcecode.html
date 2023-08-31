@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE> Compiling PHYLIP yourself</TITLE>
+<LINK href="bluestyle.css" rel="stylesheet" type="text/css">
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<P>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="NAVY"><STRONG><FONT SIZE=+3 COLOR="Cyan">
+S</FONT><FONT SIZE=+2 COLOR="Cyan">ource code ... compiling it yourself</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+The source code for PHYLIP comes is in the C language.
+The programs are written in generic ANSI-compatible
+C code which can be compiled on most systems.  There are
+conditionally-defined pieces of code to adapt the programs
+to Windows, Mac OS or Mac OS X systems, or to Linux or
+Unix systems that have X windows.
+<P>
+Please note that if you simply want to run PHYLIP programs, and you have the
+PHYLIP executables, <em>you don't need to compile anything</em>, just use the
+executables.
+<P>
+<CENTER>
+<TABLE WIDTH=40%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+2 COLOR="Cyan">
+U</FONT><FONT SIZE=+1 COLOR="Cyan">nix&nbsp;&nbsp; and&nbsp;&nbsp; <FONT SIZE=+2 COLOR="Cyan">L</FONT><FONT SIZE=+1 COLOR="Cyan">inux</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+The source code comes with a Makefile that enable it to be compiled easily
+on most compilers.
+<P>
+PHYLIP has been compiled successfully on Unix and Linux systems with the GCC
+C compiler, and with proprietary compilers from Sun, HP, Compaq/Digital, SGI,
+and many other systems.
+<P>
+On most Linux or Unix systems all you need to do is type "make install".
+<P>
+<CENTER>
+<TABLE WIDTH=40%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG>
+<FONT SIZE=+1 COLOR="Cyan">Windows, MacOS, and MacOS X</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+Compiling the source code on PCs and on Macs is less easy.  For the most part
+you do not have to think about doing it, as we distribute
+<A HREF="executables.html">executables</A> for
+Windows systems, for Mac OS X systems, and others distribute Linux
+executables.
+Once in a while
+you might want to recompile a program to add a feature of your own; the instructions
+for doing this are given in the documentation.  However some leading PC and Mac
+compilers do not make this easy.  It is possible to use a
+Makefile for the GNU GCC compiler, for
+the Microsoft .NET compiler, for Borland C, and for the Cygwin port of GCC to
+Windows, but it's harder for Codewarrior C++, which we used to use
+for the Mac OS 8 and 9 compiles.  Codewarrior did not use a Makefile, but
+requires you
+to structure your compilation into "projects".  Unfortunately although many different
+compilers do it that way, the project structures differ between
+different compilers.  Our distribution supplies
+icon files for GCC, MS .NET, Borland C, and Cygwin GCC.
+<P>
+If you have a PC or a Mac OS X system, try our precompiled executables and
+avoid recompiling unless you have to.
+<P>
+<CENTER>
+<TABLE WIDTH=40%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG>
+<FONT SIZE=+1 COLOR="Cyan">VMS and OpenVMS</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+The source code we distribute also has a compile.com file for VMS VAX systems.
+The present version should also be able to be compiled on DEC Alpha OpenVMS
+systems with a little hand-editing of the <tt>phylip.h</tt> and
+<tt>compile.com</tt> files.  We
+have not checked this in quite a while, since VMS and OpenVMS systems have
+basically disappeared and we have no access to one.
+<P>
+<HR>
+<A HREF="../phylip.html"><IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>

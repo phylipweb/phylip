@@ -1,0 +1,795 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE> Frequently Asked Questions </TITLE>
+<LINK href="bluestyle.css" rel="stylesheet" type="text/css">
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+
+<CENTER>
+<TABLE WIDTH=70%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="navy"><STRONG><FONT SIZE=+4 COLOR="cyan">
+Frequently Asked Questions</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+2 COLOR="cyan">
+Problems that are encountered
+</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<UL>
+<A HREF="#infile"><LI><STRONG>"It doesn't work! <I>It doesn't work!!</I> It says <TT>can't find infile.</TT>"</STRONG></A>
+<A HREF="#memory"><LI><STRONG>"The program reads my data file and then says it has
+a memory allocation error!"</STRONG></A>
+<A HREF="#larger"><LI><STRONG>"On our MacOS 9 system, larger data files fail to run."</STRONG></A>
+<A HREF="#create"><LI><STRONG>"I opened the program but I don't see where to create
+a data file!"</STRONG></A>
+<A HREF="#phylip"><LI><STRONG>"I ran PHYLIP, and all it did was say it was extracting a bunch of files!"</STRONG></A>
+<A HREF="#next"><LI><STRONG>"One program makes an output file and then the next program crashes while reading it!"</STRONG></A>
+<A HREF="#cantfind"><LI><STRONG>"I make a file called infile and then the program can't find it!"</STRONG></A>
+<A HREF="#consense"><LI><STRONG>"Consense gives weird branch lengths! How do I
+get more reasonable ones?"</STRONG> </A>
+<A HREF="#weirdtree"><LI><STRONG>"I looked at the tree printed in the output
+file <tt>outfile</tt>
+and it looked weird.  Do I always need to look at it in Drawgram?"</STRONG></A>
+<A HREF="#fontfile"><LI><STRONG>"DrawTree (or DrawGram) doesn't work: it can't find the font file!"</STRONG></A>
+<A HREF="#scale"><LI><STRONG>"Can DrawGram draw a scale beside the tree? Print the branch lengths as numbers?"</STRONG></A>
+<A HREF="#bootvalues"><LI><STRONG>"How can I get DrawGram or DrawTree to print the bootstrap values
+next to the branches?"</STRONG></A>
+<A HREF="#hp"><LI><STRONG>"I have an HP laser printer and can't get DrawGram to print on it"</STRONG>
+<A HREF="#treefile"><LI><STRONG>"DNAML won't read the treefile that is produced by DNAPARS!"</STRONG></A>
+<A HREF="#toolarge"><LI><STRONG>"In bootstrapping, SEQBOOT makes too large a file"</STRONG></A>
+<A HREF="#bigfile"><LI><STRONG>"In bootstrapping, the output file gets too big."</STRONG></A>
+<A HREF="#clustalw"><LI><STRONG>"Why don't your programs correctly read the sequence alignment
+files produced by ClustalW?"</STRONG></A>
+<A HREF="#neighborinput"><LI><STRONG>"Why doesn't NEIGHBOR read my DNA sequences correctly?"</STRONG></A>
+</UL>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+2 COLOR="cyan">
+How to make it do various things:
+</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<UL>
+<A HREF="#bootstrap"><LI><STRONG>"How do I bootstrap?"</STRONG></A>
+<A HREF="#outgroup"><LI><STRONG>"How do I specify a multi-species outgroup
+with your parsimony  programs?"</STRONG> </A>
+<A HREF="#monophyletic"><LI><STRONG>"How do I force certain groups to remain  monophyletic in your
+parsimony programs?"</STRONG> </A>
+<A HREF="#reroot"><LI><STRONG>"How can I reroot one of the trees written out by PHYLIP?"</STRONG></A>
+<A HREF="#indels"><LI><STRONG>"What do I do  about  deletions  and  insertions  in  my  sequences?"</STRONG></A>
+<A HREF="#01distances"><LI><STRONG>"How can I produce distances for my data set which
+has 0's and 1's?"</STRONG> </A>
+<A HREF="#rflps"><LI><STRONG>"I have RFLP fragment data: which programs should I
+use?"</STRONG></A>
+<A HREF="#parsbranch"><LI><STRONG>"Why don't your parsimony programs  print  out  branch  lengths?"</STRONG></A>
+<A HREF="#multistate"><LI><STRONG>"Why can't your programs handle unordered multistate  characters?"</STRONG>
+</UL>
+<CENTER>
+<TABLE WIDTH=80%>
+F
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+2 COLOR="cyan">
+Background information needed:
+</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<UL>
+<A HREF="#documentation"><LI><STRONG>"What file format do I use for the sequences?"<BR>
+"How do I use the programs?  I can't find any documentation!"</STRONG></A>
+<A HREF="#wheretoread"><LI><STRONG>"Where can I find out how to infer
+phylogenies?"</STRONG></A>
+</UL>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+2 COLOR="cyan">
+Questions about distribution and citation:
+</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<UL>
+<A HREF="#copied"><LI><STRONG>"If I copied PHYLIP from a friend without you knowing, should I try
+to keep you from finding out?"</STRONG></A>
+<A HREF="#citation"><LI><STRONG>"How do I make a citation  to  the  PHYLIP  package in  the  paper I am
+writing?"</STRONG> </A>
+<A HREF="#class"><LI><STRONG>"Can I make copies of PHYLIP available to the students in
+my class?"</STRONG></A>
+<A HREF="#howmany"><LI><STRONG>"How many copies of PHYLIP have been distributed?"</STRONG></A>
+</UL>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+2 COLOR="cyan">
+Questions about documentation
+</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<UL>
+<A HREF="#printed"><LI><STRONG>"Where can I get a printed version of  the  PHYLIP  documents?"</STRONG></A>
+<A HREF="#newsletter"><LI><STRONG>"Why have I been dropped from your newsletter mailing list?"</STRONG></A>
+</UL>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+2 COLOR="cyan">
+Additional Frequently Asked Questions, or: "Why didn't it occur to you to ...
+</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<UL>
+<A HREF="#commandline"><LI><STRONG>... allow the options to be set on the command line?"</STRONG></A>
+<A HREF="#java"><LI><STRONG>... write these programs in Java?"</STRONG></A>
+<A HREF="#inferior"><LI><STRONG>... forgot about all those inferior systems and just develop PHYLIP for Unix?"</STRONG></A>
+<A HREF="#pascal"><LI><STRONG>... write these programs in Pascal?"</STRONG></A>
+<A HREF="#prolog"><LI><STRONG>... write these programs in PROLOG
+(or Ada, or Modula-2, or SIMULA, or BCPL, or PL/I, or APL, or LISP)?"</STRONG></A>
+<A HREF="#distwag"><LI><STRONG>... include in the package a program to do the Distance Wagner method, (or
+successive approximations character weighting)?"</STRONG></A>
+<A HREF="#clustering"><LI><STRONG>... include in the package ordination methods and more
+clustering algorithms?"</STRONG></A>
+<A HREF="#align"><LI><STRONG>... include in the package a program to do nucleotide sequence 
+alignment?"</STRONG></A>
+</UL>
+<CENTER>
+<TABLE WIDTH=80%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="gray"><STRONG><FONT SIZE=+2 COLOR="cyan">
+(Fortunately) obsolete questions
+</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<UL>
+<A HREF="#phoneline"><LI><STRONG>... let me log in to your computer in Seattle
+and copy the files out over a phone line?"</STRONG></A>
+<A HREF="#listing"><LI><STRONG>... send me a listing of your program?"</STRONG></A>
+<A HREF="#magtape"><LI><STRONG>... write a magnetic tape in our computer center's favorite format
+(inverted Lithuanian EBCDIC at 998 bpi)?"</STRONG></A>
+<A HREF="#fortran"><LI><STRONG>... give us a version of these in FORTRAN?"</STRONG></A>
+</UL>
+<HR>
+<DIV ALIGN=CENTER>
+<H3>Problems that are encountered</H3>
+</DIV>
+<DL>
+<A NAME="infile"><DT><P><STRONG>"It doesn't work! <I>It doesn't work!!</I> It says <TT>can't find infile.</TT>"</STRONG>
+<DD>Actually, it's working just fine.  Many of the programs look for an input file called <TT>infile</TT>,
+and if one of that name is not present in the current folder, they then ask
+you to type in the name of the input file.  That's all that it's doing. This
+is done so that
+you can get the program to read the file without you having to type in its
+name, by making a copy of your input file and calling it <TT>infile</TT>.
+If you don't do that, then the program issues this message.  It looks
+alarming, but really all that it is trying to do is to get you to type in
+the name of the input file.  Try giving it the name of the input file.
+<A NAME="memory"><DT><P><STRONG>"The program reads my data file and then says it's has
+a memory allocation error!"</STRONG>
+<DD>This is what tends to happen if there is a problem with the format of the data
+file, so that the programs get confused and think they need to set aside memory
+for 1,000,000 species or so.  The result is a "memory allocation error" (the
+error message may say that "the function asked for an inappropriate amount of memory").  Check the data file format against the documentation:
+make sure that the data files have <I>not</I> been saved in the format of
+your word processor (such as Microsoft Word) but in a "flat ASCII" or "text only"
+mode.  Note that adding memory to your computer is <I>not</I> the
+way to solve this problem -- you probably have plenty of memory
+to run the program once the data file is in the correct format.
+<A NAME="larger"><DT><P><STRONG>"On our MacOS 9 system, larger data files fail to run."</STRONG>
+<DD>We have set the memory allowances on the MacOS 9 executables
+to be generous, but not too big.  You therefore may need to
+increase them.  Use the <TT>Get Info</TT> item on the Finder <TT>File</TT> menu.
+<A NAME="create"><DT><P><STRONG>"I opened the program but I don't see where to create
+a data file!"</STRONG>
+<DD>The programs (there are more than one) use data
+files that have been created outside of the program.  They do not have any
+data editor within them.  You can create a data file by using an editor,
+such as Microsoft Word, EMACS, vi, SimpleText, Notepad, etc.  But be sure
+<I>not</I> to save the file in Microsoft Word's own format.  It should be saved in
+Text Only format.  You can use the documentation files, including the examples
+at the end of those files, to figure out the format of the input file.
+Documentation files such as <TT>main.html</TT>, <TT>sequence.html</TT>,
+<TT>distance.html</TT> and many others should be consulted.  Many users
+create their data files by having their alignment program (such as
+ClustalW), output its alignments in PHYLIP format.  Many alignment programs
+have options to do that.
+<A NAME="phylip"><DT><P><STRONG>"I ran PHYLIP, and all it did was say it was extracting a bunch of files!"</STRONG>
+<DD>
+There is no executable program
+named <TT>PHYLIP</TT> in the PHYLIP package!  But in some cases
+(especially the Windows distribution) there is a file called
+<TT>phylip.exe</TT>.
+That file is an archive of documentation and source code.  Once you have
+run it and extracted the files in it, so that they are in the folder,
+running it again will just do the extraction again, which is unnecessary.
+Similarly for the archive files for the Windows executables, which
+have names like <TT>phylipwx.exe</TT> and <TT>phylipwy.exe</TT>.
+They are run only once to extract their contents.
+<A NAME="next"><DT><P><STRONG>"One program makes an output file and then the next program crashes while reading it!"</STRONG>
+<DD>Did you rename the file?  If a program makes a file called <TT>outfile</TT>, and then the
+next program is told to use <TT>outfile</TT> as its input file, terrible things will
+happen.  The second program first opens <TT>outfile</TT> as an output file, thus
+erasing it.  When it then tries to read from this empty <TT>outfile</TT>
+a psychological
+crisis ensues.  The solution is simply to rename <TT>outfile</TT> before trying to
+use it as an input file.
+<A NAME="cantfind"><DT><P><STRONG>"I make a file called infile and then the program can't find it!"</STRONG>
+<DD>Let me guess.  You are using Windows, right?  You made your file in Word or
+in Notepad or WordPad, right?  If you made a file in one of these editors, and
+saved it, not in Word format, but in Text Only format, then you were doing the
+right thing.  But when you told the operating system to save the file as
+<TT>infile</TT>, it actually didn't.  It saved it as
+<TT>infile.txt</TT>. Then just to make
+life harder for you, the operating system is set up by default to not show
+that three-letter extension to the file name.  Next to its icon it will show
+the name <TT>infile</TT>.  So you think, quite reasonably, that
+there is a file called <TT>infile</TT>.  But there isn't a file of that
+name, so the program, quite reasonably, can't find a file called
+<TT>infile</TT>.  If you want to check what the actual file name is, use
+the <TT>Properties</TT>
+menu item of the <TT>File</TT> item on your folder (in Windows versions, anyway).  
+You should be able to get the program to work by telling it that the file name
+is <TT>infile.txt</TT>.
+<A NAME="consense"><DT><P><STRONG>"Consense gives weird branch lengths! How do I
+get more reasonable ones?"</STRONG> 
+<DD>Consense gives branch lengths which are simply the numbers of replicates
+that support the branch.  This is not a good reflection of how long those
+branches are estimated to be.  The best way to put better branch lengths on a
+consensus tree is to use it as a User Tree in a program that will estimate
+branch lengths for it, such as DnaML.  You may need to convert it to being an unrooted tree,
+using Retree, first.  If the original program you were using was a
+program that does not estimate branch lengths, you may instead have to
+use one that does.  You can use a likelihood program, or make
+some distances between your species (using, for example, DNADIST) and use
+FITCH to put branch lengths on the user tree.  Here is the sequence of
+steps you should go through:
+<OL>
+<LI>Take the tree and use Retree to make sure it is Unrooted (just
+read it into Retree and then save it, specifying Unrooted)
+<LI>Use the unrooted tree as a User Tree (option <TT>U</TT>) in one of
+our programs (such as FITCH or DNAML).   If you use FITCH, you also
+first need to use one of the distance programs such as DNADIST to
+compute a set of distances to serve as its input.
+<LI>Specify that the branch lengths
+of the tree are not to be used but should be re-estimated.  This
+is actually the default.
+</OL>
+<A NAME="weirdtree"><DT><P><STRONG>"I looked at the tree printed in the output file <tt>outfile</tt>
+and it looked weird.  Do I always need to look at it in Drawgram?"</STRONG>
+<DD>It's possible you are using the wrong font for looking at the tree in
+the output file.  The tree is drawn with dashes and exclamation points.  If
+a proportional font such as Times Roman or Helvetica is used, the tree lines
+may not connect.  Try selecting the whole tree and setting the font to
+a fixed-width one such as Courier.  You may be astounded how much clearer
+the tree has become.
+<A NAME="fontfile"><DT><P><STRONG>"DrawTree (or DrawGram) doesn't work: it can't find the font file!"</STRONG>
+<DD>Six font files, called <TT>font1</TT> through <TT>font6</TT>, are
+distributed with the executables
+(and with the source code too).  The program looks for a copy of one of them
+called <TT>fontfile</TT>.  If you haven't made such a copy called
+<TT>fontfile</TT> it then asks
+you for the name of the font file.  If they are in the current folder, just
+type one of <TT>font1</TT> through <TT>font6</TT>.  The reason for
+having the program look for <TT>fontfile</TT>
+is so that you can copy your favorite font file, call the copy
+<TT>fontfile</TT>,
+and then it will be found automatically without you having to type the name of
+the font file each time.
+<A NAME="scale"><DT><P><STRONG>"Can DrawGram draw a scale beside the tree? Print the branch lengths as numbers?"</STRONG>
+<DD>It can't do either of these.  Doing so would make the program more complex, and
+it is not obvious how to fit the branch length numbers into a tree that has
+many very short internal branches.  If you want these scales or numbers,
+choose an output plot file format (such as Postscript, PICT or PCX) that can be read by
+a drawing program such as Adobe Illustrator, Freehand, Canvas, CorelDraw,
+or MacDraw.
+Then you can add the scales and branch length numbers yourself by hand.  Note
+the menu option in DrawTree and DrawGram that specifies the tree size to be
+a given number of centimeters per unit branch length.
+<A NAME="bootvalues"><DT><P><STRONG>"How can I get DrawGram or DrawTree to print the bootstrap values
+next to the branches?"</STRONG>
+<DD>When you do bootstrapping and use Consense, it prints the bootstrap
+values in its output file (both in a table of sets, and on the diagram
+of the tree which it makes).  These are also in the output tree file of
+Consense.  There they are in place of branch lengths.  So to get them to
+be on the output of DrawGram or DrawTree, you must write the tree in the
+format of a drawing program and use it to put the values in by hand, as
+mentioned in the answer to the previous question.
+<A NAME="hp"><DT><P><STRONG>"I have an HP laser printer and can't get DrawGram to print on it"</STRONG>
+<DD>DRAWGRAM and DRAWTREE produce a plot file (called <TT>plotfile</TT>): they
+do not send it to the printer.  It is up to you to get the plot file to 
+the printer.  If you are running Windows this can probably be done
+with the Command tool and the command <TT>COPY/B PLOTFILE PRN:</TT>, unless
+your printer is a networked printer.  The <TT>/B</TT>
+is important.  If it is omitted the copy command will strip off the
+highest bit of each byte, which can cause the printing to fail or produce
+garbage.
+<A NAME="treefile"><DT><P><STRONG>"DNAML won't read the treefile that is produced by DNAPARS!"</STRONG>
+<DD>That's because the DNAPARS tree file is a rooted tree, and DNAML wants an
+unrooted tree.  Try using Retree to change the file to be an unrooted tree
+file. Our most recent versions of the programs usually automatically
+convert a rooted tree into an unrooted one as needed.  But the programs
+such as DNAMLK or DOLLOP that need a rooted tree won't be able to use an
+unrooted tree.
+<A NAME="toolarge"><DT><P><STRONG>"In bootstrapping, SEQBOOT makes too large a file"</STRONG>
+<DD>If there are 1000 bootstrap replicates, it will make a file
+1000 times as long as your original data set.  But for many methods
+there is another way that uses much less file space.  You can use
+SEQBOOT to make a file of multiple sets of weights, and use those
+together with the original data set to do bootstrapping.
+<A NAME="bigfile"><DT><P><STRONG>"In bootstrapping, the output file gets too big."</STRONG>
+<DD> When running a program such as NEIGHBOR or DNAPARS with multiple data
+sets (or multiple weights) for purposes of bootstrapping,
+the output file is usually not needed, as it
+is the output tree file that is used next.  You can use the menu
+of the program to turn off the writing of trees into the
+output file.  The trees will still be written into the output tree file.
+<A NAME="clustalw"><DT><P><STRONG>"Why don't your programs correctly read the sequence alignment
+files produced by ClustalW?"</STRONG>
+<DD>They do read them correctly if you make the right kind.  Files from
+ClustalV or ClustalW whose names end in <TT>".aln"</TT> are not in PHYLIP
+format, but in Clustal's own format which will not work in PHYLIP.
+You need to find the option to output PHYLIP format files, which ClustalW and
+ClustalV usually assign the extension <TT>.phy</TT>.
+<A NAME="neighborinput"><DT><P><STRONG>"Why doesn't NEIGHBOR read my DNA sequences correctly?"</STRONG>
+<DD>Because it  wants
+to  have as input a distance matrix, not sequences.  You have to use DNADIST to
+make the distance matrix first.
+<P>
+<DIV ALIGN=CENTER>
+<H3>How to make it do various things</H3>
+</DIV>
+<P>
+<A NAME="bootstrap"><DT><P><STRONG>"How do I bootstrap?"</STRONG>
+<DD>The general method of bootstrapping
+involves  running  SEQBOOT  to make multiple bootstrapped data sets out of your
+one data set, then running one of the tree-making programs  with  the  Multiple
+data  sets option to analyze them all, then running CONSENSE to make a majority
+rule consensus tree from the resulting tree file.  Read  the  documentation  of
+SEQBOOT  to  get  further information.  Before, only parsimony methods could be
+bootstrapped.  With this new system almost any of the  tree-making  methods  in
+the package can be bootstrapped.  It is somewhat more tedious but you will find
+it much more rewarding.
+<A NAME="outgroup"><DT><P><STRONG>"How do I specify a multi-species outgroup
+with your parsimony  programs?"</STRONG> 
+<DD>
+It's  not  a  feature  but  is  not too hard to do in many of the programs.  In
+parsimony programs like MIX, for which the W (Weights) and A (Ancestral states)
+options are available, and weights can be larger than 1, all you need to do is:
+<TABLE ALIGN=LEFT>
+<TR><TD><STRONG>(a)</STRONG><BR>&nbsp;<BR></TD><TD>In MIX, make up an extra character with states 0 for  all  the  outgroups
+and  1  for all the ingroups.  If using<BR> DNAPARS the ingroup can have (say)
+<TT>G</TT> and the outgroup <TT>A</TT>.</TD></TR>
+<TR><TD><STRONG>(b)</STRONG><BR>&nbsp;<BR></TD><TD>Assign this character an enormous weight
+(such as <TT>Z</TT> for 35) using  the  W
+option,<BR> all other characters getting weight 1, or whatever weight they had
+before.</TD></TR>
+<TR><TD><STRONG>(c)</STRONG><BR>&nbsp;<BR></TD><TD>If it is available, Use the A (Ancestral
+states) option to designate that
+for  that  new  character the state found in the<BR> outgroup is the ancestral
+state.</TD></TR>
+<TR><TD><STRONG>(d)</STRONG></TD><TD>In MIX do not use the O (Outgroup) option.
+</TD></TR>
+<TR><TD><STRONG>(e)</STRONG><BR>&nbsp;<BR>&nbsp;</TD><TD>After the tree is found, the designated
+ingroup  should  have  been  held
+together  by the fake character.  The tree will be<BR> rooted somewhere in the
+outgroup (the program may or may not have a preference for  one  place  in
+the  outgroup  over  another).<BR>  Make sure that you subtract from the total
+number of steps on the tree all steps in the new character.</TD></TR>
+<TR><TD COLSPAN=2>In programs like DNAPARS, you cannot use this method as weights  of  sites
+cannot  be  greater  than  1.   But you do an analogous trick, by adding a
+largish number of extra sites to the data, with one nucleotide state ("A")
+for the ingroup and another ("G") for the outgroup.  You will then have to
+use RETREE to manually reroot the tree in the desired place.</TD></TR>
+</TABLE>
+<P>
+<A NAME="monophyletic"><DT><P><STRONG>"How do I force certain groups to remain  monophyletic in your
+parsimony programs?"</STRONG> 
+<DD>By  the same method as in the previous question, using multiple fake characters, any number of
+groups of species can be forced to be  monophyletic.   In  MOVE,  DOLMOVE,  and
+DNAMOVE  you  can  specify  whatever  outgroups  you want without going to this
+trouble.
+<A NAME="reroot"><DT><P><STRONG>"How can I reroot one of the trees written out by PHYLIP?"</STRONG>
+<DD>Use the program
+RETREE.  But keep in mind whether the tree inferred by the original program was
+already rooted, or whether you are free to reroot it without changing its
+meaning.
+<A NAME="indels"><DT><P><STRONG>"What do I do  about  deletions  and  insertions  in  my  sequences?"</STRONG>
+<DD>The
+molecular  sequence  programs  will  accept  sequences  that have gaps (the "<TT>-</TT>"
+character).  They do various things with them,  mostly  not  optimal.   DNAPARS
+counts  "gap"  as  if it were a fifth nucleotide state (in addition to A, C, G,
+and T).  Each site counts one change when a  gap  arises  or  disappears.   The
+disadvantage  of  this  treatment is that a long gap will be overweighted, with
+one event per gapped site.  So a gap of 10 nucleotides will count as  being  as
+much  evidence  as  10  single site nucleotide substitutions.  If there are not
+overlapping gaps, one way to correct this is to recode the first  site  in  the
+gap  as "<TT>-</TT>" but make all the others be "<TT>?</TT>" so the gap only counts as one event.
+Other programs such as DNAML and DNADIST count gaps as  equivalent  to  unknown
+nucleotides  (or  unknown  amino  acids) on the grounds that we don't know what
+would be there if  something  were  there.   This  completely  leaves  out  the
+information  from  the presence or absence of the gap itself, but does not bias
+the gapped sequence to be close  to  or  far  from  other  gapped  or  ungapped
+sequences.
+So it is not necessary to remove gapped regions from your
+sequences, unless the presence of gaps indicates that the region is
+badly aligned.
+<A NAME="01distances"><DT><P><STRONG>"How can I produce distances for my data set which
+has 0's and 1's?"</STRONG> 
+<DD>You can't do it in a simple and general
+way, for a straightforward reason.  Distance methods must correct the
+distances for superimposed changes.  Unless we know specifically how to
+do this for your particular characters, we cannot accomplish the
+correction.  There are many formulas we could use, but we can't choose
+among them without much more information.  There are issues of superimposed
+changes, as well as heterogeneity of rates of change in different
+characters.  Thus we have not provided a distance program for 0/1 data.
+It is up to you to figure out what is an appropriate stochastic model
+for your data and to find the right distance formulas.
+<A NAME="rflps"><DT><P><STRONG>"I have RFLP fragment data: which programs should I
+use?"</STRONG>
+<DD>This is a more difficult question than you may imagine.
+Here is quick tour of the issues:
+<UL><LI>You can code fragment presence/absence as 0 and 1 and use a
+parsimony program.  It is
+not obvious in advance whether 0 or 1 is ancestral, though it is likely that
+change in one direction is more probable than change in the other for each
+fragment.  One can use either Wagner parsimony (programs <TT>MIX</TT>,
+<TT>PENNY</TT> or <TT>MOVE</TT>) or use Dollo parsimony
+(<TT>DOLLOP, DOLPENNY</TT> or <TT>DOLMOVE</TT>)
+with the ancestral states all set as unknown ("<TT>?</TT>").  The Wagner
+parsimony model allows change in both directions.  Dollo parsimony allows
+more change in one direction than the other, and if the ancestral state is
+unknown it lets the data determine which way allows more change.
+<LI>You can use a distance matrix method using the RFLP distance of Nei and
+Li (1979).  Their restriction fragment distance is available in our
+program RestDist. 
+<LI>You should be very hesitant to bootstrap RFLP's.  The individual
+fragments do not evolve independently: a single nucleotide substitution
+can eliminate one fragment and create two (or vice versa).
+</UL>
+For restriction <I>sites</I> (rather than fragments) life is a bit
+easier: they evolve nearly independently so bootstrapping is possible
+and <TT>RESTML</TT> can be used, as well as restriction sites distances
+computed in RESTDIST.  Also directionality of change
+is less ambiguous when parsimony is used.  A more complete tour of the
+issues for restriction sites and restriction fragments is given in chapter
+15 of my book (Felsenstein, 2004).
+<A NAME="parsbranch"><DT><P><STRONG>"Why don't your parsimony programs  print  out  branch  lengths?"</STRONG>
+<DD>Well, DNAPARS and PARS can.  The others have not yet been upgraded to the
+same level.  The longer answer is that it is because
+there  are  problems  defining  the branch lengths.  If you look closely at the
+reconstructions of the states of the hypothetical ancestral  nodes  for  almost
+any  data  set  and  almost  any  parsimony method you will find some ambiguous
+states on those nodes.  There is then usually an ambiguity as to  which  branch
+the  change  is  actually  on.  Other parsimony programs resolve this in one or
+another arbitrary fashion, sometimes with the user specifying how (for example,
+methods  that push the changes up the tree as far as possible or down it as far
+as possible).  Our older programs leave it to the user to do this.  In
+DNAPARS and PARS we use an algorithm discovered by Hochbaum and Pathria (1997)
+(and independently by Wayne Maddison) to compute branch lengths that average
+over all possible placements of the changes.  But these branch lengths, as
+nice as they are, do not correct for mulitple superimposed changes.  Few
+programs  available  from  others  currently  correct  the  branch  lengths for
+multiple changes of state that may have overlain each other.  One possible  way
+to  get  branch  lengths  with  nucleotide  sequence  data  is to take the tree
+topology that you got, use RETREE to convert  it  to  be  unrooted,  prepare  a
+distance matrix from your data using DNADIST, and then use FITCH with that tree
+as User Tree and see what branch lengths it estimates.
+<A NAME="multistate"><DT><P><STRONG>"Why can't your programs handle unordered multistate  characters?"</STRONG>
+<DD>In this 3.6 release there is a program PARS which does parsimony for
+undordered multistate characters with up to 8 states, plus <TT>?</TT>.  The
+other the discrete characters parsimony programs can only handle two states,
+<TT>0</TT> and <TT>1</TT>.
+This is mostly because I have not yet had time to modify them to do so  -  the
+modifications would have to be extensive.  Ultimately I hope to get these done.
+If you have four or fewer states and need a feature that is not in PARS,
+you could  recode your states to look like nucleotides
+and use the parsimony programs in the molecular sequence section of PHYLIP, or
+you could use one of the excellent parsimony programs produced by others.
+<P>
+<DIV ALIGN=CENTER>
+<H3>Background information needed:</H3>
+</DIV>
+<P>
+<A NAME="documentation"><DT><P><STRONG>"What file format do I use for the sequences?"<BR>
+"How do I use the programs?  I can't find any documentation!"</STRONG>
+<DD>These are discussed in the documentation files.  Do you have them?
+You probably do.  They are
+in a separate archive from the executables (they are in the Documentation and
+Sources archives, which you should definitely fetch).  Input file formats
+are discussed in <TT>main.html</TT>, in <TT>sequence.html</TT>, <TT>distance.html</TT>,
+<TT>contchar.html</TT>, <TT>discrete.html</TT>, and the documentation files for the
+individual programs.
+<A NAME="wheretoread"><DT><P><STRONG>"Where can I find out how to infer
+phylogenies?"</STRONG>
+<DD>There now a few books.  For molecular data you could use one of these:
+At the upper-undergraduate level:
+<UL>
+<LI> Graur, D. and W.-H. Li.  2000.  <EM>Fundamentals of Molecular
+     Evolution.</EM> Sinauer Associates, Sunderland, Massachusetts. (or the earlier edition
+     by Li and Graur).
+<LI> Page, R. D. P. and E. C. Holmes.  1998.  <EM>Molecular Evolution: 
+     A Phylogenetic Approach.</EM>  Blackwell, Oxford.
+</UL>
+<P>
+and as graduate-level texts:
+<UL>
+<LI> Nei, M. and S. Kumar.  2000.  <EM>Molecular Evolution and
+     Phylogenetics.</EM> Oxford University Press, Oxford.
+<LI> Li, W.-H.  1999.  <EM>Molecular Evolution.</EM>  Sinauer Associates,
+     Sunderland,   Massachusetts.
+</UL>
+<P>
+For more mathematically-oriented readers, there is the book
+<UL>
+<LI>Semple, C., and M. Steel. 2003. <EM>Phylogenetics.</EM> Oxford Lecture
+Series in Mathematics and Its Applications, volume 24. Oxford
+University Press, Oxford.
+</UL>
+<P>
+Best of all is of course my own book on phylogenies, which
+covers the subject for many data types, at a
+graduate course level:<BR>
+<UL>
+<LI>Felsenstein, J.  2004.  <EM>Inferring Phylogenies</EM>.
+Sinauer Associates, Sunderland, Massachusetts.
+</UL>
+<P>
+There are also some recent books that take a more practical hands-on approach,
+and give some detailed information on how to use programs, including some
+PHYLIP programs.  These include:
+<UL>
+<LI>Hall, B. G.  2004.  <em>Phylogenetic Trees Made Easy</em>, 2nd edition.
+Sinauer Associates, Sunderland, Massachusetts.
+<LI>Salemi, M., and A.-M. Vandamme (eds.) 2003. <em>The Phylogenetic Handbook.
+   A Practical Approach to DNA and Protein Phylogeny.</em>  Cambridge University
+Press, Cambridge.
+</UL>
+<P>
+A useful article introducing the inference of phylogenies at a more
+elementary level is:
+<UL>
+<LI>Baldauf, S. L.  2003.  Phylogeny for the faint of heart: a tutorial. <em>Trends
+in Genetics</em> <b>19:</b> 345-351.
+</UL>
+<P>
+There is an excellent guide to using PHYLIP 3.6
+for molecular analyses available.  It is by Jarno Tuimala:
+<UL>
+<LI>Tuimala, J.  2004. <em>A Primer to Phylogenetic Analysis using Phylip Package.
+</em> 2nd edition.  Center for Scientific Computing, Espoo, Finland.
+</UL>
+and it is
+available as a PDF <A HREF="http://koti.mbnet.fi/tuimala/oppaat/phylip2.pdf">here</A>.
+<P>
+In addition, one of these three older review articles may help:
+<UL><LI>Swofford, D. L., G. J. Olsen, P. J. Waddell, and D. M. Hillis.  1996.
+Phylogenetic inference.  pp. 407-514 in <I>Molecular Systematics</I>, 2nd ed.,
+ed.  D. M. Hillis, C. Moritz, and B. K. Mable.  Sinauer Associates, Sunderland,
+Massachusetts.
+<LI>Felsenstein, J. 1988. Phylogenies from molecular sequences: inference and
+reliability.  <I>Annual Review of Genetics</I> <B>22:</B> 521-565.
+<LI>Felsenstein, J. 1988. Phylogenies and quantitative
+characters. <I>Annual Review of Ecology and Systematics</I> <B>19:</B> 445-471.
+</UL>
+<P>
+<DIV ALIGN=CENTER>
+<H3>Questions about distribution and citation:</H3>
+</DIV>
+<P>
+<A NAME="copied"><DT><P><STRONG>"If I copied PHYLIP from a friend without you knowing, should I try
+to keep you from finding out?"</STRONG>
+<DD>No.  It is to your advantage and mine for you to
+let me know.  If you did not get PHYLIP "officially" from me  or  from  someone
+authorized  by me, but copied a friend's version, you are not in my database of
+users.   You  may also  have  an  old  version  which  has   since   been
+substantially  improved.  I  don't  mind  you  "bootlegging"
+PHYLIP (it's free anyway), but
+you should realize that you may have copied an outdated version. If you are reading this
+Web page, 
+you can get  the  latest  version  just  as  quickly over Internet.
+It will help both of us if you get
+onto my mailing list.  If you are on it, then I will give your  name  to  other
+nearby  users  when  they ask for the names of nearby users, and they are urged to contact you and
+update  your  copy.   (I  benefit  by  getting  a  better  feel  for  how  many
+distributions  there have been, and having a better mailing list to use to give
+other users local people to contact).  Use the registration form which
+can be accessed through our web site's registration page.
+<A NAME="citation"><DT><P><STRONG>"How do I make a citation  to  the  PHYLIP  package in  the  paper I am
+writing?"</STRONG> 
+<DD>One way is like this:
+<P>
+Felsenstein, J.  2005.  PHYLIP (Phylogeny Inference Package) version 3.6.
+<I>Distributed by the author.  Department of Genome Sciences, University of
+Washington, Seattle.</I>
+<P>
+or if the editor for whom you are writing insists that the citation must be  to
+a  printed  publication,  you  could cite a notice for version 3.2 published in
+Cladistics:
+<P>
+Felsenstein, J.  1989.  PHYLIP - Phylogeny Inference Package (Version 3.2).
+<I>Cladistics</I> <B>5:</B> 164-166.
+<BR>
+<P>
+For a while a printed version of the PHYLIP documentation was available and one
+could  cite that.  This is no longer true.  Other than that, this is difficult,
+because I have never written a paper announcing  PHYLIP!   My  1985b  paper  in
+Evolution on the bootstrap method contains a
+one-paragraph Appendix describing the availability of this  package,  and  that
+can  also  be  cited  as  a  reference  for  the  package, although it was
+distributed since 1980 while the bootstrap paper is 1985.   A paper  on  PHYLIP
+is needed mostly to give people something to cite, as word-of-mouth, references
+in other people's papers, and electronic newsgroup  postings  have  spread  the
+word about PHYLIP's existence quite effectively.
+<A NAME="class"><DT><P><STRONG>"Can I make copies of PHYLIP available to the students in
+my class?"</STRONG>
+<DD>Generally, yes.  Read the Copyright notice near the front of
+the main documentation page.  If you charge money for PHYLIP,
+or use it in a service for which you charge money, you will need
+to negotiate a royalty.  But you can make it freely available
+and you do not need to get any special permission from us to do so.
+<A NAME="howmany"><DT><P><STRONG>"How many copies of PHYLIP have been distributed?"</STRONG>
+<DD>On
+27 September, 1996 we reached 5,000 registered installations worldwide.
+(By now we are near 20,000 but have lost count for
+the moment because we have to make sure we don't count multiple registrations
+by the same person).  Of course there are
+many more people who have got copies from friends.  PHYLIP is probably
+the most widely distributed phylogeny package (figures for the others are
+not available).
+In recent years magnetic tape distribution and e-mail distribution of
+PHYLIP have disappeared, and so have diskette distributions (as I
+insist people use the network if they can).  But all this has
+been  more  than  offset  by, first, an explosion of distributions by anonymous ftp
+over Internet, and then a bigger explosion of World Wide Web distributions and
+registrations (about 8 registrations per day at the moment).
+<P>
+<DIV ALIGN=CENTER>
+<H3>Questions about documentation</H3>
+</DIV>
+<P>
+<A NAME="printed"><DT><P><STRONG>"Where can I get a printed version of  the  PHYLIP  documents?"</STRONG>
+<DD>For  the
+moment,  you  can  only  get  a  printed  version by printing it yourself.  For
+versions 3.1 to 3.3 a printed version was sold by Christopher Meacham  and  Tom
+Duncan,  then  at  the  University Herbarium of the University of California at
+Berkeley.  But they have had to discontinue this as it was too much work.   You
+should  be  able to print out the documentation files on almost any printer and
+make yourself a printed version of whichever of them you need.
+<A NAME="newsletter"><DT><P><STRONG>"Why have I been dropped from your newsletter mailing list?"</STRONG>
+<DD>You haven't.
+The  newsletter  was  dropped.  It simply was too hard to mail it out to such a
+large mailing list.  The last issue of the newsletter  was  Number  9  in  May,
+1987.  The Listserver News Bulletins that we tried for a while have also been dropped
+as too hard to keep up to date.  I am hoping that our World Wide Web site will take their place.
+</DL>
+<P>
+<DIV ALIGN="CENTER">
+<H3>Additional Frequently Asked Questions, or:</B>
+"Why didn't it occur to you to ...</H3></DIV>
+<DL>
+<A NAME="commandline"><DT><P><STRONG>... allow the options to be set on the command line?"</STRONG>
+<DD>We could in Unix and Linux, or somewhat differently in Windows.  But
+there are so many options that this would be difficult, especially
+when the options require additional information to be supplied such as
+rates of evolution for many categories of sites.  You may be asking this
+question because you want to automate the operation of PHYLIP programs
+using batch files (command files) to run in background.  If that is the
+issue, see the section of this main documentation page on
+"Running the programs in background or under control of a command file".
+It explains how to set the options using input redirection and a file
+that has the menu responses as keystrokes.
+<A NAME="java"><DT><P><STRONG>... write these programs in Java?"</STRONG>
+<DD>Well, we might.  It is not completely clear which of two contenders,
+C++ and Java, will become more widespread, and which one will gradually
+fade away (at the moment there is no sign that either will fade away).
+If one becomes overwhelmingly more successful, we will probably want to use
+it for future versions of PHYLIP.  As the C compilers that are used to
+compile PHYLIP are usually also able to compile C++, we will be moving in
+that direction, but with constant worrying about whether to convert PHYLIP
+to Java instead.
+<A NAME="inferior"><DT><P><STRONG>... forgot about all those inferior systems and just develop PHYLIP for Unix?"</STRONG>
+<DD>This is self-answering, since the same people first said I should 
+just develop it for Apple II's, then just for CP/M Z-80's, then just
+for IBM PCDOS, then just for Macintoshes or for Sun 
+workstations, and then for Windows.  If I had listened to them and done any one of these, I would 
+have had a very hard time adapting the package to any of the other ones once 
+these folks changed their mind (and most of them did)!
+<A NAME="pascal"><DT><P><STRONG>... write these programs in Pascal?"</STRONG>
+<DD>These programs started out
+in Pascal in 1980.  In 1993 we released both Pascal and C versions. 
+Versions beyond 3.5, including revised versions of 3.5 were
+C-only.  I make fewer mistakes in Pascal and do
+like the language better than C, but C has overtaken Pascal and Pascal
+compilers are starting to be hard to find.  Also C is a
+bit better standardized which makes the number of modifications a user
+has to make to adapt the programs to their system much less.
+<A NAME="prolog"><DT><P><STRONG>... write these programs in PROLOG
+(or Ada, or Modula-2, or SIMULA, or BCPL, or PL/I, or APL, or LISP)?"</STRONG>
+<DD>These are all languages I have considered.  All
+have advantages, but they are not really widespread (as are C, C++, and Java).
+<A NAME="distwag"><DT><P><STRONG>... include in the package a program to do the Distance Wagner method, (or
+successive approximations character weighting)?"</STRONG>
+<DD>In most cases where I have not
+included other methods, it is because I decided that they had no substantial
+advantages over methods that were included (such as the programs FITCH, 
+KITSCH, NEIGHBOR, the <TT>T</TT> option of MIX and DOLLOP, and the "<TT>?</TT>" ancestral
+states option of the discrete characters parsimony programs).
+<A NAME="clustering"><DT><P><STRONG>... include in the package ordination methods and more
+clustering algorithms?"</STRONG>
+<DD>Because this is <I>not</I> a clustering package, it's a
+package for phylogeny estimation.  Those are different tasks with different
+objectives and mostly different methods.  Mary Kuhner and Jon Yamato have,
+however,
+included in NEIGHBOR an option for UPGMA clustering, which will be very
+similar to KITSCH in results.
+<A NAME="align"><DT><P><STRONG>... include in the package a program to do nucleotide sequence 
+alignment?"</STRONG>
+<DD>Well, yes, I should
+have, and this is scheduled to be in future releases.  But multiple sequence
+alignment programs, in the era after Sankoff, Morel, and Cedergren's 1973
+classic paper, need to use substantial computer horsepower to estimate the
+alignment and the tree together (but see Karl Nicholas's program
+<TT>GeneDoc</TT> or Ward Wheeler and David Gladstein's <TT>MALIGN</TT>, as
+well as more approximate methods of tree-based alignment used in
+<TT>ClustalW</TT>, <TT>TreeAlign</TT>, or <TT>POY</TT>).
+</DL>
+<P>
+<DIV ALIGN="CENTER">
+<H3>(Fortunately) obsolete questions</H3></DIV>
+<P>
+(The following four questions, once
+common, have finally disappeared, I am pleased to report).
+<H4>"Why didn't it occur to you to ...</H4></DIV>
+<DL>
+<A NAME="phoneline"><DT><P><STRONG>... let me log in to your computer in Seattle
+and copy the files out over a phone line?"</STRONG>
+<DD>No thanks.  It would cost you for a lot of
+long-distance telephone time, plus a half hour of my time and yours in which
+I had to explain to you how to log in and do the copying.
+<A NAME="listing"><DT><P><STRONG>... send me a listing of your program?"</STRONG>
+<DD>Damn it, it's not "a program",
+it's 35 programs, in a great many files.  What were you
+thinking of doing, having 1800-line programs typed in by slaves at your
+end?  If you were going to go to all that trouble why not try network
+transfer?  If you have these then you can print out all the
+listings you want to and add them to the huge stack of printed output in
+the corner of your office.
+<A NAME="magtape"><DT><P><STRONG>... write a magnetic tape in our computer center's favorite format
+(inverted Lithuanian EBCDIC at 998 bpi)?"</STRONG>
+<DD>Because the ANSI standard
+format is the most widely used one, and even though your computer center
+may pretend it can't read a tape written this way, if you sniff around
+you will find a utility to read it.  It's just a <I>lot</I> easier for me to
+let you do that work.  If I tried to put the tape into your format, I
+would probably get it wrong anyway.
+<A NAME="fortran"><DT><P><STRONG>... give us a version of these in FORTRAN?"</STRONG>
+<DD>Because the
+programs are <I>far</I> easier to write and debug in C or Pascal, and cannot
+easily be
+rewritten into FORTRAN (they make extensive use of recursive calls and
+of records and pointers).  In any case, C is widely available.  If you don't
+have a C compiler or don't know
+how to use it, you are going to have to learn a language like C or
+Pascal sooner or later, and the sooner the better.
+</DL>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>

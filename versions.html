@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE>PHYLIP versions </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<P>
+<CENTER>
+<TABLE WIDTH=70%>
+<TR ALIGN=CENTER>
+<TD BGCOLOR="navy"><STRONG><FONT SIZE=+3 COLOR="cyan">
+V</FONT><FONT SIZE=+2 COLOR="cyan">ersions, current and future</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<P ALIGN=CENTER>
+<IMG SRC="icons/oldphylip2.gif" ALT="Tree with nest and egg">
+</P>
+<P>
+<P>
+<H2>Version 3.6</H2>
+<P>
+The official release of PHYLIP has now reached version 3.695.
+<P>
+Here are some of the ways in which the 3.6 release differs from the 3.5
+releases:
+<UL>
+<LI> Documentation distributed as web pages, with links to other web pages.
+<LI> Much faster DNA and restriction sites likelihood programs.
+<LI> Two protein likelihood programs, one for a molecular clock.
+<LI> Gamma distribution of rates across sites in the protein distance program.
+<LI> Both user-defined rate categories and "regional" rate categories (chosen
+by a Hidden Markov Model) allowed simultaneously in DNA and protein likelihood
+programs.
+<LI> Gamma distribution of rates across sites used to pick rates and probabilities
+for the Hidden Markov Model rate variation features in the DNA and protein
+likelihood and distance programs.
+<LI> The same programs can also allow for a fraction of invariant sites.
+<LI> Reconstruction of ancestral sequences in the protein and DNA likelihood programs.
+<LI> The Shimodaira-Hasegawa correction for multiple user trees with the
+Kishino-Hasegawa-Templeton test.
+<LI> A Minimum Evolution tree option in the distance matrix program.
+<LI> LogDet distance available as an option in the DNA distance program.
+<LI> A table of fraction of similarity between sequences can be calculated
+in the DNA and protein distance programs.
+<LI> Neighbor-Joining trees now calculated at full speed (the previous
+algorithm was unnecessarily slow).
+<LI> Generalized parsimony programs that can handle multifurcations nicely and can
+provide estimates of branch lengths.
+<LI> An unordered multistate version of the discrete characters parsimony
+programs, allowing up to 8 states plus "<TT>?</TT>".
+<LI> A restriction sites, fragments, RAPD, AFLP distance matrix program.
+<LI> The comparative method contrasts program now allowing for within-species
+variability, not just assuming species means are exactly measured.
+<LI> The tree rearrangement program now handling multifurcating trees.
+<LI> The tree rearrangement program RETREE can now write out trees in either Nexus
+or a preliminary version of a new XML phylogeny format.
+<LI> All input trees come from file "intree" instead of being in the input file.
+<LI> A better algorithm for drawing unrooted trees in Drawtree
+<LI> A tree distance program calculating the Symmetric Difference metric or
+the Branch Score distance that takes branch lengths into account.
+<LI> The consensus tree program able to calculate Strict, Majority Rule, and
+<I>M<SUB><em>l</em></SUB></I> consensus trees.
+<LI> Weights and Categories information for input files to be in separate
+files called "weights" and "categories".
+<LI> Bootstrapping is possible by writing a multiple weights file.
+rather than multiple data files (the latter still possible too).
+<LI> The bootstrap program will allow block-bootstrapping (to correct for
+local correlation of rates in a molecule).
+<LI> Multiple-page trees in Drawgram/Drawtree so big posters can be made.
+<LI> Circular trees a la Swofford/Maddison as an option in Drawgram.
+<LI> Font and spline support for many draw program formats in Drawgram/Drawtree.
+<LI> Drivers for the POV ray-tracing program and for the VRML Virtual Reality
+Markup Language available in the Drawtree and Drawgram programs.
+<LI> Restructured C code that reduces source code size by sharing more functions.
+<LI> Compilation support files (Makefile or project files) for the
+Microsoft Visual C++, Borland C++, 
+CygWin Gnu C++ and Metrowerks Codewarrior compilers under Windows and the
+Metrowerks Codewarrior compiler
+in Mac OS.
+<LI> Native executables available for Mac OS X, both for Intel iMac and PowerMac
+processors.
+</UL>
+<P>
+<H2>Future versions</H2>
+<P>
+As we move toward version 4.0, we intend to change in a number of directions:
+<UL>
+<LI> We will make sure that all programs can read
+and correctly handle both rooted and unrooted user trees, with or without
+the number of trees being at the front of the input tree file.
+<LI>The code
+will become ever more structured and will increasingly be object-oriented,
+though perhaps without ceasing to be in C.
+<LI> We will have more XML tree and data file support, including the ability
+to read simple XML alignment and tree files.
+<LI> Many programs will be able to analyze data sets with multiple loci,
+taking into account variation of rates of evolution across loci.
+<LI> We will be able to read in user trees and use them as the basis for
+rearrangements.  Used after bootstrapping, this will enable a version of
+Kevin Nixon's method of searching tree space.
+<LI> We will have some codon-model programs for analysing synonymous / nonsynonymous
+ratios of change in proteins.
+<LI> A maximum likelihood program will be produced to fit trees under the
+threshold model of quantitative genetics, for 0/1 data.
+<LI> We will have a GUI (mouse/windows) front end program.
+<LI> We hope to have ever more support for parallel compilation of PHYLIP programs
+as well, though this is currently hampered by the absence of a widespread
+standard parallel computing software environment.
+</UL>
+In general, we are now using a "stable/unstable" release structure.  This
+means that we keep fixing bugs in the current version of PHYLIP, resulting
+in a series of minor releases (3.62, 3.63, 3.64, etc.) while also adding
+new features to another version (3.7) which is to be the next major release.
+This requires care to ensure that bug-fixes are made in both the current and
+the future versions.  We have hopes of releasing version 3.7a towards the 
+end of 2008.  We will release alpha and beta releases of it in addition
+to the 3.6 release, which will continue to be available as the official
+version until the full release of version 3.7 later.
+<P>
+To see recent bug fixes and ones that are to be fixed in the next minor
+release, <A HREF="bugs.html">look here.</A>
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE> PHYLIP discrete characters programs </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<H1> Discrete characters </H1>
+
+<P> <IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>PARS</STRONG>.
+Multistate discrete-characters parsimony method.   Up to 8 states
+  (as well as "<TT>?</TT>") are allowed.  Cannot do Camin-Sokal or Dollo Parsimony.
+  Can cope with multifurcations, reconstruct ancestral states, use character
+  weights, and infer branch lengths.
+
+<P> <IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>MIX</STRONG>.
+Estimates phylogenies by some parsimony methods for discrete
+   character data with two states (0 and 1).  Allows use of the
+   Wagner parsimony method, the Camin-Sokal parsimony method, or arbitrary
+   mixtures of these.  Also reconstructs ancestral states and allows weighting
+   of characters (does not infer branch lengths).
+
+<P> <IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>MOVE</STRONG>.
+Interactive construction of phylogenies from discrete character
+   data with two states (0 and 1).  Evaluates parsimony and compatibility
+   criteria for those phylogenies and displays reconstructed states throughout
+   the tree.  This can be used to find parsimony or compatibility estimates by
+   hand.
+
+<P> <IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>PENNY</STRONG>.
+Finds all most parsimonious phylogenies for discrete-character
+   data with two states, for the Wagner, Camin-Sokal, and mixed parsimony
+   criteria using the branch-and-bound method of exact search.  May be
+   impractical (depending on the data) for more than 10-11 species.
+
+
+<P> <IMG SRC="icons/DOLLO.gif" ALT="[Icon]"> <STRONG>DOLLOP</STRONG>.
+Estimates phylogenies by the Dollo or polymorphism parsimony
+   criteria for discrete character data with two states (0 and 1).  Also
+   reconstructs ancestral states and allows weighting of characters.  Dollo
+   parsimony is particularly appropriate for restriction sites data; with
+   ancestor states specified as unknown it may be appropriate for restriction
+   fragments data.
+
+<P> <IMG SRC="icons/DOLLO.gif" ALT="[Icon]"> <STRONG>DOLMOVE</STRONG>.
+Interactive construction of phylogenies from discrete
+   character data with two states (0 and 1) using the Dollo or polymorphism
+   parsimony criteria.  Evaluates parsimony and compatibility criteria for
+   those phylogenies and displays reconstructed states throughout the tree.
+   This can be used to find parsimony or compatibility estimates by hand.
+
+<P> <IMG SRC="icons/DOLLO.gif" ALT="[Icon]"> <STRONG>DOLPENNY</STRONG>.
+Finds all most parsimonious phylogenies for
+    discrete-character data with two states, for the Dollo or polymorphism
+   parsimony criteria using the branch-and-bound method of exact search.  May
+   be impractical (depending on the data) for more than 10-11 species.
+
+<P> <IMG SRC="icons/CLIQUE.gif" ALT="[Icon]"> <STRONG>CLIQUE</STRONG>.
+Finds the largest clique of mutually compatible characters, and
+   the phylogeny which they recommend, for discrete character data with two
+   states.  The largest clique (or all cliques within a given size range of
+   the largest one) are found by a very fast branch and bound search method.
+   The method does not allow for missing data.  For such cases the <TT>T</TT>
+   (Threshold) option of PARS or MIX may be a useful alternative.
+   Compatibility methods are particular useful when some characters are of
+   poor quality and the rest of good quality, but when it is not known in
+   advance which ones are which.
+
+<P> <IMG SRC="icons/DISCRETE.gif" ALT="[Icon]"> <STRONG>FACTOR</STRONG>.
+Takes discrete multistate data with character state trees and
+   produces the corresponding data set with two states (0 and 1).  Written by
+   Christopher Meacham.  This program was formerly used to accomodate
+   multistate characters in MIX, but this is less necessary now that PARS is
+   available.
+
+
+<P> <IMG SRC="icons/BOOT.gif" ALT="[Icon]"> <STRONG>SEQBOOT</STRONG>.
+Reads in a data set, and produces multiple data sets from
+   it by bootstrap resampling.  Since most programs in the current version of
+   the package allow processing of multiple data sets, this can be used
+   together with the consensus tree program CONSENSE to do bootstrap (or
+   delete-half-jackknife) analyses with most of the methods in this package.
+   This program also allows the Archie/Faith technique of permutation of
+   species within characters.
+
+<P> <IMG SRC="icons/CONSENSE.gif" ALT="[Icon]"> <STRONG>CONSENSE</STRONG>.
+Computes consensus trees by the majority-rule consensus tree
+   method, which also allows one to easily find the strict consensus tree.
+   Is not able to compute the Adams consensus tree.  Trees are input in a tree
+   file in standard nested-parenthesis notation, which is produced by many of
+   the tree estimation programs in the package.  This program can be used as
+   the final step in doing bootstrap analyses for many of the methods in the
+   package.
+
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
+

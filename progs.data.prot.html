@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE>PHYLIP protein programs </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<H1> protein sequences </H1>
+<P>
+<UL>
+<P> <IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROTPARS</STRONG>.  Estimates phylogenies from protein sequences (input using the
+   standard one-letter code for amino acids) using the parsimony method, in
+   a variant which counts only those nucleotide changes that change the amino
+   acid, on the assumption that silent changes are more easily accomplished.
+
+<P> <IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROTDIST</STRONG>.
+Computes a distance measure for protein sequences, using
+   maximum likelihood estimates based on the Dayhoff PAM matrix,
+   the JTT matrix model, the PBM model, Kimura's 1983 approximation to these,
+   or a model based on the genetic code plus a constraint on changing to a
+   different category of amino acid.  The distances can also be corrected for
+   gamma-distributed and gamma-plus-invariant-sites-distributed rates of change
+   in different sites.  Rates of evolution can vary among sites in a
+   prespecified way, and also according to a Hidden Markov model.  The program
+   can also make a table of percentage similarity among sequences.  The
+   distances can then be used in the <A HREF="progs.data.dist.html">distance matrix programs</A>.
+
+<P> <IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROML</STRONG>.
+Estimates phylogenies from protein amino acid sequences by maximum
+   likelihood.  The PAM, JTT, or PMB models can be employed, and also use
+   of a Hidden Markov model of rates, with the program inferring which sites
+   have which rates.  This also allows gamma-distribution and
+   gamma-plus-invariant sites distributions of rates across sites.
+   It also allows different rates of change at known sites.
+
+<P> <IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROMLK</STRONG>.
+Same as PROML but assumes a molecular clock.  The use of the
+   two programs together permits a likelihood ratio test of the
+   molecular clock hypothesis to be made.
+
+<P> <IMG SRC="icons/BOOT.gif" ALT="[Icon]"> <STRONG>SEQBOOT</STRONG>.
+Reads in a data set, and produces multiple data sets from
+   it by bootstrap resampling.  Since most programs in the current version of
+   the package allow processing of multiple data sets, this can be used
+   together with the consensus tree program CONSENSE to do bootstrap (or
+   delete-half-jackknife) analyses with most of the methods in this package.
+   This program also allows the Archie/Faith technique of permutation of
+   species within characters.  It can also rewrite a data set to convert
+   it from between the PHYLIP Interleaved and Sequential forms, and into
+   a preliminary version of a new XML sequence alignment format
+   which is under development and which is described in the
+   SEQBOOT documentation web page.
+
+<P> <IMG SRC="icons/CONSENSE.gif" ALT="[Icon]"> <STRONG>CONSENSE</STRONG>.
+Computes consensus trees by the majority-rule consensus tree
+   method, which also allows one to easily find the strict consensus tree.
+   Is not able to compute the Adams consensus tree.  Trees are input in a tree
+   file in standard nested-parenthesis notation, which is produced by many of
+   the tree estimation programs in the package.  This program can be used as
+   the final step in doing bootstrap analyses for many of the methods in the
+   package.
+
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
+

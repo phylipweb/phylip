@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE> PHYLIP distance programs </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<H1> distance matrix data </H1>
+
+<P> <IMG SRC="icons/DISTANCE.gif" ALT="[Icon]"> <STRONG>FITCH</STRONG>.
+Estimates phylogenies from distance matrix data under the
+   "additive tree model" according to which the distances are expected to
+   equal the sums of branch lengths between the species.  Uses the
+   Fitch-Margoliash criterion and some related least squares criteria, or
+   the Minimum Evolution distance matrix method.  Does
+   not assume an evolutionary clock.  This program will be useful with
+   distances computed from molecular sequences, restriction sites or fragments
+   distances, with DNA hybridization measurements, and with genetic distances
+   computed from gene frequencies.
+
+<P> <IMG SRC="icons/DISTANCE.gif" ALT="[Icon]"> <STRONG>KITSCH</STRONG>.
+Estimates phylogenies from distance matrix data under the
+   "ultrametric" model which is the same as the additive tree model except
+   that an evolutionary clock is assumed.  The Fitch-Margoliash criterion and
+   other least squares criteria, or the Minimum Evolution criterion are
+   possible.  This program will be useful with
+   distances computed from molecular sequences, restriction sites or
+   fragments distances, with distances from DNA hybridization measurements,
+   and with genetic distances computed from gene frequencies.
+
+<P> <IMG SRC="icons/DISTANCE.gif" ALT="[Icon]"> <STRONG>NEIGHBOR</STRONG>.
+An implementation by Mary Kuhner and John Yamato of Saitou and
+   Nei's "Neighbor Joining Method," and of the UPGMA (Average Linkage
+   clustering) method.  Neighbor Joining is a distance matrix method producing
+   an unrooted tree without the assumption of a clock.  UPGMA does assume a
+   clock.  The branch lengths are not optimized by the least squares criterion
+   but the methods are very fast and thus can handle much larger data sets.
+
+<P> <IMG SRC="icons/DNA.gif" ALT="[Icon]"> <STRONG>DNADIST</STRONG>.
+Computes four different distances between species from nucleic acid
+   sequences.  The distances can then be used in the distance matrix programs.
+   The distances are the Jukes-Cantor formula, one based on Kimura's 2-
+   parameter method, the F84 model used in DNAML, and the LogDet distance.
+   The distances can also be corrected for gamma-distributed and
+   gamma-plus-invariant-sites-distributed rates of change in different sites.
+   Rates of evolution can vary among sites in a prespecified way, and also
+   according to a Hidden Markov model.  The program can also make a table of
+   percentage similarity among sequences.
+
+<P> <IMG SRC="icons/PROTEIN.gif" ALT="[Icon]"> <STRONG>PROTDIST</STRONG>.
+Computes a distance measure for protein sequences, using
+   maximum likelihood estimates based on the Dayhoff PAM matrix,
+   the JTT matrix model, the PBM model, Kimura's 1983 approximation to these,
+   or a model based on the genetic code plus a constraint on changing to a
+   different category of amino acid.  The distances can also be corrected for
+   gamma-distributed and gamma-plus-invariant-sites-distributed rates of change
+   in different sites.  Rates of evolution can vary among sites in a
+   prespecified way, and also according to a Hidden Markov model.  The program
+   can also make a table of percentage similarity among sequences.  The
+   distances can be used in the distance matrix programs.
+
+<P> <IMG SRC="icons/GENDIST.gif" ALT="[Icon]"> <STRONG>GENDIST</STRONG>.
+Computes one of three different genetic distance formulas
+   from gene frequency data.  The formulas are Nei's genetic distance, the
+   Cavalli-Sforza chord measure, and the genetic distance of Reynolds et. al.
+   The former is appropriate for data in which new mutations occur in an
+   infinite isoalleles neutral mutation model, the latter two for a model
+   without mutation and with pure genetic drift.  The distances are written to
+   a file in a format appropriate for input to the distance matrix programs.
+
+<P> <IMG SRC="icons/RESTRICT.gif" ALT="[Icon]"> <STRONG>RESTDIST</STRONG>.
+Distances calculated from restriction sites data or
+   restriction fragments data.  The restriction sites option is the one to
+   use to also make distances for RAPDs or AFLPs.
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE>PHYLIP gene frequency programs </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<H1> gene frequencies </H1>
+
+<P> <IMG SRC="icons/CONTCHAR.gif" ALT="[Icon]"> <STRONG>CONTML</STRONG>.  Estimates phylogenies from gene frequency data by maximum likelihood
+   under a model in which all divergence is due to genetic drift in the
+   absence of new mutations.  Does not assume a molecular clock.  An
+   alternative method of analyzing this data is to compute Nei's genetic
+   distance and use one of the distance matrix programs.
+
+<P> <IMG SRC="icons/GENDIST.gif" ALT="[Icon]"> <STRONG>GENDIST</STRONG>.  Computes one of three different genetic distance formulas from gene
+   frequency data.  The formulas are Nei's genetic distance, the Cavalli-
+   Sforza chord measure, and the genetic distance of Reynolds et. al.  The
+   former is appropriate for data in which new mutations occur in an infinite
+   isoalleles neutral mutation model, the latter two for a model without
+   mutation and with pure genetic drift.  The distances are written to a file
+   in a format appropriate for input to the <A HREF="progs.data.dist.html">distance matrix programs</A>.
+
+<P> <IMG SRC="icons/BOOT.gif" ALT="[Icon]"> <STRONG>SEQBOOT</STRONG>.  Reads in a data set, and produces multiple data sets from
+   it by bootstrap resampling.  Since most programs in the current version of
+   the package allow processing of multiple data sets, this can be used
+   together with the consensus tree program CONSENSE to do bootstrap (or
+   delete-half-jackknife) analyses with most of the methods in this package.
+   This program also allows the Archie/Faith technique of permutation of
+   species within characters.
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
+

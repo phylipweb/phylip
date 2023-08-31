@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<HEAD>
+
+
+<script language="JavaScript" type="text/javascript"><!--
+var nav = window.Event ? true : false;
+if (nav) {
+  window.captureEvents(Event.KEYDOWN);
+  window.onkeydown = NetscapeEventHandler_KeyDown;
+} else {
+  document.onkeydown = MicrosoftEventHandler_KeyDown;
+}
+ 
+ function NetscapeEventHandler_KeyDown(e) {
+ if (e.which == 13 && e.target.type != 'textarea' && e.target.type != 'submit') { return false; }
+return true;
+}
+
+function MicrosoftEventHandler_KeyDown() {
+if (event.keyCode == 13 && event.srcElement.type != 'textarea' && event.srcElement.type != 'submit')
+   return false;
+  return true;
+}
+--></script>
+
+<TITLE>
+PHYLIP 3.6 Registration Form
+</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#CCFFFF">
+<FORM METHOD=POST ACTION="/cgi-bin/verify-form">
+<CENTER>
+<TABLE WIDTH="70%">
+<TR ALIGN=CENTER>
+<TD BGCOLOR="navy"><STRONG><FONT SIZE="+4" COLOR="cyan">
+Registration form</FONT></STRONG></TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+<H2> Please fill this out if you have transferred any of our archives </H2>
+<P>
+(It only needs to be filled out once when transferring multiple archives).
+<P>
+<H3> Your name(s) and address </H3>
+<P>
+<FONT SIZE="+1"><EM>Please</EM>:</FONT><BR>
+   <UL>
+   <LI> <B>do not</B> use all upper-case letters or all lower-case letters,<BR>
+(so, <B>not</B> like this:  "JOHN SMITH" and <B>not</B> like this: "john smith").
+   <LI> <B>do not</B> include the name in the address, or the address in the name<br>
+   <LI> <B>do not</B> put everything on one line<BR>
+(so, <B>not</B> like this<BR> "John Smith, Institute of Entomological
+Etymology, University of Southern North Dakota, Hoople ND 58243"<BR> all in one line).
+  </UL>
+<FONT SIZE="+1"><EM>Please</EM> <B>do</B> these:</FONT><BR>
+  <UL>
+   <LI> You should spread the address out over 3-4 lines as if you were addressing an envelope,<BR>
+something like this:
+<P>
+<table border = 0>
+<tr><td>&nbsp;&nbsp;Department of Hermetic Hermeneutics</td></tr>
+<tr><td>&nbsp;&nbsp;Institute of Entomological Etymology</td></tr>
+<tr><td>&nbsp;&nbsp;University of Southern North Dakota</td></tr>
+<tr><td>&nbsp;&nbsp;Hoople, ND &nbsp;58243</td></tr>
+</table>
+<P>
+   <LI> You should put the country (if not U.S.) on the last of the nonblank
+lines.<BR>
+   </UL>
+Name of person or persons who will have the copy (not the institution
+formally owning it but the person)
+<BR>
+<INPUT NAME="Registered Name" SIZE=80><BR>
+<P>
+Address, line 1 (do <B>not</B> put the person's name again here)<BR><INPUT TYPE="text" NAME="Registered Address #1" SIZE=80><BR>
+Address, line 2<BR><INPUT TYPE="text" NAME="Registered Address #2" SIZE=80><BR>
+Address, line 3 (if needed)<BR><INPUT TYPE="text" NAME="Registered Address #3" SIZE=80><BR>
+Address, line 4 (if needed)<BR><INPUT TYPE="text" NAME="Registered Address #4" SIZE=80><BR>
+<P>
+<H3> Phone and e-mail information </H3>
+Phone number&nbsp;&nbsp;<INPUT TYPE="text" NAME="Phone Number" SIZE=20><BR>
+e-mail address&nbsp;&nbsp;<INPUT TYPE="text" NAME="Email Address" SIZE=40><BR>
+<P>
+<H3> what you have fetched (select all that apply):</H3>
+<INPUT TYPE=checkbox NAME="3.697" VALUE="3.697">&nbsp 3.697 Documentation and C sources <BR>
+<INPUT TYPE=checkbox NAME="W3.698X" VALUE="W3.698X">&nbsp 3.698 64-bit Windows executables <BR>
+<INPUT TYPE=checkbox NAME="W3.695X" VALUE="W3.695X">&nbsp 3.695 32-bit Windows executables <BR>
+<INPUT TYPE=checkbox NAME="MacOS" VALUE="MacOS">&nbsp 3.695 Macintosh Mac OS executables <BR>
+<P>
+<H3> Computer information </H3>
+Type of computer&nbsp;&nbsp;<INPUT NAME="Computer Type" SIZE=80><BR>
+Operating system&nbsp;&nbsp;<INPUT NAME="Operating System" SIZE=80><BR>
+C Compiler (if you are going to recompile it, otherwise leave this empty)<INPUT NAME="COMPILER" SIZE=80><BR>
+<P>
+<H3> Comments on who you are or on PHYLIP: </H3>
+(no more than 255 characters)
+<INPUT TYPE="text" NAME="Comments" SIZE=255> <BR>
+<P>
+<TABLE BORDER=5 ALIGN=center width="50%">
+<TR><TD>
+<B>Your address and contact information will not be sold or made widely available
+over the Internet.
+However I will make it available to users in your area, if they request
+a list of nearby users.</B>
+</TD></TR>
+</TABLE>
+<P>
+<INPUT TYPE="submit" VALUE="Submit the registration"> <STRONG> OK, submit this </STRONG> <BR>
+<INPUT TYPE="reset"> <STRONG> Reset the form (erase its contents)</STRONG> <BR>
+(It is not necessary to erase the form after you have submitted a registration)
+</FORM>
+<P>
+<HR>
+<A HREF="../phylip.html">
+<IMG SRC="icons/PHYLIP.gif" ALT="[Phylip icon here]"> ... to the PHYLIP home page</A>
+</BODY>
+</HTML>
