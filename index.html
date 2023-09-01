@@ -1,84 +1,82 @@
-<HTML>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<HEAD>
-<TITLE>Felsenstein/Kuhner lab</TITLE>
+<!dOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="description" content="PHYLIP Phylogeny Inference Package computer
+programs for inferring phylogenies">
+<meta name="keywords" content="phylogeny, phylogenies, evolutionary trees,
+evolution, software">
+<title>PHYLIP Home Page</title>
 <LINK href="bluestyle.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" language="JavaScript">
-<!-- Copyright 2002 Bontrager Connection, LLC >
-//
-// Type the number of images you are rotating.
-
-NumberOfImagesToRotate = 13;
-
-var caption = new Array(NumberOfImagesToRotate);
-
-// Specify the first and last part of the image tag.
-
-FirstPart = '<img src="picture';
-LastPart = '.jpg" width="600">';
-FirstPart2 = '<div align="center"><small>';
-LastPart2 = '</small></div>';
-
-function printImage() {
-var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
-caption[1] = 'The <a href="https://www.dot.state.ak.us/amhs/map.shtml">Alaska Marine Highway</a> ferry <a href="https://en.wikipedia.org/wiki/MV_Taku"><i>Taku</i></a> passes its larger<br>sister ship <a href="https://www.dot.state.ak.us/amhs/fleet/columbia.shtml"><i>Columbia</i></a> in Neva Strait just north of Sitka';
-caption[2] = 'Evening view of the <a href="https://www.google.com/maps/place/Eel+Pond/@41.5258975,-70.6717816,3a,65.9y,117.06h,89.76t/data=!3m8!1e1!3m6!1s-DfYV-FVglBM%2FV3V5uD6JZjI%2FAAAAAAACGuY%2Fn09wIhOX4nwTuMkNsiRpC-8xWa4LW9cnwCLIB!2e4!3e11!6s%2F%2Flh3.googleusercontent.com%2F-DfYV-FVglBM%2FV3V5uD6JZjI%2FAAAAAAACGuY%2Fn09wIhOX4nwTuMkNsiRpC-8xWa4LW9cnwCLIB%2Fw203-h101-n-k-no%2F!7i8704!8i4352!4m5!3m4!1s0x89e4d88741e62be7:0xf64828946a20f7a3!8m2!3d41.5262094!4d-70.6703808!6m1!1e1">Eel Pond</a>, Woods Hole, Massachusetts, from the Marine Biological Laboratory';
-caption[3] = "Our lab in 2011 (it was considerably smaller after 2014, and closed in 2017):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Joe Felsenstein&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bob Giansiracusa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jim McGill&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mary Kuhner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jon Yamato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elizabeth Walkup";
-caption[4] = '<a href="https://www.google.com/maps/@48.7275297,-121.0382541,3a,75y,20.12h,92.83t/data=!3m6!1e1!3m4!1sDdhR5t3YCjSxpIJ61WiykQ!2e0!7i3328!8i1664?hl=en">Ross Lake</a>';
-caption[5] = 'upper Early Winters Creek <a href="https://www.google.com/maps/@48.5194072,-120.6486988,3a,45y,43.2h,85.76t/data=!3m6!1e1!3m4!1sqxMAIMNB3UMVYGNTUVjkGw!2e0!7i3328!8i1664!7i3328!8i1664">from Washington Pass</a>';
-caption[6] = '<i>Darlingtonia</i> pitcher plants at<br> <a href="http://www.oregonstateparks.org/index.cfm?do=parkPage.dsp_parkPage&parkId=81">Darlingtonia Wayside</a> near Florence, Oregon';
-caption[7] = '<a href="https://www.google.com/maps/@44.2841543,-124.109055,3a,75y,270h,80.55t/data=!3m6!1e1!3m4!1sdL5AF-PprlEC-0Ge04zqtw!2e0!7i13312!8i6656">Devil\'s Churn<\a>, Cape Perpetua, near Yachats, Oregon';
-caption[8] = 'Yoshino cherry tree blossoms, <a href="https://twitter.com/uwcherryblossom">UW old quadrangle</a>, March 2013';
-caption[9] = '<a href="http://www.yelp.com/biz/cherry-blossoms-university-of-washington-seattle">Yoshino cherry tree blossoms</a>, UW old quadrangle, March 2013';
-caption[10] = "Yoshino cherry tree blossoms, UW old quadrangle, March 2013";
-caption[11] = '<a href="https://fhl.uw.edu/">Friday Harbor Labs</a> waterfront, with Mt. Baker on horizon, May, 2017';
-caption[12] = '<a href="https://en.wikipedia.org/wiki/MV_Elwha">Washington State Ferry MV Elwha</a> passes the pier at Friday Harbor Laboratories<br>on its last run of the day into Friday Harbor, June 11, 2019';
-caption[13] = 'Visiting the newly-reopened <a href="https://www.burkemuseum.org/">Burke Museum</a>, Seattle, 9 November 2019 (photo courtesy of Joan Rudd)';
-document.write(FirstPart + r + LastPart);
-document.write(FirstPart2 + caption[r] + LastPart2);
-}
-//-->
-</script>
-</HEAD>
-
-<BODY bgcolof="#ffddcc">
-<DIV ALIGN=center>
-<H2> Felsenstein&nbsp;/&nbsp;Kuhner lab</H2>
-<H3> <A HREF="http://www.gs.washington.edu/">Department of Genome Sciences</A>,
-<A HREF="http://www.washington.edu">University of Washington</A>,
-<A HREF="http://www.scn.org/directory.html">Seattle</A></H3>
-<UL>
+</head>
+<body bgcolor="#ccffff">
+<!-- PHYLIP, phylogeny, phylogenies, phylogenetic, evolution, evolutionary trees, software -->
 <P>
-<DIV>
-<table>
-<tr><td align="center"> <script type="text/javascript"
-language="JavaScript"><!--
-printImage();
-//--></script> </td></tr>
-</table>
-</DIV>
+<p align="center">
+<img src="phylip.gif" alt="[PHYLIP logo here]">
+</p>
+<h1 align="center"><b>PHYLIP</b></h1>
+<p>
+<div align=center>
+<table border=1 width="48%" bgcolor="#ddffdd"><tr><td>A new release
+of PHYLIP, version 3.698, is now available as source code.  This release
+differs in correcting the consensus tree bug that was recently pointed out,
+and in its license -- from version 3.696 on, we have had an open source license, so that
+PHYLIP can be distributed with other software that has commercial
+licenses or has a restrictive open-source source license.
+MacOS executables are at version 3.695, with the old license, but I will update them soon.
 <P>
-<DIV ALIGN="CENTER">
-<TABLE cellspacing=8%>
-<TR>
-<TD align=center WIDTH=11% bgcolor=aquamarine><a href="https://felsenst.github.io"
-STYLE="text-decoration:none">Joe Felsenstein</a></TD>
-<TD align=center WIDTH=11% bgcolor=aquamarine><A HREF="lamarc/mkkuhner.html"
-STYLE="text-decoration:none">Mary Kuhner<BR> and Jon Yamato</A></TD>
-<TD align=center WIDTH=14% bgcolor=aquamarine><a href="programs.html"
-STYLE="text-decoration:none">Programs (PHYLIP,<br> LAMARC, PopG,<br>Phylogeny
-Programs list)</a></TD>
-<TD align=center WIDTH=11% bgcolor=aquamarine><a
-href="https://felsenst.github.io/courses.html"
-STYLE="text-decoration:none">Courses</a></TD>
-<TD align=center WIDTH=11% bgcolor=aquamarine><a href="former.html"
-STYLE="text-decoration:none">Former members<BR> of the lab</a></TD>
-</TR>
-</TABLE>
-</DIV>
-<P>
-</DIV>
+<B>Note</B> -- recently users of 64-bit Windows systems have had difficulty running the
+Java front ends for the Drawgram and Drawtree tree-drawing programs. This was
+because this was 32-bit code.  With the version 3.698 executables, we now have a
+64-bit distribution available and these should run properly.  The 3.695
+Windows executables that are 32-bit code is also still available, for people who have
+older 32-bit Windows systems.
+</td></tr></table>
+</div>
+<p>
+PHYLIP is a <em>free</em> package of programs for inferring phylogenies.  It is
+distributed as source code, documentation files, and a number of
+different types of executables.
+These Web pages, by <a href="http://evolution.gs.washington.edu/felsenstein.html" target="_top">Joe Felsenstein</a> of the <a href="http://www.gs.washington.edu/" target="_top">Department of Genome Sciences </a>
+and the <a href="http://www.biology.washington.edu" target="_top">Department of Biology</a> at the
+<a href="http://www.washington.edu/" target="_top">University of Washington</a>, contain information on PHYLIP and ways to
+transfer the executables, source code and documentation to your computer.
+</p>
+<p>
+<ul>
+<li> A <a href="/phylip/general.html" target="_top">general description</a> of PHYLIP.
+</li><li><a href="/phylip/programs.html" target="_top">Programs</a> in the PHYLIP package
+</li><li>About the <a href="/phylip/executables.html" target="_top">Executables</a>
+</li><li>About the <a href="/phylip/sourcecode.html" target="_top">Source code</a> ... compiling it yourself
+</li><li> The documentation web pages for PHYLIP can be read
+<a href="/phylip/phylip.html" target="_top">here</a>
+</li><li><a
+href="/phylip/getme-new1.html" target="_top">Get me PHYLIP</a>
+</li><li><a
+href="/phylip/install.html" target="_top">How to install PHYLIP</a>
+</li><li><a href="/phylip/faq.html" target="_top">Frequently asked questions</a>
+</li><li> PHYLIP's <a
+href="http://www.facebook.com/pages/PHYLIP/115402811804635">Facebook
+page</a> for discussing problems.
+</li><li>An excellent guide to using PHYLIP with molecular data is available
+<a href="/phylip/tuimala3.pdf">here</a>.
+<! a href="http://koti.mbnet.fi/tuimala/oppaat/phylip2.pdf" target="_top">
+</li><li><a href="/phylip/phylipweb.html" target="_top">PHYLIP on the web</a> (HTML documentation, server services)
+</li><li><a href="/phylip/versions.html" target="_top">Current and future versions of PHYLIP (including new features)</a>
+</li><li><a href="/phylip/oldversions.html" target="_top">Older versions of PHYLIP, including version 3.5</a>
+</li><li><a href="/phylip/bugs.html" target="_top">Bugs in the package, known or recently fixed</a>
+</li><li><a href="http://evolution.gs.washington.edu/phylip/software.html" target="_top">Phylogeny programs</a> available elsewhere
+</li><li><a href="/phylip/credits.html" target="_top">Credits (people, grants etc.)</a>
+</li></ul>
 <hr>
+<p>
+This is access number <img src="/cgi-bin/Count.cgi?istrip=F&ft=0&frgb=71;29;50&tr=Y&trgb=192;192;192&wxh=15;20&md=6&dd=G&pad=N&st=5&sh=1&df=phylip.dat" align=absmiddle alt="[Counter]"> of this page since
+1 January 2021.
+To see the number of accesses in previous years look <A
+HREF="http://evolution.gs.washington.edu/phylip/useage.html" target="_top">here</A>.
+</p><p>
+<img src="phylip/icons/construct.gif" alt="[Silly cartoon]" align="right">
+</p>
+<HR>
 <div> 
 <P>
 <font color="#AAAAAA">Notices added in compliance with University of Washington
@@ -88,6 +86,4 @@ color="#AAAAAA">Privacy</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="http://www.washington.edu/online/terms"
 target="_blank"><font color="#AAAAAA">Terms</font></a></font>
 </div>
-
-</BODY>
-</HTML>
+</body></html>
