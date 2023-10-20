@@ -38,7 +38,15 @@ K</FONT><FONT SIZE=+2 COLOR="cyan">nown bugs (we're working on them)</FONT>
 </TABLE>
 </CENTER>
 <P>
-<h3>Two irritating problems with recent versions of MacOS</h3>
+<h3>A compiling problem with a version of the gcc compiler</h3>h3>
+ <p>On 19 October 2023 I tried to compile the 3.697 source code and ran
+ into a problem with linking to make executables.  This was with the 10.2.1
+ version of the GCC compiler on a Linux system.  The problem is owing to a 
+ bug in our variable definitions.  It can be almost entirely avoided 
+ by changing the CFLAGS statenment in Makefile.unx to read
+ CFLAGS = -zmuldefs
+ </p>
+ <h3>Two irritating problems with recent versions of MacOS</h3>
 <p>
 There are two serious problems running PHYLIP 3.695 executables in recent
 versions of the MacOS operating system.  Fortunately there are workarounds,
